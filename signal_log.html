@@ -4,13 +4,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Signal History</title>
 <style>
-body{margin:0;background:#0d1117;color:#e6edf3;font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px 40px}
-a{color:#58a6ff;text-decoration:none}
-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
-td,th{padding:4px 6px;text-align:right;border-bottom:1px solid #30363d}
+:root{color-scheme:light;--page:#eceff8;--surface:#fff;--txt:#0e1320;--mut:#76829c;--grid:#e2e7f1;--accent:#4f46e5;--good:#12a150;--bad:#dc3545}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--page:#090c14;--surface:#131a29;--txt:#eef1f9;--mut:#7f8aa3;--grid:#253048;--accent:#9b8cf3;--good:#2bc85a;--bad:#f0645f}}
+body{margin:0;background:var(--page);color:var(--txt);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:0 16px 40px}
+a{color:var(--accent);text-decoration:none}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px;background:var(--surface);border-radius:10px}
+td,th{padding:5px 8px;text-align:right;border-bottom:1px solid var(--grid)}
 td:first-child,th:first-child{text-align:left}
-.up{color:#3fb950}.dn{color:#f85149}
+.up{color:var(--good)}.dn{color:var(--bad)}
 h1{font-size:18px}
+.note{background:var(--surface);border:1px solid var(--grid);border-radius:10px;padding:14px}
 </style>
 </head>
 <body>

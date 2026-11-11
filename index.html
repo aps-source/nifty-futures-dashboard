@@ -5,120 +5,206 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nifty Futures</title>
 <style>
-:root{
-  --bg:#0d1117; --card:#161b22; --line:#30363d; --txt:#e6edf3; --dim:#8b949e;
-  --green:#3fb950; --red:#f85149; --amber:#d29922; --blue:#58a6ff;
-}
-:root[data-theme="light"]{--bg:#f6f8fa;--card:#fff;--line:#d0d7de;--txt:#1f2328;--dim:#57606a}
-@media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){--bg:#f6f8fa;--card:#fff;--line:#d0d7de;--txt:#1f2328;--dim:#57606a}
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--txt);
-  font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px 40px}
-a{color:var(--blue);text-decoration:none}
-.top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 16px;margin:0 -16px;
-  background:linear-gradient(90deg,#1a2744,#232145 45%,#3b1f47);
-  border-bottom:2px solid #58a6ff}
-.top h1{font-size:18px;margin:0;
-  background:linear-gradient(90deg,#58a6ff,#bc8cff,#ff7b72);
-  -webkit-background-clip:text;background-clip:text;color:transparent}
-.badge{padding:2px 10px;border-radius:12px;font-weight:600;font-size:12px}
-.live{background:rgba(63,185,80,.15);color:var(--green)}
-.off{background:rgba(248,81,73,.15);color:var(--red)}
-.clock{margin-left:auto;color:var(--dim);font-variant-numeric:tabular-nums}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;
-  border-top:3px solid var(--accent,#58a6ff)}
-.card h2{font-size:13px;margin:0 0 8px;color:var(--accent,#58a6ff);
-  text-transform:uppercase;letter-spacing:.5px}
-.c-idx{--accent:#58a6ff}.c-oc{--accent:#bc8cff}.c-dec{--accent:#d29922}
-.c-sod{--accent:#3fb950}.c-cond{--accent:#ff7b72}.c-chart{--accent:#39c5cf}
-.c-trade{--accent:#f778ba}.c-sig{--accent:#8b949e}
-table{width:100%;border-collapse:collapse;font-size:13px}
-td,th{padding:4px 6px;text-align:right;border-bottom:1px solid var(--line)}
-td:first-child,th:first-child{text-align:left}
-.up{color:var(--green)} .dn{color:var(--red)} .nt{color:var(--amber)}
-.big{font-size:20px;font-weight:700}
-.chk li{list-style:none;margin:4px 0}
-.chk{padding:0;margin:0}
-.chart{width:100%;height:440px;border:0;border-radius:6px}
-.full{float:right;font-size:12px}
-.strip{font-size:12px;margin:8px 0}
-.sig{max-height:300px;overflow:auto}
-footer{color:var(--dim);font-size:12px;margin-top:20px}
-@media(max-width:700px){.chart{height:320px}}
+  :root {
+    color-scheme: light;
+    --page:#eceff8; --surface-1:#ffffff; --surface-2:#f3f5fb;
+    --text-primary:#0e1320; --text-secondary:#4f5a74; --text-muted:#76829c;
+    --gridline:#e2e7f1; --border:rgba(14,19,32,0.10);
+    --shadow:0 1px 2px rgba(14,19,32,0.06), 0 8px 24px rgba(40,50,110,0.08);
+    --brand-a:#4338ca; --brand-b:#7c3aed; --brand-c:#0d9488; --accent:#4f46e5;
+    --call:#2563eb; --put:#d6336c;
+    --good:#12a150; --warning:#c77d00; --critical:#dc3545;
+    --slate-1:#1b2340; --slate-2:#2d3a66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page:#090c14; --surface-1:#131a29; --surface-2:#1a2336;
+      --text-primary:#eef1f9; --text-secondary:#a0abc4; --text-muted:#7f8aa3;
+      --gridline:#253048; --border:rgba(238,241,249,0.11);
+      --shadow:0 1px 2px rgba(0,0,0,0.4), 0 10px 28px rgba(0,0,0,0.35);
+      --brand-a:#4f46e5; --brand-b:#8b5cf6; --brand-c:#14b8a6; --accent:#9b8cf3;
+      --call:#4a8cf0; --put:#e0578a;
+      --good:#2bc85a; --warning:#f2b636; --critical:#f0645f;
+      --slate-1:#0f1630; --slate-2:#26305a;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { font-size: clamp(15px, 0.55vw + 9px, 19px); }
+  body {
+    margin:0; color:var(--text-primary);
+    font-family: system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.4;
+    background:
+      radial-gradient(1100px 480px at 8% -8%, color-mix(in srgb, var(--brand-b) 16%, transparent), transparent 70%),
+      radial-gradient(900px 480px at 100% 0%, color-mix(in srgb, var(--brand-c) 14%, transparent), transparent 70%),
+      var(--page);
+    background-attachment: fixed;
+  }
+  b { font-variant-numeric: tabular-nums; }
+  a { color: var(--accent); }
+
+  .hero { background: linear-gradient(115deg, var(--brand-a) 0%, var(--brand-b) 52%, var(--brand-c) 100%);
+    color:#fff; padding:1.05rem clamp(14px,2vw,32px) 0.9rem; box-shadow:0 6px 26px rgba(67,56,202,0.28); }
+  .hero-inner { max-width:1500px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; }
+  .brand { display:flex; align-items:center; gap:0.9rem; }
+  .logo { width:2.5rem; height:2.5rem; border-radius:0.8rem; background:rgba(255,255,255,0.18); display:grid; place-items:center; font-size:1.35rem; backdrop-filter:blur(4px); }
+  h1 { font-size:1.45rem; margin:0; font-weight:800; letter-spacing:-0.015em; }
+  .tag { font-size:0.86rem; opacity:0.88; margin-top:1px; }
+  .hero-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .hero-pill { background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.28); padding:0.32rem 0.75rem; border-radius:999px; font-size:0.82rem; font-variant-numeric:tabular-nums; color:#fff; text-decoration:none; }
+  a.btn { background:#fff; color:var(--brand-a); text-decoration:none; font-weight:700; font-size:0.88rem; padding:0.45rem 0.95rem; border-radius:999px; box-shadow:0 2px 10px rgba(0,0,0,0.18); }
+  .live-clock { text-align:right; font-variant-numeric:tabular-nums; }
+  .live-clock .d { font-size:0.86rem; font-weight:700; }
+  .live-clock .t { font-size:1.15rem; font-weight:800; letter-spacing:0.01em; }
+
+  .st-pill { display:inline-flex; align-items:center; gap:0.35rem; font-weight:700; font-size:0.78rem; padding:0.15rem 0.55rem; border-radius:999px; }
+  .st-pill.live { background:color-mix(in srgb, var(--good) 16%, var(--surface-1)); color:var(--good); }
+  .st-pill.stale { background:color-mix(in srgb, var(--critical) 16%, var(--surface-1)); color:var(--critical); }
+  .hero .st-pill { background:rgba(255,255,255,0.2); color:#fff; }
+  .dot { display:inline-block; width:0.55rem; height:0.55rem; border-radius:50%; background:currentColor; flex:none; }
+  .st-pill.live .dot { animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow:0 0 0 0 color-mix(in srgb, currentColor 55%, transparent);} 60% { box-shadow:0 0 0 6px transparent;} }
+
+  .page { max-width:1500px; margin:0 auto; padding:1.1rem clamp(14px,2vw,32px) 2rem; }
+
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(165px,100%),1fr)); gap:0.9rem; margin-bottom:1rem; }
+  .kpi { position:relative; overflow:hidden; background:var(--surface-1); border:1px solid var(--border); border-radius:1rem; padding:0.95rem 1.1rem; box-shadow:var(--shadow); }
+  .kpi::before { content:""; position:absolute; inset:0 auto 0 0; width:5px; background:var(--kc, var(--accent)); }
+  .kpi .k { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); font-weight:700; }
+  .kpi .v { font-size:1.45rem; font-weight:800; letter-spacing:-0.02em; font-variant-numeric:tabular-nums; margin-top:0.1rem; line-height:1.15; }
+  .kpi .s { font-size:0.82rem; color:var(--text-secondary); margin-top:0.15rem; font-variant-numeric:tabular-nums; }
+  .kpi.good { --kc:var(--good); } .kpi.bad { --kc:var(--critical); } .kpi.warn { --kc:var(--warning); }
+  .s.good { color:var(--good); } .s.bad { color:var(--critical); }
+
+  .decisions { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:0.9rem; margin-bottom:1rem; }
+  .decision { display:flex; align-items:center; gap:1rem; padding:1rem 1.3rem; border-radius:1.1rem; color:#fff; box-shadow:var(--shadow); border:1px solid rgba(255,255,255,0.14); }
+  .decision .glyph { width:3.1rem; height:3.1rem; border-radius:50%; background:rgba(255,255,255,0.2); display:grid; place-items:center; font-size:1.5rem; font-weight:800; flex:none; }
+  .decision .mi-label { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.07em; opacity:0.9; font-weight:700; }
+  .decision .mi-action { font-size:1.75rem; font-weight:800; line-height:1.15; }
+  .decision .mi-meta { font-size:0.85rem; opacity:0.92; margin-top:0.15rem; }
+  .decision.CE { background:linear-gradient(120deg, color-mix(in srgb, var(--call) 72%, #000), var(--call)); }
+  .decision.PE { background:linear-gradient(120deg, color-mix(in srgb, var(--put) 72%, #000), var(--put)); }
+  .decision.PENDING { background:linear-gradient(120deg, var(--slate-1), var(--slate-2)); }
+
+  .card { background:var(--surface-1); border:1px solid var(--border); border-radius:1rem; padding:1.05rem 1.2rem; box-shadow:var(--shadow); margin-bottom:1rem; min-width:0; }
+  .card h2 { font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:0 0 0.7rem; font-weight:800; }
+  .split { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0.9rem; }
+
+  .lvl-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0.55rem; margin-top:0.6rem; }
+  .lvl { border-radius:0.75rem; padding:0.5rem 0.7rem; background:var(--surface-2); border-left:4px solid var(--c, var(--text-muted)); }
+  .lvl .l { font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; }
+  .lvl .n { font-size:1.25rem; font-weight:800; font-variant-numeric:tabular-nums; }
+  .lvl .d { font-size:0.72rem; color:var(--text-secondary); }
+  .lvl.res { --c:var(--critical); } .lvl.mp { --c:var(--warning); } .lvl.sup { --c:var(--good); } .lvl.pcr { --c:var(--brand-c); } .lvl.spot { --c:var(--accent); }
+
+  table { width:100%; border-collapse:collapse; font-size:0.86rem; }
+  td,th { padding:0.3rem 0.4rem; text-align:right; border-bottom:1px solid var(--gridline); font-variant-numeric:tabular-nums; }
+  td:first-child, th:first-child { text-align:left; }
+  th { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); }
+  .up { color:var(--good); } .dn { color:var(--critical); } .nt { color:var(--warning); }
+
+  .chk { padding:0; margin:0; }
+  .chk li { list-style:none; padding:0.28rem 0; border-top:1px solid var(--gridline); font-size:0.88rem; color:var(--text-secondary); }
+  .chk li:first-child { border-top:none; }
+
+  .chart { width:100%; height:440px; }
+  .full { float:right; font-size:0.78rem; font-weight:700; }
+  footer { color:var(--text-muted); font-size:0.8rem; max-width:1500px; margin:0 auto; padding:0 clamp(14px,2vw,32px) 2rem; }
+  .sig { max-height:320px; overflow:auto; }
+  @media (max-width:700px){ .chart{height:320px} }
 </style>
 </head>
 <body>
 <!--main-dashboard-link--><div id="main-dashboard-link" data-mode="bar" style="box-sizing:border-box;width:100%;padding:7px 14px;background:#0f172a;font:600 12px/1.3 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-align:left"><a href="https://aps-source.github.io/" style="color:#e2e8f0;text-decoration:none">&#9666; Main dashboard</a></div><!--/main-dashboard-link-->
 
 
-<div class="top">
-  <h1>Project Nifty Futures &mdash; Futures Data</h1>
-  <span id="live" class="badge off">&hellip;</span>
-  <span class="clock" id="clock"></span>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <div class="logo">&#128202;</div>
+      <div>
+        <h1>Nifty Futures</h1>
+        <div class="tag">Futures Data &middot; OI &times; price quadrant tracker &middot; 3/5/15/60-min MTF decision</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <span id="live" class="st-pill stale"><span class="dot"></span><span id="live-txt">&hellip;</span></span>
+      <a class="hero-pill" href="signal_log.html">Signal history</a>
+      <a class="hero-pill" href="backtest.html">Backtest</a>
+      <a class="btn" href="https://aps-source.github.io/">&#9666; Main dashboard</a>
+      <div class="live-clock"><div class="d" id="clock-d"></div><div class="t" id="clock-t"></div></div>
+    </div>
+  </div>
+  <details class="rules" style="max-width:1500px;margin:0.55rem auto 0;font-size:0.83rem">
+    <summary style="cursor:pointer;font-weight:600">Strategy rules</summary>
+    <p>Each closed bar at 3/5/15/60-min is classified from futures price &times; OI change: long buildup / short covering (bullish, +1), short buildup / long unwinding (bearish, -1). Decision = sum of the latest score per timeframe: &ge;+3 STRONG LONG, +1..+2 LONG, 0 NEUTRAL, mirror short. Algo window 08:59&ndash;15:40 IST, data refreshes every 1 min. Signals only &mdash; no orders.</p>
+  </details>
 </div>
-<div class="strip">
-  Strategy: NIFTY futures OI &times; price 4-quadrant classifier at 3/5/15/60-min, MTF decision = sum of TF scores.
-  Algo window 08:59&ndash;15:40 IST &middot; data refreshes every 1 min &middot;
-  <a href="signal_log.html">Strategy Signal History</a> &middot;
-  <a href="backtest.html">Backtest</a>
-</div>
 
-<div class="grid">
-  <div class="card c-idx" style="grid-column:1/-1">
-    <h2>B] Indices live</h2>
-    <table id="indices"><tr><td class="nt">waiting for data&hellip;</td></tr></table>
+<div class="page">
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="decisions">
+    <div class="decision PENDING" id="dec-card">
+      <div class="glyph" id="dec-glyph">&#8943;</div>
+      <div>
+        <div class="mi-label">MTF decision &middot; NIFTY futures</div>
+        <div class="mi-action" id="dec-act">WAIT</div>
+        <div class="mi-meta" id="dec-meta">waiting for first closed bars</div>
+      </div>
+    </div>
   </div>
 
-  <div class="card c-oc">
-    <h2>C] Market levels &middot; NIFTY option chain</h2>
-    <div id="oc" class="nt">waiting for data&hellip;</div>
+  <div class="card">
+    <h2>Market levels &middot; NIFTY option chain</h2>
+    <div class="lvl-grid" id="oc">
+      <div class="lvl"><div class="l">waiting</div><div class="n">&hellip;</div></div>
+    </div>
   </div>
 
-  <div class="card c-dec">
-    <h2>MTF Decision</h2>
-    <div id="decision" class="big nt">&mdash;</div>
-    <table id="mtf"></table>
+  <div class="split">
+    <div class="card">
+      <h2>Timeframe classification</h2>
+      <table id="mtf"></table>
+    </div>
+    <div class="card">
+      <h2>Start-of-day checklist</h2>
+      <ul class="chk" id="sod"></ul>
+    </div>
+    <div class="card">
+      <h2>Entry conditions (NIFTY)</h2>
+      <ul class="chk" id="entry"></ul>
+      <h2 style="margin-top:0.9rem">Exit conditions</h2>
+      <ul class="chk" id="exit"></ul>
+    </div>
   </div>
 
-  <div class="card c-sod">
-    <h2>D] Start-of-day checklist</h2>
-    <ul class="chk" id="sod"></ul>
-  </div>
-
-  <div class="card c-cond">
-    <h2>E] Entry conditions (NIFTY)</h2>
-    <ul class="chk" id="entry"></ul>
-    <h2 style="margin-top:12px">F] Exit conditions</h2>
-    <ul class="chk" id="exit"></ul>
-  </div>
-
-  <div class="card c-chart" style="grid-column:1/-1" id="card-NIFTY">
-    <h2>G] NIFTY index &middot; 3-min (Dhan data) <span id="ch-dec-NIFTY"></span>
+  <div class="card" id="card-NIFTY">
+    <h2>NIFTY index &middot; 3-min (Dhan data) <span id="ch-dec-NIFTY"></span>
       <a class="full" href="#" onclick="goFull('card-NIFTY');return false">full screen &#8599;</a></h2>
     <div class="chart" id="chart-NIFTY"></div>
   </div>
-  <div class="card c-chart" style="grid-column:1/-1" id="card-SENSEX">
-    <h2>G] SENSEX index &middot; 3-min (Dhan data)
+  <div class="card" id="card-SENSEX">
+    <h2>SENSEX index &middot; 3-min (Dhan data)
       <a class="full" href="#" onclick="goFull('card-SENSEX');return false">full screen &#8599;</a></h2>
     <div class="chart" id="chart-SENSEX"></div>
   </div>
 
-  <div class="card c-trade" style="grid-column:1/-1">
-    <h2>H] Trade log (today)</h2>
+  <div class="card">
+    <h2>Trade log (today)</h2>
     <table id="trades">
       <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
       <th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>
-      <tr><td colspan="11" class="nt">No trades &mdash; signal-only scanner (paper engine not built yet)</td></tr>
+      <tr><td colspan="11" style="color:var(--text-muted)">No trades &mdash; signal-only scanner (paper engine not built yet)</td></tr>
     </table>
   </div>
 
-  <div class="card sig c-sig" style="grid-column:1/-1">
+  <div class="card sig">
     <h2>Signal history (today, latest first)</h2>
     <table id="signals"></table>
   </div>
+
 </div>
 <footer id="updated"></footer>
 
@@ -127,20 +213,22 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
 const fmt2 = n => Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
 const fmtI = n => (n>=0?'+':'')+fmt2(n);
 const fmtOI = n => (n>=0?'+':'')+Number(n).toLocaleString('en-IN');
+const cls = v => v>0?'up':(v<0?'dn':'nt');
 const charts = {};
 function ensureChart(sym){
   if(charts[sym]) return charts[sym];
   const el = document.getElementById('chart-'+sym);
   if(!el || !window.LightweightCharts) return null;
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
   const c = LightweightCharts.createChart(el, {
-    layout:{background:{color:'transparent'},textColor:'#8b949e'},
-    grid:{vertLines:{color:'#21262d'},horzLines:{color:'#21262d'}},
+    layout:{background:{color:'transparent'},textColor:dark?'#7f8aa3':'#76829c'},
+    grid:{vertLines:{color:dark?'#253048':'#e2e7f1'},horzLines:{color:dark?'#253048':'#e2e7f1'}},
     timeScale:{timeVisible:true,secondsVisible:false},
     autoSize:true,
   });
-  const s = c.addCandlestickSeries({upColor:'#3fb950',downColor:'#f85149',
-    borderUpColor:'#3fb950',borderDownColor:'#f85149',
-    wickUpColor:'#3fb950',wickDownColor:'#f85149'});
+  const s = c.addCandlestickSeries({upColor:'#12a150',downColor:'#dc3545',
+    borderUpColor:'#12a150',borderDownColor:'#dc3545',
+    wickUpColor:'#12a150',wickDownColor:'#dc3545'});
   charts[sym] = {c, s, n:0};
   return charts[sym];
 }
@@ -151,77 +239,77 @@ function drawCharts(d){
     if(!rows || !rows.length) continue;
     const ch = ensureChart(sym);
     if(!ch) continue;
-    // Dhan epochs are IST wall-clock; LW charts shows UTC, so shift +5:30
     const data = rows.map(r=>({time:r.time+19800, open:r.open, high:r.high, low:r.low, close:r.close}));
     ch.s.setData(data);
     if(sym==='NIFTY' && d.signals){
       const day = (d.updated||'').slice(0,10);
-      const marks = d.signals.filter(r=>r.tf_min==='3' && r.decision.startsWith('STRONG')).map(r=>{
+      const marks = d.signals.filter(r=>r.tf_min==='3' && r.decision && r.decision.startsWith('STRONG')).map(r=>{
         const t = Math.floor(new Date(day+'T'+r.time+':00Z').getTime()/1000);
         const long = r.decision.includes('LONG');
         return {time:t, position: long?'belowBar':'aboveBar',
-          color: long?'#3fb950':'#f85149', shape: long?'arrowUp':'arrowDown',
+          color: long?'#12a150':'#dc3545', shape: long?'arrowUp':'arrowDown',
           text: long?'SL+':'SS-'};
       });
       ch.s.setMarkers(marks);
     }
     if(ch.n !== data.length){ ch.c.timeScale().fitContent(); ch.n = data.length; }
   }
-  const dec = d.decision || '';
-  const el = document.getElementById('ch-dec-NIFTY');
-  if(el) el.innerHTML = dec ? ` &middot; <b class="${dec.includes('LONG')?'up':dec.includes('SHORT')?'dn':'nt'}">${dec}</b>` : '';
 }
 function goFull(id){
   const el = document.getElementById(id);
   (el.requestFullscreen||el.webkitRequestFullscreen).call(el);
 }
-const cls = v => v>0?'up':(v<0?'dn':'nt');
 function tickClock(){
-  const ist = new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata',
-    weekday:'short',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'});
-  document.getElementById('clock').textContent = ist + ' IST';
+  const now = new Date();
+  document.getElementById('clock-d').textContent = now.toLocaleDateString('en-IN',
+    {timeZone:'Asia/Kolkata',weekday:'short',day:'2-digit',month:'short',year:'numeric'});
+  document.getElementById('clock-t').textContent = now.toLocaleTimeString('en-IN',
+    {timeZone:'Asia/Kolkata',hour12:false}) + ' IST';
 }
 setInterval(tickClock,1000); tickClock();
 
-function li(ok, label){return `<li>${ok?'&#9989;':'&#10060;'} ${label}</li>`}
+function li(ok,label){return `<li>${ok?'&#9989;':'&#10060;'} ${label}</li>`}
 
 async function load(){
   let d;
   try{ d = await (await fetch('data.json?t='+Date.now())).json(); }
   catch(e){ return; }
   const age = (Date.now() - new Date(d.updated.replace(' ','T')+'+05:30'))/60000;
-  const liveEl = document.getElementById('live');
   const isLive = age < 3;
-  liveEl.textContent = isLive ? 'LIVE' : ('STALE '+Math.round(age)+'m');
-  liveEl.className = 'badge ' + (isLive?'live':'off');
+  document.getElementById('live').className = 'st-pill ' + (isLive?'live':'stale');
+  document.getElementById('live-txt').textContent = isLive ? 'LIVE' : ('STALE '+Math.round(age)+'m');
 
   if(d.indices){
-    document.getElementById('indices').innerHTML =
-      '<tr><th>Instrument</th><th>LTP</th><th>Pts</th><th>%</th></tr>' +
-      d.indices.map(i=>`<tr><td>${i.name}</td><td><b>${fmt2(i.ltp)}</b></td>
-        <td class="${cls(i.chg_pts)}">${fmtI(i.chg_pts)}</td>
-        <td class="${cls(i.chg_pct)}">${fmtI(i.chg_pct)}%</td></tr>`).join('');
+    document.getElementById('kpis').innerHTML = d.indices.map(i=>{
+      const k = i.chg_pct>0?'good':(i.chg_pct<0?'bad':'warn');
+      return `<div class="kpi ${k}"><div class="k">${i.name}</div>
+        <div class="v">${fmt2(i.ltp)}</div>
+        <div class="s ${k==='warn'?'':k}">${fmtI(i.chg_pts)} pts &middot; ${fmtI(i.chg_pct)}%</div></div>`;
+    }).join('');
   }
   if(d.oc){ const o=d.oc;
     document.getElementById('oc').innerHTML = `
-      <table>
-      <tr><td>Spot / Expiry</td><td><b>${fmt2(o.spot)}</b> &middot; ${o.expiry}</td></tr>
-      <tr><td>Resistance &middot; max Call OI</td><td><b>${o.res_strike}</b> &middot; ${fmt2(o.res_pct)}% above &middot; ${(o.res_oi/1e6).toFixed(2)}M OI</td></tr>
-      <tr><td>Support &middot; max Put OI</td><td><b>${o.sup_strike}</b> &middot; ${fmt2(o.sup_pct)}% below &middot; ${(o.sup_oi/1e6).toFixed(2)}M OI</td></tr>
-      <tr><td>Max pain</td><td><b>${o.max_pain}</b> &middot; ${fmt2(o.mp_pct)}% vs spot</td></tr>
-      <tr><td>PCR</td><td><b>${Number(o.pcr).toFixed(2)}</b> &middot; ${o.suggests}</td></tr>
-      </table>`;
+      <div class="lvl spot"><div class="l">Spot &middot; ${o.expiry}</div><div class="n">${fmt2(o.spot)}</div><div class="d">NIFTY</div></div>
+      <div class="lvl res"><div class="l">Resistance &middot; max Call OI</div><div class="n">${o.res_strike}</div><div class="d">${fmt2(o.res_pct)}% above spot &middot; ${(o.res_oi/1e6).toFixed(2)}M OI</div></div>
+      <div class="lvl sup"><div class="l">Support &middot; max Put OI</div><div class="n">${o.sup_strike}</div><div class="d">${fmt2(o.sup_pct)}% below spot &middot; ${(o.sup_oi/1e6).toFixed(2)}M OI</div></div>
+      <div class="lvl mp"><div class="l">Max pain</div><div class="n">${o.max_pain}</div><div class="d">${fmt2(o.mp_pct)}% vs spot</div></div>
+      <div class="lvl pcr"><div class="l">PCR</div><div class="n">${Number(o.pcr).toFixed(2)}</div><div class="d">${o.suggests}</div></div>`;
   }
   const dec = d.decision || 'WAIT';
-  const dEl = document.getElementById('decision');
-  dEl.textContent = dec + (d.decision_score!=null?` (${d.decision_score>0?'+':''}${d.decision_score})`:'');
-  dEl.className = 'big ' + (dec.includes('LONG')?'up':dec.includes('SHORT')?'dn':'nt');
+  const card = document.getElementById('dec-card');
+  const long = dec.includes('LONG'), short = dec.includes('SHORT');
+  card.className = 'decision ' + (long?'CE':short?'PE':'PENDING');
+  document.getElementById('dec-glyph').innerHTML = long?'&#9650;':short?'&#9660;':'&#8943;';
+  document.getElementById('dec-act').textContent = dec;
+  document.getElementById('dec-meta').textContent =
+    (d.decision_score!=null ? `score ${d.decision_score>0?'+':''}${d.decision_score} across ${d.mtf?Object.keys(d.mtf).length:0} timeframes` : 'waiting for first closed bars');
+
   if(d.mtf){
     document.getElementById('mtf').innerHTML =
       '<tr><th>TF</th><th>Last bar</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th></tr>' +
-      Object.entries(d.mtf).map(([tf,m])=>`<tr><td>${tf}m</td><td>${m.time}</td>
+      Object.entries(d.mtf).map(([tf,m])=>`<tr><td><b>${tf}m</b></td><td>${m.time}</td>
         <td class="${cls(+m.d_price)}">${fmtI(+m.d_price)}</td><td class="${cls(+m.d_oi)}">${fmtOI(+m.d_oi)}</td>
-        <td class="${m.cls.includes('LONG B')||m.cls.includes('COVER')?'up':'dn'}">${m.cls}</td></tr>`).join('');
+        <td class="${m.cls.includes('LONG B')||m.cls.includes('COVER')?'up':'dn'}"><b>${m.cls}</b></td></tr>`).join('');
   }
   const c = d.checklist||{};
   document.getElementById('sod').innerHTML =
@@ -241,7 +329,7 @@ async function load(){
       '<tr><th>Time</th><th>TF</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>' +
       d.signals.slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
         <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
-        <td>${r.classification}</td><td>${r.decision_score}</td><td>${r.decision}</td></tr>`).join('');
+        <td>${r.classification}</td><td>${r.decision_score}</td><td><b>${r.decision}</b></td></tr>`).join('');
   }
   drawCharts(d);
   document.getElementById('updated').textContent =
