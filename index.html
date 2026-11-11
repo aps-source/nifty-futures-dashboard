@@ -17,16 +17,24 @@
 body{margin:0;background:var(--bg);color:var(--txt);
   font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px 40px}
 a{color:var(--blue);text-decoration:none}
-.top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 0;
-  border-bottom:1px solid var(--line)}
-.top h1{font-size:18px;margin:0}
+.top{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:14px 16px;margin:0 -16px;
+  background:linear-gradient(90deg,#1a2744,#232145 45%,#3b1f47);
+  border-bottom:2px solid #58a6ff}
+.top h1{font-size:18px;margin:0;
+  background:linear-gradient(90deg,#58a6ff,#bc8cff,#ff7b72);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
 .badge{padding:2px 10px;border-radius:12px;font-weight:600;font-size:12px}
 .live{background:rgba(63,185,80,.15);color:var(--green)}
 .off{background:rgba(248,81,73,.15);color:var(--red)}
 .clock{margin-left:auto;color:var(--dim);font-variant-numeric:tabular-nums}
 .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
-.card h2{font-size:13px;margin:0 0 8px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;
+  border-top:3px solid var(--accent,#58a6ff)}
+.card h2{font-size:13px;margin:0 0 8px;color:var(--accent,#58a6ff);
+  text-transform:uppercase;letter-spacing:.5px}
+.c-idx{--accent:#58a6ff}.c-oc{--accent:#bc8cff}.c-dec{--accent:#d29922}
+.c-sod{--accent:#3fb950}.c-cond{--accent:#ff7b72}.c-chart{--accent:#39c5cf}
+.c-trade{--accent:#f778ba}.c-sig{--accent:#8b949e}
 table{width:100%;border-collapse:collapse;font-size:13px}
 td,th{padding:4px 6px;text-align:right;border-bottom:1px solid var(--line)}
 td:first-child,th:first-child{text-align:left}
@@ -59,46 +67,46 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
 </div>
 
 <div class="grid">
-  <div class="card" style="grid-column:1/-1">
+  <div class="card c-idx" style="grid-column:1/-1">
     <h2>B] Indices live</h2>
     <table id="indices"><tr><td class="nt">waiting for data&hellip;</td></tr></table>
   </div>
 
-  <div class="card">
+  <div class="card c-oc">
     <h2>C] Market levels &middot; NIFTY option chain</h2>
     <div id="oc" class="nt">waiting for data&hellip;</div>
   </div>
 
-  <div class="card">
+  <div class="card c-dec">
     <h2>MTF Decision</h2>
     <div id="decision" class="big nt">&mdash;</div>
     <table id="mtf"></table>
   </div>
 
-  <div class="card">
+  <div class="card c-sod">
     <h2>D] Start-of-day checklist</h2>
     <ul class="chk" id="sod"></ul>
   </div>
 
-  <div class="card">
+  <div class="card c-cond">
     <h2>E] Entry conditions (NIFTY)</h2>
     <ul class="chk" id="entry"></ul>
     <h2 style="margin-top:12px">F] Exit conditions</h2>
     <ul class="chk" id="exit"></ul>
   </div>
 
-  <div class="card" style="grid-column:1/-1" id="card-NIFTY">
+  <div class="card c-chart" style="grid-column:1/-1" id="card-NIFTY">
     <h2>G] NIFTY index &middot; 3-min (Dhan data) <span id="ch-dec-NIFTY"></span>
       <a class="full" href="#" onclick="goFull('card-NIFTY');return false">full screen &#8599;</a></h2>
     <div class="chart" id="chart-NIFTY"></div>
   </div>
-  <div class="card" style="grid-column:1/-1" id="card-SENSEX">
+  <div class="card c-chart" style="grid-column:1/-1" id="card-SENSEX">
     <h2>G] SENSEX index &middot; 3-min (Dhan data)
       <a class="full" href="#" onclick="goFull('card-SENSEX');return false">full screen &#8599;</a></h2>
     <div class="chart" id="chart-SENSEX"></div>
   </div>
 
-  <div class="card" style="grid-column:1/-1">
+  <div class="card c-trade" style="grid-column:1/-1">
     <h2>H] Trade log (today)</h2>
     <table id="trades">
       <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
@@ -107,7 +115,7 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
     </table>
   </div>
 
-  <div class="card sig" style="grid-column:1/-1">
+  <div class="card sig c-sig" style="grid-column:1/-1">
     <h2>Signal history (today, latest first)</h2>
     <table id="signals"></table>
   </div>
@@ -116,7 +124,9 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
 
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
 <script>
-const fmtI = n => (n>=0?'+':'')+Number(n).toLocaleString('en-IN');
+const fmt2 = n => Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtI = n => (n>=0?'+':'')+fmt2(n);
+const fmtOI = n => (n>=0?'+':'')+Number(n).toLocaleString('en-IN');
 const charts = {};
 function ensureChart(sym){
   if(charts[sym]) return charts[sym];
@@ -144,6 +154,17 @@ function drawCharts(d){
     // Dhan epochs are IST wall-clock; LW charts shows UTC, so shift +5:30
     const data = rows.map(r=>({time:r.time+19800, open:r.open, high:r.high, low:r.low, close:r.close}));
     ch.s.setData(data);
+    if(sym==='NIFTY' && d.signals){
+      const day = (d.updated||'').slice(0,10);
+      const marks = d.signals.filter(r=>r.tf_min==='3' && r.decision.startsWith('STRONG')).map(r=>{
+        const t = Math.floor(new Date(day+'T'+r.time+':00Z').getTime()/1000);
+        const long = r.decision.includes('LONG');
+        return {time:t, position: long?'belowBar':'aboveBar',
+          color: long?'#3fb950':'#f85149', shape: long?'arrowUp':'arrowDown',
+          text: long?'SL+':'SS-'};
+      });
+      ch.s.setMarkers(marks);
+    }
     if(ch.n !== data.length){ ch.c.timeScale().fitContent(); ch.n = data.length; }
   }
   const dec = d.decision || '';
@@ -177,18 +198,18 @@ async function load(){
   if(d.indices){
     document.getElementById('indices').innerHTML =
       '<tr><th>Instrument</th><th>LTP</th><th>Pts</th><th>%</th></tr>' +
-      d.indices.map(i=>`<tr><td>${i.name}</td><td>${i.ltp.toLocaleString('en-IN')}</td>
+      d.indices.map(i=>`<tr><td>${i.name}</td><td><b>${fmt2(i.ltp)}</b></td>
         <td class="${cls(i.chg_pts)}">${fmtI(i.chg_pts)}</td>
         <td class="${cls(i.chg_pct)}">${fmtI(i.chg_pct)}%</td></tr>`).join('');
   }
   if(d.oc){ const o=d.oc;
     document.getElementById('oc').innerHTML = `
       <table>
-      <tr><td>Spot / Expiry</td><td>${o.spot} &middot; ${o.expiry}</td></tr>
-      <tr><td>Resistance &middot; max Call OI</td><td><b>${o.res_strike}</b> &middot; ${o.res_pct}% above &middot; ${(o.res_oi/1e6).toFixed(1)}M OI</td></tr>
-      <tr><td>Support &middot; max Put OI</td><td><b>${o.sup_strike}</b> &middot; ${o.sup_pct}% below &middot; ${(o.sup_oi/1e6).toFixed(1)}M OI</td></tr>
-      <tr><td>Max pain</td><td><b>${o.max_pain}</b> &middot; ${o.mp_pct}% vs spot</td></tr>
-      <tr><td>PCR</td><td><b>${o.pcr}</b> &middot; ${o.suggests}</td></tr>
+      <tr><td>Spot / Expiry</td><td><b>${fmt2(o.spot)}</b> &middot; ${o.expiry}</td></tr>
+      <tr><td>Resistance &middot; max Call OI</td><td><b>${o.res_strike}</b> &middot; ${fmt2(o.res_pct)}% above &middot; ${(o.res_oi/1e6).toFixed(2)}M OI</td></tr>
+      <tr><td>Support &middot; max Put OI</td><td><b>${o.sup_strike}</b> &middot; ${fmt2(o.sup_pct)}% below &middot; ${(o.sup_oi/1e6).toFixed(2)}M OI</td></tr>
+      <tr><td>Max pain</td><td><b>${o.max_pain}</b> &middot; ${fmt2(o.mp_pct)}% vs spot</td></tr>
+      <tr><td>PCR</td><td><b>${Number(o.pcr).toFixed(2)}</b> &middot; ${o.suggests}</td></tr>
       </table>`;
   }
   const dec = d.decision || 'WAIT';
@@ -199,7 +220,7 @@ async function load(){
     document.getElementById('mtf').innerHTML =
       '<tr><th>TF</th><th>Last bar</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th></tr>' +
       Object.entries(d.mtf).map(([tf,m])=>`<tr><td>${tf}m</td><td>${m.time}</td>
-        <td class="${cls(+m.d_price)}">${m.d_price}</td><td class="${cls(+m.d_oi)}">${fmtI(+m.d_oi)}</td>
+        <td class="${cls(+m.d_price)}">${fmtI(+m.d_price)}</td><td class="${cls(+m.d_oi)}">${fmtOI(+m.d_oi)}</td>
         <td class="${m.cls.includes('LONG B')||m.cls.includes('COVER')?'up':'dn'}">${m.cls}</td></tr>`).join('');
   }
   const c = d.checklist||{};
@@ -219,7 +240,7 @@ async function load(){
     document.getElementById('signals').innerHTML =
       '<tr><th>Time</th><th>TF</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>' +
       d.signals.slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
-        <td class="${cls(+r.d_price)}">${r.d_price}</td><td class="${cls(+r.d_oi)}">${fmtI(+r.d_oi)}</td>
+        <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
         <td>${r.classification}</td><td>${r.decision_score}</td><td>${r.decision}</td></tr>`).join('');
   }
   drawCharts(d);

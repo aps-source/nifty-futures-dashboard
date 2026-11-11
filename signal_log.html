@@ -20,14 +20,16 @@ h1{font-size:18px}
 <h1>Strategy Signal History (today)</h1>
 <table id="t"><tr><td>loading&hellip;</td></tr></table>
 <script>
-const fmtI=n=>(n>=0?'+':'')+Number(n).toLocaleString('en-IN');
+const fmt2=n=>Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtI=n=>(n>=0?'+':'')+fmt2(n);
+const fmtOI=n=>(n>=0?'+':'')+Number(n).toLocaleString('en-IN');
 const cls=v=>v>0?'up':(v<0?'dn':'');
 fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
   document.getElementById('t').innerHTML =
     '<tr><th>Time</th><th>TF</th><th>Open</th><th>Close</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>'+
     (d.signals||[]).slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
-    <td>${r.open}</td><td>${r.close}</td>
-    <td class="${cls(+r.d_price)}">${r.d_price}</td><td class="${cls(+r.d_oi)}">${fmtI(+r.d_oi)}</td>
+    <td>${fmt2(r.open)}</td><td>${fmt2(r.close)}</td>
+    <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
     <td>${r.classification}</td><td>${r.decision_score}</td><td>${r.decision}</td></tr>`).join('');
 });
 </script>
