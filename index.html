@@ -196,7 +196,7 @@
     <table id="trades">
       <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
       <th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>
-      <tr><td colspan="11" style="color:var(--text-muted)">No trades &mdash; signal-only scanner (paper engine not built yet)</td></tr>
+      <tr><td colspan="11" style="color:var(--text-muted)">No trades today &mdash; paper engine enters on STRONG MTF signals (1 lot NIFTY futures)</td></tr>
     </table>
   </div>
 
@@ -323,7 +323,20 @@ async function load(){
     li(c.within_window,'Inside algo window');
   document.getElementById('exit').innerHTML =
     li(true,'Exit on decision flip against position') +
-    li(true,'Hard square-off 15:15 IST');
+    li(true,'Hard square-off 15:25 IST');
+  if(d.trades && d.trades.length){
+    document.getElementById('trades').innerHTML =
+      '<tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>' +
+      '<th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>' +
+      d.trades.map(t=>{
+        const buy = t.side==='LONG'?t.entry_px:t.exit_px, sell = t.side==='LONG'?t.exit_px:t.entry_px;
+        return `<tr><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
+        <td>FUT</td><td>${t.entry_t}</td><td>${buy!=null?fmt2(buy):'&mdash;'}</td>
+        <td>${t.exit_t||'&mdash;'}</td><td>${sell!=null?fmt2(sell):'&mdash;'}</td><td>${t.reason}</td>
+        <td class="${cls(t.pts)}">${t.pts!=null?fmtI(t.pts):'&mdash;'}</td>
+        <td class="${cls(t.rs)}">${t.rs!=null?fmtOI(t.rs):'&mdash;'}</td></tr>`;}).join('') +
+      (d.paper?`<tr><td colspan="11" style="color:var(--text-muted)">All time: ${d.paper.total_trades} trades, Rs ${fmtOI(d.paper.total_rs)} (paper, 1 lot)</td></tr>`:'');
+  }
   if(d.signals && d.signals.length){
     document.getElementById('signals').innerHTML =
       '<tr><th>Time</th><th>TF</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>' +

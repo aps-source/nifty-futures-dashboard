@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 19:54:49",
+ "updated": "2026-11-11 23:28:05",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,21 +29,21 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8161,
-   "chg_pts": 65,
-   "chg_pct": 0.8
+   "ltp": 8173,
+   "chg_pts": 77,
+   "chg_pct": 0.95
   },
   {
    "name": "GOLD",
-   "ltp": 140780,
-   "chg_pts": 255,
-   "chg_pct": 0.18
+   "ltp": 139760,
+   "chg_pts": -765,
+   "chg_pct": -0.54
   },
   {
    "name": "SILVER",
-   "ltp": 185701,
-   "chg_pts": 3125,
-   "chg_pct": 1.71
+   "ltp": 184354,
+   "chg_pts": 1778,
+   "chg_pct": 0.97
   }
  ],
  "oc": {
@@ -1835,6 +1835,16 @@
  "decision_score": null,
  "signals": [],
  "trades": [],
+ "fut": {
+  "ltp": 25235,
+  "expiry": "2026-11-23"
+ },
+ "paper": {
+  "open": null,
+  "total_trades": 0,
+  "total_rs": 0,
+  "telegram": false
+ },
  "errors": [],
  "checklist": {
   "within_window": false,
