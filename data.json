@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 23:28:05",
+ "updated": "2026-11-11 23:35:28",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,20 +29,20 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8173,
-   "chg_pts": 77,
-   "chg_pct": 0.95
+   "ltp": 8207,
+   "chg_pts": 111,
+   "chg_pct": 1.37
   },
   {
    "name": "GOLD",
-   "ltp": 139760,
-   "chg_pts": -765,
-   "chg_pct": -0.54
+   "ltp": 139576,
+   "chg_pts": -949,
+   "chg_pct": -0.68
   },
   {
    "name": "SILVER",
-   "ltp": 184354,
-   "chg_pts": 1778,
+   "ltp": 184353,
+   "chg_pts": 1777,
    "chg_pct": 0.97
   }
  ],
@@ -1835,15 +1835,15 @@
  "decision_score": null,
  "signals": [],
  "trades": [],
- "fut": {
-  "ltp": 25235,
-  "expiry": "2026-11-23"
+ "instrument": {
+  "type": "NIFTY 1-OTM option buy (CE on STRONG LONG, PE on STRONG SHORT)",
+  "expiry": "2026-11-17"
  },
  "paper": {
   "open": null,
   "total_trades": 0,
   "total_rs": 0,
-  "telegram": false
+  "telegram": true
  },
  "errors": [],
  "checklist": {

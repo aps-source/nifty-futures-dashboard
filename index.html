@@ -137,7 +137,7 @@
   </div>
   <details class="rules" style="max-width:1500px;margin:0.55rem auto 0;font-size:0.83rem">
     <summary style="cursor:pointer;font-weight:600">Strategy rules</summary>
-    <p>Each closed bar at 3/5/15/60-min is classified from futures price &times; OI change: long buildup / short covering (bullish, +1), short buildup / long unwinding (bearish, -1). Decision = sum of the latest score per timeframe: &ge;+3 STRONG LONG, +1..+2 LONG, 0 NEUTRAL, mirror short. Algo window 08:59&ndash;15:40 IST, data refreshes every 1 min. Signals only &mdash; no orders.</p>
+    <p>Each closed bar at 3/5/15/60-min is classified from futures price &times; OI change: long buildup / short covering (bullish, +1), short buildup / long unwinding (bearish, -1). Decision = sum of the latest score per timeframe: &ge;+3 STRONG LONG, +1..+2 LONG, 0 NEUTRAL, mirror short. Algo window 08:59&ndash;15:40 IST, data refreshes every 1 min. Paper trades: STRONG LONG buys 1-OTM Call, STRONG SHORT buys 1-OTM Put (1 lot, nearest weekly expiry); exit on score flip against or 15:25 square-off. No real orders.</p>
   </details>
 </div>
 
@@ -196,7 +196,7 @@
     <table id="trades">
       <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
       <th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>
-      <tr><td colspan="11" style="color:var(--text-muted)">No trades today &mdash; paper engine enters on STRONG MTF signals (1 lot NIFTY futures)</td></tr>
+      <tr><td colspan="11" style="color:var(--text-muted)">No trades today &mdash; paper engine buys 1-OTM NIFTY option on STRONG MTF signals (CE long / PE short, 1 lot)</td></tr>
     </table>
   </div>
 
@@ -329,9 +329,9 @@ async function load(){
       '<tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>' +
       '<th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>' +
       d.trades.map(t=>{
-        const buy = t.side==='LONG'?t.entry_px:t.exit_px, sell = t.side==='LONG'?t.exit_px:t.entry_px;
+        const buy = t.entry_px, sell = t.exit_px;   // option buying: always buy then sell
         return `<tr><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
-        <td>FUT</td><td>${t.entry_t}</td><td>${buy!=null?fmt2(buy):'&mdash;'}</td>
+        <td>${t.strike||''} ${t.opt_type||''}</td><td>${t.entry_t}</td><td>${buy!=null?fmt2(buy):'&mdash;'}</td>
         <td>${t.exit_t||'&mdash;'}</td><td>${sell!=null?fmt2(sell):'&mdash;'}</td><td>${t.reason}</td>
         <td class="${cls(t.pts)}">${t.pts!=null?fmtI(t.pts):'&mdash;'}</td>
         <td class="${cls(t.rs)}">${t.rs!=null?fmtOI(t.rs):'&mdash;'}</td></tr>`;}).join('') +
