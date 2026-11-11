@@ -87,17 +87,15 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
     <ul class="chk" id="exit"></ul>
   </div>
 
-  <div class="card" style="grid-column:1/-1">
-    <h2>G] NIFTY chart
-      <a class="full" target="_blank" href="https://www.tradingview.com/chart/?symbol=NSE%3ANIFTY">full screen &#8599;</a></h2>
-    <iframe class="chart" loading="lazy"
-      src="https://s.tradingview.com/widgetembed/?symbol=NSE%3ANIFTY&interval=3&theme=dark&style=1&hidesidetoolbar=1&saveimage=0&locale=en"></iframe>
+  <div class="card" style="grid-column:1/-1" id="card-NIFTY">
+    <h2>G] NIFTY index &middot; 3-min (Dhan data) <span id="ch-dec-NIFTY"></span>
+      <a class="full" href="#" onclick="goFull('card-NIFTY');return false">full screen &#8599;</a></h2>
+    <div class="chart" id="chart-NIFTY"></div>
   </div>
-  <div class="card" style="grid-column:1/-1">
-    <h2>G] SENSEX chart
-      <a class="full" target="_blank" href="https://www.tradingview.com/chart/?symbol=BSE%3ASENSEX">full screen &#8599;</a></h2>
-    <iframe class="chart" loading="lazy"
-      src="https://s.tradingview.com/widgetembed/?symbol=BSE%3ASENSEX&interval=3&theme=dark&style=1&hidesidetoolbar=1&saveimage=0&locale=en"></iframe>
+  <div class="card" style="grid-column:1/-1" id="card-SENSEX">
+    <h2>G] SENSEX index &middot; 3-min (Dhan data)
+      <a class="full" href="#" onclick="goFull('card-SENSEX');return false">full screen &#8599;</a></h2>
+    <div class="chart" id="chart-SENSEX"></div>
   </div>
 
   <div class="card" style="grid-column:1/-1">
@@ -116,8 +114,46 @@ footer{color:var(--dim);font-size:12px;margin-top:20px}
 </div>
 <footer id="updated"></footer>
 
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
 <script>
 const fmtI = n => (n>=0?'+':'')+Number(n).toLocaleString('en-IN');
+const charts = {};
+function ensureChart(sym){
+  if(charts[sym]) return charts[sym];
+  const el = document.getElementById('chart-'+sym);
+  if(!el || !window.LightweightCharts) return null;
+  const c = LightweightCharts.createChart(el, {
+    layout:{background:{color:'transparent'},textColor:'#8b949e'},
+    grid:{vertLines:{color:'#21262d'},horzLines:{color:'#21262d'}},
+    timeScale:{timeVisible:true,secondsVisible:false},
+    autoSize:true,
+  });
+  const s = c.addCandlestickSeries({upColor:'#3fb950',downColor:'#f85149',
+    borderUpColor:'#3fb950',borderDownColor:'#f85149',
+    wickUpColor:'#3fb950',wickDownColor:'#f85149'});
+  charts[sym] = {c, s, n:0};
+  return charts[sym];
+}
+function drawCharts(d){
+  if(!d.charts) return;
+  for(const sym of ['NIFTY','SENSEX']){
+    const rows = d.charts[sym];
+    if(!rows || !rows.length) continue;
+    const ch = ensureChart(sym);
+    if(!ch) continue;
+    // Dhan epochs are IST wall-clock; LW charts shows UTC, so shift +5:30
+    const data = rows.map(r=>({time:r.time+19800, open:r.open, high:r.high, low:r.low, close:r.close}));
+    ch.s.setData(data);
+    if(ch.n !== data.length){ ch.c.timeScale().fitContent(); ch.n = data.length; }
+  }
+  const dec = d.decision || '';
+  const el = document.getElementById('ch-dec-NIFTY');
+  if(el) el.innerHTML = dec ? ` &middot; <b class="${dec.includes('LONG')?'up':dec.includes('SHORT')?'dn':'nt'}">${dec}</b>` : '';
+}
+function goFull(id){
+  const el = document.getElementById(id);
+  (el.requestFullscreen||el.webkitRequestFullscreen).call(el);
+}
 const cls = v => v>0?'up':(v<0?'dn':'nt');
 function tickClock(){
   const ist = new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata',
@@ -186,6 +222,7 @@ async function load(){
         <td class="${cls(+r.d_price)}">${r.d_price}</td><td class="${cls(+r.d_oi)}">${fmtI(+r.d_oi)}</td>
         <td>${r.classification}</td><td>${r.decision_score}</td><td>${r.decision}</td></tr>`).join('');
   }
+  drawCharts(d);
   document.getElementById('updated').textContent =
     'Data updated ' + d.updated + ' IST' + (d.errors&&d.errors.length?' | errors: '+d.errors.join('; '):'');
 }
