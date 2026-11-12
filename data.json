@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:24:01",
+ "updated": "2026-11-12 15:25:11",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -18,48 +18,34 @@
   {
    "name": "SENSEX",
    "ltp": 81967.57,
-   "chg_pts": 544.5,
-   "chg_pct": 0.67
+   "chg_pts": 505.59,
+   "chg_pct": 0.62
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.6,
-   "chg_pts": -0.96,
-   "chg_pct": -5.47
+   "ltp": 16.63,
+   "chg_pts": -0.93,
+   "chg_pct": -5.3
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8097,
-   "chg_pts": -87,
-   "chg_pct": -1.06
+   "ltp": 8095,
+   "chg_pts": -89,
+   "chg_pct": -1.09
   },
   {
    "name": "GOLD",
-   "ltp": 138093,
-   "chg_pts": -1623,
-   "chg_pct": -1.16
+   "ltp": 138020,
+   "chg_pts": -1696,
+   "chg_pct": -1.21
   },
   {
    "name": "SILVER",
-   "ltp": 181577,
-   "chg_pts": -2948,
-   "chg_pct": -1.6
+   "ltp": 181482,
+   "chg_pts": -3043,
+   "chg_pct": -1.65
   }
  ],
- "oc": {
-  "spot": 25275.2,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 11371815,
-  "res_pct": 2.87,
-  "sup_strike": 24000.0,
-  "sup_oi": 8433490,
-  "sup_pct": 5.05,
-  "max_pain": 25200.0,
-  "mp_pct": -0.3,
-  "pcr": 0.826,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -1804,10 +1790,10 @@
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "15:21",
-   "d_price": "8",
-   "d_oi": "-7150"
+   "cls": "SHORT BUILDUP",
+   "time": "15:24",
+   "d_price": "-8",
+   "d_oi": "3120"
   },
   "5": {
    "cls": "LONG UNWINDING",
@@ -1828,8 +1814,8 @@
    "d_oi": "89440"
   }
  },
- "decision": "LONG",
- "decision_score": 2,
+ "decision": "NEUTRAL",
+ "decision_score": 0,
  "signals": [
   {
    "time": "13:50",
@@ -2700,6 +2686,21 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "15:24",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25316",
+   "close": "25308",
+   "oi_start": "12237615",
+   "oi_end": "12240735",
+   "d_price": "-8",
+   "d_oi": "3120",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
   }
  ],
  "trades": [
@@ -2731,11 +2732,13 @@
   "total_rs": -448,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
