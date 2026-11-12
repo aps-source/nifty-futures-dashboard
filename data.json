@@ -1,65 +1,51 @@
 {
- "updated": "2026-11-12 15:08:26",
+ "updated": "2026-11-12 15:09:37",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25257.75,
-   "chg_pts": 2.7,
-   "chg_pct": 0.01
+   "ltp": 25261.3,
+   "chg_pts": 6.25,
+   "chg_pct": 0.02
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61438.35,
-   "chg_pts": 645.95,
-   "chg_pct": 1.06
+   "ltp": 61445.75,
+   "chg_pts": 653.35,
+   "chg_pct": 1.07
   },
   {
    "name": "SENSEX",
-   "ltp": 81962,
-   "chg_pts": 82.6,
-   "chg_pct": 0.1
+   "ltp": 81948.71,
+   "chg_pts": 69.31,
+   "chg_pct": 0.08
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.67,
-   "chg_pts": -0.89,
-   "chg_pct": -5.07
+   "ltp": 16.65,
+   "chg_pts": -0.91,
+   "chg_pct": -5.18
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8096,
-   "chg_pts": -88,
-   "chg_pct": -1.08
+   "ltp": 8092,
+   "chg_pts": -92,
+   "chg_pct": -1.12
   },
   {
    "name": "GOLD",
-   "ltp": 137917,
-   "chg_pts": -1799,
-   "chg_pct": -1.29
+   "ltp": 137864,
+   "chg_pts": -1852,
+   "chg_pct": -1.33
   },
   {
    "name": "SILVER",
-   "ltp": 181514,
-   "chg_pts": -3011,
-   "chg_pct": -1.63
+   "ltp": 181469,
+   "chg_pts": -3056,
+   "chg_pct": -1.66
   }
  ],
- "oc": {
-  "spot": 25257.0,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 11287120,
-  "res_pct": 2.94,
-  "sup_strike": 24500.0,
-  "sup_oi": 8313240,
-  "sup_pct": 3.0,
-  "max_pain": 25200.0,
-  "mp_pct": -0.23,
-  "pcr": 0.823,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -886,7 +872,14 @@
     "open": 25259.95,
     "high": 25263.45,
     "low": 25254.75,
-    "close": 25258.85
+    "close": 25257.3
+   },
+   {
+    "time": 1794476340,
+    "open": 25259.0,
+    "high": 25265.6,
+    "low": 25253.95,
+    "close": 25264.0
    }
   ],
   "SENSEX": [
@@ -1714,16 +1707,23 @@
     "open": 81957.87,
     "high": 81966.42,
     "low": 81909.99,
-    "close": 81956.78
+    "close": 81948.49
+   },
+   {
+    "time": 1794476340,
+    "open": 81942.57,
+    "high": 81953.02,
+    "low": 81927.22,
+    "close": 81950.4
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "15:06",
-   "d_price": "-8",
-   "d_oi": "4225"
+   "cls": "SHORT COVERING",
+   "time": "15:09",
+   "d_price": "11.4",
+   "d_oi": "-3185"
   },
   "5": {
    "cls": "SHORT COVERING",
@@ -1744,8 +1744,8 @@
    "d_oi": "101075"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
   {
    "time": "13:50",
@@ -2466,6 +2466,21 @@
    "score": "-1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "15:09",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25282",
+   "close": "25293.4",
+   "oi_start": "12244505",
+   "oi_end": "12241320",
+   "d_price": "11.4",
+   "d_oi": "-3185",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -2497,11 +2512,13 @@
   "total_rs": -448,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000017F8A169A90>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
