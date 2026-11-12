@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-12 14:18:35",
+ "updated": "2026-11-12 14:19:45",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25255.7,
-   "chg_pts": 0.65,
+   "ltp": 25255.25,
+   "chg_pts": 0.2,
    "chg_pct": 0.0
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61471.8,
-   "chg_pts": 679.4,
-   "chg_pct": 1.12
+   "ltp": 61443.35,
+   "chg_pts": 650.95,
+   "chg_pct": 1.07
   },
   {
    "name": "SENSEX",
-   "ltp": 81897.82,
-   "chg_pts": 18.42,
-   "chg_pct": 0.02
+   "ltp": 81919.02,
+   "chg_pts": 39.62,
+   "chg_pct": 0.05
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.94,
-   "chg_pts": -0.62,
-   "chg_pct": -3.53
+   "ltp": 16.92,
+   "chg_pts": -0.64,
+   "chg_pct": -3.64
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8159,
-   "chg_pts": -25,
-   "chg_pct": -0.31
+   "ltp": 8162,
+   "chg_pts": -22,
+   "chg_pct": -0.27
   },
   {
    "name": "GOLD",
-   "ltp": 137880,
-   "chg_pts": -1836,
-   "chg_pct": -1.31
+   "ltp": 137878,
+   "chg_pts": -1838,
+   "chg_pct": -1.32
   },
   {
    "name": "SILVER",
-   "ltp": 181602,
-   "chg_pts": -2923,
-   "chg_pct": -1.58
+   "ltp": 181536,
+   "chg_pts": -2989,
+   "chg_pct": -1.62
   }
  ],
  "oc": {
-  "spot": 25256.5,
+  "spot": 25255.3,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 11076195,
-  "res_pct": 2.94,
+  "res_oi": 11078340,
+  "res_pct": 2.95,
   "sup_strike": 24000.0,
-  "sup_oi": 8083985,
+  "sup_oi": 8079500,
   "sup_pct": 4.97,
   "max_pain": 25200.0,
   "mp_pct": -0.22,
-  "pcr": 0.812,
+  "pcr": 0.811,
   "suggests": "Balanced"
  },
  "charts": {
@@ -772,9 +772,9 @@
    {
     "time": 1794473280,
     "open": 25259.45,
-    "high": 25259.45,
-    "low": 25254.2,
-    "close": 25257.15
+    "high": 25260.65,
+    "low": 25252.1,
+    "close": 25255.3
    }
   ],
   "SENSEX": [
@@ -1488,9 +1488,9 @@
    {
     "time": 1794473280,
     "open": 81887.83,
-    "high": 81911.91,
+    "high": 81926.7,
     "low": 81886.69,
-    "close": 81911.91
+    "close": 81912.19
    }
   ]
  },
