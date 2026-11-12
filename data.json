@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:19:19",
+ "updated": "2026-11-12 15:20:32",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -18,46 +18,46 @@
   {
    "name": "SENSEX",
    "ltp": 81967.57,
-   "chg_pts": 17.81,
-   "chg_pct": 0.02
+   "chg_pts": 74.31,
+   "chg_pct": 0.09
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.68,
-   "chg_pts": -0.88,
-   "chg_pct": -5.01
+   "ltp": 16.65,
+   "chg_pts": -0.91,
+   "chg_pct": -5.18
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8086,
-   "chg_pts": -98,
-   "chg_pct": -1.2
+   "ltp": 8096,
+   "chg_pts": -88,
+   "chg_pct": -1.08
   },
   {
    "name": "GOLD",
-   "ltp": 138050,
-   "chg_pts": -1666,
-   "chg_pct": -1.19
+   "ltp": 138090,
+   "chg_pts": -1626,
+   "chg_pct": -1.16
   },
   {
    "name": "SILVER",
-   "ltp": 181461,
-   "chg_pts": -3064,
-   "chg_pct": -1.66
+   "ltp": 181484,
+   "chg_pts": -3041,
+   "chg_pct": -1.65
   }
  ],
  "oc": {
   "spot": 25275.2,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 11406200,
+  "res_oi": 11402625,
   "res_pct": 2.87,
   "sup_strike": 24000.0,
-  "sup_oi": 8324030,
+  "sup_oi": 8405865,
   "sup_pct": 5.05,
   "max_pain": 25200.0,
   "mp_pct": -0.3,
-  "pcr": 0.829,
+  "pcr": 0.828,
   "suggests": "Balanced"
  },
  "charts": {
@@ -1782,10 +1782,10 @@
    "d_oi": "130"
   },
   "5": {
-   "cls": "LONG BUILDUP",
-   "time": "15:15",
-   "d_price": "20.7",
-   "d_oi": "2145"
+   "cls": "LONG UNWINDING",
+   "time": "15:20",
+   "d_price": "-2.7",
+   "d_oi": "-7605"
   },
   "15": {
    "cls": "SHORT COVERING",
@@ -1800,8 +1800,8 @@
    "d_oi": "89440"
   }
  },
- "decision": "STRONG LONG",
- "decision_score": 4,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
   {
    "time": "13:50",
@@ -2642,6 +2642,21 @@
    "score": "1",
    "decision_score": "4",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "15:20",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25307.7",
+   "close": "25305",
+   "oi_start": "12244635",
+   "oi_end": "12237030",
+   "d_price": "-2.7",
+   "d_oi": "-7605",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
