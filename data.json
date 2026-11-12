@@ -1,18 +1,62 @@
 {
- "updated": "2026-11-12 14:07:50",
+ "updated": "2026-11-12 14:09:01",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25263.1,
+   "chg_pts": 8.05,
+   "chg_pct": 0.03
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61474.55,
+   "chg_pts": 682.15,
+   "chg_pct": 1.12
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81933.39,
+   "chg_pts": 53.99,
+   "chg_pct": 0.07
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.94,
+   "chg_pts": -0.62,
+   "chg_pct": -3.53
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8190,
+   "chg_pts": 6,
+   "chg_pct": 0.07
+  },
+  {
+   "name": "GOLD",
+   "ltp": 138132,
+   "chg_pts": -1584,
+   "chg_pct": -1.13
+  },
+  {
+   "name": "SILVER",
+   "ltp": 182237,
+   "chg_pts": -2288,
+   "chg_pct": -1.24
+  }
+ ],
  "oc": {
-  "spot": 25259.3,
+  "spot": 25262.5,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 10961665,
-  "res_pct": 2.93,
+  "res_oi": 10986495,
+  "res_pct": 2.92,
   "sup_strike": 24000.0,
-  "sup_oi": 8045245,
-  "sup_pct": 4.99,
+  "sup_oi": 8052330,
+  "sup_pct": 5.0,
   "max_pain": 25200.0,
-  "mp_pct": -0.23,
+  "mp_pct": -0.25,
   "pcr": 0.81,
   "suggests": "Balanced"
  },
@@ -700,9 +744,16 @@
    {
     "time": 1794472560,
     "open": 25247.05,
-    "high": 25261.4,
+    "high": 25264.35,
     "low": 25244.65,
-    "close": 25260.4
+    "close": 25263.6
+   },
+   {
+    "time": 1794472740,
+    "open": 25265.5,
+    "high": 25265.5,
+    "low": 25262.15,
+    "close": 25263.1
    }
   ],
   "SENSEX": [
@@ -1388,9 +1439,16 @@
    {
     "time": 1794472560,
     "open": 81883.59,
-    "high": 81920.7,
+    "high": 81938.46,
     "low": 81877.2,
-    "close": 81916.32
+    "close": 81933.59
+   },
+   {
+    "time": 1794472740,
+    "open": 81932.01,
+    "high": 81934.68,
+    "low": 81931.37,
+    "close": 81932.31
    }
   ]
  },
@@ -1612,12 +1670,10 @@
   "total_rs": -448,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
