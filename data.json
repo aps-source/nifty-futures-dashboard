@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-12 14:02:49",
+ "updated": "2026-11-12 14:04:03",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25260,
+  "spot": 25259.7,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 10978825,
+  "res_oi": 10987080,
   "res_pct": 2.93,
   "sup_strike": 24000.0,
-  "sup_oi": 8010730,
+  "sup_oi": 8001565,
   "sup_pct": 4.99,
   "max_pain": 25200.0,
   "mp_pct": -0.24,
@@ -686,9 +686,16 @@
    {
     "time": 1794472200,
     "open": 25250.75,
-    "high": 25260.95,
+    "high": 25261.85,
     "low": 25246.2,
-    "close": 25259.8
+    "close": 25261.1
+   },
+   {
+    "time": 1794472380,
+    "open": 25264.15,
+    "high": 25264.15,
+    "low": 25256.65,
+    "close": 25258.7
    }
   ],
   "SENSEX": [
@@ -1362,16 +1369,23 @@
     "open": 81885.95,
     "high": 81911.54,
     "low": 81875.78,
-    "close": 81904.02
+    "close": 81906.86
+   },
+   {
+    "time": 1794472380,
+    "open": 81908.41,
+    "high": 81923.4,
+    "low": 81900.07,
+    "close": 81905.77
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "14:00",
-   "d_price": "-30.2",
-   "d_oi": "13455"
+   "cls": "LONG BUILDUP",
+   "time": "14:03",
+   "d_price": "28",
+   "d_oi": "13130"
   },
   "5": {
    "cls": "SHORT BUILDUP",
@@ -1386,8 +1400,8 @@
    "d_oi": "47060"
   }
  },
- "decision": "STRONG SHORT",
- "decision_score": -3,
+ "decision": "SHORT",
+ "decision_score": -1,
  "signals": [
   {
    "time": "13:50",
@@ -1508,6 +1522,21 @@
    "score": "-1",
    "decision_score": "-3",
    "decision": "STRONG SHORT"
+  },
+  {
+   "time": "14:03",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25265",
+   "close": "25293",
+   "oi_start": "12101180",
+   "oi_end": "12114310",
+   "d_price": "28",
+   "d_oi": "13130",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "-1",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -1523,10 +1552,10 @@
    "score": -3,
    "spot_entry": 25249.3,
    "exit_t": null,
-   "exit_px": 155.8,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": -11.15,
-   "rs": -836
+   "pts": null,
+   "rs": null
   }
  ],
  "instrument": {
