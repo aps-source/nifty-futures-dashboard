@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:16:59",
+ "updated": "2026-11-12 15:18:09",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,20 +29,20 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8101,
-   "chg_pts": -83,
-   "chg_pct": -1.01
+   "ltp": 8091,
+   "chg_pts": -93,
+   "chg_pct": -1.14
   },
   {
    "name": "GOLD",
-   "ltp": 138055,
-   "chg_pts": -1661,
-   "chg_pct": -1.19
+   "ltp": 138082,
+   "chg_pts": -1634,
+   "chg_pct": -1.17
   },
   {
    "name": "SILVER",
-   "ltp": 181632,
-   "chg_pts": -2893,
+   "ltp": 181625,
+   "chg_pts": -2900,
    "chg_pct": -1.57
   }
  ],
@@ -50,10 +50,10 @@
   "spot": 25275.2,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 11396515,
+  "res_oi": 11398140,
   "res_pct": 2.87,
   "sup_strike": 24000.0,
-  "sup_oi": 8245640,
+  "sup_oi": 8314475,
   "sup_pct": 5.05,
   "max_pain": 25200.0,
   "mp_pct": -0.3,
@@ -908,6 +908,13 @@
     "high": 25275.25,
     "low": 25275.25,
     "close": 25275.25
+   },
+   {
+    "time": 1794476880,
+    "open": 25275.25,
+    "high": 25275.25,
+    "low": 25275.25,
+    "close": 25275.25
    }
   ],
   "SENSEX": [
@@ -1757,15 +1764,22 @@
     "high": 81967.57,
     "low": 81967.57,
     "close": 81967.57
+   },
+   {
+    "time": 1794476880,
+    "open": 81967.57,
+    "high": 81967.57,
+    "low": 81967.57,
+    "close": 81967.57
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "15:15",
-   "d_price": "9.6",
-   "d_oi": "2600"
+   "time": "15:18",
+   "d_price": "0.3",
+   "d_oi": "130"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -2609,6 +2623,21 @@
    "oi_end": "12244635",
    "d_price": "21.4",
    "d_oi": "89440",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "15:18",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25307.7",
+   "close": "25308",
+   "oi_start": "12244635",
+   "oi_end": "12244765",
+   "d_price": "0.3",
+   "d_oi": "130",
    "classification": "LONG BUILDUP",
    "score": "1",
    "decision_score": "4",
