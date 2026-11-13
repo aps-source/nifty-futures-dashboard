@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-13 12:52:30",
+ "updated": "2026-11-13 12:53:41",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25110,
-   "chg_pts": -189.35,
-   "chg_pct": -0.75
+   "ltp": 25107.15,
+   "chg_pts": -192.2,
+   "chg_pct": -0.76
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 60992.05,
-   "chg_pts": -526.45,
-   "chg_pct": -0.86
+   "ltp": 60976.5,
+   "chg_pts": -542.0,
+   "chg_pct": -0.88
   },
   {
    "name": "SENSEX",
-   "ltp": 81450.73,
-   "chg_pts": -460.28,
+   "ltp": 81453.13,
+   "chg_pts": -457.88,
    "chg_pct": -0.56
   },
   {
@@ -29,9 +29,9 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8365,
-   "chg_pts": 65,
-   "chg_pct": 0.78
+   "ltp": 8372,
+   "chg_pts": 72,
+   "chg_pct": 0.87
   },
   {
    "name": "GOLD",
@@ -41,23 +41,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 178067,
-   "chg_pts": -657,
-   "chg_pct": -0.37
+   "ltp": 178089,
+   "chg_pts": -635,
+   "chg_pct": -0.36
   }
  ],
  "oc": {
-  "spot": 25108.5,
+  "spot": 25107.8,
   "expiry": "2026-11-17",
   "res_strike": 25200.0,
-  "res_oi": 14806415,
-  "res_pct": 0.36,
+  "res_oi": 14888315,
+  "res_pct": 0.37,
   "sup_strike": 25000.0,
-  "sup_oi": 13557830,
+  "sup_oi": 13470210,
   "sup_pct": 0.43,
   "max_pain": 25150.0,
   "mp_pct": 0.17,
-  "pcr": 0.806,
+  "pcr": 0.803,
   "suggests": "Balanced"
  },
  "charts": {
@@ -569,9 +569,9 @@
    {
     "time": 1794554460,
     "open": 25095.15,
-    "high": 25110.85,
+    "high": 25111.65,
     "low": 25094.5,
-    "close": 25109.0
+    "close": 25107.5
    }
   ],
   "SENSEX": [
@@ -1082,9 +1082,9 @@
    {
     "time": 1794554460,
     "open": 81413.25,
-    "high": 81454.76,
+    "high": 81457.66,
     "low": 81408.35,
-    "close": 81451.95
+    "close": 81457.66
    }
   ]
  },
@@ -2695,10 +2695,10 @@
    "score": -4,
    "spot_entry": 25105.55,
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 134.55,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": 0.95,
+   "rs": 71
   }
  ],
  "instrument": {
