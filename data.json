@@ -1,37 +1,37 @@
 {
- "updated": "2026-11-13 14:28:13",
+ "updated": "2026-11-13 14:29:26",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25082.4,
-   "chg_pts": -216.95,
-   "chg_pct": -0.86
+   "ltp": 25086.45,
+   "chg_pts": -212.9,
+   "chg_pct": -0.84
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 60939.6,
-   "chg_pts": -578.9,
-   "chg_pct": -0.94
+   "ltp": 60955.55,
+   "chg_pts": -562.95,
+   "chg_pct": -0.92
   },
   {
    "name": "SENSEX",
-   "ltp": 81381.99,
-   "chg_pts": -529.02,
-   "chg_pct": -0.65
+   "ltp": 81388.04,
+   "chg_pts": -522.97,
+   "chg_pct": -0.64
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.88,
-   "chg_pts": -0.74,
-   "chg_pct": -4.45
+   "ltp": 15.87,
+   "chg_pts": -0.75,
+   "chg_pct": -4.51
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8394,
-   "chg_pts": 94,
-   "chg_pct": 1.13
+   "ltp": 8401,
+   "chg_pts": 101,
+   "chg_pct": 1.22
   },
   {
    "name": "GOLD",
@@ -41,23 +41,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 178234,
-   "chg_pts": -490,
-   "chg_pct": -0.27
+   "ltp": 178255,
+   "chg_pts": -469,
+   "chg_pct": -0.26
   }
  ],
  "oc": {
-  "spot": 25085.3,
+  "spot": 25086.3,
   "expiry": "2026-11-17",
   "res_strike": 25200.0,
-  "res_oi": 15394275,
-  "res_pct": 0.46,
+  "res_oi": 15457585,
+  "res_pct": 0.45,
   "sup_strike": 25000.0,
-  "sup_oi": 13306020,
+  "sup_oi": 13145015,
   "sup_pct": 0.34,
   "max_pain": 25100.0,
-  "mp_pct": 0.06,
-  "pcr": 0.798,
+  "mp_pct": 0.05,
+  "pcr": 0.793,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -793,9 +793,9 @@
    {
     "time": 1794560220,
     "open": 25076.75,
-    "high": 25088.2,
+    "high": 25089.85,
     "low": 25075.35,
-    "close": 25087.4
+    "close": 25085.55
    }
   ],
   "SENSEX": [
@@ -1530,9 +1530,9 @@
    {
     "time": 1794560220,
     "open": 81356.29,
-    "high": 81390.59,
+    "high": 81393.76,
     "low": 81356.01,
-    "close": 81389.41
+    "close": 81386.0
    }
   ]
  },
@@ -3430,10 +3430,10 @@
    "score": -4,
    "spot_entry": 25073.3,
    "exit_t": null,
-   "exit_px": 112.85,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": -9.55,
-   "rs": -716
+   "pts": null,
+   "rs": null
   }
  ],
  "instrument": {
