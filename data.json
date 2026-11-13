@@ -1,65 +1,7 @@
 {
- "updated": "2026-11-13 14:36:47",
+ "updated": "2026-11-13 14:38:01",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25097.65,
-   "chg_pts": -201.7,
-   "chg_pct": -0.8
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 60975.05,
-   "chg_pts": -543.45,
-   "chg_pct": -0.88
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81458.33,
-   "chg_pts": -452.68,
-   "chg_pct": -0.55
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.78,
-   "chg_pts": -0.84,
-   "chg_pct": -5.05
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8372,
-   "chg_pts": 72,
-   "chg_pct": 0.87
-  },
-  {
-   "name": "GOLD",
-   "ltp": 136862,
-   "chg_pts": 637,
-   "chg_pct": 0.47
-  },
-  {
-   "name": "SILVER",
-   "ltp": 178478,
-   "chg_pts": -246,
-   "chg_pct": -0.14
-  }
- ],
- "oc": {
-  "spot": 25099.5,
-  "expiry": "2026-11-17",
-  "res_strike": 25200.0,
-  "res_oi": 15009670,
-  "res_pct": 0.4,
-  "sup_strike": 25000.0,
-  "sup_oi": 12491700,
-  "sup_pct": 0.4,
-  "max_pain": 25100.0,
-  "mp_pct": 0.0,
-  "pcr": 0.795,
-  "suggests": "CALL side heavy - PUT bias"
- },
  "charts": {
   "NIFTY": [
    {
@@ -814,9 +756,9 @@
    {
     "time": 1794560760,
     "open": 25099.95,
-    "high": 25101.95,
+    "high": 25114.05,
     "low": 25096.75,
-    "close": 25099.4
+    "close": 25113.8
    }
   ],
   "SENSEX": [
@@ -1572,9 +1514,9 @@
    {
     "time": 1794560760,
     "open": 81448.47,
-    "high": 81462.42,
+    "high": 81496.29,
     "low": 81448.35,
-    "close": 81458.32
+    "close": 81496.29
    }
   ]
  },
@@ -3488,11 +3430,14 @@
   "total_rs": -910,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": true,
+  "quotes_ok": false,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
