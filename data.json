@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-13 12:50:03",
+ "updated": "2026-11-13 12:51:17",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25098.05,
-   "chg_pts": -201.3,
-   "chg_pct": -0.8
+   "ltp": 25095.55,
+   "chg_pts": -203.8,
+   "chg_pct": -0.81
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 60956.65,
-   "chg_pts": -561.85,
-   "chg_pct": -0.91
+   "ltp": 60952.55,
+   "chg_pts": -565.95,
+   "chg_pct": -0.92
   },
   {
    "name": "SENSEX",
-   "ltp": 81411.1,
-   "chg_pts": -499.91,
+   "ltp": 81410.66,
+   "chg_pts": -500.35,
    "chg_pct": -0.61
   },
   {
@@ -29,23 +29,37 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8375,
-   "chg_pts": 75,
-   "chg_pct": 0.9
+   "ltp": 8364,
+   "chg_pts": 64,
+   "chg_pct": 0.77
   },
   {
    "name": "GOLD",
-   "ltp": 136596,
-   "chg_pts": 371,
-   "chg_pct": 0.27
+   "ltp": 136600,
+   "chg_pts": 375,
+   "chg_pct": 0.28
   },
   {
    "name": "SILVER",
-   "ltp": 178073,
-   "chg_pts": -651,
-   "chg_pct": -0.36
+   "ltp": 178247,
+   "chg_pts": -477,
+   "chg_pct": -0.27
   }
  ],
+ "oc": {
+  "spot": 25096.7,
+  "expiry": "2026-11-17",
+  "res_strike": 25200.0,
+  "res_oi": 14804010,
+  "res_pct": 0.41,
+  "sup_strike": 25000.0,
+  "sup_oi": 13506155,
+  "sup_pct": 0.39,
+  "max_pain": 25150.0,
+  "mp_pct": 0.21,
+  "pcr": 0.808,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -549,8 +563,15 @@
     "time": 1794554280,
     "open": 25107.2,
     "high": 25109.4,
-    "low": 25096.2,
-    "close": 25097.9
+    "low": 25094.1,
+    "close": 25094.75
+   },
+   {
+    "time": 1794554460,
+    "open": 25095.15,
+    "high": 25097.45,
+    "low": 25094.5,
+    "close": 25097.3
    }
   ],
   "SENSEX": [
@@ -1055,23 +1076,30 @@
     "time": 1794554280,
     "open": 81439.07,
     "high": 81439.67,
-    "low": 81409.33,
-    "close": 81413.18
+    "low": 81400.73,
+    "close": 81410.04
+   },
+   {
+    "time": 1794554460,
+    "open": 81413.25,
+    "high": 81417.74,
+    "low": 81408.35,
+    "close": 81417.04
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "12:48",
-   "d_price": "0.8",
-   "d_oi": "1105"
+   "cls": "SHORT BUILDUP",
+   "time": "12:51",
+   "d_price": "-8.8",
+   "d_oi": "5135"
   },
   "5": {
    "cls": "SHORT BUILDUP",
-   "time": "12:45",
-   "d_price": "-27.2",
-   "d_oi": "6110"
+   "time": "12:50",
+   "d_price": "-10.5",
+   "d_oi": "4290"
   },
   "15": {
    "cls": "SHORT BUILDUP",
@@ -1086,8 +1114,8 @@
    "d_oi": "-20995"
   }
  },
- "decision": "SHORT",
- "decision_score": -2,
+ "decision": "STRONG SHORT",
+ "decision_score": -4,
  "signals": [
   {
    "time": "10:09",
@@ -2588,6 +2616,36 @@
    "score": "1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "12:50",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25140.8",
+   "close": "25130.3",
+   "oi_start": "12168130",
+   "oi_end": "12172420",
+   "d_price": "-10.5",
+   "d_oi": "4290",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "12:51",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25141.6",
+   "close": "25132.8",
+   "oi_start": "12169235",
+   "oi_end": "12174370",
+   "d_price": "-8.8",
+   "d_oi": "5135",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-4",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -2637,10 +2695,10 @@
    "score": -4,
    "spot_entry": 25105.55,
    "exit_t": null,
-   "exit_px": 141.45,
+   "exit_px": 139.75,
    "reason": "OPEN",
-   "pts": 7.85,
-   "rs": 589
+   "pts": 6.15,
+   "rs": 461
   }
  ],
  "instrument": {
@@ -2664,13 +2722,11 @@
   "total_rs": 371,
   "telegram": true
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
