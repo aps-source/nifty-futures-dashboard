@@ -1,62 +1,62 @@
 {
- "updated": "2026-11-13 10:48:33",
+ "updated": "2026-11-13 10:49:47",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25236.1,
-   "chg_pts": -63.25,
-   "chg_pct": -0.25
+   "ltp": 25242.35,
+   "chg_pts": -57.0,
+   "chg_pct": -0.23
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61175.55,
-   "chg_pts": -342.95,
-   "chg_pct": -0.56
+   "ltp": 61197.2,
+   "chg_pts": -321.3,
+   "chg_pct": -0.52
   },
   {
    "name": "SENSEX",
-   "ltp": 81853.23,
-   "chg_pts": -57.78,
-   "chg_pct": -0.07
+   "ltp": 81862.44,
+   "chg_pts": -48.57,
+   "chg_pct": -0.06
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.24,
-   "chg_pts": -0.38,
-   "chg_pct": -2.29
+   "ltp": 16.25,
+   "chg_pts": -0.37,
+   "chg_pct": -2.23
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8313,
-   "chg_pts": 13,
-   "chg_pct": 0.16
+   "ltp": 8321,
+   "chg_pts": 21,
+   "chg_pct": 0.25
   },
   {
    "name": "GOLD",
-   "ltp": 137350,
-   "chg_pts": 1125,
-   "chg_pct": 0.83
+   "ltp": 137370,
+   "chg_pts": 1145,
+   "chg_pct": 0.84
   },
   {
    "name": "SILVER",
-   "ltp": 179034,
-   "chg_pts": 310,
-   "chg_pct": 0.17
+   "ltp": 178990,
+   "chg_pts": 266,
+   "chg_pct": 0.15
   }
  ],
  "oc": {
-  "spot": 25240,
+  "spot": 25243.5,
   "expiry": "2026-11-17",
   "res_strike": 26500.0,
-  "res_oi": 14135810,
-  "res_pct": 4.99,
+  "res_oi": 14179295,
+  "res_pct": 4.98,
   "sup_strike": 25000.0,
-  "sup_oi": 15023775,
-  "sup_pct": 0.95,
+  "sup_oi": 15084810,
+  "sup_pct": 0.96,
   "max_pain": 25200.0,
-  "mp_pct": -0.16,
+  "mp_pct": -0.17,
   "pcr": 1.013,
   "suggests": "Balanced"
  },
@@ -282,9 +282,9 @@
    {
     "time": 1794547080,
     "open": 25238.35,
-    "high": 25243.9,
+    "high": 25244.9,
     "low": 25235.4,
-    "close": 25240.95
+    "close": 25244.5
    }
   ],
   "SENSEX": [
@@ -508,9 +508,9 @@
    {
     "time": 1794547080,
     "open": 81859.94,
-    "high": 81874.92,
+    "high": 81875.32,
     "low": 81845.84,
-    "close": 81856.85
+    "close": 81875.32
    }
   ]
  },
