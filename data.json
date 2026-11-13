@@ -1,21 +1,7 @@
 {
- "updated": "2026-11-13 11:55:41",
+ "updated": "2026-11-13 11:56:54",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "oc": {
-  "spot": 25137.6,
-  "expiry": "2026-11-17",
-  "res_strike": 26500.0,
-  "res_oi": 14410695,
-  "res_pct": 5.42,
-  "sup_strike": 25000.0,
-  "sup_oi": 14649245,
-  "sup_pct": 0.55,
-  "max_pain": 25200.0,
-  "mp_pct": 0.25,
-  "pcr": 0.952,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -393,8 +379,15 @@
     "time": 1794551040,
     "open": 25148.75,
     "high": 25148.8,
-    "low": 25137.45,
-    "close": 25138.0
+    "low": 25134.6,
+    "close": 25143.7
+   },
+   {
+    "time": 1794551220,
+    "open": 25143.45,
+    "high": 25143.95,
+    "low": 25142.65,
+    "close": 25143.45
    }
   ],
   "SENSEX": [
@@ -773,17 +766,24 @@
     "time": 1794551040,
     "open": 81554.44,
     "high": 81560.4,
-    "low": 81527.79,
-    "close": 81535.18
+    "low": 81514.69,
+    "close": 81539.76
+   },
+   {
+    "time": 1794551220,
+    "open": 81543.45,
+    "high": 81543.45,
+    "low": 81539.53,
+    "close": 81541.05
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "LONG UNWINDING",
-   "time": "11:54",
-   "d_price": "-14",
-   "d_oi": "-975"
+   "time": "11:57",
+   "d_price": "-2.2",
+   "d_oi": "-3900"
   },
   "5": {
    "cls": "LONG UNWINDING",
@@ -1811,6 +1811,21 @@
    "score": "-1",
    "decision_score": "-4",
    "decision": "STRONG SHORT"
+  },
+  {
+   "time": "11:57",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25177",
+   "close": "25174.8",
+   "oi_start": "12135825",
+   "oi_end": "12131925",
+   "d_price": "-2.2",
+   "d_oi": "-3900",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-4",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -1843,10 +1858,10 @@
    "score": -4,
    "spot_entry": 25194.7,
    "exit_t": null,
-   "exit_px": 152.9,
+   "exit_px": 149.9,
    "reason": "OPEN",
-   "pts": 20.45,
-   "rs": 1534
+   "pts": 17.45,
+   "rs": 1309
   }
  ],
  "instrument": {
@@ -1871,12 +1886,13 @@
   "telegram": true
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
   "quotes_ok": false,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
