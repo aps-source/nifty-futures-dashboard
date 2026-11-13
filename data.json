@@ -1,7 +1,65 @@
 {
- "updated": "2026-11-13 11:56:54",
+ "updated": "2026-11-13 11:58:14",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25144,
+   "chg_pts": -155.35,
+   "chg_pct": -0.61
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 60977,
+   "chg_pts": -541.5,
+   "chg_pct": -0.88
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81549.66,
+   "chg_pts": -361.35,
+   "chg_pct": -0.44
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.16,
+   "chg_pts": -0.46,
+   "chg_pct": -2.77
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8348,
+   "chg_pts": 48,
+   "chg_pct": 0.58
+  },
+  {
+   "name": "GOLD",
+   "ltp": 136838,
+   "chg_pts": 613,
+   "chg_pct": 0.45
+  },
+  {
+   "name": "SILVER",
+   "ltp": 177899,
+   "chg_pts": -825,
+   "chg_pct": -0.46
+  }
+ ],
+ "oc": {
+  "spot": 25142.9,
+  "expiry": "2026-11-17",
+  "res_strike": 26500.0,
+  "res_oi": 14163630,
+  "res_pct": 5.4,
+  "sup_strike": 25000.0,
+  "sup_oi": 14348360,
+  "sup_pct": 0.57,
+  "max_pain": 25200.0,
+  "mp_pct": 0.23,
+  "pcr": 0.944,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -385,9 +443,9 @@
    {
     "time": 1794551220,
     "open": 25143.45,
-    "high": 25143.95,
-    "low": 25142.65,
-    "close": 25143.45
+    "high": 25147.5,
+    "low": 25141.85,
+    "close": 25142.6
    }
   ],
   "SENSEX": [
@@ -772,9 +830,9 @@
    {
     "time": 1794551220,
     "open": 81543.45,
-    "high": 81543.45,
-    "low": 81539.53,
-    "close": 81541.05
+    "high": 81557.52,
+    "low": 81538.27,
+    "close": 81544.78
    }
   ]
  },
@@ -1858,10 +1916,10 @@
    "score": -4,
    "spot_entry": 25194.7,
    "exit_t": null,
-   "exit_px": 149.9,
+   "exit_px": 150,
    "reason": "OPEN",
-   "pts": 17.45,
-   "rs": 1309
+   "pts": 17.55,
+   "rs": 1316
   }
  ],
  "instrument": {
@@ -1885,14 +1943,11 @@
   "total_rs": -2080,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": false,
+  "quotes_ok": true,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
