@@ -1,7 +1,65 @@
 {
- "updated": "2026-11-13 10:28:00",
+ "updated": "2026-11-13 10:29:14",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25195.4,
+   "chg_pts": -103.95,
+   "chg_pct": -0.41
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61021.3,
+   "chg_pts": -497.2,
+   "chg_pct": -0.81
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81711.12,
+   "chg_pts": -199.89,
+   "chg_pct": -0.24
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.29,
+   "chg_pts": -0.33,
+   "chg_pct": -1.99
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8315,
+   "chg_pts": 15,
+   "chg_pct": 0.18
+  },
+  {
+   "name": "GOLD",
+   "ltp": 137213,
+   "chg_pts": 988,
+   "chg_pct": 0.73
+  },
+  {
+   "name": "SILVER",
+   "ltp": 178948,
+   "chg_pts": 224,
+   "chg_pct": 0.13
+  }
+ ],
+ "oc": {
+  "spot": 25194,
+  "expiry": "2026-11-17",
+  "res_strike": 26500.0,
+  "res_oi": 14103115,
+  "res_pct": 5.18,
+  "sup_strike": 25000.0,
+  "sup_oi": 15485665,
+  "sup_pct": 0.77,
+  "max_pain": 25200.0,
+  "mp_pct": 0.02,
+  "pcr": 1.019,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -175,9 +233,9 @@
    {
     "time": 1794545820,
     "open": 25190.45,
-    "high": 25202.05,
+    "high": 25203.3,
     "low": 25187.2,
-    "close": 25201.85
+    "close": 25193.95
    }
   ],
   "SENSEX": [
@@ -354,7 +412,7 @@
     "open": 81697.17,
     "high": 81729.09,
     "low": 81679.97,
-    "close": 81723.26
+    "close": 81700.84
    }
   ]
  },
@@ -596,10 +654,10 @@
    "score": -4,
    "spot_entry": 25199.6,
    "exit_t": null,
-   "exit_px": 133.5,
+   "exit_px": 138.55,
    "reason": "OPEN",
-   "pts": -1.2,
-   "rs": -90
+   "pts": 3.85,
+   "rs": 289
   }
  ],
  "instrument": {
@@ -623,14 +681,11 @@
   "total_rs": -448,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": false,
+  "quotes_ok": true,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
