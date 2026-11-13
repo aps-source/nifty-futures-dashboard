@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-13 10:07:47",
+ "updated": "2026-11-13 10:08:57",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25220.35,
-   "chg_pts": -79.0,
-   "chg_pct": -0.31
+   "ltp": 25215.15,
+   "chg_pts": -84.2,
+   "chg_pct": -0.33
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61070.85,
-   "chg_pts": -447.65,
-   "chg_pct": -0.73
+   "ltp": 61059.3,
+   "chg_pts": -459.2,
+   "chg_pct": -0.75
   },
   {
    "name": "SENSEX",
-   "ltp": 81765.3,
-   "chg_pts": -145.71,
-   "chg_pct": -0.18
+   "ltp": 81768.13,
+   "chg_pts": -142.88,
+   "chg_pct": -0.17
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.32,
-   "chg_pts": -0.3,
-   "chg_pct": -1.81
+   "ltp": 16.35,
+   "chg_pts": -0.27,
+   "chg_pct": -1.62
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8324,
-   "chg_pts": 24,
-   "chg_pct": 0.29
+   "ltp": 8326,
+   "chg_pts": 26,
+   "chg_pct": 0.31
   },
   {
    "name": "GOLD",
-   "ltp": 137021,
-   "chg_pts": 796,
-   "chg_pct": 0.58
+   "ltp": 137029,
+   "chg_pts": 804,
+   "chg_pct": 0.59
   },
   {
    "name": "SILVER",
-   "ltp": 178747,
-   "chg_pts": 23,
-   "chg_pct": 0.01
+   "ltp": 178753,
+   "chg_pts": 29,
+   "chg_pct": 0.02
   }
  ],
  "oc": {
-  "spot": 25219.8,
+  "spot": 25217.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 13269035,
-  "res_pct": 3.09,
+  "res_oi": 13280865,
+  "res_pct": 3.11,
   "sup_strike": 25000.0,
-  "sup_oi": 14756885,
-  "sup_pct": 0.87,
+  "sup_oi": 14688440,
+  "sup_pct": 0.86,
   "max_pain": 25200.0,
-  "mp_pct": -0.08,
-  "pcr": 0.974,
+  "mp_pct": -0.07,
+  "pcr": 0.972,
   "suggests": "Balanced"
  },
  "charts": {
@@ -186,7 +186,14 @@
     "open": 25211.25,
     "high": 25223.45,
     "low": 25202.25,
-    "close": 25219.7
+    "close": 25215.4
+   },
+   {
+    "time": 1794544740,
+    "open": 25216.1,
+    "high": 25218.15,
+    "low": 25214.95,
+    "close": 25216.45
    }
   ],
   "SENSEX": [
@@ -314,7 +321,14 @@
     "open": 81747.64,
     "high": 81772.14,
     "low": 81714.84,
-    "close": 81770.69
+    "close": 81767.28
+   },
+   {
+    "time": 1794544740,
+    "open": 81766.88,
+    "high": 81766.88,
+    "low": 81758.21,
+    "close": 81758.54
    }
   ]
  },
