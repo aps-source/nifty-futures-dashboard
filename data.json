@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-13 14:33:09",
+ "updated": "2026-11-13 14:34:20",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25110.0,
+  "spot": 25106.0,
   "expiry": "2026-11-17",
   "res_strike": 25200.0,
-  "res_oi": 15227940,
-  "res_pct": 0.36,
+  "res_oi": 15196220,
+  "res_pct": 0.37,
   "sup_strike": 25000.0,
-  "sup_oi": 12439830,
-  "sup_pct": 0.44,
+  "sup_oi": 12425075,
+  "sup_pct": 0.42,
   "max_pain": 25100.0,
-  "mp_pct": -0.04,
-  "pcr": 0.781,
+  "mp_pct": -0.02,
+  "pcr": 0.783,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -764,8 +764,8 @@
     "time": 1794560580,
     "open": 25106.65,
     "high": 25110.85,
-    "low": 25105.6,
-    "close": 25109.6
+    "low": 25103.3,
+    "close": 25106.65
    }
   ],
   "SENSEX": [
@@ -1514,18 +1514,18 @@
    {
     "time": 1794560580,
     "open": 81464.26,
-    "high": 81478.26,
-    "low": 81464.26,
-    "close": 81478.26
+    "high": 81482.52,
+    "low": 81463.51,
+    "close": 81476.95
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "SHORT COVERING",
-   "time": "14:30",
-   "d_price": "20.7",
-   "d_oi": "-11310"
+   "time": "14:33",
+   "d_price": "29.3",
+   "d_oi": "-6760"
   },
   "5": {
    "cls": "SHORT COVERING",
@@ -1549,21 +1549,6 @@
  "decision": "LONG",
  "decision_score": 2,
  "signals": [
-  {
-   "time": "11:18",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25201",
-   "close": "25214.3",
-   "oi_start": "12160005",
-   "oi_end": "12151035",
-   "d_price": "13.3",
-   "d_oi": "-8970",
-   "classification": "SHORT COVERING",
-   "score": "1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
   {
    "time": "11:20",
    "symbol": "NIFTY",
@@ -3344,6 +3329,21 @@
    "oi_end": "12084150",
    "d_price": "10",
    "d_oi": "-25155",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "14:33",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25125",
+   "close": "25154.3",
+   "oi_start": "12084150",
+   "oi_end": "12077390",
+   "d_price": "29.3",
+   "d_oi": "-6760",
    "classification": "SHORT COVERING",
    "score": "1",
    "decision_score": "2",
