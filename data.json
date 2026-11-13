@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-13 12:42:37",
+ "updated": "2026-11-13 12:43:52",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25114.1,
-   "chg_pts": -185.25,
-   "chg_pct": -0.73
+   "ltp": 25116,
+   "chg_pts": -183.35,
+   "chg_pct": -0.72
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61008.95,
-   "chg_pts": -509.55,
-   "chg_pct": -0.83
+   "ltp": 61027.8,
+   "chg_pts": -490.7,
+   "chg_pct": -0.8
   },
   {
    "name": "SENSEX",
-   "ltp": 81474.63,
-   "chg_pts": -436.38,
+   "ltp": 81473.36,
+   "chg_pts": -437.65,
    "chg_pct": -0.53
   },
   {
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 136729,
-   "chg_pts": 504,
-   "chg_pct": 0.37
+   "ltp": 136682,
+   "chg_pts": 457,
+   "chg_pct": 0.34
   },
   {
    "name": "SILVER",
-   "ltp": 178471,
-   "chg_pts": -253,
-   "chg_pct": -0.14
+   "ltp": 178450,
+   "chg_pts": -274,
+   "chg_pct": -0.15
   }
  ],
  "oc": {
-  "spot": 25113.3,
+  "spot": 25115.3,
   "expiry": "2026-11-17",
   "res_strike": 25200.0,
-  "res_oi": 14990885,
-  "res_pct": 0.35,
+  "res_oi": 14972230,
+  "res_pct": 0.34,
   "sup_strike": 25000.0,
-  "sup_oi": 12590760,
-  "sup_pct": 0.45,
+  "sup_oi": 12644710,
+  "sup_pct": 0.46,
   "max_pain": 25150.0,
-  "mp_pct": 0.15,
-  "pcr": 0.794,
+  "mp_pct": 0.14,
+  "pcr": 0.795,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -548,9 +548,9 @@
    {
     "time": 1794553920,
     "open": 25115.8,
-    "high": 25117.7,
-    "low": 25112.75,
-    "close": 25112.9
+    "high": 25119.35,
+    "low": 25112.25,
+    "close": 25115.7
    }
   ],
   "SENSEX": [
@@ -1042,7 +1042,7 @@
     "open": 81474.05,
     "high": 81480.08,
     "low": 81459.45,
-    "close": 81465.83
+    "close": 81477.01
    }
   ]
  },
