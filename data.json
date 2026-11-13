@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-13 11:44:27",
+ "updated": "2026-11-13 11:45:46",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25159.45,
-   "chg_pts": -139.9,
-   "chg_pct": -0.55
+   "ltp": 25155.7,
+   "chg_pts": -143.65,
+   "chg_pct": -0.57
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61015.5,
-   "chg_pts": -503.0,
-   "chg_pct": -0.82
+   "ltp": 61007.55,
+   "chg_pts": -510.95,
+   "chg_pct": -0.83
   },
   {
    "name": "SENSEX",
-   "ltp": 81601.91,
-   "chg_pts": -309.1,
+   "ltp": 81596.29,
+   "chg_pts": -314.72,
    "chg_pct": -0.38
   },
   {
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 136803,
-   "chg_pts": 578,
+   "ltp": 136794,
+   "chg_pts": 569,
    "chg_pct": 0.42
   },
   {
    "name": "SILVER",
-   "ltp": 178097,
-   "chg_pts": -627,
-   "chg_pct": -0.35
+   "ltp": 178016,
+   "chg_pts": -708,
+   "chg_pct": -0.4
   }
  ],
  "oc": {
-  "spot": 25159.9,
+  "spot": 25157.3,
   "expiry": "2026-11-17",
   "res_strike": 26500.0,
-  "res_oi": 14447095,
-  "res_pct": 5.33,
-  "sup_strike": 25000.0,
-  "sup_oi": 14666405,
-  "sup_pct": 0.64,
+  "res_oi": 14448915,
+  "res_pct": 5.34,
+  "sup_strike": 25200.0,
+  "sup_oi": 14771705,
+  "sup_pct": -0.17,
   "max_pain": 25200.0,
-  "mp_pct": 0.16,
-  "pcr": 0.964,
+  "mp_pct": 0.17,
+  "pcr": 0.966,
   "suggests": "Balanced"
  },
  "charts": {
@@ -410,7 +410,14 @@
     "open": 25173.1,
     "high": 25174.05,
     "low": 25157.75,
-    "close": 25159.85
+    "close": 25160.3
+   },
+   {
+    "time": 1794550500,
+    "open": 25160.2,
+    "high": 25161.8,
+    "low": 25155.0,
+    "close": 25156.65
    }
   ],
   "SENSEX": [
@@ -761,29 +768,36 @@
     "time": 1794550320,
     "open": 81641.58,
     "high": 81641.78,
-    "low": 81592.99,
-    "close": 81593.59
+    "low": 81590.54,
+    "close": 81599.99
+   },
+   {
+    "time": 1794550500,
+    "open": 81599.99,
+    "high": 81607.79,
+    "low": 81588.95,
+    "close": 81588.95
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "11:42",
-   "d_price": "6.3",
-   "d_oi": "-11635"
+   "cls": "SHORT BUILDUP",
+   "time": "11:45",
+   "d_price": "-9.3",
+   "d_oi": "780"
   },
   "5": {
    "cls": "LONG UNWINDING",
-   "time": "11:40",
-   "d_price": "-15",
-   "d_oi": "-8060"
+   "time": "11:45",
+   "d_price": "-4",
+   "d_oi": "-2470"
   },
   "15": {
-   "cls": "SHORT COVERING",
-   "time": "11:30",
-   "d_price": "7.5",
-   "d_oi": "-7280"
+   "cls": "LONG UNWINDING",
+   "time": "11:45",
+   "d_price": "-27.5",
+   "d_oi": "-15015"
   },
   "60": {
    "cls": "SHORT BUILDUP",
@@ -792,8 +806,8 @@
    "d_oi": "19370"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "STRONG SHORT",
+ "decision_score": -4,
  "signals": [
   {
    "time": "10:09",
@@ -1679,6 +1693,51 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25190.3",
+   "close": "25181",
+   "oi_start": "12136930",
+   "oi_end": "12137710",
+   "d_price": "-9.3",
+   "d_oi": "780",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25185",
+   "close": "25181",
+   "oi_start": "12140180",
+   "oi_end": "12137710",
+   "d_price": "-4",
+   "d_oi": "-2470",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25208.5",
+   "close": "25181",
+   "oi_start": "12152725",
+   "oi_end": "12137710",
+   "d_price": "-27.5",
+   "d_oi": "-15015",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-4",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -1711,10 +1770,10 @@
    "score": -4,
    "spot_entry": 25194.7,
    "exit_t": null,
-   "exit_px": 146.75,
+   "exit_px": 144.2,
    "reason": "OPEN",
-   "pts": 14.3,
-   "rs": 1072
+   "pts": 11.75,
+   "rs": 881
   }
  ],
  "instrument": {
