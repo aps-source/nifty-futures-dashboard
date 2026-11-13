@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-13 11:25:54",
+ "updated": "2026-11-13 11:27:12",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25177.5,
+  "spot": 25172.0,
   "expiry": "2026-11-17",
   "res_strike": 26500.0,
-  "res_oi": 14531140,
-  "res_pct": 5.25,
+  "res_oi": 14526785,
+  "res_pct": 5.28,
   "sup_strike": 25000.0,
-  "sup_oi": 14728480,
-  "sup_pct": 0.71,
+  "sup_oi": 14754480,
+  "sup_pct": 0.68,
   "max_pain": 25200.0,
-  "mp_pct": 0.09,
-  "pcr": 0.974,
+  "mp_pct": 0.11,
+  "pcr": 0.977,
   "suggests": "Balanced"
  },
  "charts": {
@@ -323,8 +323,15 @@
     "time": 1794549240,
     "open": 25182.85,
     "high": 25190.95,
-    "low": 25176.5,
-    "close": 25176.6
+    "low": 25169.9,
+    "close": 25172.15
+   },
+   {
+    "time": 1794549420,
+    "open": 25172.05,
+    "high": 25174.6,
+    "low": 25171.05,
+    "close": 25172.5
    }
   ],
   "SENSEX": [
@@ -633,17 +640,24 @@
     "time": 1794549240,
     "open": 81673.16,
     "high": 81687.02,
-    "low": 81649.47,
-    "close": 81652.76
+    "low": 81628.63,
+    "close": 81635.18
+   },
+   {
+    "time": 1794549420,
+    "open": 81637.41,
+    "high": 81637.41,
+    "low": 81628.4,
+    "close": 81634.23
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "11:24",
-   "d_price": "27",
-   "d_oi": "455"
+   "cls": "SHORT BUILDUP",
+   "time": "11:27",
+   "d_price": "-22",
+   "d_oi": "3185"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -664,8 +678,8 @@
    "d_oi": "19370"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
   {
    "time": "10:09",
@@ -1401,6 +1415,21 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:27",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25223",
+   "close": "25201",
+   "oi_start": "12149085",
+   "oi_end": "12152270",
+   "d_price": "-22",
+   "d_oi": "3185",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -1433,10 +1462,10 @@
    "score": -4,
    "spot_entry": 25194.7,
    "exit_t": null,
-   "exit_px": 143.45,
+   "exit_px": 140.25,
    "reason": "OPEN",
-   "pts": 11.0,
-   "rs": 825
+   "pts": 7.8,
+   "rs": 585
   }
  ],
  "instrument": {
