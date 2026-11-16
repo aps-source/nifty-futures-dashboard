@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-16 14:37:36",
+ "updated": "2026-11-16 14:38:46",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25221.65,
+   "chg_pts": 77.35,
+   "chg_pct": 0.31
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61406.25,
+   "chg_pts": 372.15,
+   "chg_pct": 0.61
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81932.32,
+   "chg_pts": 339.87,
+   "chg_pct": 0.42
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.68,
+   "chg_pts": 0.18,
+   "chg_pct": 1.16
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8301,
+   "chg_pts": -68,
+   "chg_pct": -0.81
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134983,
+   "chg_pts": -1722,
+   "chg_pct": -1.26
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169997,
+   "chg_pts": -6312,
+   "chg_pct": -3.58
+  }
+ ],
  "oc": {
-  "spot": 25228.0,
+  "spot": 25223.2,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 21517665,
-  "res_pct": 0.29,
+  "res_oi": 21081970,
+  "res_pct": 0.3,
   "sup_strike": 25200.0,
-  "sup_oi": 18394480,
-  "sup_pct": 0.11,
+  "sup_oi": 18652985,
+  "sup_pct": 0.09,
   "max_pain": 25200.0,
-  "mp_pct": -0.11,
-  "pcr": 0.864,
+  "mp_pct": -0.09,
+  "pcr": 0.874,
   "suggests": "Balanced"
  },
  "charts": {
@@ -771,8 +815,8 @@
     "time": 1794819960,
     "open": 25230.3,
     "high": 25237.9,
-    "low": 25227.2,
-    "close": 25227.3
+    "low": 25220.7,
+    "close": 25223.45
    }
   ],
   "SENSEX": [
@@ -1529,8 +1573,8 @@
     "time": 1794819960,
     "open": 81948.31,
     "high": 81964.54,
-    "low": 81944.7,
-    "close": 81952.26
+    "low": 81925.22,
+    "close": 81926.73
    }
   ]
  },
@@ -3478,12 +3522,10 @@
   "total_rs": -3253,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
