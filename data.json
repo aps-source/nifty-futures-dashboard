@@ -1,51 +1,65 @@
 {
- "updated": "2026-11-16 10:59:20",
+ "updated": "2026-11-16 11:00:32",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25221.85,
-   "chg_pts": 77.55,
+   "ltp": 25221.6,
+   "chg_pts": 77.3,
    "chg_pct": 0.31
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61387.15,
-   "chg_pts": 353.05,
-   "chg_pct": 0.58
+   "ltp": 61376.85,
+   "chg_pts": 342.75,
+   "chg_pct": 0.56
   },
   {
    "name": "SENSEX",
-   "ltp": 81942.38,
-   "chg_pts": 349.93,
-   "chg_pct": 0.43
+   "ltp": 81932.48,
+   "chg_pts": 340.03,
+   "chg_pct": 0.42
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.55,
-   "chg_pts": 0.05,
-   "chg_pct": 0.32
+   "ltp": 15.54,
+   "chg_pts": 0.04,
+   "chg_pct": 0.26
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8332,
-   "chg_pts": -37,
-   "chg_pct": -0.44
+   "ltp": 8338,
+   "chg_pts": -31,
+   "chg_pct": -0.37
   },
   {
    "name": "GOLD",
-   "ltp": 135705,
-   "chg_pts": -1000,
-   "chg_pct": -0.73
+   "ltp": 135548,
+   "chg_pts": -1157,
+   "chg_pct": -0.85
   },
   {
    "name": "SILVER",
-   "ltp": 170940,
-   "chg_pts": -5369,
-   "chg_pct": -3.05
+   "ltp": 170549,
+   "chg_pts": -5760,
+   "chg_pct": -3.27
   }
  ],
+ "oc": {
+  "spot": 25221.0,
+  "expiry": "2026-11-17",
+  "res_strike": 25300.0,
+  "res_oi": 21428745,
+  "res_pct": 0.31,
+  "sup_strike": 25200.0,
+  "sup_oi": 19618755,
+  "sup_pct": 0.08,
+  "max_pain": 25200.0,
+  "mp_pct": -0.08,
+  "pcr": 0.874,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -289,9 +303,16 @@
    {
     "time": 1794806820,
     "open": 25204.0,
-    "high": 25224.35,
+    "high": 25229.0,
     "low": 25203.6,
-    "close": 25224.35
+    "close": 25226.1
+   },
+   {
+    "time": 1794807000,
+    "open": 25227.25,
+    "high": 25228.7,
+    "low": 25219.7,
+    "close": 25220.4
    }
   ],
   "SENSEX": [
@@ -536,30 +557,37 @@
    {
     "time": 1794806820,
     "open": 81881.6,
-    "high": 81942.38,
+    "high": 81947.53,
     "low": 81881.6,
-    "close": 81938.31
+    "close": 81945.75
+   },
+   {
+    "time": 1794807000,
+    "open": 81949.47,
+    "high": 81950.06,
+    "low": 81925.49,
+    "close": 81925.49
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "10:57",
-   "d_price": "-2.0",
-   "d_oi": "1105"
+   "cls": "LONG BUILDUP",
+   "time": "11:00",
+   "d_price": "20.3",
+   "d_oi": "1625"
   },
   "5": {
    "cls": "LONG BUILDUP",
-   "time": "10:55",
-   "d_price": "7",
-   "d_oi": "3250"
+   "time": "11:00",
+   "d_price": "20.9",
+   "d_oi": "1365"
   },
   "15": {
-   "cls": "SHORT BUILDUP",
-   "time": "10:45",
-   "d_price": "-25",
-   "d_oi": "2340"
+   "cls": "LONG BUILDUP",
+   "time": "11:00",
+   "d_price": "12.9",
+   "d_oi": "18265"
   },
   "60": {
    "cls": "SHORT COVERING",
@@ -568,8 +596,8 @@
    "d_oi": "-51675"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "STRONG LONG",
+ "decision_score": 4,
  "signals": [
   {
    "time": "09:18",
@@ -1485,6 +1513,51 @@
    "score": "-1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:00",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25247.6",
+   "close": "25267.9",
+   "oi_start": "11740495",
+   "oi_end": "11742120",
+   "d_price": "20.3",
+   "d_oi": "1625",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "11:00",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25247",
+   "close": "25267.9",
+   "oi_start": "11740755",
+   "oi_end": "11742120",
+   "d_price": "20.9",
+   "d_oi": "1365",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "11:00",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25255",
+   "close": "25267.9",
+   "oi_start": "11723855",
+   "oi_end": "11742120",
+   "d_price": "12.9",
+   "d_oi": "18265",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -1504,6 +1577,23 @@
    "reason": "score flip (-1)",
    "pts": -6.35,
    "rs": -526
+  },
+  {
+   "date": "2026-11-16",
+   "expiry": "2026-11-17",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25250,
+   "opt_id": 45396,
+   "entry_t": "11:00",
+   "entry_px": 90.4,
+   "score": 4,
+   "spot_entry": 25221.6,
+   "exit_t": null,
+   "exit_px": 91.55,
+   "reason": "OPEN",
+   "pts": 1.15,
+   "rs": 86
   }
  ],
  "instrument": {
@@ -1511,18 +1601,27 @@
   "expiry": "2026-11-17"
  },
  "paper": {
-  "open": null,
+  "open": {
+   "date": "2026-11-16",
+   "expiry": "2026-11-17",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25250,
+   "opt_id": 45396,
+   "entry_t": "11:00",
+   "entry_px": 90.4,
+   "score": 4,
+   "spot_entry": 25221.6
+  },
   "total_trades": 6,
   "total_rs": -1436,
   "telegram": true
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
