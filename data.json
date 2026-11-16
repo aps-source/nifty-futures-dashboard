@@ -1,7 +1,65 @@
 {
- "updated": "2026-11-16 12:22:03",
+ "updated": "2026-11-16 12:23:23",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25264.45,
+   "chg_pts": 120.15,
+   "chg_pct": 0.48
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61593.85,
+   "chg_pts": 559.75,
+   "chg_pct": 0.92
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82066.89,
+   "chg_pts": 474.44,
+   "chg_pct": 0.58
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.78,
+   "chg_pts": 0.28,
+   "chg_pct": 1.81
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8379,
+   "chg_pts": 10,
+   "chg_pct": 0.12
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134559,
+   "chg_pts": -2146,
+   "chg_pct": -1.57
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169799,
+   "chg_pts": -6510,
+   "chg_pct": -3.69
+  }
+ ],
+ "oc": {
+  "spot": 25263.0,
+  "expiry": "2026-11-17",
+  "res_strike": 25300.0,
+  "res_oi": 19169735,
+  "res_pct": 0.15,
+  "sup_strike": 25200.0,
+  "sup_oi": 23399090,
+  "sup_pct": 0.25,
+  "max_pain": 25250.0,
+  "mp_pct": -0.05,
+  "pcr": 1.023,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -441,9 +499,9 @@
    {
     "time": 1794811860,
     "open": 25266.05,
-    "high": 25271.2,
+    "high": 25271.85,
     "low": 25258.7,
-    "close": 25265.4
+    "close": 25263.65
    }
   ],
   "SENSEX": [
@@ -885,8 +943,8 @@
     "time": 1794811860,
     "open": 82088.44,
     "high": 82091.2,
-    "low": 82062.76,
-    "close": 82071.1
+    "low": 82061.44,
+    "close": 82061.44
    }
   ]
  },
@@ -2694,10 +2752,10 @@
    "score": 4,
    "spot_entry": 25288.6,
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 80.95,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": -14.9,
+   "rs": -1118
   }
  ],
  "instrument": {
@@ -2721,14 +2779,11 @@
   "total_rs": -2380,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": false,
+  "quotes_ok": true,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
