@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-16 11:06:54",
+ "updated": "2026-11-16 11:08:11",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25242.8,
-   "chg_pts": 98.5,
-   "chg_pct": 0.39
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61447.75,
-   "chg_pts": 413.65,
-   "chg_pct": 0.68
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82012.57,
-   "chg_pts": 420.12,
-   "chg_pct": 0.51
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.49,
-   "chg_pts": -0.01,
-   "chg_pct": -0.06
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8329,
-   "chg_pts": -40,
-   "chg_pct": -0.48
-  },
-  {
-   "name": "GOLD",
-   "ltp": 135412,
-   "chg_pts": -1293,
-   "chg_pct": -0.95
-  },
-  {
-   "name": "SILVER",
-   "ltp": 170767,
-   "chg_pts": -5542,
-   "chg_pct": -3.14
-  }
- ],
  "oc": {
-  "spot": 25240.9,
+  "spot": 25241.8,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 21660275,
+  "res_oi": 21617505,
   "res_pct": 0.23,
   "sup_strike": 25200.0,
-  "sup_oi": 19517680,
-  "sup_pct": 0.16,
+  "sup_oi": 19708130,
+  "sup_pct": 0.17,
   "max_pain": 25200.0,
-  "mp_pct": -0.16,
-  "pcr": 0.862,
+  "mp_pct": -0.17,
+  "pcr": 0.865,
   "suggests": "Balanced"
  },
  "charts": {
@@ -325,8 +281,8 @@
     "time": 1794807360,
     "open": 25246.15,
     "high": 25249.25,
-    "low": 25240.45,
-    "close": 25241.45
+    "low": 25235.95,
+    "close": 25242.65
    }
   ],
   "SENSEX": [
@@ -593,8 +549,8 @@
     "time": 1794807360,
     "open": 82012.13,
     "high": 82025.21,
-    "low": 82005.94,
-    "close": 82005.94
+    "low": 81986.38,
+    "close": 81999.97
    }
   ]
  },
@@ -1663,10 +1619,10 @@
    "score": 4,
    "spot_entry": 25221.6,
    "exit_t": null,
-   "exit_px": 94.9,
+   "exit_px": 97.25,
    "reason": "OPEN",
-   "pts": 4.5,
-   "rs": 338
+   "pts": 6.85,
+   "rs": 514
   }
  ],
  "instrument": {
@@ -1690,10 +1646,12 @@
   "total_rs": -1436,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
