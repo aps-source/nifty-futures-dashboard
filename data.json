@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-16 10:00:53",
+ "updated": "2026-11-16 10:02:13",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25315.05,
-   "chg_pts": 170.75,
-   "chg_pct": 0.68
+   "ltp": 25302.6,
+   "chg_pts": 158.3,
+   "chg_pct": 0.63
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61668.75,
-   "chg_pts": 634.65,
-   "chg_pct": 1.04
+   "ltp": 61647.15,
+   "chg_pts": 613.05,
+   "chg_pct": 1.0
   },
   {
    "name": "SENSEX",
-   "ltp": 82240.25,
-   "chg_pts": 647.8,
-   "chg_pct": 0.79
+   "ltp": 82203.48,
+   "chg_pts": 611.03,
+   "chg_pct": 0.75
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.86,
-   "chg_pts": 0.36,
-   "chg_pct": 2.32
+   "ltp": 15.68,
+   "chg_pts": 0.18,
+   "chg_pct": 1.16
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8321,
-   "chg_pts": -48,
-   "chg_pct": -0.57
+   "ltp": 8318,
+   "chg_pts": -51,
+   "chg_pct": -0.61
   },
   {
    "name": "GOLD",
-   "ltp": 135751,
-   "chg_pts": -954,
-   "chg_pct": -0.7
+   "ltp": 135727,
+   "chg_pts": -978,
+   "chg_pct": -0.72
   },
   {
    "name": "SILVER",
-   "ltp": 170800,
-   "chg_pts": -5509,
-   "chg_pct": -3.12
+   "ltp": 170709,
+   "chg_pts": -5600,
+   "chg_pct": -3.18
   }
  ],
  "oc": {
-  "spot": 25314.5,
+  "spot": 25300.8,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 17178070,
-  "res_pct": 2.71,
+  "res_oi": 17289610,
+  "res_pct": 2.76,
   "sup_strike": 25200.0,
-  "sup_oi": 20598435,
-  "sup_pct": 0.45,
+  "sup_oi": 20737730,
+  "sup_pct": 0.4,
   "max_pain": 25300.0,
-  "mp_pct": -0.06,
-  "pcr": 1.157,
+  "mp_pct": -0.0,
+  "pcr": 1.173,
   "suggests": "Balanced"
  },
  "charts": {
@@ -171,8 +171,8 @@
     "time": 1794803400,
     "open": 25320.95,
     "high": 25328.15,
-    "low": 25313.1,
-    "close": 25313.55
+    "low": 25297.35,
+    "close": 25299.25
    }
   ],
   "SENSEX": [
@@ -285,8 +285,8 @@
     "time": 1794803400,
     "open": 82247.64,
     "high": 82275.99,
-    "low": 82236.87,
-    "close": 82245.83
+    "low": 82194.96,
+    "close": 82196.05
    }
   ]
  },
@@ -732,10 +732,10 @@
    "score": 3,
    "spot_entry": 25314.95,
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 86.6,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": -4.95,
+   "rs": -371
   }
  ],
  "instrument": {
