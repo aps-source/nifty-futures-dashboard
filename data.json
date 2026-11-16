@@ -1,7 +1,65 @@
 {
- "updated": "2026-11-16 14:14:06",
+ "updated": "2026-11-16 14:15:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25189.65,
+   "chg_pts": 45.35,
+   "chg_pct": 0.18
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61357.9,
+   "chg_pts": 323.8,
+   "chg_pct": 0.53
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81825.11,
+   "chg_pts": 232.66,
+   "chg_pct": 0.29
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.79,
+   "chg_pts": 0.29,
+   "chg_pct": 1.87
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8324,
+   "chg_pts": -45,
+   "chg_pct": -0.54
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134830,
+   "chg_pts": -1875,
+   "chg_pct": -1.37
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169845,
+   "chg_pts": -6464,
+   "chg_pct": -3.67
+  }
+ ],
+ "oc": {
+  "spot": 25186.5,
+  "expiry": "2026-11-17",
+  "res_strike": 25300.0,
+  "res_oi": 22452430,
+  "res_pct": 0.45,
+  "sup_strike": 25200.0,
+  "sup_oi": 16644290,
+  "sup_pct": -0.05,
+  "max_pain": 25200.0,
+  "mp_pct": 0.05,
+  "pcr": 0.852,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -700,9 +758,16 @@
    {
     "time": 1794818520,
     "open": 25184.25,
-    "high": 25195.35,
+    "high": 25196.5,
     "low": 25181.4,
-    "close": 25194.7
+    "close": 25191.45
+   },
+   {
+    "time": 1794818700,
+    "open": 25192.3,
+    "high": 25194.2,
+    "low": 25186.5,
+    "close": 25187.45
    }
   ],
   "SENSEX": [
@@ -1402,101 +1467,48 @@
    {
     "time": 1794818520,
     "open": 81801.06,
-    "high": 81836.35,
+    "high": 81844.32,
     "low": 81793.73,
-    "close": 81832.93
+    "close": 81830.45
+   },
+   {
+    "time": 1794818700,
+    "open": 81829.86,
+    "high": 81838.95,
+    "low": 81820.51,
+    "close": 81823.93
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG UNWINDING",
-   "time": "14:12",
-   "d_price": "-1.4",
-   "d_oi": "-390"
+   "cls": "LONG BUILDUP",
+   "time": "14:15",
+   "d_price": "18.9",
+   "d_oi": "520"
   },
   "5": {
    "cls": "LONG BUILDUP",
-   "time": "14:10",
-   "d_price": "4",
-   "d_oi": "3965"
+   "time": "14:15",
+   "d_price": "19.5",
+   "d_oi": "845"
   },
   "15": {
    "cls": "LONG UNWINDING",
-   "time": "14:00",
-   "d_price": "-36",
-   "d_oi": "-3835"
+   "time": "14:15",
+   "d_price": "-3.5",
+   "d_oi": "-780"
   },
   "60": {
    "cls": "LONG UNWINDING",
-   "time": "13:15",
-   "d_price": "-30",
-   "d_oi": "-55705"
+   "time": "14:15",
+   "d_price": "-51.5",
+   "d_oi": "-6500"
   }
  },
- "decision": "SHORT",
- "decision_score": -2,
+ "decision": "NEUTRAL",
+ "decision_score": 0,
  "signals": [
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25247.6",
-   "close": "25267.9",
-   "oi_start": "11740495",
-   "oi_end": "11742120",
-   "d_price": "20.3",
-   "d_oi": "1625",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25247",
-   "close": "25267.9",
-   "oi_start": "11740755",
-   "oi_end": "11742120",
-   "d_price": "20.9",
-   "d_oi": "1365",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "15",
-   "open": "25255",
-   "close": "25267.9",
-   "oi_start": "11723855",
-   "oi_end": "11742120",
-   "d_price": "12.9",
-   "d_oi": "18265",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "4",
-   "decision": "STRONG LONG"
-  },
-  {
-   "time": "11:03",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25267.9",
-   "close": "25265",
-   "oi_start": "11742120",
-   "oi_end": "11748425",
-   "d_price": "-2.9",
-   "d_oi": "6305",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
   {
    "time": "11:05",
    "symbol": "NIFTY",
@@ -3236,6 +3248,66 @@
    "score": "-1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25218.6",
+   "close": "25237.5",
+   "oi_start": "11658530",
+   "oi_end": "11659050",
+   "d_price": "18.9",
+   "d_oi": "520",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25218",
+   "close": "25237.5",
+   "oi_start": "11658205",
+   "oi_end": "11659050",
+   "d_price": "19.5",
+   "d_oi": "845",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25241",
+   "close": "25237.5",
+   "oi_start": "11659830",
+   "oi_end": "11659050",
+   "d_price": "-3.5",
+   "d_oi": "-780",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "60",
+   "open": "25289",
+   "close": "25237.5",
+   "oi_start": "11665550",
+   "oi_end": "11659050",
+   "d_price": "-51.5",
+   "d_oi": "-6500",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
   }
  ],
  "trades": [
@@ -3336,10 +3408,10 @@
    "score": -4,
    "spot_entry": 25264,
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 117.85,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": 38.85,
+   "rs": 2914
   }
  ],
  "instrument": {
@@ -3363,14 +3435,11 @@
   "total_rs": -4332,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": false,
+  "quotes_ok": true,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
