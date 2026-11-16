@@ -1,62 +1,18 @@
 {
- "updated": "2026-11-16 11:42:47",
+ "updated": "2026-11-16 11:43:58",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25232.2,
-   "chg_pts": 87.9,
-   "chg_pct": 0.35
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61408.55,
-   "chg_pts": 374.45,
-   "chg_pct": 0.61
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81968.55,
-   "chg_pts": 376.1,
-   "chg_pct": 0.46
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.42,
-   "chg_pts": -0.08,
-   "chg_pct": -0.52
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8374,
-   "chg_pts": 5,
-   "chg_pct": 0.06
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134753,
-   "chg_pts": -1952,
-   "chg_pct": -1.43
-  },
-  {
-   "name": "SILVER",
-   "ltp": 169703,
-   "chg_pts": -6606,
-   "chg_pct": -3.75
-  }
- ],
  "oc": {
-  "spot": 25232.1,
+  "spot": 25224.6,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 21559330,
-  "res_pct": 0.27,
+  "res_oi": 21534500,
+  "res_pct": 0.3,
   "sup_strike": 25200.0,
-  "sup_oi": 22719970,
-  "sup_pct": 0.13,
+  "sup_oi": 22535630,
+  "sup_pct": 0.1,
   "max_pain": 25200.0,
-  "mp_pct": -0.13,
+  "mp_pct": -0.1,
   "pcr": 0.882,
   "suggests": "Balanced"
  },
@@ -408,9 +364,9 @@
    {
     "time": 1794809520,
     "open": 25230.75,
-    "high": 25234.05,
-    "low": 25226.1,
-    "close": 25232.85
+    "high": 25234.4,
+    "low": 25224.2,
+    "close": 25225.65
    }
   ],
   "SENSEX": [
@@ -761,8 +717,8 @@
     "time": 1794809520,
     "open": 81963.51,
     "high": 81968.62,
-    "low": 81956.9,
-    "close": 81956.9
+    "low": 81943.94,
+    "close": 81946.62
    }
   ]
  },
@@ -2178,10 +2134,10 @@
    "score": -4,
    "spot_entry": 25234.65,
    "exit_t": null,
-   "exit_px": 77.1,
+   "exit_px": 76.1,
    "reason": "OPEN",
-   "pts": -2.0,
-   "rs": -150
+   "pts": -3.0,
+   "rs": -225
   }
  ],
  "instrument": {
@@ -2205,10 +2161,12 @@
   "total_rs": -1696,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
