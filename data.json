@@ -1,65 +1,7 @@
 {
- "updated": "2026-11-16 14:12:48",
+ "updated": "2026-11-16 14:14:06",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25183.25,
-   "chg_pts": 38.95,
-   "chg_pct": 0.15
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61345.7,
-   "chg_pts": 311.6,
-   "chg_pct": 0.51
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81801.27,
-   "chg_pts": 208.82,
-   "chg_pct": 0.26
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.81,
-   "chg_pts": 0.31,
-   "chg_pct": 2.0
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8329,
-   "chg_pts": -40,
-   "chg_pct": -0.48
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134854,
-   "chg_pts": -1851,
-   "chg_pct": -1.35
-  },
-  {
-   "name": "SILVER",
-   "ltp": 169902,
-   "chg_pts": -6407,
-   "chg_pct": -3.63
-  }
- ],
- "oc": {
-  "spot": 25185.1,
-  "expiry": "2026-11-17",
-  "res_strike": 25300.0,
-  "res_oi": 22292205,
-  "res_pct": 0.46,
-  "sup_strike": 25200.0,
-  "sup_oi": 16947190,
-  "sup_pct": -0.06,
-  "max_pain": 25200.0,
-  "mp_pct": 0.06,
-  "pcr": 0.861,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -758,9 +700,9 @@
    {
     "time": 1794818520,
     "open": 25184.25,
-    "high": 25185.55,
+    "high": 25195.35,
     "low": 25181.4,
-    "close": 25184.45
+    "close": 25194.7
    }
   ],
   "SENSEX": [
@@ -1460,9 +1402,9 @@
    {
     "time": 1794818520,
     "open": 81801.06,
-    "high": 81812.39,
+    "high": 81836.35,
     "low": 81793.73,
-    "close": 81807.81
+    "close": 81832.93
    }
   ]
  },
@@ -3394,10 +3336,10 @@
    "score": -4,
    "spot_entry": 25264,
    "exit_t": null,
-   "exit_px": 119.8,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 40.8,
-   "rs": 3060
+   "pts": null,
+   "rs": null
   }
  ],
  "instrument": {
@@ -3421,11 +3363,14 @@
   "total_rs": -4332,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": true,
+  "quotes_ok": false,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
