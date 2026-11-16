@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-16 15:07:31",
+ "updated": "2026-11-16 15:08:42",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25238.75,
-   "chg_pts": 94.45,
+   "ltp": 25239.2,
+   "chg_pts": 94.9,
    "chg_pct": 0.38
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61450.15,
-   "chg_pts": 416.05,
-   "chg_pct": 0.68
+   "ltp": 61461.4,
+   "chg_pts": 427.3,
+   "chg_pct": 0.7
   },
   {
    "name": "SENSEX",
-   "ltp": 81983.71,
-   "chg_pts": 391.26,
-   "chg_pct": 0.48
+   "ltp": 82001.65,
+   "chg_pts": 409.2,
+   "chg_pct": 0.5
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.65,
-   "chg_pts": 0.15,
-   "chg_pct": 0.97
+   "ltp": 15.66,
+   "chg_pts": 0.16,
+   "chg_pct": 1.03
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8269,
-   "chg_pts": -100,
-   "chg_pct": -1.19
+   "ltp": 8279,
+   "chg_pts": -90,
+   "chg_pct": -1.08
   },
   {
    "name": "GOLD",
-   "ltp": 134670,
-   "chg_pts": -2035,
-   "chg_pct": -1.49
+   "ltp": 134691,
+   "chg_pts": -2014,
+   "chg_pct": -1.47
   },
   {
    "name": "SILVER",
-   "ltp": 169650,
-   "chg_pts": -6659,
-   "chg_pct": -3.78
+   "ltp": 169721,
+   "chg_pts": -6588,
+   "chg_pct": -3.74
   }
  ],
  "oc": {
-  "spot": 25239.3,
+  "spot": 25241.0,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 18550740,
-  "res_pct": 0.24,
+  "res_oi": 18352490,
+  "res_pct": 0.23,
   "sup_strike": 25200.0,
-  "sup_oi": 18117060,
+  "sup_oi": 17734145,
   "sup_pct": 0.16,
   "max_pain": 25200.0,
   "mp_pct": -0.16,
-  "pcr": 0.874,
+  "pcr": 0.873,
   "suggests": "Balanced"
  },
  "charts": {
@@ -884,9 +884,9 @@
    {
     "time": 1794821760,
     "open": 25224.85,
-    "high": 25240.7,
+    "high": 25242.5,
     "low": 25224.0,
-    "close": 25238.8
+    "close": 25241.75
    }
   ],
   "SENSEX": [
@@ -1712,9 +1712,9 @@
    {
     "time": 1794821760,
     "open": 81951.45,
-    "high": 81995.96,
+    "high": 82001.65,
     "low": 81940.55,
-    "close": 81988.13
+    "close": 81996.2
    }
   ]
  },
