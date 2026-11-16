@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-16 09:30:45",
+ "updated": "2026-11-16 09:31:54",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25251.25,
-   "chg_pts": 106.95,
-   "chg_pct": 0.43
+   "ltp": 25246.95,
+   "chg_pts": 102.65,
+   "chg_pct": 0.41
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61398.15,
-   "chg_pts": 364.05,
-   "chg_pct": 0.6
+   "ltp": 61344.75,
+   "chg_pts": 310.65,
+   "chg_pct": 0.51
   },
   {
    "name": "SENSEX",
-   "ltp": 82040.42,
-   "chg_pts": 447.97,
-   "chg_pct": 0.55
+   "ltp": 82019.05,
+   "chg_pts": 426.6,
+   "chg_pct": 0.52
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.5,
-   "chg_pts": 0.0,
-   "chg_pct": 0.0
+   "ltp": 15.52,
+   "chg_pts": 0.02,
+   "chg_pct": 0.13
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8321,
-   "chg_pts": -48,
-   "chg_pct": -0.57
+   "ltp": 8333,
+   "chg_pts": -36,
+   "chg_pct": -0.43
   },
   {
    "name": "GOLD",
-   "ltp": 135965,
-   "chg_pts": -740,
-   "chg_pct": -0.54
+   "ltp": 135866,
+   "chg_pts": -839,
+   "chg_pct": -0.61
   },
   {
    "name": "SILVER",
-   "ltp": 171312,
-   "chg_pts": -4997,
-   "chg_pct": -2.83
+   "ltp": 171138,
+   "chg_pts": -5171,
+   "chg_pct": -2.93
   }
  ],
  "oc": {
-  "spot": 25251.2,
+  "spot": 25249.6,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 16591770,
+  "res_oi": 16604510,
   "res_pct": 2.97,
   "sup_strike": 25000.0,
-  "sup_oi": 12789530,
+  "sup_oi": 12990250,
   "sup_pct": 0.99,
   "max_pain": 25200.0,
   "mp_pct": -0.2,
-  "pcr": 0.859,
+  "pcr": 0.858,
   "suggests": "Balanced"
  },
  "charts": {
@@ -100,9 +100,9 @@
    {
     "time": 1794801600,
     "open": 25232.25,
-    "high": 25254.95,
+    "high": 25256.65,
     "low": 25231.25,
-    "close": 25251.25
+    "close": 25249.7
    }
   ],
   "SENSEX": [
@@ -144,9 +144,9 @@
    {
     "time": 1794801600,
     "open": 81965.71,
-    "high": 82042.04,
+    "high": 82052.79,
     "low": 81965.71,
-    "close": 82032.95
+    "close": 82042.99
    }
   ]
  },
