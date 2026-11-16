@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:24:38",
+ "updated": "2026-11-16 15:25:49",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -18,46 +18,46 @@
   {
    "name": "SENSEX",
    "ltp": 81904.45,
-   "chg_pts": -168.31,
+   "chg_pts": -176.37,
    "chg_pct": -0.21
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.67,
-   "chg_pts": 0.17,
-   "chg_pct": 1.1
+   "ltp": 15.69,
+   "chg_pts": 0.19,
+   "chg_pct": 1.23
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8324,
-   "chg_pts": -45,
-   "chg_pct": -0.54
+   "ltp": 8312,
+   "chg_pts": -57,
+   "chg_pct": -0.68
   },
   {
    "name": "GOLD",
-   "ltp": 134535,
-   "chg_pts": -2170,
-   "chg_pct": -1.59
+   "ltp": 134593,
+   "chg_pts": -2112,
+   "chg_pct": -1.54
   },
   {
    "name": "SILVER",
-   "ltp": 169294,
-   "chg_pts": -7015,
-   "chg_pct": -3.98
+   "ltp": 169442,
+   "chg_pts": -6867,
+   "chg_pct": -3.89
   }
  ],
  "oc": {
   "spot": 25220.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15803645,
+  "res_oi": 15757040,
   "res_pct": 3.09,
   "sup_strike": 25200.0,
-  "sup_oi": 14895140,
+  "sup_oi": 14617980,
   "sup_pct": 0.08,
   "max_pain": 25200.0,
   "mp_pct": -0.08,
-  "pcr": 0.884,
+  "pcr": 0.888,
   "suggests": "Balanced"
  },
  "charts": {
@@ -1811,9 +1811,9 @@
   },
   "5": {
    "cls": "LONG BUILDUP",
-   "time": "15:20",
-   "d_price": "5.9",
-   "d_oi": "1560"
+   "time": "15:25",
+   "d_price": "10.1",
+   "d_oi": "6435"
   },
   "15": {
    "cls": "SHORT COVERING",
@@ -1831,21 +1831,6 @@
  "decision": "STRONG LONG",
  "decision_score": 4,
  "signals": [
-  {
-   "time": "12:12",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25301.8",
-   "close": "25316.5",
-   "oi_start": "11693890",
-   "oi_end": "11718005",
-   "d_price": "14.7",
-   "d_oi": "24115",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
   {
    "time": "12:15",
    "symbol": "NIFTY",
@@ -3626,6 +3611,21 @@
    "oi_end": "11614330",
    "d_price": "0",
    "d_oi": "3120",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "15:25",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25274.9",
+   "close": "25285",
+   "oi_start": "11608480",
+   "oi_end": "11614915",
+   "d_price": "10.1",
+   "d_oi": "6435",
    "classification": "LONG BUILDUP",
    "score": "1",
    "decision_score": "4",
