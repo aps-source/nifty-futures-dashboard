@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-16 14:36:22",
+ "updated": "2026-11-16 14:37:36",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25232,
-   "chg_pts": 87.7,
-   "chg_pct": 0.35
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61442.8,
-   "chg_pts": 408.7,
-   "chg_pct": 0.67
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81961.4,
-   "chg_pts": 368.95,
-   "chg_pct": 0.45
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.71,
-   "chg_pts": 0.21,
-   "chg_pct": 1.35
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8308,
-   "chg_pts": -61,
-   "chg_pct": -0.73
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134915,
-   "chg_pts": -1790,
-   "chg_pct": -1.31
-  },
-  {
-   "name": "SILVER",
-   "ltp": 169800,
-   "chg_pts": -6509,
-   "chg_pct": -3.69
-  }
- ],
  "oc": {
-  "spot": 25231.8,
+  "spot": 25228.0,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 21963370,
-  "res_pct": 0.27,
+  "res_oi": 21517665,
+  "res_pct": 0.29,
   "sup_strike": 25200.0,
-  "sup_oi": 18677620,
-  "sup_pct": 0.13,
+  "sup_oi": 18394480,
+  "sup_pct": 0.11,
   "max_pain": 25200.0,
-  "mp_pct": -0.13,
-  "pcr": 0.859,
+  "mp_pct": -0.11,
+  "pcr": 0.864,
   "suggests": "Balanced"
  },
  "charts": {
@@ -814,9 +770,9 @@
    {
     "time": 1794819960,
     "open": 25230.3,
-    "high": 25233.2,
-    "low": 25229.4,
-    "close": 25231.85
+    "high": 25237.9,
+    "low": 25227.2,
+    "close": 25227.3
    }
   ],
   "SENSEX": [
@@ -1572,9 +1528,9 @@
    {
     "time": 1794819960,
     "open": 81948.31,
-    "high": 81961.4,
+    "high": 81964.54,
     "low": 81944.7,
-    "close": 81959.32
+    "close": 81952.26
    }
   ]
  },
@@ -3522,10 +3478,12 @@
   "total_rs": -3253,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
