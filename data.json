@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-16 13:32:57",
+ "updated": "2026-11-16 13:34:14",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25245.1,
-   "chg_pts": 100.8,
-   "chg_pct": 0.4
+   "ltp": 25237.05,
+   "chg_pts": 92.75,
+   "chg_pct": 0.37
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61478.2,
-   "chg_pts": 444.1,
-   "chg_pct": 0.73
+   "ltp": 61436.95,
+   "chg_pts": 402.85,
+   "chg_pct": 0.66
   },
   {
    "name": "SENSEX",
-   "ltp": 82000.48,
-   "chg_pts": 408.03,
-   "chg_pct": 0.5
+   "ltp": 81973.03,
+   "chg_pts": 380.58,
+   "chg_pct": 0.47
   },
   {
    "name": "INDIA VIX",
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8357,
-   "chg_pts": -12,
-   "chg_pct": -0.14
+   "ltp": 8366,
+   "chg_pts": -3,
+   "chg_pct": -0.04
   },
   {
    "name": "GOLD",
-   "ltp": 134702,
-   "chg_pts": -2003,
-   "chg_pct": -1.47
+   "ltp": 134759,
+   "chg_pts": -1946,
+   "chg_pct": -1.42
   },
   {
    "name": "SILVER",
-   "ltp": 169650,
-   "chg_pts": -6659,
+   "ltp": 169642,
+   "chg_pts": -6667,
    "chg_pct": -3.78
   }
  ],
  "oc": {
-  "spot": 25242.2,
+  "spot": 25237.2,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 22226490,
-  "res_pct": 0.23,
+  "res_oi": 21903700,
+  "res_pct": 0.25,
   "sup_strike": 25200.0,
-  "sup_oi": 23217285,
-  "sup_pct": 0.17,
+  "sup_oi": 23144030,
+  "sup_pct": 0.15,
   "max_pain": 25250.0,
-  "mp_pct": 0.03,
-  "pcr": 1.025,
+  "mp_pct": 0.05,
+  "pcr": 1.024,
   "suggests": "Balanced"
  },
  "charts": {
@@ -668,8 +668,8 @@
     "time": 1794816180,
     "open": 25244.7,
     "high": 25245.15,
-    "low": 25240.55,
-    "close": 25242.15
+    "low": 25233.05,
+    "close": 25236.7
    }
   ],
   "SENSEX": [
@@ -1279,8 +1279,8 @@
     "time": 1794816180,
     "open": 81998.04,
     "high": 82000.84,
-    "low": 81987.73,
-    "close": 81987.73
+    "low": 81970.77,
+    "close": 81970.77
    }
   ]
  },
@@ -3212,10 +3212,10 @@
    "score": -4,
    "spot_entry": 25264,
    "exit_t": null,
-   "exit_px": 88.6,
+   "exit_px": 91.45,
    "reason": "OPEN",
-   "pts": 9.6,
-   "rs": 720
+   "pts": 12.45,
+   "rs": 934
   }
  ],
  "instrument": {
