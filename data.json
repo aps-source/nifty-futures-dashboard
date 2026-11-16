@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-16 10:15:34",
+ "updated": "2026-11-16 10:16:43",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25294.45,
-   "chg_pts": 150.15,
+   "ltp": 25294.15,
+   "chg_pts": 149.85,
    "chg_pct": 0.6
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61664.85,
-   "chg_pts": 630.75,
+   "ltp": 61662.5,
+   "chg_pts": 628.4,
    "chg_pct": 1.03
   },
   {
    "name": "SENSEX",
-   "ltp": 82178.42,
-   "chg_pts": 585.97,
-   "chg_pct": 0.72
+   "ltp": 82185.99,
+   "chg_pts": 593.54,
+   "chg_pct": 0.73
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.78,
-   "chg_pts": 0.28,
-   "chg_pct": 1.81
+   "ltp": 15.76,
+   "chg_pts": 0.26,
+   "chg_pct": 1.68
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8327,
-   "chg_pts": -42,
-   "chg_pct": -0.5
+   "ltp": 8325,
+   "chg_pts": -44,
+   "chg_pct": -0.53
   },
   {
    "name": "GOLD",
-   "ltp": 135715,
-   "chg_pts": -990,
+   "ltp": 135727,
+   "chg_pts": -978,
    "chg_pct": -0.72
   },
   {
    "name": "SILVER",
-   "ltp": 170672,
-   "chg_pts": -5637,
-   "chg_pct": -3.2
+   "ltp": 170676,
+   "chg_pts": -5633,
+   "chg_pct": -3.19
   }
  ],
  "oc": {
-  "spot": 25292,
+  "spot": 25295.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 17157790,
-  "res_pct": 2.8,
+  "res_oi": 17322890,
+  "res_pct": 2.79,
   "sup_strike": 25200.0,
-  "sup_oi": 20696000,
-  "sup_pct": 0.36,
-  "max_pain": 25250.0,
-  "mp_pct": -0.17,
-  "pcr": 1.114,
+  "sup_oi": 20861295,
+  "sup_pct": 0.38,
+  "max_pain": 25300.0,
+  "mp_pct": 0.02,
+  "pcr": 1.117,
   "suggests": "Balanced"
  },
  "charts": {
@@ -206,8 +206,8 @@
     "time": 1794804300,
     "open": 25302.85,
     "high": 25304.05,
-    "low": 25292.0,
-    "close": 25293.4
+    "low": 25290.7,
+    "close": 25295.95
    }
   ],
   "SENSEX": [
@@ -355,8 +355,8 @@
     "time": 1794804300,
     "open": 82196.13,
     "high": 82199.12,
-    "low": 82176.69,
-    "close": 82176.69
+    "low": 82174.79,
+    "close": 82192.19
    }
   ]
  },
