@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-16 10:58:00",
+ "updated": "2026-11-16 10:59:20",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25214.25,
-   "chg_pts": 69.95,
-   "chg_pct": 0.28
+   "ltp": 25221.85,
+   "chg_pts": 77.55,
+   "chg_pct": 0.31
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61353.45,
-   "chg_pts": 319.35,
-   "chg_pct": 0.52
+   "ltp": 61387.15,
+   "chg_pts": 353.05,
+   "chg_pct": 0.58
   },
   {
    "name": "SENSEX",
-   "ltp": 81902.97,
-   "chg_pts": 310.52,
-   "chg_pct": 0.38
+   "ltp": 81942.38,
+   "chg_pts": 349.93,
+   "chg_pct": 0.43
   },
   {
    "name": "INDIA VIX",
@@ -29,37 +29,23 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8331,
-   "chg_pts": -38,
-   "chg_pct": -0.45
+   "ltp": 8332,
+   "chg_pts": -37,
+   "chg_pct": -0.44
   },
   {
    "name": "GOLD",
-   "ltp": 135746,
-   "chg_pts": -959,
-   "chg_pct": -0.7
+   "ltp": 135705,
+   "chg_pts": -1000,
+   "chg_pct": -0.73
   },
   {
    "name": "SILVER",
-   "ltp": 170903,
-   "chg_pts": -5406,
-   "chg_pct": -3.07
+   "ltp": 170940,
+   "chg_pts": -5369,
+   "chg_pct": -3.05
   }
  ],
- "oc": {
-  "spot": 25213.8,
-  "expiry": "2026-11-17",
-  "res_strike": 25300.0,
-  "res_oi": 21378370,
-  "res_pct": 0.34,
-  "sup_strike": 25200.0,
-  "sup_oi": 19477900,
-  "sup_pct": 0.05,
-  "max_pain": 25200.0,
-  "mp_pct": -0.05,
-  "pcr": 0.88,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -303,9 +289,9 @@
    {
     "time": 1794806820,
     "open": 25204.0,
-    "high": 25214.5,
+    "high": 25224.35,
     "low": 25203.6,
-    "close": 25212.9
+    "close": 25224.35
    }
   ],
   "SENSEX": [
@@ -550,9 +536,9 @@
    {
     "time": 1794806820,
     "open": 81881.6,
-    "high": 81910.75,
+    "high": 81942.38,
     "low": 81881.6,
-    "close": 81904.59
+    "close": 81938.31
    }
   ]
  },
@@ -1530,11 +1516,13 @@
   "total_rs": -1436,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
