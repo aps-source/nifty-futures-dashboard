@@ -1,51 +1,7 @@
 {
- "updated": "2026-11-16 09:12:50",
+ "updated": "2026-11-16 09:14:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25206.15,
-   "chg_pts": 61.85,
-   "chg_pct": 0.25
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61225.65,
-   "chg_pts": 191.55,
-   "chg_pct": 0.31
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81810.98,
-   "chg_pts": 218.53,
-   "chg_pct": 0.27
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.5,
-   "chg_pts": 0.0,
-   "chg_pct": 0.0
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8293,
-   "chg_pts": -76,
-   "chg_pct": -0.91
-  },
-  {
-   "name": "GOLD",
-   "ltp": 135832,
-   "chg_pts": -873,
-   "chg_pct": -0.64
-  },
-  {
-   "name": "SILVER",
-   "ltp": 170800,
-   "chg_pts": -5509,
-   "chg_pct": -3.12
-  }
- ],
  "oc": {
   "spot": 25206.2,
   "expiry": "2026-11-17",
@@ -79,10 +35,12 @@
   "total_rs": -910,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": false,
   "weekday": true
