@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-16 13:01:49",
+ "updated": "2026-11-16 13:03:05",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25261.65,
-   "chg_pts": 117.35,
-   "chg_pct": 0.47
+   "ltp": 25270.95,
+   "chg_pts": 126.65,
+   "chg_pct": 0.5
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61552.25,
-   "chg_pts": 518.15,
-   "chg_pct": 0.85
+   "ltp": 61581.8,
+   "chg_pts": 547.7,
+   "chg_pct": 0.9
   },
   {
    "name": "SENSEX",
-   "ltp": 82054.75,
-   "chg_pts": 462.3,
-   "chg_pct": 0.57
+   "ltp": 82072.69,
+   "chg_pts": 480.24,
+   "chg_pct": 0.59
   },
   {
    "name": "INDIA VIX",
@@ -29,37 +29,23 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8358,
-   "chg_pts": -11,
-   "chg_pct": -0.13
+   "ltp": 8345,
+   "chg_pts": -24,
+   "chg_pct": -0.29
   },
   {
    "name": "GOLD",
-   "ltp": 134815,
-   "chg_pts": -1890,
-   "chg_pct": -1.38
+   "ltp": 134863,
+   "chg_pts": -1842,
+   "chg_pct": -1.35
   },
   {
    "name": "SILVER",
-   "ltp": 169964,
-   "chg_pts": -6345,
-   "chg_pct": -3.6
+   "ltp": 170018,
+   "chg_pts": -6291,
+   "chg_pct": -3.57
   }
  ],
- "oc": {
-  "spot": 25262.3,
-  "expiry": "2026-11-17",
-  "res_strike": 25300.0,
-  "res_oi": 22364420,
-  "res_pct": 0.15,
-  "sup_strike": 25200.0,
-  "sup_oi": 22574760,
-  "sup_pct": 0.25,
-  "max_pain": 25250.0,
-  "mp_pct": -0.05,
-  "pcr": 1.014,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -590,9 +576,16 @@
    {
     "time": 1794814200,
     "open": 25257.0,
-    "high": 25263.0,
+    "high": 25269.6,
     "low": 25254.55,
-    "close": 25262.55
+    "close": 25269.6
+   },
+   {
+    "time": 1794814380,
+    "open": 25269.75,
+    "high": 25272.7,
+    "low": 25269.75,
+    "close": 25271.7
    }
   ],
   "SENSEX": [
@@ -1124,9 +1117,16 @@
    {
     "time": 1794814200,
     "open": 82041.28,
-    "high": 82055.51,
+    "high": 82068.54,
     "low": 82032.42,
-    "close": 82054.11
+    "close": 82066.92
+   },
+   {
+    "time": 1794814380,
+    "open": 82068.81,
+    "high": 82083.39,
+    "low": 82066.58,
+    "close": 82083.39
    }
   ]
  },
@@ -3041,10 +3041,10 @@
    "score": 4,
    "spot_entry": 25269,
    "exit_t": null,
-   "exit_px": 81.7,
+   "exit_px": 84.9,
    "reason": "OPEN",
-   "pts": 0.05,
-   "rs": 4
+   "pts": 3.25,
+   "rs": 244
   }
  ],
  "instrument": {
@@ -3068,11 +3068,13 @@
   "total_rs": -3960,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
