@@ -1,65 +1,7 @@
 {
- "updated": "2026-11-17 09:22:49",
+ "updated": "2026-11-17 09:24:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25327.05,
-   "chg_pts": 35.95,
-   "chg_pct": 0.14
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61793.65,
-   "chg_pts": 217.75,
-   "chg_pct": 0.35
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82226.88,
-   "chg_pts": 122.09,
-   "chg_pct": 0.15
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.14,
-   "chg_pts": -0.54,
-   "chg_pct": -3.44
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7965,
-   "chg_pts": -114,
-   "chg_pct": -1.41
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134875,
-   "chg_pts": 336,
-   "chg_pct": 0.25
-  },
-  {
-   "name": "SILVER",
-   "ltp": 168690,
-   "chg_pts": 827,
-   "chg_pct": 0.49
-  }
- ],
- "oc": {
-  "spot": 25327.3,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 18842200,
-  "res_pct": 2.66,
-  "sup_strike": 25300.0,
-  "sup_oi": 22808630,
-  "sup_pct": 0.11,
-  "max_pain": 25300.0,
-  "mp_pct": -0.11,
-  "pcr": 1.08,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -81,7 +23,14 @@
     "open": 25341.7,
     "high": 25344.5,
     "low": 25320.8,
-    "close": 25326.15
+    "close": 25343.8
+   },
+   {
+    "time": 1794887640,
+    "open": 25343.0,
+    "high": 25346.3,
+    "low": 25336.4,
+    "close": 25337.35
    }
   ],
   "SENSEX": [
@@ -104,7 +53,14 @@
     "open": 82280.03,
     "high": 82283.36,
     "low": 82214.37,
-    "close": 82234.26
+    "close": 82262.77
+   },
+   {
+    "time": 1794887640,
+    "open": 82264.02,
+    "high": 82274.75,
+    "low": 82251.8,
+    "close": 82251.8
    }
   ]
  },
@@ -182,11 +138,14 @@
   "total_rs": -3892,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": true,
+  "quotes_ok": false,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
