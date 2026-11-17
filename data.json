@@ -1,65 +1,51 @@
 {
- "updated": "2026-11-17 14:51:09",
+ "updated": "2026-11-17 14:53:29",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25420.35,
-   "chg_pts": 129.25,
-   "chg_pct": 0.51
+   "ltp": 25430.4,
+   "chg_pts": 139.3,
+   "chg_pct": 0.55
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62292.25,
-   "chg_pts": 716.35,
-   "chg_pct": 1.16
+   "ltp": 62305.65,
+   "chg_pts": 729.75,
+   "chg_pct": 1.19
   },
   {
    "name": "SENSEX",
-   "ltp": 82647.68,
-   "chg_pts": 542.89,
-   "chg_pct": 0.66
+   "ltp": 82685.53,
+   "chg_pts": 580.74,
+   "chg_pct": 0.71
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.49,
-   "chg_pts": -0.19,
-   "chg_pct": -1.21
+   "ltp": 15.56,
+   "chg_pts": -0.12,
+   "chg_pct": -0.77
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8015,
-   "chg_pts": -64,
-   "chg_pct": -0.79
+   "ltp": 8007,
+   "chg_pts": -72,
+   "chg_pct": -0.89
   },
   {
    "name": "GOLD",
-   "ltp": 134236,
-   "chg_pts": -303,
+   "ltp": 134235,
+   "chg_pts": -304,
    "chg_pct": -0.23
   },
   {
    "name": "SILVER",
-   "ltp": 169354,
-   "chg_pts": 1491,
-   "chg_pct": 0.89
+   "ltp": 169334,
+   "chg_pts": 1471,
+   "chg_pct": 0.88
   }
  ],
- "oc": {
-  "spot": 25419.0,
-  "expiry": "2026-11-17",
-  "res_strike": 25500.0,
-  "res_oi": 39191815,
-  "res_pct": 0.32,
-  "sup_strike": 25400.0,
-  "sup_oi": 33958990,
-  "sup_pct": 0.07,
-  "max_pain": 25400.0,
-  "mp_pct": -0.07,
-  "pcr": 1.113,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -849,9 +835,9 @@
    {
     "time": 1794907260,
     "open": 25423.45,
-    "high": 25426.1,
+    "high": 25433.15,
     "low": 25417.75,
-    "close": 25420.1
+    "close": 25432.15
    }
   ],
   "SENSEX": [
@@ -1642,9 +1628,9 @@
    {
     "time": 1794907260,
     "open": 82648.08,
-    "high": 82654.21,
+    "high": 82696.11,
     "low": 82636.77,
-    "close": 82637.82
+    "close": 82690.6
    }
   ]
  },
@@ -3558,11 +3544,13 @@
   "total_rs": -311,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586FA350>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
