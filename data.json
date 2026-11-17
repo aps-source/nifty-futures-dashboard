@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-17 12:16:37",
+ "updated": "2026-11-17 12:17:50",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25491.65,
+   "chg_pts": 200.55,
+   "chg_pct": 0.79
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62384.75,
+   "chg_pts": 808.85,
+   "chg_pct": 1.31
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82861.1,
+   "chg_pts": 756.31,
+   "chg_pct": 0.92
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.42,
+   "chg_pts": -0.26,
+   "chg_pct": -1.66
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7962,
+   "chg_pts": -117,
+   "chg_pct": -1.45
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134789,
+   "chg_pts": 250,
+   "chg_pct": 0.19
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169000,
+   "chg_pts": 1137,
+   "chg_pct": 0.68
+  }
+ ],
  "oc": {
-  "spot": 25493.5,
+  "spot": 25490.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 26471185,
-  "res_pct": 0.03,
+  "res_oi": 26876460,
+  "res_pct": 0.04,
   "sup_strike": 25400.0,
-  "sup_oi": 39342485,
-  "sup_pct": 0.37,
+  "sup_oi": 39257855,
+  "sup_pct": 0.36,
   "max_pain": 25450.0,
-  "mp_pct": -0.17,
-  "pcr": 1.732,
+  "mp_pct": -0.16,
+  "pcr": 1.728,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -442,8 +486,15 @@
     "time": 1794897900,
     "open": 25498.75,
     "high": 25499.05,
-    "low": 25489.85,
-    "close": 25492.25
+    "low": 25489.45,
+    "close": 25491.1
+   },
+   {
+    "time": 1794898080,
+    "open": 25492.7,
+    "high": 25492.7,
+    "low": 25492.7,
+    "close": 25492.7
    }
   ],
   "SENSEX": [
@@ -872,7 +923,14 @@
     "open": 82880.11,
     "high": 82882.11,
     "low": 82850.73,
-    "close": 82863.81
+    "close": 82862.64
+   },
+   {
+    "time": 1794898080,
+    "open": 82856.89,
+    "high": 82856.89,
+    "low": 82856.89,
+    "close": 82856.89
    }
   ]
  },
@@ -2618,10 +2676,10 @@
    "score": 4,
    "spot_entry": 25377.95,
    "exit_t": null,
-   "exit_px": 116.05,
+   "exit_px": 115.65,
    "reason": "OPEN",
-   "pts": 69.35,
-   "rs": 5201
+   "pts": 68.95,
+   "rs": 5171
   }
  ],
  "instrument": {
@@ -2645,12 +2703,10 @@
   "total_rs": -3043,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
