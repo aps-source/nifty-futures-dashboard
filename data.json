@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-17 13:00:26",
+ "updated": "2026-11-17 13:01:53",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25450.4,
-   "chg_pts": 159.3,
-   "chg_pct": 0.63
+   "ltp": 25448.5,
+   "chg_pts": 157.4,
+   "chg_pct": 0.62
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62300.8,
-   "chg_pts": 724.9,
-   "chg_pct": 1.18
+   "ltp": 62308.6,
+   "chg_pts": 732.7,
+   "chg_pct": 1.19
   },
   {
    "name": "SENSEX",
-   "ltp": 82748.7,
-   "chg_pts": 643.91,
-   "chg_pct": 0.78
+   "ltp": 82740.96,
+   "chg_pts": 636.17,
+   "chg_pct": 0.77
   },
   {
    "name": "INDIA VIX",
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7959,
-   "chg_pts": -120,
-   "chg_pct": -1.49
+   "ltp": 7965,
+   "chg_pts": -114,
+   "chg_pct": -1.41
   },
   {
    "name": "GOLD",
-   "ltp": 134810,
-   "chg_pts": 271,
-   "chg_pct": 0.2
+   "ltp": 134839,
+   "chg_pts": 300,
+   "chg_pct": 0.22
   },
   {
    "name": "SILVER",
-   "ltp": 169719,
-   "chg_pts": 1856,
-   "chg_pct": 1.11
+   "ltp": 169761,
+   "chg_pts": 1898,
+   "chg_pct": 1.13
   }
  ],
  "oc": {
-  "spot": 25448.2,
+  "spot": 25449.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 37391445,
+  "res_oi": 36574200,
   "res_pct": 0.2,
   "sup_strike": 25400.0,
-  "sup_oi": 40749020,
-  "sup_pct": 0.19,
+  "sup_oi": 41200900,
+  "sup_pct": 0.2,
   "max_pain": 25450.0,
-  "mp_pct": 0.01,
-  "pcr": 1.46,
+  "mp_pct": 0.0,
+  "pcr": 1.472,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -591,8 +591,8 @@
     "time": 1794900600,
     "open": 25452.95,
     "high": 25453.65,
-    "low": 25447.3,
-    "close": 25448.2
+    "low": 25442.15,
+    "close": 25449.75
    }
   ],
   "SENSEX": [
@@ -1125,8 +1125,8 @@
     "time": 1794900600,
     "open": 82750.21,
     "high": 82755.3,
-    "low": 82738.17,
-    "close": 82739.62
+    "low": 82729.85,
+    "close": 82750.68
    }
   ]
  },
