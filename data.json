@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-17 14:06:15",
+ "updated": "2026-11-17 14:07:41",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25467.85,
+   "chg_pts": 176.75,
+   "chg_pct": 0.7
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62385.4,
+   "chg_pts": 809.5,
+   "chg_pct": 1.31
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82807.91,
+   "chg_pts": 703.12,
+   "chg_pct": 0.86
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.28,
+   "chg_pts": -0.4,
+   "chg_pct": -2.55
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7991,
+   "chg_pts": -88,
+   "chg_pct": -1.09
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134446,
+   "chg_pts": -93,
+   "chg_pct": -0.07
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169457,
+   "chg_pts": 1594,
+   "chg_pct": 0.95
+  }
+ ],
  "oc": {
-  "spot": 25464.9,
+  "spot": 25466.0,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 43574700,
-  "res_pct": 0.14,
+  "res_oi": 43229810,
+  "res_pct": 0.13,
   "sup_strike": 25400.0,
-  "sup_oi": 36439780,
-  "sup_pct": 0.25,
-  "max_pain": 25400.0,
-  "mp_pct": -0.25,
-  "pcr": 1.135,
+  "sup_oi": 36034635,
+  "sup_pct": 0.26,
+  "max_pain": 25450.0,
+  "mp_pct": -0.06,
+  "pcr": 1.138,
   "suggests": "Balanced"
  },
  "charts": {
@@ -700,9 +744,9 @@
    {
     "time": 1794904560,
     "open": 25460.1,
-    "high": 25465.1,
+    "high": 25469.35,
     "low": 25457.05,
-    "close": 25464.05
+    "close": 25466.45
    }
   ],
   "SENSEX": [
@@ -1388,9 +1432,9 @@
    {
     "time": 1794904560,
     "open": 82799.7,
-    "high": 82803.6,
+    "high": 82814.92,
     "low": 82790.49,
-    "close": 82801.95
+    "close": 82803.77
    }
   ]
  },
@@ -3304,12 +3348,10 @@
   "total_rs": -311,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
