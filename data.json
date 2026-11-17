@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-17 09:55:17",
+ "updated": "2026-11-17 09:56:31",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25378.55,
-   "chg_pts": 87.45,
-   "chg_pct": 0.35
+   "ltp": 25374.55,
+   "chg_pts": 83.45,
+   "chg_pct": 0.33
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61968.9,
-   "chg_pts": 393.0,
-   "chg_pct": 0.64
+   "ltp": 61965.55,
+   "chg_pts": 389.65,
+   "chg_pct": 0.63
   },
   {
    "name": "SENSEX",
-   "ltp": 82422.14,
-   "chg_pts": 317.35,
-   "chg_pct": 0.39
+   "ltp": 82412.56,
+   "chg_pts": 307.77,
+   "chg_pct": 0.37
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.14,
-   "chg_pts": -0.54,
-   "chg_pct": -3.44
+   "ltp": 14.98,
+   "chg_pts": -0.7,
+   "chg_pct": -4.46
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 134690,
-   "chg_pts": 151,
-   "chg_pct": 0.11
+   "ltp": 134710,
+   "chg_pts": 171,
+   "chg_pct": 0.13
   },
   {
    "name": "SILVER",
-   "ltp": 168364,
-   "chg_pts": 501,
-   "chg_pct": 0.3
+   "ltp": 168423,
+   "chg_pts": 560,
+   "chg_pct": 0.33
   }
  ],
  "oc": {
-  "spot": 25376.8,
+  "spot": 25375.8,
   "expiry": "2026-11-17",
   "res_strike": 25400.0,
-  "res_oi": 24471460,
-  "res_pct": 0.09,
+  "res_oi": 23641735,
+  "res_pct": 0.1,
   "sup_strike": 25300.0,
-  "sup_oi": 36229635,
+  "sup_oi": 37193910,
   "sup_pct": 0.3,
   "max_pain": 25350.0,
-  "mp_pct": -0.11,
-  "pcr": 1.209,
+  "mp_pct": -0.1,
+  "pcr": 1.25,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -158,7 +158,7 @@
     "open": 25364.95,
     "high": 25382.5,
     "low": 25361.0,
-    "close": 25377.05
+    "close": 25375.4
    }
   ],
   "SENSEX": [
@@ -258,7 +258,7 @@
     "open": 82372.75,
     "high": 82426.85,
     "low": 82364.92,
-    "close": 82415.06
+    "close": 82413.41
    }
   ]
  },
@@ -661,10 +661,10 @@
    "score": 3,
    "spot_entry": 25334.75,
    "exit_t": null,
-   "exit_px": 69.7,
+   "exit_px": 70.6,
    "reason": "OPEN",
-   "pts": 17.15,
-   "rs": 1286
+   "pts": 18.05,
+   "rs": 1354
   }
  ],
  "instrument": {
