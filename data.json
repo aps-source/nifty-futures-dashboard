@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-17 10:21:41",
+ "updated": "2026-11-17 10:22:54",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25406.9,
-   "chg_pts": 115.8,
-   "chg_pct": 0.46
+   "ltp": 25414.25,
+   "chg_pts": 123.15,
+   "chg_pct": 0.49
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62298.6,
-   "chg_pts": 722.7,
-   "chg_pct": 1.17
+   "ltp": 62317,
+   "chg_pts": 741.1,
+   "chg_pct": 1.2
   },
   {
    "name": "SENSEX",
-   "ltp": 82540.27,
-   "chg_pts": 435.48,
-   "chg_pct": 0.53
+   "ltp": 82564.09,
+   "chg_pts": 459.3,
+   "chg_pct": 0.56
   },
   {
    "name": "INDIA VIX",
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7959,
-   "chg_pts": -120,
-   "chg_pct": -1.49
+   "ltp": 7961,
+   "chg_pts": -118,
+   "chg_pct": -1.46
   },
   {
    "name": "GOLD",
-   "ltp": 134952,
-   "chg_pts": 413,
-   "chg_pct": 0.31
+   "ltp": 134986,
+   "chg_pts": 447,
+   "chg_pct": 0.33
   },
   {
    "name": "SILVER",
-   "ltp": 168794,
-   "chg_pts": 931,
-   "chg_pct": 0.55
+   "ltp": 168939,
+   "chg_pts": 1076,
+   "chg_pct": 0.64
   }
  ],
  "oc": {
-  "spot": 25406.7,
+  "spot": 25412.9,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 23255245,
-  "res_pct": 0.37,
+  "res_oi": 22932065,
+  "res_pct": 0.34,
   "sup_strike": 25300.0,
-  "sup_oi": 42179020,
-  "sup_pct": 0.42,
+  "sup_oi": 41970175,
+  "sup_pct": 0.44,
   "max_pain": 25350.0,
-  "mp_pct": -0.22,
-  "pcr": 1.479,
+  "mp_pct": -0.25,
+  "pcr": 1.504,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -219,9 +219,9 @@
    {
     "time": 1794891060,
     "open": 25401.0,
-    "high": 25409.85,
+    "high": 25416.85,
     "low": 25399.85,
-    "close": 25406.9
+    "close": 25411.7
    }
   ],
   "SENSEX": [
@@ -382,9 +382,9 @@
    {
     "time": 1794891060,
     "open": 82504.48,
-    "high": 82545.94,
+    "high": 82576.78,
     "low": 82503.45,
-    "close": 82542.91
+    "close": 82570.56
    }
   ]
  },
@@ -1065,10 +1065,10 @@
    "score": 4,
    "spot_entry": 25377.95,
    "exit_t": null,
-   "exit_px": 67.55,
+   "exit_px": 66.35,
    "reason": "OPEN",
-   "pts": 20.85,
-   "rs": 1564
+   "pts": 19.65,
+   "rs": 1474
   }
  ],
  "instrument": {
