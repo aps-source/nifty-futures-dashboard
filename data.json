@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-17 13:56:12",
+ "updated": "2026-11-17 13:57:31",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "13:54",
-   "d_price": "11.1",
-   "d_oi": "6435"
+   "time": "13:57",
+   "d_price": "10",
+   "d_oi": "5980"
   },
   "5": {
    "cls": "LONG BUILDUP",
-   "time": "13:51",
-   "d_price": "10.0",
-   "d_oi": "12935"
+   "time": "13:56",
+   "d_price": "21.6",
+   "d_oi": "12415"
   },
   "15": {
    "cls": "LONG BUILDUP",
@@ -31,36 +31,6 @@
  "decision": "LONG",
  "decision_score": 2,
  "signals": [
-  {
-   "time": "10:40",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25425",
-   "close": "25424",
-   "oi_start": "11504675",
-   "oi_end": "11510980",
-   "d_price": "-1",
-   "d_oi": "6305",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
-  {
-   "time": "10:42",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25431",
-   "close": "25424.9",
-   "oi_start": "11508965",
-   "oi_end": "11517220",
-   "d_price": "-6.1",
-   "d_oi": "8255",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
   {
    "time": "10:45",
    "symbol": "NIFTY",
@@ -1830,6 +1800,36 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "13:56",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25468.9",
+   "close": "25490.5",
+   "oi_start": "11578775",
+   "oi_end": "11591190",
+   "d_price": "21.6",
+   "d_oi": "12415",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "13:57",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25480",
+   "close": "25490",
+   "oi_start": "11585210",
+   "oi_end": "11591190",
+   "d_price": "10",
+   "d_oi": "5980",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -1913,9 +1913,9 @@
   "telegram": true
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F9590>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586FA710>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "charts: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F82D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E9586F9D10>, 'Connection to api.dhan.co timed out. (connect timeout=15)'))",
+  "charts: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F8F50>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
