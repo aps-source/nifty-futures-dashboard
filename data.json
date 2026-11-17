@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-17 14:37:00",
+ "updated": "2026-11-17 14:38:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25451,
-   "chg_pts": 159.9,
-   "chg_pct": 0.63
+   "ltp": 25447.9,
+   "chg_pts": 156.8,
+   "chg_pct": 0.62
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62358.1,
-   "chg_pts": 782.2,
-   "chg_pct": 1.27
+   "ltp": 62351,
+   "chg_pts": 775.1,
+   "chg_pct": 1.26
   },
   {
    "name": "SENSEX",
-   "ltp": 82750.3,
-   "chg_pts": 645.51,
-   "chg_pct": 0.79
+   "ltp": 82743.63,
+   "chg_pts": 638.84,
+   "chg_pct": 0.78
   },
   {
    "name": "INDIA VIX",
@@ -29,23 +29,37 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8017,
-   "chg_pts": -62,
-   "chg_pct": -0.77
+   "ltp": 8014,
+   "chg_pts": -65,
+   "chg_pct": -0.8
   },
   {
    "name": "GOLD",
-   "ltp": 134421,
-   "chg_pts": -118,
-   "chg_pct": -0.09
+   "ltp": 134435,
+   "chg_pts": -104,
+   "chg_pct": -0.08
   },
   {
    "name": "SILVER",
-   "ltp": 169762,
-   "chg_pts": 1899,
-   "chg_pct": 1.13
+   "ltp": 169650,
+   "chg_pts": 1787,
+   "chg_pct": 1.06
   }
  ],
+ "oc": {
+  "spot": 25449.5,
+  "expiry": "2026-11-17",
+  "res_strike": 25500.0,
+  "res_oi": 42435510,
+  "res_pct": 0.2,
+  "sup_strike": 25400.0,
+  "sup_oi": 36965110,
+  "sup_pct": 0.19,
+  "max_pain": 25450.0,
+  "mp_pct": 0.0,
+  "pcr": 1.129,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -802,7 +816,7 @@
     "open": 25445.65,
     "high": 25454.75,
     "low": 25442.3,
-    "close": 25453.75
+    "close": 25449.1
    }
   ],
   "SENSEX": [
@@ -1558,9 +1572,9 @@
    {
     "time": 1794906360,
     "open": 82725.47,
-    "high": 82753.31,
+    "high": 82757.29,
     "low": 82724.13,
-    "close": 82752.09
+    "close": 82742.6
    }
   ]
  },
@@ -3474,13 +3488,11 @@
   "total_rs": -311,
   "telegram": true
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
