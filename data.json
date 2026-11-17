@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-17 13:06:16",
+ "updated": "2026-11-17 13:08:38",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25412.95,
-   "chg_pts": 121.85,
-   "chg_pct": 0.48
+   "ltp": 25392.8,
+   "chg_pts": 101.7,
+   "chg_pct": 0.4
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62213.45,
-   "chg_pts": 637.55,
-   "chg_pct": 1.04
+   "ltp": 62162.55,
+   "chg_pts": 586.65,
+   "chg_pct": 0.95
   },
   {
    "name": "SENSEX",
-   "ltp": 82629.75,
-   "chg_pts": 524.96,
-   "chg_pct": 0.64
+   "ltp": 82579.05,
+   "chg_pts": 474.26,
+   "chg_pct": 0.58
   },
   {
    "name": "INDIA VIX",
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7979,
-   "chg_pts": -100,
-   "chg_pct": -1.24
+   "ltp": 7990,
+   "chg_pts": -89,
+   "chg_pct": -1.1
   },
   {
    "name": "GOLD",
-   "ltp": 134844,
-   "chg_pts": 305,
-   "chg_pct": 0.23
+   "ltp": 134810,
+   "chg_pts": 271,
+   "chg_pct": 0.2
   },
   {
    "name": "SILVER",
-   "ltp": 169699,
-   "chg_pts": 1836,
-   "chg_pct": 1.09
+   "ltp": 169600,
+   "chg_pts": 1737,
+   "chg_pct": 1.03
   }
  ],
  "oc": {
-  "spot": 25411.0,
+  "spot": 25391.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 36841610,
-  "res_pct": 0.35,
-  "sup_strike": 25400.0,
-  "sup_oi": 35837100,
-  "sup_pct": 0.04,
-  "max_pain": 25450.0,
-  "mp_pct": 0.15,
-  "pcr": 1.372,
+  "res_oi": 37498305,
+  "res_pct": 0.43,
+  "sup_strike": 25300.0,
+  "sup_oi": 34314410,
+  "sup_pct": 0.36,
+  "max_pain": 25400.0,
+  "mp_pct": 0.03,
+  "pcr": 1.296,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -605,8 +605,8 @@
     "time": 1794900960,
     "open": 25418.0,
     "high": 25418.25,
-    "low": 25403.15,
-    "close": 25404.7
+    "low": 25388.0,
+    "close": 25391.55
    }
   ],
   "SENSEX": [
@@ -1153,8 +1153,8 @@
     "time": 1794900960,
     "open": 82636.47,
     "high": 82640.21,
-    "low": 82614.27,
-    "close": 82618.21
+    "low": 82562.53,
+    "close": 82562.53
    }
   ]
  },
