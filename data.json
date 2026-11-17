@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-17 10:00:17",
+ "updated": "2026-11-17 10:01:33",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25374.05,
-   "chg_pts": 82.95,
-   "chg_pct": 0.33
+   "ltp": 25365.05,
+   "chg_pts": 73.95,
+   "chg_pct": 0.29
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61998.9,
-   "chg_pts": 423.0,
+   "ltp": 61999.75,
+   "chg_pts": 423.85,
    "chg_pct": 0.69
   },
   {
    "name": "SENSEX",
-   "ltp": 82406.69,
-   "chg_pts": 301.9,
-   "chg_pct": 0.37
+   "ltp": 82384.2,
+   "chg_pts": 279.41,
+   "chg_pct": 0.34
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15,
-   "chg_pts": -0.68,
-   "chg_pct": -4.34
+   "ltp": 15.02,
+   "chg_pts": -0.66,
+   "chg_pct": -4.21
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7963,
-   "chg_pts": -116,
-   "chg_pct": -1.44
+   "ltp": 7962,
+   "chg_pts": -117,
+   "chg_pct": -1.45
   },
   {
    "name": "GOLD",
-   "ltp": 134575,
-   "chg_pts": 36,
-   "chg_pct": 0.03
+   "ltp": 134523,
+   "chg_pts": -16,
+   "chg_pct": -0.01
   },
   {
    "name": "SILVER",
-   "ltp": 168100,
-   "chg_pts": 237,
-   "chg_pct": 0.14
+   "ltp": 168040,
+   "chg_pts": 177,
+   "chg_pct": 0.11
   }
  ],
  "oc": {
-  "spot": 25374,
+  "spot": 25364.7,
   "expiry": "2026-11-17",
   "res_strike": 25400.0,
-  "res_oi": 24502205,
-  "res_pct": 0.1,
+  "res_oi": 24876150,
+  "res_pct": 0.14,
   "sup_strike": 25300.0,
-  "sup_oi": 38284220,
-  "sup_pct": 0.29,
+  "sup_oi": 38629045,
+  "sup_pct": 0.25,
   "max_pain": 25350.0,
-  "mp_pct": -0.09,
-  "pcr": 1.273,
+  "mp_pct": -0.06,
+  "pcr": 1.278,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -171,8 +171,8 @@
     "time": 1794889800,
     "open": 25372.45,
     "high": 25375.3,
-    "low": 25372.45,
-    "close": 25372.6
+    "low": 25363.85,
+    "close": 25365.25
    }
   ],
   "SENSEX": [
@@ -285,8 +285,8 @@
     "time": 1794889800,
     "open": 82399.07,
     "high": 82410.41,
-    "low": 82397.32,
-    "close": 82399.56
+    "low": 82382.55,
+    "close": 82385.33
    }
   ]
  },
