@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-17 12:39:16",
+ "updated": "2026-11-17 12:40:36",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25466.5,
-   "chg_pts": 175.4,
-   "chg_pct": 0.69
+   "ltp": 25468.1,
+   "chg_pts": 177.0,
+   "chg_pct": 0.7
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62378.2,
-   "chg_pts": 802.3,
-   "chg_pct": 1.3
+   "ltp": 62382.15,
+   "chg_pts": 806.25,
+   "chg_pct": 1.31
   },
   {
    "name": "SENSEX",
-   "ltp": 82802.67,
-   "chg_pts": 697.88,
-   "chg_pct": 0.85
+   "ltp": 82809.11,
+   "chg_pts": 704.32,
+   "chg_pct": 0.86
   },
   {
    "name": "INDIA VIX",
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7941,
-   "chg_pts": -138,
-   "chg_pct": -1.71
+   "ltp": 7933,
+   "chg_pts": -146,
+   "chg_pct": -1.81
   },
   {
    "name": "GOLD",
-   "ltp": 134796,
-   "chg_pts": 257,
-   "chg_pct": 0.19
+   "ltp": 134867,
+   "chg_pts": 328,
+   "chg_pct": 0.24
   },
   {
    "name": "SILVER",
-   "ltp": 169404,
-   "chg_pts": 1541,
-   "chg_pct": 0.92
+   "ltp": 169448,
+   "chg_pts": 1585,
+   "chg_pct": 0.94
   }
  ],
  "oc": {
-  "spot": 25468.3,
+  "spot": 25467.2,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 31881070,
-  "res_pct": 0.12,
+  "res_oi": 32721715,
+  "res_pct": 0.13,
   "sup_strike": 25400.0,
-  "sup_oi": 38915890,
-  "sup_pct": 0.27,
+  "sup_oi": 39363740,
+  "sup_pct": 0.26,
   "max_pain": 25450.0,
   "mp_pct": -0.07,
-  "pcr": 1.621,
+  "pcr": 1.601,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -541,9 +541,9 @@
    {
     "time": 1794899340,
     "open": 25463.9,
-    "high": 25469.4,
+    "high": 25469.9,
     "low": 25461.1,
-    "close": 25468.65
+    "close": 25466.2
    }
   ],
   "SENSEX": [
@@ -1026,24 +1026,24 @@
    {
     "time": 1794899340,
     "open": 82794.9,
-    "high": 82807.83,
+    "high": 82818.67,
     "low": 82789.94,
-    "close": 82804.06
+    "close": 82811.49
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "12:36",
-   "d_price": "-2.6",
-   "d_oi": "1300"
+   "cls": "LONG UNWINDING",
+   "time": "12:39",
+   "d_price": "-9.7",
+   "d_oi": "-1235"
   },
   "5": {
-   "cls": "SHORT BUILDUP",
-   "time": "12:35",
-   "d_price": "-5.1",
-   "d_oi": "3185"
+   "cls": "LONG UNWINDING",
+   "time": "12:40",
+   "d_price": "-14",
+   "d_oi": "-5850"
   },
   "15": {
    "cls": "LONG UNWINDING",
@@ -1061,36 +1061,6 @@
  "decision": "SHORT",
  "decision_score": -2,
  "signals": [
-  {
-   "time": "09:24",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25378.5",
-   "close": "25362",
-   "oi_start": "11522225",
-   "oi_end": "11524955",
-   "d_price": "-16.5",
-   "d_oi": "2730",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
-  {
-   "time": "09:25",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25380",
-   "close": "25355.5",
-   "oi_start": "11523265",
-   "oi_end": "11522745",
-   "d_price": "-24.5",
-   "d_oi": "-520",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
   {
    "time": "09:27",
    "symbol": "NIFTY",
@@ -2857,6 +2827,36 @@
    "d_price": "-2.6",
    "d_oi": "1300",
    "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "12:39",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25520",
+   "close": "25510.3",
+   "oi_start": "11557065",
+   "oi_end": "11555830",
+   "d_price": "-9.7",
+   "d_oi": "-1235",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "12:40",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25524",
+   "close": "25510",
+   "oi_start": "11557065",
+   "oi_end": "11551215",
+   "d_price": "-14",
+   "d_oi": "-5850",
+   "classification": "LONG UNWINDING",
    "score": "-1",
    "decision_score": "-2",
    "decision": "SHORT"
