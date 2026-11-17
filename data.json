@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-17 11:59:50",
+ "updated": "2026-11-17 12:01:03",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25483.1,
-   "chg_pts": 192.0,
-   "chg_pct": 0.76
+   "ltp": 25493.5,
+   "chg_pts": 202.4,
+   "chg_pct": 0.8
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62375.95,
-   "chg_pts": 800.05,
-   "chg_pct": 1.3
+   "ltp": 62399.4,
+   "chg_pts": 823.5,
+   "chg_pct": 1.34
   },
   {
    "name": "SENSEX",
-   "ltp": 82819.85,
-   "chg_pts": 715.06,
-   "chg_pct": 0.87
+   "ltp": 82857.64,
+   "chg_pts": 752.85,
+   "chg_pct": 0.92
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.32,
-   "chg_pts": -0.36,
-   "chg_pct": -2.3
+   "ltp": 15.31,
+   "chg_pts": -0.37,
+   "chg_pct": -2.36
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7976,
-   "chg_pts": -103,
-   "chg_pct": -1.27
+   "ltp": 7979,
+   "chg_pts": -100,
+   "chg_pct": -1.24
   },
   {
    "name": "GOLD",
-   "ltp": 134896,
-   "chg_pts": 357,
-   "chg_pct": 0.27
+   "ltp": 134860,
+   "chg_pts": 321,
+   "chg_pct": 0.24
   },
   {
    "name": "SILVER",
-   "ltp": 169631,
-   "chg_pts": 1768,
-   "chg_pct": 1.05
+   "ltp": 169455,
+   "chg_pts": 1592,
+   "chg_pct": 0.95
   }
  ],
  "oc": {
-  "spot": 25484.0,
+  "spot": 25495.0,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 26173940,
-  "res_pct": 0.06,
+  "res_oi": 24093940,
+  "res_pct": 0.02,
   "sup_strike": 25300.0,
-  "sup_oi": 39902070,
-  "sup_pct": 0.72,
+  "sup_oi": 39252525,
+  "sup_pct": 0.76,
   "max_pain": 25450.0,
-  "mp_pct": -0.13,
-  "pcr": 1.71,
+  "mp_pct": -0.18,
+  "pcr": 1.777,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -450,9 +450,9 @@
    {
     "time": 1794897000,
     "open": 25484.65,
-    "high": 25485.25,
-    "low": 25484.65,
-    "close": 25484.7
+    "high": 25499.9,
+    "low": 25482.3,
+    "close": 25494.9
    }
   ],
   "SENSEX": [
@@ -844,30 +844,30 @@
    {
     "time": 1794897000,
     "open": 82830.02,
-    "high": 82830.02,
+    "high": 82868.97,
     "low": 82828.84,
-    "close": 82828.84
+    "close": 82862.03
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "11:57",
-   "d_price": "25.5",
-   "d_oi": "69160"
+   "time": "12:00",
+   "d_price": "8",
+   "d_oi": "14690"
   },
   "5": {
    "cls": "LONG BUILDUP",
-   "time": "11:55",
-   "d_price": "4.5",
-   "d_oi": "16380"
+   "time": "12:00",
+   "d_price": "40.5",
+   "d_oi": "82680"
   },
   "15": {
-   "cls": "SHORT COVERING",
-   "time": "11:45",
-   "d_price": "17.6",
-   "d_oi": "-19435"
+   "cls": "LONG BUILDUP",
+   "time": "12:00",
+   "d_price": "43.4",
+   "d_oi": "101660"
   },
   "60": {
    "cls": "LONG BUILDUP",
@@ -2348,6 +2348,51 @@
    "score": "1",
    "decision_score": "4",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "12:00",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25525",
+   "close": "25533",
+   "oi_start": "11561745",
+   "oi_end": "11576435",
+   "d_price": "8",
+   "d_oi": "14690",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "12:00",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25492.5",
+   "close": "25533",
+   "oi_start": "11493755",
+   "oi_end": "11576435",
+   "d_price": "40.5",
+   "d_oi": "82680",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "12:00",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25489.6",
+   "close": "25533",
+   "oi_start": "11474775",
+   "oi_end": "11576435",
+   "d_price": "43.4",
+   "d_oi": "101660",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -2397,10 +2442,10 @@
    "score": 4,
    "spot_entry": 25377.95,
    "exit_t": null,
-   "exit_px": 110.7,
+   "exit_px": 123.55,
    "reason": "OPEN",
-   "pts": 64.0,
-   "rs": 4800
+   "pts": 76.85,
+   "rs": 5764
   }
  ],
  "instrument": {
