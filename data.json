@@ -1,21 +1,7 @@
 {
- "updated": "2026-11-17 10:53:37",
+ "updated": "2026-11-17 10:55:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "oc": {
-  "spot": 25400.7,
-  "expiry": "2026-11-17",
-  "res_strike": 25400.0,
-  "res_oi": 28624050,
-  "res_pct": -0.0,
-  "sup_strike": 25300.0,
-  "sup_oi": 43535245,
-  "sup_pct": 0.4,
-  "max_pain": 25400.0,
-  "mp_pct": -0.0,
-  "pcr": 1.392,
-  "suggests": "PUT side heavy - CALL bias"
- },
  "charts": {
   "NIFTY": [
    {
@@ -247,7 +233,14 @@
     "open": 25399.05,
     "high": 25404.15,
     "low": 25393.65,
-    "close": 25400.9
+    "close": 25400.65
+   },
+   {
+    "time": 1794893040,
+    "open": 25402.25,
+    "high": 25406.35,
+    "low": 25400.05,
+    "close": 25405.05
    }
   ],
   "SENSEX": [
@@ -480,22 +473,29 @@
     "open": 82521.75,
     "high": 82535.36,
     "low": 82510.27,
-    "close": 82530.48
+    "close": 82530.08
+   },
+   {
+    "time": 1794893040,
+    "open": 82529.88,
+    "high": 82555.02,
+    "low": 82520.58,
+    "close": 82548.02
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "10:51",
-   "d_price": "1.6",
-   "d_oi": "13195"
+   "cls": "SHORT COVERING",
+   "time": "10:54",
+   "d_price": "7.3",
+   "d_oi": "-90480"
   },
   "5": {
-   "cls": "LONG BUILDUP",
-   "time": "10:50",
-   "d_price": "12.0",
-   "d_oi": "11635"
+   "cls": "SHORT COVERING",
+   "time": "10:55",
+   "d_price": "1.4",
+   "d_oi": "-80665"
   },
   "15": {
    "cls": "SHORT BUILDUP",
@@ -1382,6 +1382,36 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "10:54",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25440.7",
+   "close": "25448",
+   "oi_start": "11547055",
+   "oi_end": "11456575",
+   "d_price": "7.3",
+   "d_oi": "-90480",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "10:55",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25448.1",
+   "close": "25449.5",
+   "oi_start": "11541400",
+   "oi_end": "11460735",
+   "d_price": "1.4",
+   "d_oi": "-80665",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -1431,10 +1461,10 @@
    "score": 4,
    "spot_entry": 25377.95,
    "exit_t": null,
-   "exit_px": 53.25,
+   "exit_px": 58.65,
    "reason": "OPEN",
-   "pts": 6.55,
-   "rs": 491
+   "pts": 11.95,
+   "rs": 896
   }
  ],
  "instrument": {
@@ -1459,12 +1489,13 @@
   "telegram": true
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F8690>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
   "quotes_ok": false,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
