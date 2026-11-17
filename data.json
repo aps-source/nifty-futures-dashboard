@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-17 15:10:30",
+ "updated": "2026-11-17 15:11:49",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
   "spot": 25415.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 34043945,
+  "res_oi": 34314410,
   "res_pct": 0.33,
   "sup_strike": 25400.0,
-  "sup_oi": 29163940,
+  "sup_oi": 28759900,
   "sup_pct": 0.06,
   "max_pain": 25400.0,
   "mp_pct": -0.06,
-  "pcr": 1.043,
+  "pcr": 1.041,
   "suggests": "Balanced"
  },
  "charts": {
@@ -847,9 +847,16 @@
    {
     "time": 1794908340,
     "open": 25391.8,
-    "high": 25419.1,
+    "high": 25425.15,
     "low": 25391.8,
-    "close": 25416.95
+    "close": 25416.9
+   },
+   {
+    "time": 1794908520,
+    "open": 25417.1,
+    "high": 25417.95,
+    "low": 25411.9,
+    "close": 25416.15
    }
   ],
   "SENSEX": [
@@ -1682,9 +1689,16 @@
    {
     "time": 1794908340,
     "open": 82551.39,
-    "high": 82628.03,
+    "high": 82639.04,
     "low": 82548.77,
-    "close": 82624.95
+    "close": 82631.7
+   },
+   {
+    "time": 1794908520,
+    "open": 82626.29,
+    "high": 82630.68,
+    "low": 82611.54,
+    "close": 82611.68
    }
   ]
  },
@@ -3599,7 +3613,7 @@
   "telegram": true
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586FA350>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
