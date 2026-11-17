@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17 13:53:39",
+ "updated": "2026-11-17 13:55:04",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "13:51",
-   "d_price": "22.0",
-   "d_oi": "3445"
+   "time": "13:54",
+   "d_price": "11.1",
+   "d_oi": "6435"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -31,21 +31,6 @@
  "decision": "LONG",
  "decision_score": 2,
  "signals": [
-  {
-   "time": "10:39",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25424",
-   "close": "25431",
-   "oi_start": "11504610",
-   "oi_end": "11508965",
-   "d_price": "7",
-   "d_oi": "4355",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
   {
    "time": "10:40",
    "symbol": "NIFTY",
@@ -1830,6 +1815,21 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "13:54",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25468.9",
+   "close": "25480",
+   "oi_start": "11578775",
+   "oi_end": "11585210",
+   "d_price": "11.1",
+   "d_oi": "6435",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -1913,9 +1913,9 @@
   "telegram": true
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F8F50>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F9D10>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "charts: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F8550>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F82D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F9950>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "charts: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E9586F8A50>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
