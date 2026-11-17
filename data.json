@@ -1,43 +1,43 @@
 {
- "updated": "2026-11-17 13:09:55",
+ "updated": "2026-11-17 13:11:16",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25381.55,
-   "chg_pts": 90.45,
-   "chg_pct": 0.36
+   "ltp": 25363.2,
+   "chg_pts": 72.1,
+   "chg_pct": 0.29
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62123.45,
-   "chg_pts": 547.55,
-   "chg_pct": 0.89
+   "ltp": 62089.9,
+   "chg_pts": 514.0,
+   "chg_pct": 0.83
   },
   {
    "name": "SENSEX",
-   "ltp": 82527.58,
-   "chg_pts": 422.79,
-   "chg_pct": 0.51
+   "ltp": 82467.28,
+   "chg_pts": 362.49,
+   "chg_pct": 0.44
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.35,
-   "chg_pts": -0.33,
-   "chg_pct": -2.1
+   "ltp": 15.37,
+   "chg_pts": -0.31,
+   "chg_pct": -1.98
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8002,
-   "chg_pts": -77,
-   "chg_pct": -0.95
+   "ltp": 7992,
+   "chg_pts": -87,
+   "chg_pct": -1.08
   },
   {
    "name": "GOLD",
-   "ltp": 134780,
-   "chg_pts": 241,
-   "chg_pct": 0.18
+   "ltp": 134730,
+   "chg_pts": 191,
+   "chg_pct": 0.14
   },
   {
    "name": "SILVER",
@@ -47,18 +47,18 @@
   }
  ],
  "oc": {
-  "spot": 25368.2,
+  "spot": 25360.2,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 37354655,
-  "res_pct": 0.52,
+  "res_oi": 36645700,
+  "res_pct": 0.55,
   "sup_strike": 25300.0,
-  "sup_oi": 32084195,
-  "sup_pct": 0.27,
+  "sup_oi": 30033835,
+  "sup_pct": 0.24,
   "max_pain": 25400.0,
-  "mp_pct": 0.13,
-  "pcr": 1.203,
-  "suggests": "PUT side heavy - CALL bias"
+  "mp_pct": 0.16,
+  "pcr": 1.109,
+  "suggests": "Balanced"
  },
  "charts": {
   "NIFTY": [
@@ -612,8 +612,8 @@
     "time": 1794901140,
     "open": 25389.25,
     "high": 25390.3,
-    "low": 25365.05,
-    "close": 25366.45
+    "low": 25358.3,
+    "close": 25360.0
    }
   ],
   "SENSEX": [
@@ -1167,8 +1167,8 @@
     "time": 1794901140,
     "open": 82549.55,
     "high": 82559.16,
-    "low": 82478.87,
-    "close": 82481.74
+    "low": 82449.63,
+    "close": 82449.63
    }
   ]
  },
