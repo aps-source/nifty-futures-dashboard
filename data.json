@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-17 10:28:04",
+ "updated": "2026-11-17 10:29:19",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25408.75,
-   "chg_pts": 117.65,
-   "chg_pct": 0.47
+   "ltp": 25406.3,
+   "chg_pts": 115.2,
+   "chg_pct": 0.46
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62293.15,
-   "chg_pts": 717.25,
-   "chg_pct": 1.16
+   "ltp": 62287.1,
+   "chg_pts": 711.2,
+   "chg_pct": 1.15
   },
   {
    "name": "SENSEX",
-   "ltp": 82547.26,
-   "chg_pts": 442.47,
+   "ltp": 82545.32,
+   "chg_pts": 440.53,
    "chg_pct": 0.54
   },
   {
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7967,
-   "chg_pts": -112,
-   "chg_pct": -1.39
+   "ltp": 7966,
+   "chg_pts": -113,
+   "chg_pct": -1.4
   },
   {
    "name": "GOLD",
-   "ltp": 135037,
-   "chg_pts": 498,
+   "ltp": 135042,
+   "chg_pts": 503,
    "chg_pct": 0.37
   },
   {
    "name": "SILVER",
-   "ltp": 169140,
-   "chg_pts": 1277,
-   "chg_pct": 0.76
+   "ltp": 169179,
+   "chg_pts": 1316,
+   "chg_pct": 0.78
   }
  ],
  "oc": {
-  "spot": 25410.1,
+  "spot": 25404.6,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 24355695,
-  "res_pct": 0.35,
+  "res_oi": 24797760,
+  "res_pct": 0.38,
   "sup_strike": 25300.0,
-  "sup_oi": 42620955,
-  "sup_pct": 0.43,
+  "sup_oi": 42489005,
+  "sup_pct": 0.41,
   "max_pain": 25400.0,
-  "mp_pct": -0.04,
-  "pcr": 1.484,
+  "mp_pct": -0.02,
+  "pcr": 1.472,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -233,9 +233,9 @@
    {
     "time": 1794891420,
     "open": 25395.65,
-    "high": 25412.15,
+    "high": 25413.15,
     "low": 25392.9,
-    "close": 25411.25
+    "close": 25405.2
    }
   ],
   "SENSEX": [
@@ -410,9 +410,9 @@
    {
     "time": 1794891420,
     "open": 82501.93,
-    "high": 82557.6,
+    "high": 82564.91,
     "low": 82498.8,
-    "close": 82554.59
+    "close": 82543.22
    }
   ]
  },
@@ -1138,10 +1138,10 @@
    "score": 4,
    "spot_entry": 25377.95,
    "exit_t": null,
-   "exit_px": 62.45,
+   "exit_px": 57.9,
    "reason": "OPEN",
-   "pts": 15.75,
-   "rs": 1181
+   "pts": 11.2,
+   "rs": 840
   }
  ],
  "instrument": {
