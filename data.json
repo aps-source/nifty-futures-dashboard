@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-18 11:30:45",
+ "updated": "2026-11-18 11:32:23",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25258.1,
+   "chg_pts": -129.3,
+   "chg_pct": -0.51
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62149.7,
+   "chg_pts": -123.55,
+   "chg_pct": -0.2
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82154.83,
+   "chg_pts": -377.36,
+   "chg_pct": -0.46
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.65,
+   "chg_pts": 0.13,
+   "chg_pct": 0.84
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7910,
+   "chg_pts": -180,
+   "chg_pct": -2.22
+  },
+  {
+   "name": "GOLD",
+   "ltp": 131463,
+   "chg_pts": -2760,
+   "chg_pct": -2.06
+  },
+  {
+   "name": "SILVER",
+   "ltp": 164240,
+   "chg_pts": -5462,
+   "chg_pct": -3.22
+  }
+ ],
  "oc": {
-  "spot": 25265.2,
+  "spot": 25258.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16779165,
-  "res_pct": 2.91,
+  "res_oi": 16849300,
+  "res_pct": 2.94,
   "sup_strike": 25000.0,
-  "sup_oi": 12362350,
-  "sup_pct": 1.05,
+  "sup_oi": 12408890,
+  "sup_pct": 1.02,
   "max_pain": 25200.0,
-  "mp_pct": -0.26,
-  "pcr": 0.861,
+  "mp_pct": -0.23,
+  "pcr": 0.863,
   "suggests": "Balanced"
  },
  "charts": {
@@ -337,8 +381,8 @@
     "time": 1794981600,
     "open": 25279.1,
     "high": 25281.9,
-    "low": 25263.7,
-    "close": 25264.1
+    "low": 25258.0,
+    "close": 25258.95
    }
   ],
   "SENSEX": [
@@ -661,8 +705,8 @@
     "time": 1794981600,
     "open": 82210.21,
     "high": 82221.75,
-    "low": 82167.62,
-    "close": 82167.62
+    "low": 82150.21,
+    "close": 82150.76
    }
   ]
  },
@@ -2038,12 +2082,10 @@
   "total_rs": -235,
   "telegram": true
  },
- "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000229E35E9A90>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
