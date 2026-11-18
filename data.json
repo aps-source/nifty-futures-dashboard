@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 15:17:20",
+ "updated": "2026-11-18 15:18:38",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,15 +29,15 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7883,
-   "chg_pts": -207,
-   "chg_pct": -2.56
+   "ltp": 7889,
+   "chg_pts": -201,
+   "chg_pct": -2.48
   },
   {
    "name": "GOLD",
-   "ltp": 131243,
-   "chg_pts": -2980,
-   "chg_pct": -2.22
+   "ltp": 131294,
+   "chg_pts": -2929,
+   "chg_pct": -2.18
   },
   {
    "name": "SILVER",
@@ -50,14 +50,14 @@
   "spot": 25220.5,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 15074150,
+  "res_oi": 15032615,
   "res_pct": 3.09,
   "sup_strike": 24000.0,
-  "sup_oi": 11397555,
+  "sup_oi": 11413350,
   "sup_pct": 4.84,
   "max_pain": 25100.0,
   "mp_pct": -0.48,
-  "pcr": 0.851,
+  "pcr": 0.849,
   "suggests": "Balanced"
  },
  "charts": {
@@ -904,6 +904,13 @@
    },
    {
     "time": 1794995100,
+    "open": 25220.45,
+    "high": 25220.45,
+    "low": 25220.45,
+    "close": 25220.45
+   },
+   {
+    "time": 1794995280,
     "open": 25220.45,
     "high": 25220.45,
     "low": 25220.45,
@@ -1757,15 +1764,22 @@
     "high": 82030.21,
     "low": 82030.21,
     "close": 82030.21
+   },
+   {
+    "time": 1794995280,
+    "open": 82030.21,
+    "high": 82030.21,
+    "low": 82030.21,
+    "close": 82030.21
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG UNWINDING",
-   "time": "15:15",
-   "d_price": "-7.4",
-   "d_oi": "-7020"
+   "cls": "SHORT COVERING",
+   "time": "15:18",
+   "d_price": "0.4",
+   "d_oi": "-5330"
   },
   "5": {
    "cls": "LONG UNWINDING",
@@ -1786,24 +1800,9 @@
    "d_oi": "-48945"
   }
  },
- "decision": "STRONG SHORT",
- "decision_score": -4,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
-  {
-   "time": "12:05",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25264",
-   "close": "25243.7",
-   "oi_start": "11479455",
-   "oi_end": "11480885",
-   "d_price": "-20.3",
-   "d_oi": "1430",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
   {
    "time": "12:06",
    "symbol": "NIFTY",
@@ -3588,6 +3587,21 @@
    "score": "-1",
    "decision_score": "-4",
    "decision": "STRONG SHORT"
+  },
+  {
+   "time": "15:18",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25238.6",
+   "close": "25239",
+   "oi_start": "11593465",
+   "oi_end": "11588135",
+   "d_price": "0.4",
+   "d_oi": "-5330",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
