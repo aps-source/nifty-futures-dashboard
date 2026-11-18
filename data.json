@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-18 14:12:50",
+ "updated": "2026-11-18 14:13:59",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25232.3,
-   "chg_pts": -155.1,
-   "chg_pct": -0.61
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62028.25,
-   "chg_pts": -245.0,
-   "chg_pct": -0.39
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82067.4,
-   "chg_pts": -464.79,
+   "ltp": 25245.1,
+   "chg_pts": -142.3,
    "chg_pct": -0.56
   },
   {
+   "name": "BANKNIFTY",
+   "ltp": 62077.4,
+   "chg_pts": -195.85,
+   "chg_pct": -0.31
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82110,
+   "chg_pts": -422.19,
+   "chg_pct": -0.51
+  },
+  {
    "name": "INDIA VIX",
-   "ltp": 15.8,
-   "chg_pts": 0.28,
-   "chg_pct": 1.8
+   "ltp": 15.75,
+   "chg_pts": 0.23,
+   "chg_pct": 1.48
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7851,
-   "chg_pts": -239,
-   "chg_pct": -2.95
+   "ltp": 7840,
+   "chg_pts": -250,
+   "chg_pct": -3.09
   },
   {
    "name": "GOLD",
-   "ltp": 130985,
-   "chg_pts": -3238,
-   "chg_pct": -2.41
+   "ltp": 131020,
+   "chg_pts": -3203,
+   "chg_pct": -2.39
   },
   {
    "name": "SILVER",
-   "ltp": 163729,
-   "chg_pts": -5973,
-   "chg_pct": -3.52
+   "ltp": 163800,
+   "chg_pts": -5902,
+   "chg_pct": -3.48
   }
  ],
  "oc": {
-  "spot": 25232.2,
+  "spot": 25247.5,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16495245,
-  "res_pct": 3.04,
+  "res_oi": 16500055,
+  "res_pct": 2.98,
   "sup_strike": 25000.0,
-  "sup_oi": 11598600,
-  "sup_pct": 0.92,
+  "sup_oi": 11517090,
+  "sup_pct": 0.98,
   "max_pain": 25100.0,
-  "mp_pct": -0.52,
-  "pcr": 0.82,
+  "mp_pct": -0.58,
+  "pcr": 0.816,
   "suggests": "Balanced"
  },
  "charts": {
@@ -758,9 +758,9 @@
    {
     "time": 1794991320,
     "open": 25224.9,
-    "high": 25234.45,
+    "high": 25248.3,
     "low": 25224.9,
-    "close": 25232.95
+    "close": 25247.0
    }
   ],
   "SENSEX": [
@@ -1460,9 +1460,9 @@
    {
     "time": 1794991320,
     "open": 82042.74,
-    "high": 82069.42,
+    "high": 82118.04,
     "low": 82041.45,
-    "close": 82069.42
+    "close": 82107.2
    }
   ]
  },
