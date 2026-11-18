@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-18 11:44:52",
+ "updated": "2026-11-18 11:46:01",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25257.65,
-   "chg_pts": -129.75,
-   "chg_pct": -0.51
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62166.05,
-   "chg_pts": -107.2,
-   "chg_pct": -0.17
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82146.17,
-   "chg_pts": -386.02,
-   "chg_pct": -0.47
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.66,
-   "chg_pts": 0.14,
-   "chg_pct": 0.9
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7906,
-   "chg_pts": -184,
-   "chg_pct": -2.27
-  },
-  {
-   "name": "GOLD",
-   "ltp": 131471,
-   "chg_pts": -2752,
-   "chg_pct": -2.05
-  },
-  {
-   "name": "SILVER",
-   "ltp": 164555,
-   "chg_pts": -5147,
-   "chg_pct": -3.03
-  }
- ],
  "oc": {
-  "spot": 25257.8,
+  "spot": 25237.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16880435,
-  "res_pct": 2.94,
+  "res_oi": 16895125,
+  "res_pct": 3.02,
   "sup_strike": 25000.0,
-  "sup_oi": 12391600,
-  "sup_pct": 1.02,
+  "sup_oi": 12412400,
+  "sup_pct": 0.94,
   "max_pain": 25200.0,
-  "mp_pct": -0.23,
-  "pcr": 0.866,
+  "mp_pct": -0.15,
+  "pcr": 0.867,
   "suggests": "Balanced"
  },
  "charts": {
@@ -410,7 +366,14 @@
     "open": 25255.5,
     "high": 25266.7,
     "low": 25255.2,
-    "close": 25258.55
+    "close": 25258.5
+   },
+   {
+    "time": 1794982500,
+    "open": 25258.5,
+    "high": 25259.75,
+    "low": 25234.8,
+    "close": 25238.15
    }
   ],
   "SENSEX": [
@@ -763,27 +726,34 @@
     "high": 82160.92,
     "low": 82134.14,
     "close": 82145.29
+   },
+   {
+    "time": 1794982500,
+    "open": 82139.01,
+    "high": 82150.89,
+    "low": 82077.62,
+    "close": 82080.72
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "11:42",
-   "d_price": "3.4",
-   "d_oi": "3510"
+   "cls": "SHORT BUILDUP",
+   "time": "11:45",
+   "d_price": "-15.6",
+   "d_oi": "2795"
   },
   "5": {
-   "cls": "LONG UNWINDING",
-   "time": "11:40",
-   "d_price": "-15",
-   "d_oi": "-1105"
+   "cls": "SHORT BUILDUP",
+   "time": "11:45",
+   "d_price": "-14.7",
+   "d_oi": "4355"
   },
   "15": {
-   "cls": "LONG BUILDUP",
-   "time": "11:30",
-   "d_price": "39.9",
-   "d_oi": "5850"
+   "cls": "SHORT BUILDUP",
+   "time": "11:45",
+   "d_price": "-29.7",
+   "d_oi": "2015"
   },
   "60": {
    "cls": "LONG UNWINDING",
@@ -792,8 +762,8 @@
    "d_oi": "-40755"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "STRONG SHORT",
+ "decision_score": -4,
  "signals": [
   {
    "time": "09:18",
@@ -2129,6 +2099,51 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25275.9",
+   "close": "25260.3",
+   "oi_start": "11455015",
+   "oi_end": "11457810",
+   "d_price": "-15.6",
+   "d_oi": "2795",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25275",
+   "close": "25260.3",
+   "oi_start": "11453455",
+   "oi_end": "11457810",
+   "d_price": "-14.7",
+   "d_oi": "4355",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "11:45",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25290",
+   "close": "25260.3",
+   "oi_start": "11455795",
+   "oi_end": "11457810",
+   "d_price": "-29.7",
+   "d_oi": "2015",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-4",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -2228,10 +2243,12 @@
   "total_rs": -235,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
