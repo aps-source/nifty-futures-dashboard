@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-18 11:09:04",
+ "updated": "2026-11-18 11:10:15",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25237,
-   "chg_pts": -150.4,
-   "chg_pct": -0.59
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62093.45,
-   "chg_pts": -179.8,
-   "chg_pct": -0.29
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82071.61,
-   "chg_pts": -460.58,
-   "chg_pct": -0.56
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.67,
-   "chg_pts": 0.15,
-   "chg_pct": 0.97
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7926,
-   "chg_pts": -164,
-   "chg_pct": -2.03
-  },
-  {
-   "name": "GOLD",
-   "ltp": 131620,
-   "chg_pts": -2603,
-   "chg_pct": -1.94
-  },
-  {
-   "name": "SILVER",
-   "ltp": 164810,
-   "chg_pts": -4892,
-   "chg_pct": -2.88
-  }
- ],
  "oc": {
-  "spot": 25239.0,
+  "spot": 25243.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16817840,
-  "res_pct": 3.01,
+  "res_oi": 16818035,
+  "res_pct": 3.0,
   "sup_strike": 25000.0,
-  "sup_oi": 12267905,
-  "sup_pct": 0.95,
+  "sup_oi": 12232285,
+  "sup_pct": 0.96,
   "max_pain": 25150.0,
-  "mp_pct": -0.35,
-  "pcr": 0.854,
+  "mp_pct": -0.37,
+  "pcr": 0.853,
   "suggests": "Balanced"
  },
  "charts": {
@@ -331,9 +287,9 @@
    {
     "time": 1794980340,
     "open": 25237.0,
-    "high": 25239.05,
-    "low": 25235.8,
-    "close": 25237.35
+    "high": 25246.4,
+    "low": 25235.55,
+    "close": 25242.8
    }
   ],
   "SENSEX": [
@@ -606,24 +562,24 @@
    {
     "time": 1794980340,
     "open": 82072.7,
-    "high": 82074.04,
+    "high": 82104.18,
     "low": 82071.52,
-    "close": 82072.2
+    "close": 82101.56
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "11:06",
-   "d_price": "-10",
-   "d_oi": "8060"
+   "cls": "LONG BUILDUP",
+   "time": "11:09",
+   "d_price": "28",
+   "d_oi": "4680"
   },
   "5": {
-   "cls": "SHORT BUILDUP",
-   "time": "11:05",
-   "d_price": "-9.8",
-   "d_oi": "10010"
+   "cls": "LONG BUILDUP",
+   "time": "11:10",
+   "d_price": "24.6",
+   "d_oi": "7605"
   },
   "15": {
    "cls": "LONG BUILDUP",
@@ -638,8 +594,8 @@
    "d_oi": "89960"
   }
  },
- "decision": "SHORT",
- "decision_score": -2,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
   {
    "time": "09:18",
@@ -1645,6 +1601,36 @@
    "score": "-1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "11:09",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25230",
+   "close": "25258",
+   "oi_start": "11445330",
+   "oi_end": "11450010",
+   "d_price": "28",
+   "d_oi": "4680",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:10",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25230",
+   "close": "25254.6",
+   "oi_start": "11442600",
+   "oi_end": "11450205",
+   "d_price": "24.6",
+   "d_oi": "7605",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -1727,11 +1713,11 @@
    "entry_px": 166.8,
    "score": -4,
    "spot_entry": 25281.2,
-   "exit_t": null,
-   "exit_px": 177.1,
-   "reason": "OPEN",
-   "pts": 10.3,
-   "rs": 772
+   "exit_t": "11:10",
+   "exit_px": 176.35,
+   "reason": "score flip (+2)",
+   "pts": 9.55,
+   "rs": 666
   }
  ],
  "instrument": {
@@ -1739,26 +1725,17 @@
   "expiry": "2026-11-23"
  },
  "paper": {
-  "open": {
-   "date": "2026-11-18",
-   "expiry": "2026-11-23",
-   "side": "SHORT",
-   "opt_type": "PE",
-   "strike": 25250,
-   "opt_id": 64455,
-   "entry_t": "10:17",
-   "entry_px": 166.8,
-   "score": -4,
-   "spot_entry": 25281.2
-  },
-  "total_trades": 20,
-  "total_rs": -901,
+  "open": null,
+  "total_trades": 21,
+  "total_rs": -235,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
