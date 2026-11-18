@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-18 12:37:15",
+ "updated": "2026-11-18 12:38:36",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25196.65,
+   "chg_pts": -190.75,
+   "chg_pct": -0.75
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62096.15,
+   "chg_pts": -177.1,
+   "chg_pct": -0.28
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81955.3,
+   "chg_pts": -576.89,
+   "chg_pct": -0.7
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.84,
+   "chg_pts": 0.32,
+   "chg_pct": 2.06
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7835,
+   "chg_pts": -255,
+   "chg_pct": -3.15
+  },
+  {
+   "name": "GOLD",
+   "ltp": 131120,
+   "chg_pts": -3103,
+   "chg_pct": -2.31
+  },
+  {
+   "name": "SILVER",
+   "ltp": 164046,
+   "chg_pts": -5656,
+   "chg_pct": -3.33
+  }
+ ],
  "oc": {
-  "spot": 25194.9,
+  "spot": 25196.7,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16764410,
-  "res_pct": 3.2,
+  "res_oi": 16768440,
+  "res_pct": 3.19,
   "sup_strike": 25000.0,
-  "sup_oi": 12225980,
-  "sup_pct": 0.77,
+  "sup_oi": 12240865,
+  "sup_pct": 0.78,
   "max_pain": 25150.0,
-  "mp_pct": -0.18,
-  "pcr": 0.823,
+  "mp_pct": -0.19,
+  "pcr": 0.821,
   "suggests": "Balanced"
  },
  "charts": {
@@ -490,9 +534,9 @@
    {
     "time": 1794985560,
     "open": 25190.8,
-    "high": 25198.0,
+    "high": 25206.1,
     "low": 25186.45,
-    "close": 25195.4
+    "close": 25196.85
    }
   ],
   "SENSEX": [
@@ -968,9 +1012,9 @@
    {
     "time": 1794985560,
     "open": 81928.52,
-    "high": 81949.06,
+    "high": 81978.74,
     "low": 81918.96,
-    "close": 81943.91
+    "close": 81948.77
    }
   ]
  },
@@ -2918,12 +2962,10 @@
   "total_rs": -735,
   "telegram": true
  },
- "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000229E35E9950>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
