@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-18 12:16:46",
+ "updated": "2026-11-18 12:17:55",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25259.2,
-   "chg_pts": -128.2,
-   "chg_pct": -0.5
+   "ltp": 25263.85,
+   "chg_pts": -123.55,
+   "chg_pct": -0.49
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62248.75,
-   "chg_pts": -24.5,
-   "chg_pct": -0.04
+   "ltp": 62284.15,
+   "chg_pts": 10.9,
+   "chg_pct": 0.02
   },
   {
    "name": "SENSEX",
-   "ltp": 82142.75,
-   "chg_pts": -389.44,
-   "chg_pct": -0.47
+   "ltp": 82167,
+   "chg_pts": -365.19,
+   "chg_pct": -0.44
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.69,
-   "chg_pts": 0.17,
-   "chg_pct": 1.1
+   "ltp": 15.65,
+   "chg_pts": 0.13,
+   "chg_pct": 0.84
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7875,
-   "chg_pts": -215,
-   "chg_pct": -2.66
+   "ltp": 7863,
+   "chg_pts": -227,
+   "chg_pct": -2.81
   },
   {
    "name": "GOLD",
-   "ltp": 131283,
-   "chg_pts": -2940,
-   "chg_pct": -2.19
+   "ltp": 131350,
+   "chg_pts": -2873,
+   "chg_pct": -2.14
   },
   {
    "name": "SILVER",
-   "ltp": 164361,
-   "chg_pts": -5341,
-   "chg_pct": -3.15
+   "ltp": 164564,
+   "chg_pts": -5138,
+   "chg_pct": -3.03
   }
  ],
  "oc": {
-  "spot": 25260.1,
+  "spot": 25264.0,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16808545,
-  "res_pct": 2.93,
+  "res_oi": 16779880,
+  "res_pct": 2.91,
   "sup_strike": 25000.0,
-  "sup_oi": 12404015,
-  "sup_pct": 1.03,
+  "sup_oi": 12402325,
+  "sup_pct": 1.04,
   "max_pain": 25150.0,
-  "mp_pct": -0.44,
-  "pcr": 0.841,
+  "mp_pct": -0.45,
+  "pcr": 0.84,
   "suggests": "Balanced"
  },
  "charts": {
@@ -485,9 +485,16 @@
    {
     "time": 1794984300,
     "open": 25245.2,
-    "high": 25262.35,
+    "high": 25271.1,
     "low": 25243.6,
-    "close": 25262.0
+    "close": 25264.0
+   },
+   {
+    "time": 1794984480,
+    "open": 25264.1,
+    "high": 25264.2,
+    "low": 25263.25,
+    "close": 25263.25
    }
   ],
   "SENSEX": [
@@ -914,9 +921,16 @@
    {
     "time": 1794984300,
     "open": 82101.28,
-    "high": 82155.1,
+    "high": 82191.23,
     "low": 82101.02,
-    "close": 82155.1
+    "close": 82162.01
+   },
+   {
+    "time": 1794984480,
+    "open": 82163.9,
+    "high": 82163.9,
+    "low": 82163.9,
+    "close": 82163.9
    }
   ]
  },
