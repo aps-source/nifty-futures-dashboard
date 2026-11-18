@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-18 12:29:53",
+ "updated": "2026-11-18 12:31:02",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25217.55,
-   "chg_pts": -169.85,
-   "chg_pct": -0.67
+   "ltp": 25210.2,
+   "chg_pts": -177.2,
+   "chg_pct": -0.7
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62127.25,
-   "chg_pts": -146.0,
-   "chg_pct": -0.23
+   "ltp": 62102.35,
+   "chg_pts": -170.9,
+   "chg_pct": -0.27
   },
   {
    "name": "SENSEX",
-   "ltp": 82015.46,
-   "chg_pts": -516.73,
-   "chg_pct": -0.63
+   "ltp": 81986.03,
+   "chg_pts": -546.16,
+   "chg_pct": -0.66
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.79,
-   "chg_pts": 0.27,
-   "chg_pct": 1.74
+   "ltp": 15.82,
+   "chg_pts": 0.3,
+   "chg_pct": 1.93
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7863,
-   "chg_pts": -227,
-   "chg_pct": -2.81
+   "ltp": 7851,
+   "chg_pts": -239,
+   "chg_pct": -2.95
   },
   {
    "name": "GOLD",
-   "ltp": 131223,
-   "chg_pts": -3000,
-   "chg_pct": -2.24
+   "ltp": 131180,
+   "chg_pts": -3043,
+   "chg_pct": -2.27
   },
   {
    "name": "SILVER",
-   "ltp": 164500,
-   "chg_pts": -5202,
-   "chg_pct": -3.07
+   "ltp": 164352,
+   "chg_pts": -5350,
+   "chg_pct": -3.15
   }
  ],
  "oc": {
-  "spot": 25216.7,
+  "spot": 25208.7,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16969095,
-  "res_pct": 3.11,
+  "res_oi": 16959540,
+  "res_pct": 3.14,
   "sup_strike": 25000.0,
-  "sup_oi": 12429690,
-  "sup_pct": 0.86,
-  "max_pain": 25200.0,
-  "mp_pct": -0.07,
-  "pcr": 0.84,
+  "sup_oi": 12269075,
+  "sup_pct": 0.83,
+  "max_pain": 25150.0,
+  "mp_pct": -0.23,
+  "pcr": 0.834,
   "suggests": "Balanced"
  },
  "charts": {
@@ -515,7 +515,14 @@
     "open": 25230.9,
     "high": 25233.95,
     "low": 25215.4,
-    "close": 25215.4
+    "close": 25215.5
+   },
+   {
+    "time": 1794985200,
+    "open": 25215.6,
+    "high": 25216.95,
+    "low": 25198.7,
+    "close": 25208.2
    }
   ],
   "SENSEX": [
@@ -978,29 +985,29 @@
     "time": 1794985200,
     "open": 82015.47,
     "high": 82015.47,
-    "low": 82015.47,
-    "close": 82015.47
+    "low": 81951.64,
+    "close": 81979.22
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "12:27",
-   "d_price": "12.9",
-   "d_oi": "455"
+   "cls": "LONG UNWINDING",
+   "time": "12:30",
+   "d_price": "-32.8",
+   "d_oi": "-1625"
   },
   "5": {
    "cls": "SHORT BUILDUP",
-   "time": "12:25",
-   "d_price": "-17.5",
-   "d_oi": "585"
+   "time": "12:30",
+   "d_price": "-27.6",
+   "d_oi": "0"
   },
   "15": {
-   "cls": "SHORT BUILDUP",
-   "time": "12:15",
-   "d_price": "-4",
-   "d_oi": "3900"
+   "cls": "LONG UNWINDING",
+   "time": "12:30",
+   "d_price": "-42.8",
+   "d_oi": "-325"
   },
   "60": {
    "cls": "LONG BUILDUP",
@@ -1009,8 +1016,8 @@
    "d_oi": "33410"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
   {
    "time": "09:18",
@@ -2766,6 +2773,51 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "12:30",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25250",
+   "close": "25217.2",
+   "oi_start": "11484655",
+   "oi_end": "11483030",
+   "d_price": "-32.8",
+   "d_oi": "-1625",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "12:30",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25244.8",
+   "close": "25217.2",
+   "oi_start": "11483030",
+   "oi_end": "11483030",
+   "d_price": "-27.6",
+   "d_oi": "0",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "12:30",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25260",
+   "close": "25217.2",
+   "oi_start": "11483355",
+   "oi_end": "11483030",
+   "d_price": "-42.8",
+   "d_oi": "-325",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
