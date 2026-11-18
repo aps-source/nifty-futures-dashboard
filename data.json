@@ -1,68 +1,84 @@
 {
- "updated": "2026-11-18 09:14:23",
+ "updated": "2026-11-18 09:15:33",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25323.15,
-   "chg_pts": -64.25,
-   "chg_pct": -0.25
+   "ltp": 25356.75,
+   "chg_pts": -30.65,
+   "chg_pct": -0.12
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62204.1,
-   "chg_pts": -69.15,
-   "chg_pct": -0.11
+   "ltp": 62303.75,
+   "chg_pts": 30.5,
+   "chg_pct": 0.05
   },
   {
    "name": "SENSEX",
-   "ltp": 82376.56,
-   "chg_pts": -155.63,
-   "chg_pct": -0.19
+   "ltp": 82448.11,
+   "chg_pts": -84.08,
+   "chg_pct": -0.1
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.52,
-   "chg_pts": 0.0,
-   "chg_pct": 0.0
+   "ltp": 15.8,
+   "chg_pts": 0.28,
+   "chg_pct": 1.8
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7931,
-   "chg_pts": -159,
-   "chg_pct": -1.97
+   "ltp": 7928,
+   "chg_pts": -162,
+   "chg_pct": -2.0
   },
   {
    "name": "GOLD",
-   "ltp": 131741,
-   "chg_pts": -2482,
-   "chg_pct": -1.85
+   "ltp": 131666,
+   "chg_pts": -2557,
+   "chg_pct": -1.91
   },
   {
    "name": "SILVER",
-   "ltp": 164820,
-   "chg_pts": -4882,
-   "chg_pct": -2.88
+   "ltp": 164716,
+   "chg_pts": -4986,
+   "chg_pct": -2.94
   }
  ],
  "oc": {
-  "spot": 25323.2,
+  "spot": 25360.9,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 13401960,
-  "res_pct": 2.67,
+  "res_oi": 13492375,
+  "res_pct": 2.52,
   "sup_strike": 25000.0,
-  "sup_oi": 9546095,
-  "sup_pct": 1.28,
+  "sup_oi": 9548240,
+  "sup_pct": 1.42,
   "max_pain": 25000.0,
-  "mp_pct": -1.28,
-  "pcr": 1.082,
+  "mp_pct": -1.42,
+  "pcr": 1.08,
   "suggests": "Balanced"
  },
  "charts": {
-  "NIFTY": [],
-  "SENSEX": []
+  "NIFTY": [
+   {
+    "time": 1794973500,
+    "open": 25323.15,
+    "high": 25361.8,
+    "low": 25291.95,
+    "close": 25357.65
+   }
+  ],
+  "SENSEX": [
+   {
+    "time": 1794973500,
+    "open": 82376.56,
+    "high": 82478.23,
+    "low": 82267.22,
+    "close": 82467.65
+   }
+  ]
  },
  "mtf": {},
  "decision": null,
