@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-18 12:07:12",
+ "updated": "2026-11-18 12:08:21",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25227.2,
-   "chg_pts": -160.2,
-   "chg_pct": -0.63
+   "ltp": 25245.1,
+   "chg_pts": -142.3,
+   "chg_pct": -0.56
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62171.05,
-   "chg_pts": -102.2,
-   "chg_pct": -0.16
+   "ltp": 62219.95,
+   "chg_pts": -53.3,
+   "chg_pct": -0.09
   },
   {
    "name": "SENSEX",
-   "ltp": 82061.14,
-   "chg_pts": -471.05,
-   "chg_pct": -0.57
+   "ltp": 82106.06,
+   "chg_pts": -426.13,
+   "chg_pct": -0.52
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.73,
-   "chg_pts": 0.21,
-   "chg_pct": 1.35
+   "ltp": 15.69,
+   "chg_pts": 0.17,
+   "chg_pct": 1.1
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 131257,
-   "chg_pts": -2966,
-   "chg_pct": -2.21
+   "ltp": 131238,
+   "chg_pts": -2985,
+   "chg_pct": -2.22
   },
   {
    "name": "SILVER",
-   "ltp": 164308,
-   "chg_pts": -5394,
-   "chg_pct": -3.18
+   "ltp": 164257,
+   "chg_pts": -5445,
+   "chg_pct": -3.21
   }
  ],
  "oc": {
-  "spot": 25229.3,
+  "spot": 25244.1,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16815955,
-  "res_pct": 3.05,
+  "res_oi": 16833700,
+  "res_pct": 2.99,
   "sup_strike": 25000.0,
-  "sup_oi": 12433525,
-  "sup_pct": 0.91,
-  "max_pain": 25200.0,
-  "mp_pct": -0.12,
-  "pcr": 0.847,
+  "sup_oi": 12436450,
+  "sup_pct": 0.97,
+  "max_pain": 25150.0,
+  "mp_pct": -0.37,
+  "pcr": 0.846,
   "suggests": "Balanced"
  },
  "charts": {
@@ -464,9 +464,9 @@
    {
     "time": 1794983760,
     "open": 25237.2,
-    "high": 25238.15,
+    "high": 25248.0,
     "low": 25226.8,
-    "close": 25229.55
+    "close": 25243.6
    }
   ],
   "SENSEX": [
@@ -872,9 +872,9 @@
    {
     "time": 1794983760,
     "open": 82088.29,
-    "high": 82093.41,
+    "high": 82107.56,
     "low": 82057.64,
-    "close": 82064.5
+    "close": 82102.5
    }
   ]
  },
