@@ -1,65 +1,51 @@
 {
- "updated": "2026-11-18 09:52:34",
+ "updated": "2026-11-18 09:53:45",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25267.5,
-   "chg_pts": -119.9,
-   "chg_pct": -0.47
+   "ltp": 25282.55,
+   "chg_pts": -104.85,
+   "chg_pct": -0.41
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61982.3,
-   "chg_pts": -290.95,
-   "chg_pct": -0.47
+   "ltp": 62027.2,
+   "chg_pts": -246.05,
+   "chg_pct": -0.4
   },
   {
    "name": "SENSEX",
-   "ltp": 82166.07,
-   "chg_pts": -366.12,
-   "chg_pct": -0.44
+   "ltp": 82220.53,
+   "chg_pts": -311.66,
+   "chg_pct": -0.38
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.84,
-   "chg_pts": 0.32,
-   "chg_pct": 2.06
+   "ltp": 15.82,
+   "chg_pts": 0.3,
+   "chg_pct": 1.93
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7936,
-   "chg_pts": -154,
-   "chg_pct": -1.9
+   "ltp": 7931,
+   "chg_pts": -159,
+   "chg_pct": -1.97
   },
   {
    "name": "GOLD",
-   "ltp": 131471,
-   "chg_pts": -2752,
-   "chg_pct": -2.05
+   "ltp": 131541,
+   "chg_pts": -2682,
+   "chg_pct": -2.0
   },
   {
    "name": "SILVER",
-   "ltp": 164210,
-   "chg_pts": -5492,
-   "chg_pct": -3.24
+   "ltp": 164280,
+   "chg_pts": -5422,
+   "chg_pct": -3.2
   }
  ],
- "oc": {
-  "spot": 25266.7,
-  "expiry": "2026-11-23",
-  "res_strike": 26000.0,
-  "res_oi": 16107715,
-  "res_pct": 2.9,
-  "sup_strike": 25000.0,
-  "sup_oi": 11650015,
-  "sup_pct": 1.06,
-  "max_pain": 25150.0,
-  "mp_pct": -0.46,
-  "pcr": 0.889,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -149,9 +135,9 @@
    {
     "time": 1794975660,
     "open": 25238.7,
-    "high": 25268.85,
+    "high": 25283.15,
     "low": 25233.55,
-    "close": 25268.05
+    "close": 25281.2
    }
   ],
   "SENSEX": [
@@ -242,9 +228,9 @@
    {
     "time": 1794975660,
     "open": 82083.96,
-    "high": 82176.6,
+    "high": 82221.0,
     "low": 82074.03,
-    "close": 82176.6
+    "close": 82219.13
    }
   ]
  },
@@ -633,11 +619,13 @@
   "total_rs": 673,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
