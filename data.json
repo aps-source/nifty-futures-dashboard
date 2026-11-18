@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-18 11:29:35",
+ "updated": "2026-11-18 11:30:45",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25276.55,
-   "chg_pts": -110.85,
-   "chg_pct": -0.44
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62204.55,
-   "chg_pts": -68.7,
-   "chg_pct": -0.11
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82202.94,
-   "chg_pts": -329.25,
-   "chg_pct": -0.4
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.65,
-   "chg_pts": 0.13,
-   "chg_pct": 0.84
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7912,
-   "chg_pts": -178,
-   "chg_pct": -2.2
-  },
-  {
-   "name": "GOLD",
-   "ltp": 131505,
-   "chg_pts": -2718,
-   "chg_pct": -2.02
-  },
-  {
-   "name": "SILVER",
-   "ltp": 164596,
-   "chg_pts": -5106,
-   "chg_pct": -3.01
-  }
- ],
  "oc": {
-  "spot": 25278.3,
+  "spot": 25265.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16770845,
-  "res_pct": 2.85,
+  "res_oi": 16779165,
+  "res_pct": 2.91,
   "sup_strike": 25000.0,
-  "sup_oi": 12343760,
-  "sup_pct": 1.1,
+  "sup_oi": 12362350,
+  "sup_pct": 1.05,
   "max_pain": 25200.0,
-  "mp_pct": -0.31,
-  "pcr": 0.86,
+  "mp_pct": -0.26,
+  "pcr": 0.861,
   "suggests": "Balanced"
  },
  "charts": {
@@ -375,7 +331,14 @@
     "open": 25268.4,
     "high": 25281.05,
     "low": 25265.75,
-    "close": 25277.8
+    "close": 25278.85
+   },
+   {
+    "time": 1794981600,
+    "open": 25279.1,
+    "high": 25281.9,
+    "low": 25263.7,
+    "close": 25264.1
    }
   ],
   "SENSEX": [
@@ -690,30 +653,37 @@
    {
     "time": 1794981420,
     "open": 82159.08,
-    "high": 82205.85,
+    "high": 82213.51,
     "low": 82159.08,
-    "close": 82205.73
+    "close": 82210.21
+   },
+   {
+    "time": 1794981600,
+    "open": 82210.21,
+    "high": 82221.75,
+    "low": 82167.62,
+    "close": 82167.62
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "11:27",
-   "d_price": "2.1",
-   "d_oi": "4550"
+   "cls": "SHORT COVERING",
+   "time": "11:30",
+   "d_price": "10",
+   "d_oi": "-130"
   },
   "5": {
-   "cls": "SHORT BUILDUP",
-   "time": "11:25",
-   "d_price": "-14.2",
-   "d_oi": "5460"
+   "cls": "LONG BUILDUP",
+   "time": "11:30",
+   "d_price": "19",
+   "d_oi": "4420"
   },
   "15": {
    "cls": "LONG BUILDUP",
-   "time": "11:15",
-   "d_price": "10.3",
-   "d_oi": "17355"
+   "time": "11:30",
+   "d_price": "39.9",
+   "d_oi": "5850"
   },
   "60": {
    "cls": "LONG UNWINDING",
@@ -722,8 +692,8 @@
    "d_oi": "-40755"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
   {
    "time": "09:18",
@@ -1924,6 +1894,51 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:30",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25280",
+   "close": "25290",
+   "oi_start": "11455925",
+   "oi_end": "11455795",
+   "d_price": "10",
+   "d_oi": "-130",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:30",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25271",
+   "close": "25290",
+   "oi_start": "11451375",
+   "oi_end": "11455795",
+   "d_price": "19",
+   "d_oi": "4420",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "11:30",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25250.1",
+   "close": "25290",
+   "oi_start": "11449945",
+   "oi_end": "11455795",
+   "d_price": "39.9",
+   "d_oi": "5850",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -2023,10 +2038,12 @@
   "total_rs": -235,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000229E35E9A90>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
