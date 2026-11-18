@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-18 13:06:16",
+ "updated": "2026-11-18 13:07:26",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25177.4,
-   "chg_pts": -210.0,
-   "chg_pct": -0.83
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62013.15,
-   "chg_pts": -260.1,
-   "chg_pct": -0.42
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81896.17,
-   "chg_pts": -636.02,
-   "chg_pct": -0.77
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.92,
-   "chg_pts": 0.4,
-   "chg_pct": 2.58
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7867,
-   "chg_pts": -223,
-   "chg_pct": -2.76
-  },
-  {
-   "name": "GOLD",
-   "ltp": 131145,
-   "chg_pts": -3078,
-   "chg_pct": -2.29
-  },
-  {
-   "name": "SILVER",
-   "ltp": 164000,
-   "chg_pts": -5702,
-   "chg_pct": -3.36
-  }
- ],
  "oc": {
-  "spot": 25176.8,
+  "spot": 25151.9,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16706040,
-  "res_pct": 3.27,
+  "res_oi": 16674710,
+  "res_pct": 3.37,
   "sup_strike": 25000.0,
-  "sup_oi": 12063675,
-  "sup_pct": 0.7,
+  "sup_oi": 11898315,
+  "sup_pct": 0.6,
   "max_pain": 25100.0,
-  "mp_pct": -0.31,
-  "pcr": 0.779,
+  "mp_pct": -0.21,
+  "pcr": 0.772,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -605,8 +561,8 @@
     "time": 1794987360,
     "open": 25178.1,
     "high": 25180.9,
-    "low": 25175.8,
-    "close": 25175.85
+    "low": 25150.0,
+    "close": 25151.35
    }
   ],
   "SENSEX": [
@@ -1153,8 +1109,8 @@
     "time": 1794987360,
     "open": 81897.69,
     "high": 81904.93,
-    "low": 81892.95,
-    "close": 81902.9
+    "low": 81814.44,
+    "close": 81819.7
    }
   ]
  },
@@ -3102,10 +3058,12 @@
   "total_rs": -735,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
