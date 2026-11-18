@@ -1,65 +1,7 @@
 {
- "updated": "2026-11-18 13:13:48",
+ "updated": "2026-11-18 13:15:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25153.5,
-   "chg_pts": -233.9,
-   "chg_pct": -0.92
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61883.4,
-   "chg_pts": -389.85,
-   "chg_pct": -0.63
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81810.26,
-   "chg_pts": -721.93,
-   "chg_pct": -0.87
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.96,
-   "chg_pts": 0.44,
-   "chg_pct": 2.84
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7884,
-   "chg_pts": -206,
-   "chg_pct": -2.55
-  },
-  {
-   "name": "GOLD",
-   "ltp": 131100,
-   "chg_pts": -3123,
-   "chg_pct": -2.33
-  },
-  {
-   "name": "SILVER",
-   "ltp": 164102,
-   "chg_pts": -5600,
-   "chg_pct": -3.3
-  }
- ],
- "oc": {
-  "spot": 25155.7,
-  "expiry": "2026-11-23",
-  "res_strike": 26000.0,
-  "res_oi": 16694405,
-  "res_pct": 3.36,
-  "sup_strike": 25000.0,
-  "sup_oi": 11777155,
-  "sup_pct": 0.62,
-  "max_pain": 25100.0,
-  "mp_pct": -0.22,
-  "pcr": 0.771,
-  "suggests": "CALL side heavy - PUT bias"
- },
  "charts": {
   "NIFTY": [
    {
@@ -618,9 +560,16 @@
    {
     "time": 1794987720,
     "open": 25162.85,
-    "high": 25164.6,
+    "high": 25165.65,
     "low": 25149.45,
-    "close": 25155.55
+    "close": 25164.25
+   },
+   {
+    "time": 1794987900,
+    "open": 25164.0,
+    "high": 25172.7,
+    "low": 25164.0,
+    "close": 25171.35
    }
   ],
   "SENSEX": [
@@ -1180,9 +1129,16 @@
    {
     "time": 1794987720,
     "open": 81834.03,
-    "high": 81841.92,
+    "high": 81842.01,
     "low": 81800.42,
-    "close": 81813.87
+    "close": 81839.53
+   },
+   {
+    "time": 1794987900,
+    "open": 81839.53,
+    "high": 81863.6,
+    "low": 81839.53,
+    "close": 81862.59
    }
   ]
  },
@@ -3130,11 +3086,14 @@
   "total_rs": -735,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000229E35E9A90>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": true,
+  "quotes_ok": false,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
