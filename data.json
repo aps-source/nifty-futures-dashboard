@@ -1,51 +1,7 @@
 {
- "updated": "2026-11-19 12:37:28",
+ "updated": "2026-11-19 12:38:52",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25376.6,
-   "chg_pts": 148.65,
-   "chg_pct": 0.59
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62662.75,
-   "chg_pts": 624.1,
-   "chg_pct": 1.01
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82546.79,
-   "chg_pts": 514.98,
-   "chg_pct": 0.63
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.23,
-   "chg_pts": 0.66,
-   "chg_pct": 4.24
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7792,
-   "chg_pts": 98,
-   "chg_pct": 1.27
-  },
-  {
-   "name": "GOLD",
-   "ltp": 129369,
-   "chg_pts": -445,
-   "chg_pct": -0.34
-  },
-  {
-   "name": "SILVER",
-   "ltp": 161590,
-   "chg_pts": 856,
-   "chg_pct": 0.53
-  }
- ],
  "charts": {
   "NIFTY": [
    {
@@ -522,7 +478,14 @@
     "open": 25375.0,
     "high": 25387.0,
     "low": 25372.85,
-    "close": 25377.8
+    "close": 25380.5
+   },
+   {
+    "time": 1795072140,
+    "open": 25382.3,
+    "high": 25384.15,
+    "low": 25379.75,
+    "close": 25382.65
    }
   ],
   "SENSEX": [
@@ -1000,7 +963,14 @@
     "open": 82528.66,
     "high": 82573.09,
     "low": 82523.72,
-    "close": 82548.96
+    "close": 82554.04
+   },
+   {
+    "time": 1795072140,
+    "open": 82558.41,
+    "high": 82558.41,
+    "low": 82549.9,
+    "close": 82554.29
    }
   ]
  },
@@ -2915,10 +2885,10 @@
    "score": 4,
    "spot_entry": 25363.35,
    "exit_t": null,
-   "exit_px": 141.4,
+   "exit_px": 143.45,
    "reason": "OPEN",
-   "pts": 10.25,
-   "rs": 769
+   "pts": 12.3,
+   "rs": 922
   }
  ],
  "instrument": {
@@ -2943,11 +2913,12 @@
   "telegram": true
  },
  "errors": [
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001F9BD219450>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001F9BD2196D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": false,
   "tracker_running": true,
   "weekday": true
