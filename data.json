@@ -1,68 +1,84 @@
 {
- "updated": "2026-11-19 09:14:18",
+ "updated": "2026-11-19 09:15:28",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25186.8,
-   "chg_pts": -41.15,
-   "chg_pct": -0.16
+   "ltp": 25180.9,
+   "chg_pts": -47.05,
+   "chg_pct": -0.19
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62081.3,
-   "chg_pts": 42.65,
-   "chg_pct": 0.07
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82074.16,
-   "chg_pts": 42.35,
-   "chg_pct": 0.05
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.57,
-   "chg_pts": 0.0,
+   "ltp": 62040.75,
+   "chg_pts": 2.1,
    "chg_pct": 0.0
   },
   {
+   "name": "SENSEX",
+   "ltp": 81900.92,
+   "chg_pts": -130.89,
+   "chg_pct": -0.16
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.7,
+   "chg_pts": 0.13,
+   "chg_pct": 0.83
+  },
+  {
    "name": "CRUDEOIL",
-   "ltp": 7750,
-   "chg_pts": 56,
-   "chg_pct": 0.73
+   "ltp": 7751,
+   "chg_pts": 57,
+   "chg_pct": 0.74
   },
   {
    "name": "GOLD",
-   "ltp": 128700,
-   "chg_pts": -1114,
+   "ltp": 128698,
+   "chg_pts": -1116,
    "chg_pct": -0.86
   },
   {
    "name": "SILVER",
-   "ltp": 159415,
-   "chg_pts": -1319,
-   "chg_pct": -0.82
+   "ltp": 159538,
+   "chg_pts": -1196,
+   "chg_pct": -0.74
   }
  ],
  "oc": {
-  "spot": 25186.8,
+  "spot": 25177.8,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14866475,
-  "res_pct": 3.23,
+  "res_oi": 14912040,
+  "res_pct": 3.27,
   "sup_strike": 24000.0,
-  "sup_oi": 11371685,
-  "sup_pct": 4.71,
+  "sup_oi": 11392810,
+  "sup_pct": 4.68,
   "max_pain": 25050.0,
-  "mp_pct": -0.54,
-  "pcr": 0.855,
+  "mp_pct": -0.51,
+  "pcr": 0.854,
   "suggests": "Balanced"
  },
  "charts": {
-  "NIFTY": [],
-  "SENSEX": []
+  "NIFTY": [
+   {
+    "time": 1795059900,
+    "open": 25186.8,
+    "high": 25210.55,
+    "low": 25151.5,
+    "close": 25176.5
+   }
+  ],
+  "SENSEX": [
+   {
+    "time": 1795059900,
+    "open": 82074.16,
+    "high": 82074.16,
+    "low": 81878.64,
+    "close": 81936.66
+   }
+  ]
  },
  "mtf": {},
  "decision": null,
