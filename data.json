@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-19 12:40:22",
+ "updated": "2026-11-19 12:41:41",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25378.4,
-   "chg_pts": 150.45,
-   "chg_pct": 0.6
+   "ltp": 25377.5,
+   "chg_pts": 149.55,
+   "chg_pct": 0.59
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62670.25,
-   "chg_pts": 631.6,
-   "chg_pct": 1.02
+   "ltp": 62662.1,
+   "chg_pts": 623.45,
+   "chg_pct": 1.0
   },
   {
    "name": "SENSEX",
-   "ltp": 82544.42,
-   "chg_pts": 512.61,
+   "ltp": 82542.44,
+   "chg_pts": 510.63,
    "chg_pct": 0.62
   },
   {
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7792,
-   "chg_pts": 98,
-   "chg_pct": 1.27
+   "ltp": 7789,
+   "chg_pts": 95,
+   "chg_pct": 1.23
   },
   {
    "name": "GOLD",
-   "ltp": 129261,
-   "chg_pts": -553,
-   "chg_pct": -0.43
+   "ltp": 129234,
+   "chg_pts": -580,
+   "chg_pct": -0.45
   },
   {
    "name": "SILVER",
-   "ltp": 161423,
-   "chg_pts": 689,
-   "chg_pct": 0.43
+   "ltp": 161310,
+   "chg_pts": 576,
+   "chg_pct": 0.36
   }
  ],
  "oc": {
-  "spot": 25379.5,
+  "spot": 25370.8,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14713595,
-  "res_pct": 2.44,
+  "res_oi": 14652365,
+  "res_pct": 2.48,
   "sup_strike": 25000.0,
-  "sup_oi": 15640885,
-  "sup_pct": 1.5,
+  "sup_oi": 15745405,
+  "sup_pct": 1.46,
   "max_pain": 25250.0,
-  "mp_pct": -0.51,
-  "pcr": 1.286,
+  "mp_pct": -0.48,
+  "pcr": 1.291,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -541,9 +541,9 @@
    {
     "time": 1795072140,
     "open": 25382.3,
-    "high": 25385.05,
-    "low": 25376.5,
-    "close": 25381.85
+    "high": 25386.2,
+    "low": 25370.55,
+    "close": 25370.7
    }
   ],
   "SENSEX": [
@@ -1026,9 +1026,9 @@
    {
     "time": 1795072140,
     "open": 82558.41,
-    "high": 82558.85,
-    "low": 82544.42,
-    "close": 82556.74
+    "high": 82563.77,
+    "low": 82529.54,
+    "close": 82529.54
    }
   ]
  },
@@ -2943,10 +2943,10 @@
    "score": 4,
    "spot_entry": 25363.35,
    "exit_t": null,
-   "exit_px": 143.25,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 12.1,
-   "rs": 908
+   "pts": null,
+   "rs": null
   }
  ],
  "instrument": {
