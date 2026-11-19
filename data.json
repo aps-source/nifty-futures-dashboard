@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19 15:24:16",
+ "updated": "2026-11-19 15:25:25",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -18,20 +18,20 @@
   {
    "name": "SENSEX",
    "ltp": 82960.86,
-   "chg_pts": 491.2,
-   "chg_pct": 0.6
+   "chg_pts": 311.82,
+   "chg_pct": 0.38
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.36,
-   "chg_pts": 0.79,
-   "chg_pct": 5.07
+   "ltp": 15.86,
+   "chg_pts": 0.29,
+   "chg_pct": 1.86
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7779,
-   "chg_pts": 85,
-   "chg_pct": 1.1
+   "ltp": 7783,
+   "chg_pts": 89,
+   "chg_pct": 1.16
   },
   {
    "name": "GOLD",
@@ -41,23 +41,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 160711,
-   "chg_pts": -23,
-   "chg_pct": -0.01
+   "ltp": 160778,
+   "chg_pts": 44,
+   "chg_pct": 0.03
   }
  ],
  "oc": {
   "spot": 25503.7,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 15243475,
+  "res_oi": 15499900,
   "res_pct": 1.95,
   "sup_strike": 25000.0,
-  "sup_oi": 14579240,
+  "sup_oi": 14461330,
   "sup_pct": 1.98,
   "max_pain": 25300.0,
   "mp_pct": -0.8,
-  "pcr": 1.431,
+  "pcr": 1.426,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -1810,10 +1810,10 @@
    "d_oi": "-2990"
   },
   "5": {
-   "cls": "SHORT COVERING",
-   "time": "15:20",
-   "d_price": "12.9",
-   "d_oi": "-2535"
+   "cls": "LONG UNWINDING",
+   "time": "15:25",
+   "d_price": "-7.1",
+   "d_oi": "-650"
   },
   "15": {
    "cls": "LONG BUILDUP",
@@ -1828,24 +1828,9 @@
    "d_oi": "167115"
   }
  },
- "decision": "STRONG LONG",
- "decision_score": 4,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
-  {
-   "time": "12:12",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25354.2",
-   "close": "25361.9",
-   "oi_start": "10838490",
-   "oi_end": "10844015",
-   "d_price": "7.7",
-   "d_oi": "5525",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "2",
-   "decision": "LONG"
-  },
   {
    "time": "12:15",
    "symbol": "NIFTY",
@@ -3630,6 +3615,21 @@
    "score": "1",
    "decision_score": "4",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "15:25",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25537.9",
+   "close": "25530.8",
+   "oi_start": "11308050",
+   "oi_end": "11307400",
+   "d_price": "-7.1",
+   "d_oi": "-650",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
