@@ -14,26 +14,61 @@ td:first-child,th:first-child{text-align:left}
 .up{color:var(--good)}.dn{color:var(--bad)}
 h1{font-size:18px}
 .note{background:var(--surface);border:1px solid var(--grid);border-radius:10px;padding:14px}
+.bar{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:6px 0 4px;font-size:13px}
+.bar select{font:inherit;padding:3px 6px;border-radius:6px;border:1px solid var(--grid,#ccc);background:var(--surface,#fff);color:inherit}
+#sum{color:var(--mut,#76829c)}
 </style>
 </head>
 <body>
 <!--main-dashboard-link--><div id="main-dashboard-link" data-mode="bar" style="box-sizing:border-box;width:100%;padding:7px 14px;background:#0f172a;font:600 12px/1.3 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-align:left"><a href="https://aps-source.github.io/" style="color:#e2e8f0;text-decoration:none">&#9666; Main dashboard</a></div><!--/main-dashboard-link-->
 
 <div style="font-size:12px;margin:8px 0"><a href="index.html">&#9666; Nifty Futures</a></div>
-<h1>Strategy Signal History (today)</h1>
+<h1>Strategy Signal History</h1>
+<div class="bar">
+  <label>Day <select id="day"></select></label>
+  <label>TF <select id="tf"><option value="">All</option><option>3</option><option>5</option><option>15</option><option>60</option></select></label>
+  <label><input type="checkbox" id="chg"> Decision changes only</label>
+  <span id="sum"></span>
+</div>
 <table id="t"><tr><td>loading&hellip;</td></tr></table>
 <script>
 const fmt2=n=>Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
 const fmtI=n=>(n>=0?'+':'')+fmt2(n);
 const fmtOI=n=>(n>=0?'+':'')+Number(n).toLocaleString('en-IN');
 const cls=v=>v>0?'up':(v<0?'dn':'');
-fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{
+const decCls=d=>d&&d.includes('LONG')?'up':(d&&d.includes('SHORT')?'dn':'');
+let days={};
+function render(){
+  const day=document.getElementById('day').value, tf=document.getElementById('tf').value,
+        chg=document.getElementById('chg').checked;
+  let rows=(days[day]||[]), prev=null;
+  if(chg) rows=rows.filter(r=>{const k=r.decision!==prev; prev=r.decision; return k;});
+  if(tf) rows=rows.filter(r=>r.tf_min===tf);
+  const all=days[day]||[], strong=all.filter(r=>(r.decision||'').startsWith('STRONG'));
+  document.getElementById('sum').textContent =
+    `${all.length} bars | STRONG LONG ${strong.filter(r=>r.decision==='STRONG LONG').length} | STRONG SHORT ${strong.filter(r=>r.decision==='STRONG SHORT').length}`;
   document.getElementById('t').innerHTML =
     '<tr><th>Time</th><th>TF</th><th>Open</th><th>Close</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>'+
-    (d.signals||[]).slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
+    (rows.length?rows.slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
     <td>${fmt2(r.open)}</td><td>${fmt2(r.close)}</td>
     <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
-    <td>${r.classification}</td><td>${r.decision_score}</td><td>${r.decision}</td></tr>`).join('');
+    <td>${r.classification}</td><td>${r.decision_score}</td><td class="${decCls(r.decision)}"><b>${r.decision}</b></td></tr>`).join('')
+    :'<tr><td colspan="9">No bars logged this day.</td></tr>');
+}
+Promise.all([
+  fetch('history.json?t='+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
+  fetch('data.json?t='+Date.now()).then(r=>r.json()).catch(()=>({}))
+]).then(([h,d])=>{
+  h.forEach(x=>days[x.date]=x.rows);
+  const today=(d.updated||'').slice(0,10);
+  if(today && d.signals){   // live tail: data.json carries today's last 120 bars
+    const base=days[today]||[], last=base.length?base[base.length-1].time:'';
+    days[today]=base.concat(d.signals.filter(r=>r.time>last));
+  }
+  const sel=document.getElementById('day');
+  sel.innerHTML=Object.keys(days).sort().reverse().map(k=>`<option>${k}</option>`).join('');
+  ['day','tf','chg'].forEach(id=>document.getElementById(id).onchange=render);
+  render();
 });
 </script>
 </body>
