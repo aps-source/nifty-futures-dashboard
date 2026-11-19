@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-19 11:58:40",
+ "updated": "2026-11-19 11:59:51",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25357.5,
-   "chg_pts": 129.55,
-   "chg_pct": 0.51
+   "ltp": 25366.95,
+   "chg_pts": 139.0,
+   "chg_pct": 0.55
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62525.2,
-   "chg_pts": 486.55,
-   "chg_pct": 0.78
+   "ltp": 62539.85,
+   "chg_pts": 501.2,
+   "chg_pct": 0.81
   },
   {
    "name": "SENSEX",
-   "ltp": 82443.22,
-   "chg_pts": 411.41,
-   "chg_pct": 0.5
+   "ltp": 82475.02,
+   "chg_pts": 443.21,
+   "chg_pct": 0.54
   },
   {
    "name": "INDIA VIX",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 129502,
-   "chg_pts": -312,
-   "chg_pct": -0.24
+   "ltp": 129475,
+   "chg_pts": -339,
+   "chg_pct": -0.26
   },
   {
    "name": "SILVER",
-   "ltp": 161330,
-   "chg_pts": 596,
-   "chg_pct": 0.37
+   "ltp": 161300,
+   "chg_pts": 566,
+   "chg_pct": 0.35
   }
  ],
  "oc": {
-  "spot": 25356.8,
+  "spot": 25367.0,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14999790,
-  "res_pct": 2.54,
+  "res_oi": 14995955,
+  "res_pct": 2.5,
   "sup_strike": 25000.0,
-  "sup_oi": 15302040,
-  "sup_pct": 1.41,
+  "sup_oi": 15282215,
+  "sup_pct": 1.45,
   "max_pain": 25200.0,
-  "mp_pct": -0.62,
-  "pcr": 1.209,
+  "mp_pct": -0.66,
+  "pcr": 1.214,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -443,9 +443,9 @@
    {
     "time": 1795069620,
     "open": 25357.35,
-    "high": 25360.35,
+    "high": 25368.8,
     "low": 25352.55,
-    "close": 25357.0
+    "close": 25367.6
    }
   ],
   "SENSEX": [
@@ -830,9 +830,9 @@
    {
     "time": 1795069620,
     "open": 82440.67,
-    "high": 82449.52,
+    "high": 82485.06,
     "low": 82434.61,
-    "close": 82442.46
+    "close": 82473.2
    }
   ]
  },
@@ -2400,10 +2400,10 @@
    "score": 4,
    "spot_entry": 25304,
    "exit_t": null,
-   "exit_px": 155.15,
+   "exit_px": 163.05,
    "reason": "OPEN",
-   "pts": 29.1,
-   "rs": 2182
+   "pts": 37.0,
+   "rs": 2775
   }
  ],
  "instrument": {
