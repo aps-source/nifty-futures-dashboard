@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-19 13:52:28",
+ "updated": "2026-11-19 13:53:40",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25385.5,
-   "chg_pts": 157.55,
-   "chg_pct": 0.62
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62804.25,
-   "chg_pts": 765.6,
-   "chg_pct": 1.23
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82548.36,
-   "chg_pts": 516.55,
+   "ltp": 25386.85,
+   "chg_pts": 158.9,
    "chg_pct": 0.63
   },
   {
+   "name": "BANKNIFTY",
+   "ltp": 62814.2,
+   "chg_pts": 775.55,
+   "chg_pct": 1.25
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82589.87,
+   "chg_pts": 558.06,
+   "chg_pct": 0.68
+  },
+  {
    "name": "INDIA VIX",
-   "ltp": 16.13,
-   "chg_pts": 0.56,
-   "chg_pct": 3.6
+   "ltp": 16.12,
+   "chg_pts": 0.55,
+   "chg_pct": 3.53
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 129303,
-   "chg_pts": -511,
-   "chg_pct": -0.39
+   "ltp": 129345,
+   "chg_pts": -469,
+   "chg_pct": -0.36
   },
   {
    "name": "SILVER",
-   "ltp": 160874,
-   "chg_pts": 140,
-   "chg_pct": 0.09
+   "ltp": 160991,
+   "chg_pts": 257,
+   "chg_pct": 0.16
   }
  ],
  "oc": {
-  "spot": 25386.0,
+  "spot": 25388.7,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14564095,
-  "res_pct": 2.42,
+  "res_oi": 14573715,
+  "res_pct": 2.41,
   "sup_strike": 25000.0,
-  "sup_oi": 15693860,
-  "sup_pct": 1.52,
+  "sup_oi": 15703155,
+  "sup_pct": 1.53,
   "max_pain": 25250.0,
-  "mp_pct": -0.54,
-  "pcr": 1.314,
+  "mp_pct": -0.55,
+  "pcr": 1.315,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -711,7 +711,7 @@
     "open": 25386.55,
     "high": 25391.3,
     "low": 25383.5,
-    "close": 25386.4
+    "close": 25389.6
    }
   ],
   "SENSEX": [
@@ -1362,9 +1362,9 @@
    {
     "time": 1795076460,
     "open": 82584.31,
-    "high": 82589.41,
-    "low": 82546.48,
-    "close": 82551.35
+    "high": 82597.42,
+    "low": 82546.37,
+    "close": 82597.42
    }
   ]
  },
