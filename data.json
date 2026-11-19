@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-19 11:03:33",
+ "updated": "2026-11-19 11:04:50",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25313.65,
-   "chg_pts": 85.7,
-   "chg_pct": 0.34
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62430.3,
-   "chg_pts": 391.65,
-   "chg_pct": 0.63
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82295.56,
-   "chg_pts": 263.75,
-   "chg_pct": 0.32
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.11,
-   "chg_pts": 0.54,
-   "chg_pct": 3.47
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7768,
-   "chg_pts": 74,
-   "chg_pct": 0.96
-  },
-  {
-   "name": "GOLD",
-   "ltp": 129482,
-   "chg_pts": -332,
-   "chg_pct": -0.26
-  },
-  {
-   "name": "SILVER",
-   "ltp": 161385,
-   "chg_pts": 651,
-   "chg_pct": 0.41
-  }
- ],
  "oc": {
-  "spot": 25314.5,
+  "spot": 25309.6,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14698125,
-  "res_pct": 2.71,
+  "res_oi": 14663350,
+  "res_pct": 2.73,
   "sup_strike": 25000.0,
-  "sup_oi": 14993810,
-  "sup_pct": 1.24,
+  "sup_oi": 14990430,
+  "sup_pct": 1.22,
   "max_pain": 25200.0,
-  "mp_pct": -0.45,
-  "pcr": 1.125,
+  "mp_pct": -0.43,
+  "pcr": 1.128,
   "suggests": "Balanced"
  },
  "charts": {
@@ -317,9 +273,9 @@
    {
     "time": 1795066380,
     "open": 25306.85,
-    "high": 25315.95,
-    "low": 25304.2,
-    "close": 25315.55
+    "high": 25318.5,
+    "low": 25304.1,
+    "close": 25310.5
    }
   ],
   "SENSEX": [
@@ -578,9 +534,9 @@
    {
     "time": 1795066380,
     "open": 82253.28,
-    "high": 82301.08,
+    "high": 82311.69,
     "low": 82253.28,
-    "close": 82298.73
+    "close": 82272.04
    }
   ]
  },
@@ -1680,10 +1636,12 @@
   "total_rs": -1933,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
