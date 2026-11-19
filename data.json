@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-19 10:31:28",
+ "updated": "2026-11-19 10:32:49",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25261.2,
+   "chg_pts": 33.25,
+   "chg_pct": 0.13
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62452.5,
+   "chg_pts": 413.85,
+   "chg_pct": 0.67
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82146.61,
+   "chg_pts": 114.8,
+   "chg_pct": 0.14
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.11,
+   "chg_pts": 0.54,
+   "chg_pct": 3.47
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7781,
+   "chg_pts": 87,
+   "chg_pct": 1.13
+  },
+  {
+   "name": "GOLD",
+   "ltp": 129149,
+   "chg_pts": -665,
+   "chg_pct": -0.51
+  },
+  {
+   "name": "SILVER",
+   "ltp": 160663,
+   "chg_pts": -71,
+   "chg_pct": -0.04
+  }
+ ],
  "oc": {
-  "spot": 25245.7,
+  "spot": 25260.7,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 14481090,
-  "res_pct": 2.99,
+  "res_oi": 14475890,
+  "res_pct": 2.93,
   "sup_strike": 25000.0,
-  "sup_oi": 14056250,
-  "sup_pct": 0.97,
+  "sup_oi": 14110915,
+  "sup_pct": 1.03,
   "max_pain": 25200.0,
-  "mp_pct": -0.18,
-  "pcr": 1.079,
+  "mp_pct": -0.24,
+  "pcr": 1.08,
   "suggests": "Balanced"
  },
  "charts": {
@@ -196,9 +240,16 @@
    {
     "time": 1795064400,
     "open": 25248.45,
-    "high": 25257.5,
+    "high": 25262.3,
     "low": 25242.5,
-    "close": 25244.4
+    "close": 25261.35
+   },
+   {
+    "time": 1795064580,
+    "open": 25261.05,
+    "high": 25262.9,
+    "low": 25260.55,
+    "close": 25261.35
    }
   ],
   "SENSEX": [
@@ -380,9 +431,16 @@
    {
     "time": 1795064400,
     "open": 82116.33,
-    "high": 82135.91,
+    "high": 82150.45,
     "low": 82102.45,
-    "close": 82109.86
+    "close": 82145.7
+   },
+   {
+    "time": 1795064580,
+    "open": 82144.49,
+    "high": 82144.49,
+    "low": 82136.52,
+    "close": 82136.52
    }
   ]
  },
@@ -1169,12 +1227,10 @@
   "total_rs": -1933,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
