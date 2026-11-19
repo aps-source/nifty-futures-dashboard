@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-19 12:03:35",
+ "updated": "2026-11-19 12:04:46",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25356.05,
-   "chg_pts": 128.1,
+   "ltp": 25355.6,
+   "chg_pts": 127.65,
    "chg_pct": 0.51
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62541.3,
-   "chg_pts": 502.65,
-   "chg_pct": 0.81
+   "ltp": 62535.6,
+   "chg_pts": 496.95,
+   "chg_pct": 0.8
   },
   {
    "name": "SENSEX",
-   "ltp": 82439.86,
-   "chg_pts": 408.05,
+   "ltp": 82441.83,
+   "chg_pts": 410.02,
    "chg_pct": 0.5
   },
   {
@@ -41,23 +41,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 161349,
-   "chg_pts": 615,
-   "chg_pct": 0.38
+   "ltp": 161300,
+   "chg_pts": 566,
+   "chg_pct": 0.35
   }
  ],
  "oc": {
-  "spot": 25356.8,
+  "spot": 25356,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 15073630,
+  "res_oi": 15094755,
   "res_pct": 2.54,
   "sup_strike": 25000.0,
-  "sup_oi": 15242240,
-  "sup_pct": 1.41,
+  "sup_oi": 15276300,
+  "sup_pct": 1.4,
   "max_pain": 25200.0,
   "mp_pct": -0.62,
-  "pcr": 1.229,
+  "pcr": 1.233,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -458,8 +458,8 @@
     "time": 1795069980,
     "open": 25360.85,
     "high": 25362.5,
-    "low": 25355.55,
-    "close": 25356.2
+    "low": 25355.2,
+    "close": 25355.2
    }
   ],
   "SENSEX": [
@@ -859,8 +859,8 @@
     "time": 1795069980,
     "open": 82455.98,
     "high": 82456.53,
-    "low": 82439.83,
-    "close": 82449.58
+    "low": 82432.9,
+    "close": 82439.21
    }
   ]
  },
@@ -2488,10 +2488,10 @@
    "score": 4,
    "spot_entry": 25304,
    "exit_t": null,
-   "exit_px": 152.95,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 26.9,
-   "rs": 2018
+   "pts": null,
+   "rs": null
   }
  ],
  "instrument": {
