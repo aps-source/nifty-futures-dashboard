@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-20 13:16:11",
+ "updated": "2026-11-20 13:17:38",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25715.05,
+   "chg_pts": 200.75,
+   "chg_pct": 0.79
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 64397.4,
+   "chg_pts": 1334.4,
+   "chg_pct": 2.12
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 83721.97,
+   "chg_pts": 700.22,
+   "chg_pct": 0.84
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.52,
+   "chg_pts": 1.41,
+   "chg_pct": 8.75
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7698,
+   "chg_pts": -109,
+   "chg_pct": -1.4
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122667,
+   "chg_pts": -4785,
+   "chg_pct": -3.75
+  },
+  {
+   "name": "SILVER",
+   "ltp": 149790,
+   "chg_pts": -7692,
+   "chg_pct": -4.88
+  }
+ ],
  "oc": {
-  "spot": 25719.5,
+  "spot": 25714.5,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16640910,
-  "res_pct": 1.09,
+  "res_oi": 16671395,
+  "res_pct": 1.11,
   "sup_strike": 25500.0,
-  "sup_oi": 21585265,
-  "sup_pct": 0.85,
+  "sup_oi": 21448635,
+  "sup_pct": 0.83,
   "max_pain": 25500.0,
-  "mp_pct": -0.85,
-  "pcr": 1.649,
+  "mp_pct": -0.83,
+  "pcr": 1.643,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -581,9 +625,9 @@
    {
     "time": 1795160700,
     "open": 25714.1,
-    "high": 25721.2,
+    "high": 25724.35,
     "low": 25712.15,
-    "close": 25718.5
+    "close": 25713.55
    }
   ],
   "SENSEX": [
@@ -1150,9 +1194,9 @@
    {
     "time": 1795160700,
     "open": 83728.89,
-    "high": 83744.81,
+    "high": 83746.31,
     "low": 83715.72,
-    "close": 83735.62
+    "close": 83721.94
    }
   ]
  },
@@ -3083,12 +3127,10 @@
   "total_rs": 10503,
   "telegram": true
  },
- "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000012B312D9450>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
