@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-20 10:46:26",
+ "updated": "2026-11-20 10:47:38",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25545.25,
-   "chg_pts": 30.95,
-   "chg_pct": 0.12
+   "ltp": 25547.55,
+   "chg_pts": 33.25,
+   "chg_pct": 0.13
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63256.5,
-   "chg_pts": 193.5,
-   "chg_pct": 0.31
+   "ltp": 63294.1,
+   "chg_pts": 231.1,
+   "chg_pct": 0.37
   },
   {
    "name": "SENSEX",
-   "ltp": 83161.17,
-   "chg_pts": 139.42,
-   "chg_pct": 0.17
+   "ltp": 83167.76,
+   "chg_pts": 146.01,
+   "chg_pct": 0.18
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.52,
-   "chg_pts": 1.41,
-   "chg_pct": 8.75
+   "ltp": 17.51,
+   "chg_pts": 1.4,
+   "chg_pct": 8.69
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7727,
-   "chg_pts": -80,
-   "chg_pct": -1.02
+   "ltp": 7725,
+   "chg_pts": -82,
+   "chg_pct": -1.05
   },
   {
    "name": "GOLD",
-   "ltp": 121476,
-   "chg_pts": -5976,
-   "chg_pct": -4.69
+   "ltp": 121533,
+   "chg_pts": -5919,
+   "chg_pct": -4.64
   },
   {
    "name": "SILVER",
-   "ltp": 147141,
-   "chg_pts": -10341,
-   "chg_pct": -6.57
+   "ltp": 147050,
+   "chg_pts": -10432,
+   "chg_pct": -6.62
   }
  ],
  "oc": {
-  "spot": 25547.7,
+  "spot": 25548.2,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 20586995,
+  "res_oi": 20456670,
   "res_pct": -0.19,
   "sup_strike": 25500.0,
-  "sup_oi": 17499040,
+  "sup_oi": 17857710,
   "sup_pct": 0.19,
   "max_pain": 25400.0,
   "mp_pct": -0.58,
-  "pcr": 1.282,
+  "pcr": 1.289,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -277,7 +277,7 @@
     "open": 25554.65,
     "high": 25555.1,
     "low": 25543.3,
-    "close": 25547.6
+    "close": 25547.85
    }
   ],
   "SENSEX": [
@@ -494,9 +494,9 @@
    {
     "time": 1795151700,
     "open": 83171.24,
-    "high": 83179.31,
+    "high": 83184.56,
     "low": 83156.82,
-    "close": 83164.38
+    "close": 83165.15
    }
   ]
  },
@@ -1419,10 +1419,10 @@
    "score": 4,
    "spot_entry": 25537,
    "exit_t": null,
-   "exit_px": 113,
+   "exit_px": 116.5,
    "reason": "OPEN",
-   "pts": 6.1,
-   "rs": 458
+   "pts": 9.6,
+   "rs": 720
   }
  ],
  "instrument": {
