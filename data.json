@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-20 12:16:30",
+ "updated": "2026-11-20 12:17:44",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25658.25,
-   "chg_pts": 143.95,
-   "chg_pct": 0.56
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 64005.1,
-   "chg_pts": 942.1,
-   "chg_pct": 1.49
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83522.26,
-   "chg_pts": 500.51,
-   "chg_pct": 0.6
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.18,
-   "chg_pts": 1.07,
-   "chg_pct": 6.64
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7727,
-   "chg_pts": -80,
-   "chg_pct": -1.02
-  },
-  {
-   "name": "GOLD",
-   "ltp": 122722,
-   "chg_pts": -4730,
-   "chg_pct": -3.71
-  },
-  {
-   "name": "SILVER",
-   "ltp": 150145,
-   "chg_pts": -7337,
-   "chg_pct": -4.66
-  }
- ],
  "oc": {
-  "spot": 25657.8,
+  "spot": 25654.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16473405,
-  "res_pct": 1.33,
+  "res_oi": 16472105,
+  "res_pct": 1.35,
   "sup_strike": 25500.0,
-  "sup_oi": 22272900,
-  "sup_pct": 0.62,
+  "sup_oi": 22245600,
+  "sup_pct": 0.6,
   "max_pain": 25500.0,
-  "mp_pct": -0.62,
-  "pcr": 1.542,
+  "mp_pct": -0.6,
+  "pcr": 1.547,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -487,7 +443,7 @@
     "open": 25649.75,
     "high": 25660.55,
     "low": 25648.55,
-    "close": 25657.4
+    "close": 25652.75
    }
   ],
   "SENSEX": [
@@ -916,7 +872,7 @@
     "open": 83505.49,
     "high": 83525.58,
     "low": 83495.28,
-    "close": 83519.42
+    "close": 83504.25
    }
   ]
  },
@@ -2696,10 +2652,10 @@
    "score": 4,
    "spot_entry": 25528.25,
    "exit_t": null,
-   "exit_px": 175.7,
+   "exit_px": 171.5,
    "reason": "OPEN",
-   "pts": 71.75,
-   "rs": 5381
+   "pts": 67.55,
+   "rs": 5066
   }
  ],
  "instrument": {
@@ -2723,10 +2679,12 @@
   "total_rs": 1962,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
