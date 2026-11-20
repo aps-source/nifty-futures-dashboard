@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-20 11:21:30",
+ "updated": "2026-11-20 11:22:42",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25541.4,
-   "chg_pts": 27.1,
-   "chg_pct": 0.11
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63397.55,
-   "chg_pts": 334.55,
-   "chg_pct": 0.53
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83128.84,
-   "chg_pts": 107.09,
-   "chg_pct": 0.13
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.93,
-   "chg_pts": 0.82,
-   "chg_pct": 5.09
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7713,
-   "chg_pts": -94,
-   "chg_pct": -1.2
-  },
-  {
-   "name": "GOLD",
-   "ltp": 122380,
-   "chg_pts": -5072,
-   "chg_pct": -3.98
-  },
-  {
-   "name": "SILVER",
-   "ltp": 149250,
-   "chg_pts": -8232,
-   "chg_pct": -5.23
-  }
- ],
  "oc": {
-  "spot": 25541.2,
+  "spot": 25554.0,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 20223385,
-  "res_pct": -0.16,
+  "res_oi": 20212205,
+  "res_pct": -0.21,
   "sup_strike": 25500.0,
-  "sup_oi": 18486000,
-  "sup_pct": 0.16,
+  "sup_oi": 18359445,
+  "sup_pct": 0.21,
   "max_pain": 25400.0,
-  "mp_pct": -0.55,
-  "pcr": 1.232,
+  "mp_pct": -0.6,
+  "pcr": 1.227,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -359,9 +315,9 @@
    {
     "time": 1795153860,
     "open": 25541.95,
-    "high": 25545.55,
-    "low": 25540.85,
-    "close": 25541.25
+    "high": 25557.2,
+    "low": 25539.8,
+    "close": 25555.8
    }
   ],
   "SENSEX": [
@@ -662,9 +618,9 @@
    {
     "time": 1795153860,
     "open": 83129.86,
-    "high": 83138.39,
-    "low": 83125.22,
-    "close": 83127.87
+    "high": 83174.28,
+    "low": 83124.89,
+    "close": 83174.16
    }
   ]
  },
@@ -1934,10 +1890,10 @@
    "score": 4,
    "spot_entry": 25528.25,
    "exit_t": null,
-   "exit_px": 110.2,
+   "exit_px": 119.95,
    "reason": "OPEN",
-   "pts": 6.25,
-   "rs": 469
+   "pts": 16.0,
+   "rs": 1200
   }
  ],
  "instrument": {
@@ -1961,10 +1917,12 @@
   "total_rs": 1962,
   "telegram": true
  },
- "errors": [],
+ "errors": [
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000012B312D82D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
