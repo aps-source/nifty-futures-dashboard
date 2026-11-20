@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-20 10:20:28",
+ "updated": "2026-11-20 10:21:39",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25492.25,
+   "chg_pts": -22.05,
+   "chg_pct": -0.09
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63040.9,
+   "chg_pts": -22.1,
+   "chg_pct": -0.04
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82929.46,
+   "chg_pts": -92.29,
+   "chg_pct": -0.11
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.91,
+   "chg_pts": 0.8,
+   "chg_pct": 4.97
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7760,
+   "chg_pts": -47,
+   "chg_pct": -0.6
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122094,
+   "chg_pts": -5358,
+   "chg_pct": -4.2
+  },
+  {
+   "name": "SILVER",
+   "ltp": 147931,
+   "chg_pts": -9551,
+   "chg_pct": -6.06
+  }
+ ],
  "oc": {
-  "spot": 25499.2,
+  "spot": 25494.5,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 20285330,
-  "res_pct": 0.0,
+  "res_oi": 19734910,
+  "res_pct": 0.02,
   "sup_strike": 25400.0,
-  "sup_oi": 17821895,
-  "sup_pct": 0.39,
+  "sup_oi": 18057260,
+  "sup_pct": 0.37,
   "max_pain": 25400.0,
-  "mp_pct": -0.39,
-  "pcr": 1.291,
+  "mp_pct": -0.37,
+  "pcr": 1.316,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -169,8 +213,15 @@
     "time": 1795150080,
     "open": 25505.05,
     "high": 25514.0,
-    "low": 25492.0,
-    "close": 25498.95
+    "low": 25484.95,
+    "close": 25484.95
+   },
+   {
+    "time": 1795150260,
+    "open": 25484.55,
+    "high": 25494.55,
+    "low": 25476.8,
+    "close": 25494.1
    }
   ],
   "SENSEX": [
@@ -325,17 +376,24 @@
     "time": 1795150080,
     "open": 82981.9,
     "high": 83018.59,
-    "low": 82955.34,
-    "close": 82971.27
+    "low": 82938.99,
+    "close": 82938.99
+   },
+   {
+    "time": 1795150260,
+    "open": 82929.38,
+    "high": 82945.55,
+    "low": 82904.87,
+    "close": 82944.39
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT BUILDUP",
-   "time": "10:18",
-   "d_price": "-14.9",
-   "d_oi": "3640"
+   "cls": "LONG UNWINDING",
+   "time": "10:21",
+   "d_price": "-8.4",
+   "d_oi": "-15275"
   },
   "5": {
    "cls": "LONG UNWINDING",
@@ -943,6 +1001,21 @@
    "score": "-1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "10:21",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25475.5",
+   "close": "25467.1",
+   "oi_start": "8847020",
+   "oi_end": "8831745",
+   "d_price": "-8.4",
+   "d_oi": "-15275",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -1008,12 +1081,10 @@
   "total_rs": 2121,
   "telegram": true
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
