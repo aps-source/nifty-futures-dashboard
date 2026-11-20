@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-20 12:43:50",
+ "updated": "2026-11-20 12:45:03",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25734.2,
-   "chg_pts": 219.9,
-   "chg_pct": 0.86
+   "ltp": 25709.55,
+   "chg_pts": 195.25,
+   "chg_pct": 0.77
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 64375.15,
-   "chg_pts": 1312.15,
-   "chg_pct": 2.08
+   "ltp": 64239.85,
+   "chg_pts": 1176.85,
+   "chg_pct": 1.87
   },
   {
    "name": "SENSEX",
-   "ltp": 83791.39,
-   "chg_pts": 769.64,
-   "chg_pct": 0.93
+   "ltp": 83689.4,
+   "chg_pts": 667.65,
+   "chg_pct": 0.8
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.42,
-   "chg_pts": 1.31,
-   "chg_pct": 8.13
+   "ltp": 17.32,
+   "chg_pts": 1.21,
+   "chg_pct": 7.51
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7742,
-   "chg_pts": -65,
-   "chg_pct": -0.83
+   "ltp": 7749,
+   "chg_pts": -58,
+   "chg_pct": -0.74
   },
   {
    "name": "GOLD",
-   "ltp": 122648,
-   "chg_pts": -4804,
-   "chg_pct": -3.77
+   "ltp": 122785,
+   "chg_pts": -4667,
+   "chg_pct": -3.66
   },
   {
    "name": "SILVER",
-   "ltp": 149261,
-   "chg_pts": -8221,
-   "chg_pct": -5.22
+   "ltp": 149551,
+   "chg_pts": -7931,
+   "chg_pct": -5.04
   }
  ],
  "oc": {
-  "spot": 25735.8,
+  "spot": 25711,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16313765,
-  "res_pct": 1.03,
+  "res_oi": 16178240,
+  "res_pct": 1.12,
   "sup_strike": 25500.0,
-  "sup_oi": 22513205,
-  "sup_pct": 0.92,
+  "sup_oi": 22321325,
+  "sup_pct": 0.82,
   "max_pain": 25500.0,
-  "mp_pct": -0.92,
-  "pcr": 1.657,
+  "mp_pct": -0.82,
+  "pcr": 1.66,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -549,8 +549,15 @@
     "time": 1795158720,
     "open": 25738.0,
     "high": 25738.85,
-    "low": 25730.1,
-    "close": 25734.95
+    "low": 25703.1,
+    "close": 25704.1
+   },
+   {
+    "time": 1795158900,
+    "open": 25707.0,
+    "high": 25714.15,
+    "low": 25703.2,
+    "close": 25712.45
    }
   ],
   "SENSEX": [
@@ -1041,8 +1048,15 @@
     "time": 1795158720,
     "open": 83800.95,
     "high": 83807.56,
-    "low": 83777.11,
-    "close": 83790.09
+    "low": 83673.5,
+    "close": 83676.32
+   },
+   {
+    "time": 1795158900,
+    "open": 83676.21,
+    "high": 83714.64,
+    "low": 83674.76,
+    "close": 83709.43
    }
   ]
  },
@@ -2957,10 +2971,10 @@
    "score": 4,
    "spot_entry": 25528.25,
    "exit_t": null,
-   "exit_px": 241.9,
+   "exit_px": 228.6,
    "reason": "OPEN",
-   "pts": 137.95,
-   "rs": 10346
+   "pts": 124.65,
+   "rs": 9349
   }
  ],
  "instrument": {
