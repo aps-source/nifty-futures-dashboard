@@ -1,51 +1,21 @@
 {
- "updated": "2026-11-20 13:14:58",
+ "updated": "2026-11-20 13:16:11",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25716.75,
-   "chg_pts": 202.45,
-   "chg_pct": 0.79
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 64400.3,
-   "chg_pts": 1337.3,
-   "chg_pct": 2.12
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83730.08,
-   "chg_pts": 708.33,
-   "chg_pct": 0.85
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.51,
-   "chg_pts": 1.4,
-   "chg_pct": 8.69
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7705,
-   "chg_pts": -102,
-   "chg_pct": -1.31
-  },
-  {
-   "name": "GOLD",
-   "ltp": 122522,
-   "chg_pts": -4930,
-   "chg_pct": -3.87
-  },
-  {
-   "name": "SILVER",
-   "ltp": 149530,
-   "chg_pts": -7952,
-   "chg_pct": -5.05
-  }
- ],
+ "oc": {
+  "spot": 25719.5,
+  "expiry": "2026-11-23",
+  "res_strike": 26000.0,
+  "res_oi": 16640910,
+  "res_pct": 1.09,
+  "sup_strike": 25500.0,
+  "sup_oi": 21585265,
+  "sup_pct": 0.85,
+  "max_pain": 25500.0,
+  "mp_pct": -0.85,
+  "pcr": 1.649,
+  "suggests": "PUT side heavy - CALL bias"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -611,9 +581,9 @@
    {
     "time": 1795160700,
     "open": 25714.1,
-    "high": 25720.3,
-    "low": 25714.1,
-    "close": 25719.55
+    "high": 25721.2,
+    "low": 25712.15,
+    "close": 25718.5
    }
   ],
   "SENSEX": [
@@ -1180,9 +1150,9 @@
    {
     "time": 1795160700,
     "open": 83728.89,
-    "high": 83737.59,
-    "low": 83728.46,
-    "close": 83732.89
+    "high": 83744.81,
+    "low": 83715.72,
+    "close": 83735.62
    }
   ]
  },
@@ -3114,12 +3084,12 @@
   "telegram": true
  },
  "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000012B312D9450>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": false,
+  "quotes_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
