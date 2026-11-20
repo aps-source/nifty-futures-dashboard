@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-20 11:22:42",
+ "updated": "2026-11-20 11:24:19",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25554.0,
+  "spot": 25547,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 20212205,
-  "res_pct": -0.21,
+  "res_oi": 19767605,
+  "res_pct": -0.18,
   "sup_strike": 25500.0,
-  "sup_oi": 18359445,
-  "sup_pct": 0.21,
+  "sup_oi": 18271305,
+  "sup_pct": 0.18,
   "max_pain": 25400.0,
-  "mp_pct": -0.6,
-  "pcr": 1.227,
+  "mp_pct": -0.58,
+  "pcr": 1.235,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -315,9 +315,16 @@
    {
     "time": 1795153860,
     "open": 25541.95,
-    "high": 25557.2,
+    "high": 25557.65,
     "low": 25539.8,
-    "close": 25555.8
+    "close": 25552.9
+   },
+   {
+    "time": 1795154040,
+    "open": 25552.7,
+    "high": 25554.5,
+    "low": 25545.4,
+    "close": 25545.4
    }
   ],
   "SENSEX": [
@@ -618,18 +625,25 @@
    {
     "time": 1795153860,
     "open": 83129.86,
-    "high": 83174.28,
+    "high": 83184.22,
     "low": 83124.89,
-    "close": 83174.16
+    "close": 83169.49
+   },
+   {
+    "time": 1795154040,
+    "open": 83168.75,
+    "high": 83173.22,
+    "low": 83155.8,
+    "close": 83162.01
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "11:21",
-   "d_price": "15.4",
-   "d_oi": "2860"
+   "time": "11:24",
+   "d_price": "15.9",
+   "d_oi": "390"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -1807,6 +1821,21 @@
    "score": "1",
    "decision_score": "4",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "11:24",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25524.2",
+   "close": "25540.1",
+   "oi_start": "8834215",
+   "oi_end": "8834605",
+   "d_price": "15.9",
+   "d_oi": "390",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -1890,10 +1919,10 @@
    "score": 4,
    "spot_entry": 25528.25,
    "exit_t": null,
-   "exit_px": 119.95,
+   "exit_px": 114.8,
    "reason": "OPEN",
-   "pts": 16.0,
-   "rs": 1200
+   "pts": 10.85,
+   "rs": 814
   }
  ],
  "instrument": {
@@ -1918,7 +1947,7 @@
   "telegram": true
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000012B312D82D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000012B312D9450>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
