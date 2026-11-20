@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-20 15:04:32",
+ "updated": "2026-11-20 15:05:46",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25797.45,
-   "chg_pts": 283.15,
-   "chg_pct": 1.11
+   "ltp": 25803.55,
+   "chg_pts": 289.25,
+   "chg_pct": 1.13
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 64648.4,
-   "chg_pts": 1585.4,
-   "chg_pct": 2.51
+   "ltp": 64669.65,
+   "chg_pts": 1606.65,
+   "chg_pct": 2.55
   },
   {
    "name": "SENSEX",
-   "ltp": 83996.14,
-   "chg_pts": 974.39,
-   "chg_pct": 1.17
+   "ltp": 84008.3,
+   "chg_pts": 986.55,
+   "chg_pct": 1.19
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.28,
-   "chg_pts": 1.17,
-   "chg_pct": 7.26
+   "ltp": 17.27,
+   "chg_pts": 1.16,
+   "chg_pct": 7.2
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7558,
-   "chg_pts": -249,
-   "chg_pct": -3.19
+   "ltp": 7549,
+   "chg_pts": -258,
+   "chg_pct": -3.3
   },
   {
    "name": "GOLD",
-   "ltp": 123204,
-   "chg_pts": -4248,
-   "chg_pct": -3.33
+   "ltp": 123150,
+   "chg_pts": -4302,
+   "chg_pct": -3.38
   },
   {
    "name": "SILVER",
-   "ltp": 151451,
-   "chg_pts": -6031,
-   "chg_pct": -3.83
+   "ltp": 151515,
+   "chg_pts": -5967,
+   "chg_pct": -3.79
   }
  ],
  "oc": {
-  "spot": 25798,
+  "spot": 25804.9,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 16390790,
-  "res_pct": 0.78,
+  "res_oi": 16099590,
+  "res_pct": 0.76,
   "sup_strike": 25500.0,
-  "sup_oi": 19060210,
-  "sup_pct": 1.16,
+  "sup_oi": 19055400,
+  "sup_pct": 1.18,
   "max_pain": 25550.0,
-  "mp_pct": -0.96,
-  "pcr": 1.619,
+  "mp_pct": -0.99,
+  "pcr": 1.633,
   "suggests": "PUT side heavy - CALL bias"
  },
  "charts": {
@@ -877,9 +877,9 @@
    {
     "time": 1795167180,
     "open": 25778.1,
-    "high": 25799.45,
+    "high": 25806.15,
     "low": 25776.5,
-    "close": 25798.45
+    "close": 25805.1
    }
   ],
   "SENSEX": [
@@ -1698,9 +1698,9 @@
    {
     "time": 1795167180,
     "open": 83940.44,
-    "high": 84009.1,
+    "high": 84018.81,
     "low": 83939.79,
-    "close": 83988.7
+    "close": 84012.81
    }
   ]
  },
@@ -1712,10 +1712,10 @@
    "d_oi": "-4420"
   },
   "5": {
-   "cls": "LONG UNWINDING",
-   "time": "15:00",
-   "d_price": "-6.6",
-   "d_oi": "-4030"
+   "cls": "SHORT COVERING",
+   "time": "15:05",
+   "d_price": "27.2",
+   "d_oi": "-31980"
   },
   "15": {
    "cls": "SHORT COVERING",
@@ -1730,24 +1730,9 @@
    "d_oi": "-36790"
   }
  },
- "decision": "LONG",
- "decision_score": 2,
+ "decision": "STRONG LONG",
+ "decision_score": 4,
  "signals": [
-  {
-   "time": "11:50",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25556",
-   "close": "25551",
-   "oi_start": "8832785",
-   "oi_end": "8827195",
-   "d_price": "-5",
-   "d_oi": "-5590",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
   {
    "time": "11:51",
    "symbol": "NIFTY",
@@ -3532,6 +3517,21 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "15:05",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25764",
+   "close": "25791.2",
+   "oi_start": "8696480",
+   "oi_end": "8664500",
+   "d_price": "27.2",
+   "d_oi": "-31980",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -3636,6 +3636,23 @@
    "reason": "score flip (-2)",
    "pts": 3.25,
    "rs": 194
+  },
+  {
+   "date": "2026-11-20",
+   "expiry": "2026-11-23",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25850,
+   "opt_id": 64491,
+   "entry_t": "15:05",
+   "entry_px": 94.1,
+   "score": 4,
+   "spot_entry": 25803.55,
+   "exit_t": null,
+   "exit_px": 94.1,
+   "reason": "OPEN",
+   "pts": 0.0,
+   "rs": 0
   }
  ],
  "instrument": {
@@ -3643,7 +3660,18 @@
   "expiry": "2026-11-23"
  },
  "paper": {
-  "open": null,
+  "open": {
+   "date": "2026-11-20",
+   "expiry": "2026-11-23",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25850,
+   "opt_id": 64491,
+   "entry_t": "15:05",
+   "entry_px": 94.1,
+   "score": 4,
+   "spot_entry": 25803.55
+  },
   "total_trades": 35,
   "total_rs": 10697,
   "telegram": true
