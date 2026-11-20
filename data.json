@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-20 11:40:37",
+ "updated": "2026-11-20 11:41:50",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25557.8,
-   "chg_pts": 43.5,
-   "chg_pct": 0.17
+   "ltp": 25562.55,
+   "chg_pts": 48.25,
+   "chg_pct": 0.19
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63466.85,
-   "chg_pts": 403.85,
-   "chg_pct": 0.64
+   "ltp": 63486.4,
+   "chg_pts": 423.4,
+   "chg_pct": 0.67
   },
   {
    "name": "SENSEX",
-   "ltp": 83170.07,
-   "chg_pts": 148.32,
-   "chg_pct": 0.18
+   "ltp": 83202.66,
+   "chg_pts": 180.91,
+   "chg_pct": 0.22
   },
   {
    "name": "INDIA VIX",
@@ -29,21 +29,21 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7696,
-   "chg_pts": -111,
-   "chg_pct": -1.42
+   "ltp": 7702,
+   "chg_pts": -105,
+   "chg_pct": -1.34
   },
   {
    "name": "GOLD",
-   "ltp": 123100,
-   "chg_pts": -4352,
-   "chg_pct": -3.41
+   "ltp": 123027,
+   "chg_pts": -4425,
+   "chg_pct": -3.47
   },
   {
    "name": "SILVER",
-   "ltp": 149850,
-   "chg_pts": -7632,
-   "chg_pct": -4.85
+   "ltp": 150000,
+   "chg_pts": -7482,
+   "chg_pct": -4.75
   }
  ],
  "charts": {
@@ -387,9 +387,16 @@
    {
     "time": 1795154940,
     "open": 25548.7,
-    "high": 25558.3,
+    "high": 25567.75,
     "low": 25547.7,
-    "close": 25557.35
+    "close": 25562.65
+   },
+   {
+    "time": 1795155120,
+    "open": 25563.1,
+    "high": 25564.55,
+    "low": 25563.1,
+    "close": 25563.95
    }
   ],
   "SENSEX": [
@@ -732,9 +739,16 @@
    {
     "time": 1795154940,
     "open": 83154.11,
-    "high": 83176.4,
+    "high": 83206.74,
     "low": 83143.74,
-    "close": 83170.46
+    "close": 83199.24
+   },
+   {
+    "time": 1795155120,
+    "open": 83207.12,
+    "high": 83207.12,
+    "low": 83207.12,
+    "close": 83207.12
    }
   ]
  },
@@ -2169,10 +2183,10 @@
    "score": 4,
    "spot_entry": 25528.25,
    "exit_t": null,
-   "exit_px": 117.45,
+   "exit_px": 116.7,
    "reason": "OPEN",
-   "pts": 13.5,
-   "rs": 1012
+   "pts": 12.75,
+   "rs": 956
   }
  ],
  "instrument": {
