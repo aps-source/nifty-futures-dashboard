@@ -112,6 +112,9 @@
   footer { color:var(--text-muted); font-size:0.8rem; max-width:1500px; margin:0 auto; padding:0 clamp(14px,2vw,32px) 2rem; }
   .sig { max-height:320px; overflow:auto; }
   @media (max-width:700px){ .chart{height:320px} }
+.books{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 10px}
+.book{flex:1 1 220px;border:1px solid var(--border,#e2e7f1);border-radius:10px;padding:8px 10px;font-size:13px}
+.book span{color:var(--text-muted,#76829c)}
 </style>
 </head>
 <body>
@@ -131,7 +134,6 @@
       <span id="live" class="st-pill stale"><span class="dot"></span><span id="live-txt">&hellip;</span></span>
       <a class="hero-pill" href="signal_log.html">Signal history</a>
       <a class="hero-pill" href="trades.html">Trade log</a>
-      <a class="hero-pill" href="backtest.html">Backtest</a>
       <a class="btn" href="https://aps-source.github.io/">&#9666; Main dashboard</a>
       <div class="live-clock"><div class="d" id="clock-d"></div><div class="t" id="clock-t"></div></div>
     </div>
@@ -186,18 +188,14 @@
       <a class="full" href="#" onclick="goFull('card-NIFTY');return false">full screen &#8599;</a></h2>
     <div class="chart" id="chart-NIFTY"></div>
   </div>
-  <div class="card" id="card-SENSEX">
-    <h2>SENSEX index &middot; 3-min (Dhan data)
-      <a class="full" href="#" onclick="goFull('card-SENSEX');return false">full screen &#8599;</a></h2>
-    <div class="chart" id="chart-SENSEX"></div>
-  </div>
 
   <div class="card">
     <h2>Trade log (today) <a class="full" href="trades.html">all days &#8599;</a></h2>
+    <div id="books" class="books"></div>
     <table id="trades">
-      <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
+      <tr><th>Book</th><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>
       <th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>
-      <tr><td colspan="11" style="color:var(--text-muted)">No trades today &mdash; paper engine buys 1-OTM NIFTY option on STRONG MTF signals (CE long / PE short, 1 lot)</td></tr>
+      <tr><td colspan="12" style="color:var(--text-muted)">No trades today &mdash; three paper books (v1, v2, C) buy a 1-OTM NIFTY option (Call when votes point up, Put when down, 1 lot)</td></tr>
     </table>
   </div>
 
@@ -235,7 +233,7 @@ function ensureChart(sym){
 }
 function drawCharts(d){
   if(!d.charts) return;
-  for(const sym of ['NIFTY','SENSEX']){
+  for(const sym of ['NIFTY']){
     const rows = d.charts[sym];
     if(!rows || !rows.length) continue;
     const ch = ensureChart(sym);
@@ -325,18 +323,23 @@ async function load(){
   document.getElementById('exit').innerHTML =
     li(true,'Exit on decision flip against position') +
     li(true,'Hard square-off 15:25 IST');
+  if(d.paper && d.paper.books){
+    document.getElementById('books').innerHTML = Object.entries(d.paper.books).map(([k,b])=>
+      `<div class="book"><b>${k}</b> <span>${b.desc}</span><br>${b.total_trades} trades &middot;
+       <b class="${cls(b.total_rs)}">Rs ${fmtOI(b.total_rs)}</b>${b.open?' &middot; <b>OPEN</b>':''}</div>`).join('');
+  }
   if(d.trades && d.trades.length){
     document.getElementById('trades').innerHTML =
-      '<tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>' +
+      '<tr><th>Book</th><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th>' +
       '<th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>' +
       d.trades.map(t=>{
         const buy = t.entry_px, sell = t.exit_px;   // option buying: always buy then sell
-        return `<tr><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
+        return `<tr><td><b>${t.strat||'v1'}</b></td><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
         <td>${t.strike||''} ${t.opt_type||''}</td><td>${t.entry_t}</td><td>${buy!=null?fmt2(buy):'&mdash;'}</td>
         <td>${t.exit_t||'&mdash;'}</td><td>${sell!=null?fmt2(sell):'&mdash;'}</td><td>${t.reason}</td>
         <td class="${cls(t.pts)}">${t.pts!=null?fmtI(t.pts):'&mdash;'}</td>
         <td class="${cls(t.rs)}">${t.rs!=null?fmtOI(t.rs):'&mdash;'}</td></tr>`;}).join('') +
-      (d.paper?`<tr><td colspan="11" style="color:var(--text-muted)">All time: ${d.paper.total_trades} trades, Rs ${fmtOI(d.paper.total_rs)} (paper, 1 lot)</td></tr>`:'');
+      `<tr><td colspan="12" style="color:var(--text-muted)">Paper, 1 lot, P&amp;L after Rs ${d.paper?d.paper.cost_rs:150} costs per trade</td></tr>`;
   }
   if(d.signals && d.signals.length){
     document.getElementById('signals').innerHTML =

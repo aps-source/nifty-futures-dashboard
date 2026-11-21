@@ -24,12 +24,16 @@ h1{font-size:18px}
 
 <div style="font-size:12px;margin:8px 0"><a href="index.html">&#9666; Nifty Futures</a></div>
 <h1>Paper Trade Log</h1>
-<p style="font-size:13px;color:var(--mut,#76829c);margin:0 0 8px">1-OTM NIFTY option buying: STRONG LONG buys Call, STRONG SHORT buys Put. 1 lot (75), exit on MTF score flip or 15:25. P&amp;L after Rs 50 costs per trade. Paper only, no real orders.</p>
+<p style="font-size:13px;color:var(--mut,#76829c);margin:0 0 8px">Three paper books on the same live votes. Each buys a 1-OTM NIFTY option (Call when votes point up, Put when down), 1 lot (75), exits when its score turns against the trade or at 15:25. P&amp;L after Rs 150 costs per trade. Paper only, no real orders.<br>
+<b>v1</b>: 3/5/15/60m, enter at |score| &ge; 3 &middot; <b>v2</b>: 5/15/60m all agree, max 2/day &middot; <b>C</b>: 3/5/15/60m all 4 agree, 15-min wait after exit, max 2/day. v2 and C started 2026-11-23.</p>
 <div class="bar">
   <label>Day <select id="day"><option value="">All days</option></select></label>
+  <label>Book <select id="strat"><option value="">All</option><option>v1</option><option>v2</option><option>C</option></select></label>
   <label>Side <select id="side"><option value="">All</option><option>LONG</option><option>SHORT</option></select></label>
   <span id="sum"></span>
 </div>
+<h2 style="font-size:15px;margin:14px 0 0">Book comparison</h2>
+<table id="cmp"></table>
 <h2 style="font-size:15px;margin:14px 0 0">Daily summary</h2>
 <table id="daily"></table>
 <h2 style="font-size:15px;margin:18px 0 0">Trades</h2>
@@ -47,33 +51,40 @@ function stats(ts){
           win:done.length?Math.round(100*w.length/done.length):0};
 }
 function render(){
-  const day=document.getElementById('day').value, side=document.getElementById('side').value;
-  const ts=all.filter(t=>(!day||t.date===day)&&(!side||t.side===side));
+  const day=document.getElementById('day').value, side=document.getElementById('side').value,
+        strat=document.getElementById('strat').value;
+  const ts=all.filter(t=>(!day||t.date===day)&&(!side||t.side===side)&&(!strat||t.strat===strat));
+  document.getElementById('cmp').innerHTML='<tr><th>Book</th><th>Trades</th><th>Trades/day</th><th>Wins</th><th>Win %</th><th>PF</th><th>Net Rs</th><th>Worst day Rs</th></tr>'+
+    ['v1','v2','C'].map(k=>{const bt=all.filter(t=>t.strat===k&&(!day||t.date===day)&&(!side||t.side===side)), x=stats(bt);
+      const dd={}; bt.forEach(t=>{if(t.rs!=null&&t.exit_t)dd[t.date]=(dd[t.date]||0)+t.rs;});
+      const nd=Object.keys(dd).length, worst=nd?Math.min(...Object.values(dd)):0;
+      return `<tr><td><b>${k}</b></td><td>${x.n}</td><td>${nd?(x.n/nd).toFixed(1):'-'}</td><td>${x.wins}</td><td>${x.win}%</td><td>${x.pf}</td>
+        <td class="${cls(x.net)}"><b>${fmtR(x.net)}</b></td><td class="${cls(worst)}">${fmtR(worst)}</td></tr>`;}).join('');
   const s=stats(ts);
   document.getElementById('sum').innerHTML=`${s.n} closed trades | ${s.wins} wins (${s.win}%) | PF ${s.pf} | net <b class="${cls(s.net)}">Rs ${fmtR(s.net)}</b>`;
-  const byDay={}; all.filter(t=>!side||t.side===side).forEach(t=>(byDay[t.date]=byDay[t.date]||[]).push(t));
+  const byDay={}; all.filter(t=>(!side||t.side===side)&&(!strat||t.strat===strat)).forEach(t=>(byDay[t.date]=byDay[t.date]||[]).push(t));
   let cum=0;
   const drows=Object.keys(byDay).sort().map(d=>{const x=stats(byDay[d]); cum+=x.net; return [d,x,cum];}).reverse();
   document.getElementById('daily').innerHTML='<tr><th>Date</th><th>Trades</th><th>Wins</th><th>Win %</th><th>PF</th><th>Day P&amp;L Rs</th><th>Cumulative Rs</th></tr>'+
     drows.map(([d,x,c])=>`<tr><td>${d}</td><td>${x.n}</td><td>${x.wins}</td><td>${x.win}%</td><td>${x.pf}</td>
       <td class="${cls(x.net)}"><b>${fmtR(x.net)}</b></td><td class="${cls(c)}">${fmtR(c)}</td></tr>`).join('');
-  document.getElementById('t').innerHTML='<tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th><th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>'+
-    (ts.length?ts.slice().reverse().map(t=>`<tr><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
+  document.getElementById('t').innerHTML='<tr><th>Book</th><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th><th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>'+
+    (ts.length?ts.slice().reverse().map(t=>`<tr><td><b>${t.strat||'v1'}</b></td><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.side}</b></td>
       <td>${t.strike} ${t.opt_type}</td><td>${t.entry_t}</td><td>${fmt2(t.entry_px)}</td><td>${t.exit_t||'&mdash;'}</td>
       <td>${t.exit_px!=null?fmt2(t.exit_px):'&mdash;'}</td><td>${t.reason}</td>
       <td class="${cls(t.pts)}">${t.pts!=null?fmtI(t.pts):'&mdash;'}</td><td class="${cls(t.rs)}"><b>${t.rs!=null?fmtR(t.rs):'&mdash;'}</b></td></tr>`).join('')
-    :'<tr><td colspan="11">No trades.</td></tr>');
+    :'<tr><td colspan="12">No trades.</td></tr>');
 }
 Promise.all([
   fetch('trades.json?t='+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
   fetch('data.json?t='+Date.now()).then(r=>r.json()).catch(()=>({}))
 ]).then(([h,d])=>{
   const today=(d.updated||'').slice(0,10);
-  all=h.filter(t=>t.date!==today).concat(d.trades||[]);   // today's (incl. open) is live in data.json
+  all=h.filter(t=>t.date!==today).concat(d.trades||[]).map(t=>({...t,strat:t.strat||'v1'}));   // today's (incl. open) is live in data.json
   all.sort((a,b)=>(a.date+a.entry_t).localeCompare(b.date+b.entry_t));
   const days=[...new Set(all.map(t=>t.date))].sort().reverse();
   document.getElementById('day').innerHTML+=days.map(k=>`<option>${k}</option>`).join('');
-  ['day','side'].forEach(id=>document.getElementById(id).onchange=render);
+  ['day','side','strat'].forEach(id=>document.getElementById(id).onchange=render);
   render();
 });
 </script>
