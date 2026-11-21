@@ -27,9 +27,13 @@ h1{font-size:18px}
 <div class="bar">
   <label>Day <select id="day"></select></label>
   <label>TF <select id="tf"><option value="">All</option><option>3</option><option>5</option><option>15</option><option>60</option></select></label>
-  <label><input type="checkbox" id="chg"> Decision changes only</label>
+  <label><input type="checkbox" id="chg"> Signal changes only</label>
   <span id="sum"></span>
 </div>
+<p style="font-size:12px;color:var(--mut,#76829c);margin:2px 0 8px">Book columns show each paper book's entry signal after that bar:
+<b>v1</b> 3/5/15/60m score &ge; 3 &middot; <b>v2</b> 5/15/60m all agree &middot; <b>C</b> all 4 clocks agree.
+A signal is not always a trade: books hold one position at a time, v2/C stop after 2 trades a day, C waits 15 min after an exit.
+Actual fills are on the <a href="trades.html">trade log</a>.</p>
 <table id="t"><tr><td>loading&hellip;</td></tr></table>
 <script>
 const fmt2=n=>Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -38,22 +42,37 @@ const fmtOI=n=>(n>=0?'+':'')+Number(n).toLocaleString('en-IN');
 const cls=v=>v>0?'up':(v<0?'dn':'');
 const decCls=d=>d&&d.includes('LONG')?'up':(d&&d.includes('SHORT')?'dn':'');
 let days={};
+const BOOKS={v1:{tfs:['3','5','15','60'],need:3,all:false}, v2:{tfs:['5','15','60'],need:3,all:true},
+             C:{tfs:['3','5','15','60'],need:4,all:true}};
+function addBookSignals(rows){   // same rule as publisher.votes(): latest bar per TF, +1 up / -1 down
+  const latest={};
+  rows.forEach(r=>{
+    latest[r.tf_min]=+r.score;
+    for(const [k,b] of Object.entries(BOOKS)){
+      const v=b.tfs.filter(t=>t in latest).map(t=>latest[t]), sc=v.reduce((a,x)=>a+x,0);
+      r[k]=(v.length&&(!b.all||v.length===b.tfs.length)&&Math.abs(sc)>=b.need)?(sc>0?'CALL':'PUT'):'';
+    }
+  });
+  return rows;
+}
+const sig=x=>x==='CALL'?'<b class="up">BUY CALL</b>':x==='PUT'?'<b class="dn">BUY PUT</b>':'<span class="nt">&mdash;</span>';
 function render(){
   const day=document.getElementById('day').value, tf=document.getElementById('tf').value,
         chg=document.getElementById('chg').checked;
   let rows=(days[day]||[]), prev=null;
-  if(chg) rows=rows.filter(r=>{const k=r.decision!==prev; prev=r.decision; return k;});
+  if(chg) rows=rows.filter(r=>{const key=[r.decision,r.v1,r.v2,r.C].join('|'), k=key!==prev; prev=key; return k;});
   if(tf) rows=rows.filter(r=>r.tf_min===tf);
-  const all=days[day]||[], strong=all.filter(r=>(r.decision||'').startsWith('STRONG'));
-  document.getElementById('sum').textContent =
-    `${all.length} bars | STRONG LONG ${strong.filter(r=>r.decision==='STRONG LONG').length} | STRONG SHORT ${strong.filter(r=>r.decision==='STRONG SHORT').length}`;
+  const all=days[day]||[];
+  const starts=k=>{let p='',c=0,u=0;all.forEach(r=>{if(r[k]&&r[k]!==p){r[k]==='CALL'?c++:u++;}p=r[k];});return `${k}: ${c} Call / ${u} Put`;};
+  document.getElementById('sum').textContent = `${all.length} bars | new signals ` + Object.keys(BOOKS).map(starts).join(' | ');
   document.getElementById('t').innerHTML =
-    '<tr><th>Time</th><th>TF</th><th>Open</th><th>Close</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th></tr>'+
+    '<tr><th>Time</th><th>TF</th><th>Open</th><th>Close</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th><th>v1</th><th>v2</th><th>C</th></tr>'+
     (rows.length?rows.slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
     <td>${fmt2(r.open)}</td><td>${fmt2(r.close)}</td>
     <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
-    <td>${r.classification}</td><td>${r.decision_score}</td><td class="${decCls(r.decision)}"><b>${r.decision}</b></td></tr>`).join('')
-    :'<tr><td colspan="9">No bars logged this day.</td></tr>');
+    <td>${r.classification}</td><td>${r.decision_score}</td><td class="${decCls(r.decision)}"><b>${r.decision}</b></td>
+    <td>${sig(r.v1)}</td><td>${sig(r.v2)}</td><td>${sig(r.C)}</td></tr>`).join('')
+    :'<tr><td colspan="12">No bars logged this day.</td></tr>');
 }
 Promise.all([
   fetch('history.json?t='+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
@@ -65,6 +84,7 @@ Promise.all([
     const base=days[today]||[], last=base.length?base[base.length-1].time:'';
     days[today]=base.concat(d.signals.filter(r=>r.time>last));
   }
+  Object.values(days).forEach(addBookSignals);
   const sel=document.getElementById('day');
   sel.innerHTML=Object.keys(days).sort().reverse().map(k=>`<option>${k}</option>`).join('');
   ['day','tf','chg'].forEach(id=>document.getElementById(id).onchange=render);
