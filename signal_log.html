@@ -17,6 +17,9 @@ h1{font-size:18px}
 .bar{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:6px 0 4px;font-size:13px}
 .bar select{font:inherit;padding:3px 6px;border-radius:6px;border:1px solid var(--grid,#ccc);background:var(--surface,#fff);color:inherit}
 #sum{color:var(--mut,#76829c)}
+.est{font-size:10px;font-weight:700;padding:1px 5px;border-radius:6px;background:#f59e0b;color:#fff}
+.hold{opacity:.45;font-size:12px}
+td small{opacity:.8}
 </style>
 </head>
 <body>
@@ -27,13 +30,13 @@ h1{font-size:18px}
 <div class="bar">
   <label>Day <select id="day"></select></label>
   <label>TF <select id="tf"><option value="">All</option><option>3</option><option>5</option><option>15</option><option>60</option></select></label>
-  <label><input type="checkbox" id="chg"> Signal changes only</label>
+  <label><input type="checkbox" id="chg"> Trade entries/exits only</label>
   <span id="sum"></span>
 </div>
-<p style="font-size:12px;color:var(--mut,#76829c);margin:2px 0 8px">Book columns show each paper book's entry signal after that bar:
-<b>v1</b> 3/5/15/60m score &ge; 3 &middot; <b>v2</b> 5/15/60m all agree &middot; <b>C</b> all 4 clocks agree.
-A signal is not always a trade: books hold one position at a time, v2/C stop after 2 trades a day, C waits 15 min after an exit.
-Actual fills are on the <a href="trades.html">trade log</a>.</p>
+<p style="font-size:12px;color:var(--mut,#76829c);margin:2px 0 8px">Book columns show each paper book's actual trades, placed on the bar that triggered them:
+<b>CE/PE ENTRY</b> = bought the 1-OTM Call/Put, <b>CE/PE EXIT</b> = sold it (P&amp;L after Rs 150 costs), faint &#9656; = holding.
+<b>v1</b> 3/5/15/60m score &ge; 3 &middot; <b>v2</b> 5/15/60m all agree, max 2/day &middot; <b>C</b> all 4 agree, 15-min wait, max 2/day.
+<span class="est">est</span> = estimated replay before v2/C went live (no option price). Full details on the <a href="trades.html">trade log</a>.</p>
 <table id="t"><tr><td>loading&hellip;</td></tr></table>
 <script>
 const fmt2=n=>Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -42,49 +45,67 @@ const fmtOI=n=>(n>=0?'+':'')+Number(n).toLocaleString('en-IN');
 const cls=v=>v>0?'up':(v<0?'dn':'');
 const decCls=d=>d&&d.includes('LONG')?'up':(d&&d.includes('SHORT')?'dn':'');
 let days={};
-const BOOKS={v1:{tfs:['3','5','15','60'],need:3,all:false}, v2:{tfs:['5','15','60'],need:3,all:true},
-             C:{tfs:['3','5','15','60'],need:4,all:true}};
-function addBookSignals(rows){   // same rule as publisher.votes(): latest bar per TF, +1 up / -1 down
-  const latest={};
-  rows.forEach(r=>{
-    latest[r.tf_min]=+r.score;
-    for(const [k,b] of Object.entries(BOOKS)){
-      const v=b.tfs.filter(t=>t in latest).map(t=>latest[t]), sc=v.reduce((a,x)=>a+x,0);
-      r[k]=(v.length&&(!b.all||v.length===b.tfs.length)&&Math.abs(sc)>=b.need)?(sc>0?'CALL':'PUT'):'';
-    }
+const BOOKS=['v1','v2','C'];
+let EVENTS={};   // date -> [{book,kind,ot,t,px,pts,rs,est}]
+const plus1=t=>{let [h,m]=t.split(':').map(Number); m++; if(m===60){h++;m=0;} return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0');};
+function addTradeEvents(day, rows){
+  // attach to the last bar at/before the trade minute; the publisher stamps its tick at the start, so when
+  // that bar's score does not support the trade, the trigger was the bar logged in the next minute
+  rows.forEach(r=>BOOKS.forEach(k=>{r[k]=[]; r[k+'_hold']='';}));
+  (EVENTS[day]||[]).forEach(e=>{
+    let i=-1, j2=-1; const nxt=plus1(e.t);
+    rows.forEach((r,j)=>{ if(r.time<=e.t) i=j; if(r.time===nxt) j2=j; });
+    const dir=(e.ot==='CE'?1:-1)*(e.kind==='ENTRY'?1:-1), ok=i>=0&&dir*(+rows[i].decision_score)>0;
+    rows[(!ok&&j2>=0)?j2:Math.max(i,0)][e.book].push(e);
   });
-  return rows;
+  BOOKS.forEach(k=>{let hold='';
+    rows.forEach(r=>{ r[k].forEach(e=>hold=e.kind==='ENTRY'?e.ot:''); if(!r[k].length) r[k+'_hold']=hold; });
+  });
 }
-const sig=x=>x==='CALL'?'<b class="up">BUY CALL</b>':x==='PUT'?'<b class="dn">BUY PUT</b>':'<span class="nt">&mdash;</span>';
+function cell(r,k){
+  if(!r[k].length) return r[k+'_hold']?`<span class="hold">&#9656; ${r[k+'_hold']}</span>`:'<span class="nt">&mdash;</span>';
+  return r[k].map(e=>{
+    const c=e.ot==='CE'?'up':'dn', tag=e.est?' <span class="est">est</span>':'';
+    if(e.kind==='ENTRY') return `<b class="${c}">${e.ot} ENTRY</b>${tag}<br><small>${e.t}${e.strike?' &middot; '+e.strike+' @ '+fmt2(e.px):''}</small>`;
+    return `<b class="${c}">${e.ot} EXIT</b>${tag}<br><small>${e.t} &middot; ${e.rs==null?'':`<span class="${cls(e.rs)}">Rs ${fmtOI(e.rs)}</span>`}${e.px!=null?' @ '+fmt2(e.px):''}</small>`;
+  }).join('<br>');
+}
 function render(){
   const day=document.getElementById('day').value, tf=document.getElementById('tf').value,
         chg=document.getElementById('chg').checked;
   let rows=(days[day]||[]), prev=null;
-  if(chg) rows=rows.filter(r=>{const key=[r.decision,r.v1,r.v2,r.C].join('|'), k=key!==prev; prev=key; return k;});
+  if(chg) rows=rows.filter(r=>BOOKS.some(k=>r[k].length));
   if(tf) rows=rows.filter(r=>r.tf_min===tf);
   const all=days[day]||[];
-  const starts=k=>{let p='',c=0,u=0;all.forEach(r=>{if(r[k]&&r[k]!==p){r[k]==='CALL'?c++:u++;}p=r[k];});return `${k}: ${c} Call / ${u} Put`;};
-  document.getElementById('sum').textContent = `${all.length} bars | new signals ` + Object.keys(BOOKS).map(starts).join(' | ');
+  const ev=EVENTS[day]||[];
+  const cnt=k=>{const x=ev.filter(e=>e.book===k&&e.kind==='EXIT'), rs=x.reduce((a,e)=>a+(e.rs||0),0);
+    return `${k}: ${ev.filter(e=>e.book===k&&e.kind==='ENTRY').length} trades, Rs ${fmtOI(rs)}`;};
+  document.getElementById('sum').textContent = `${all.length} bars | ` + BOOKS.map(cnt).join(' | ');
   document.getElementById('t').innerHTML =
     '<tr><th>Time</th><th>TF</th><th>Open</th><th>Close</th><th>&Delta;px</th><th>&Delta;OI</th><th>Class</th><th>Score</th><th>Decision</th><th>v1</th><th>v2</th><th>C</th></tr>'+
     (rows.length?rows.slice().reverse().map(r=>`<tr><td>${r.time}</td><td>${r.tf_min}m</td>
     <td>${fmt2(r.open)}</td><td>${fmt2(r.close)}</td>
     <td class="${cls(+r.d_price)}">${fmtI(+r.d_price)}</td><td class="${cls(+r.d_oi)}">${fmtOI(+r.d_oi)}</td>
     <td>${r.classification}</td><td>${r.decision_score}</td><td class="${decCls(r.decision)}"><b>${r.decision}</b></td>
-    <td>${sig(r.v1)}</td><td>${sig(r.v2)}</td><td>${sig(r.C)}</td></tr>`).join('')
-    :'<tr><td colspan="12">No bars logged this day.</td></tr>');
+    <td>${cell(r,'v1')}</td><td>${cell(r,'v2')}</td><td>${cell(r,'C')}</td></tr>`).join('')
+    :`<tr><td colspan="12">${chg?'No trades this day.':'No bars logged this day.'}</td></tr>`);
 }
-Promise.all([
-  fetch('history.json?t='+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
-  fetch('data.json?t='+Date.now()).then(r=>r.json()).catch(()=>({}))
-]).then(([h,d])=>{
+const getJ=(u,dflt)=>fetch(u+'?t='+Date.now()).then(r=>r.ok?r.json():dflt).catch(()=>dflt);
+Promise.all([getJ('history.json',[]), getJ('data.json',{}), getJ('trades.json',[]), getJ('backfill.json',{trades:[]})
+]).then(([h,d,tr,bf])=>{
+  const trades=tr.concat(bf.trades||[]).concat((d.trades||[]).filter(t=>t.reason==='OPEN'));
+  trades.forEach(t=>{
+    const book=t.strat||'v1', ot=t.opt_type, L=(EVENTS[t.date]=EVENTS[t.date]||[]);
+    L.push({book,kind:'ENTRY',ot,t:t.entry_t,px:t.est?null:t.entry_px,strike:t.est?null:t.strike,est:!!t.est});
+    if(t.exit_t) L.push({book,kind:'EXIT',ot,t:t.exit_t,px:t.est?null:t.exit_px,rs:t.rs,est:!!t.est});
+  });
   h.forEach(x=>days[x.date]=x.rows);
   const today=(d.updated||'').slice(0,10);
   if(today && d.signals){   // live tail: data.json carries today's last 120 bars
     const base=days[today]||[], last=base.length?base[base.length-1].time:'';
     days[today]=base.concat(d.signals.filter(r=>r.time>last));
   }
-  Object.values(days).forEach(addBookSignals);
+  Object.entries(days).forEach(([k,rows])=>addTradeEvents(k,rows));
   const sel=document.getElementById('day');
   sel.innerHTML=Object.keys(days).sort().reverse().map(k=>`<option>${k}</option>`).join('');
   ['day','tf','chg'].forEach(id=>document.getElementById(id).onchange=render);
