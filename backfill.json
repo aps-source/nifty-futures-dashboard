@@ -1,5 +1,5 @@
 {
- "note": "Estimated replay 2026-11-12 to 2026-11-20: futures price x 0.5 delta x 75 - Rs 150. Not real option fills. Real paper trading for v2 and C starts 2026-11-23.",
+ "note": "Estimated replay 2026-11-12 to 2026-11-20: futures price x 0.5 delta x 65 - Rs 150. Not real option fills. Real paper trading for v2 and C starts 2026-11-23.",
  "days": [
   "2026-11-12",
   "2026-11-13",
@@ -13,26 +13,26 @@
   "v1": {
    "trades": 37,
    "days": 7,
-   "wins": 14,
-   "net_rs": 7850,
-   "pf": 1.4,
-   "worst_day_rs": -2936
+   "wins": 13,
+   "net_rs": 6061,
+   "pf": 1.35,
+   "worst_day_rs": -2685
   },
   "v2": {
    "trades": 13,
    "days": 7,
-   "wins": 6,
-   "net_rs": 11753,
-   "pf": 3.42,
-   "worst_day_rs": -626
+   "wins": 5,
+   "net_rs": 9925,
+   "pf": 3.28,
+   "worst_day_rs": -583
   },
   "C": {
    "trades": 12,
    "days": 6,
-   "wins": 6,
-   "net_rs": 9799,
-   "pf": 2.56,
-   "worst_day_rs": -1023
+   "wins": 5,
+   "net_rs": 8252,
+   "pf": 2.49,
+   "worst_day_rs": -928
   }
  },
  "trades": [
@@ -49,7 +49,7 @@
    "fut_exit": 25285.4,
    "fut_pts": -1.4,
    "reason": "score flip (+1)",
-   "rs": -202
+   "rs": -196
   },
   {
    "strat": "v2",
@@ -64,7 +64,7 @@
    "fut_exit": 25274.0,
    "fut_pts": -44.0,
    "reason": "score flip (+1)",
-   "rs": -1800
+   "rs": -1580
   },
   {
    "strat": "v2",
@@ -79,7 +79,7 @@
    "fut_exit": 25147.2,
    "fut_pts": 81.7,
    "reason": "score flip (+1)",
-   "rs": 2914
+   "rs": 2505
   },
   {
    "strat": "v2",
@@ -94,7 +94,7 @@
    "fut_exit": 25259.6,
    "fut_pts": -8.3,
    "reason": "score flip (-3)",
-   "rs": -461
+   "rs": -420
   },
   {
    "strat": "v2",
@@ -109,7 +109,7 @@
    "fut_exit": 25260.0,
    "fut_pts": -0.4,
    "reason": "score flip (+1)",
-   "rs": -165
+   "rs": -163
   },
   {
    "strat": "v2",
@@ -124,7 +124,7 @@
    "fut_exit": 25522.6,
    "fut_pts": 107.6,
    "reason": "score flip (-1)",
-   "rs": 3885
+   "rs": 3347
   },
   {
    "strat": "v2",
@@ -139,7 +139,7 @@
    "fut_exit": 25434.0,
    "fut_pts": -14.0,
    "reason": "score flip (+1)",
-   "rs": -675
+   "rs": -605
   },
   {
    "strat": "v2",
@@ -154,7 +154,7 @@
    "fut_exit": 25258.0,
    "fut_pts": 12.0,
    "reason": "score flip (+1)",
-   "rs": 300
+   "rs": 240
   },
   {
    "strat": "v2",
@@ -169,7 +169,7 @@
    "fut_exit": 25264.0,
    "fut_pts": -3.7,
    "reason": "score flip (+1)",
-   "rs": -289
+   "rs": -270
   },
   {
    "strat": "v2",
@@ -184,7 +184,7 @@
    "fut_exit": 25244.9,
    "fut_pts": -29.6,
    "reason": "score flip (-1)",
-   "rs": -1260
+   "rs": -1112
   },
   {
    "strat": "v2",
@@ -199,7 +199,7 @@
    "fut_exit": 25384.0,
    "fut_pts": 74.0,
    "reason": "score flip (-1)",
-   "rs": 2625
+   "rs": 2255
   },
   {
    "strat": "v2",
@@ -214,7 +214,7 @@
    "fut_exit": 25510.5,
    "fut_pts": 4.6,
    "reason": "score flip (-1)",
-   "rs": 22
+   "rs": 0
   },
   {
    "strat": "v2",
@@ -229,7 +229,7 @@
    "fut_exit": 25700.0,
    "fut_pts": 186.9,
    "reason": "score flip (-1)",
-   "rs": 6859
+   "rs": 5924
   },
   {
    "strat": "C",
@@ -244,7 +244,7 @@
    "fut_exit": 25274.0,
    "fut_pts": -46.0,
    "reason": "score flip (+2)",
-   "rs": -1875
+   "rs": -1645
   },
   {
    "strat": "C",
@@ -259,7 +259,7 @@
    "fut_exit": 25147.2,
    "fut_pts": 81.7,
    "reason": "score flip (+2)",
-   "rs": 2914
+   "rs": 2505
   },
   {
    "strat": "C",
@@ -274,7 +274,7 @@
    "fut_exit": 25259.6,
    "fut_pts": -8.3,
    "reason": "score flip (-2)",
-   "rs": -461
+   "rs": -420
   },
   {
    "strat": "C",
@@ -289,7 +289,7 @@
    "fut_exit": 25260.0,
    "fut_pts": -11.0,
    "reason": "score flip (+2)",
-   "rs": -562
+   "rs": -508
   },
   {
    "strat": "C",
@@ -304,7 +304,7 @@
    "fut_exit": 25522.6,
    "fut_pts": 107.6,
    "reason": "score flip (-2)",
-   "rs": 3885
+   "rs": 3347
   },
   {
    "strat": "C",
@@ -319,7 +319,7 @@
    "fut_exit": 25434.0,
    "fut_pts": -14.0,
    "reason": "score flip (+2)",
-   "rs": -675
+   "rs": -605
   },
   {
    "strat": "C",
@@ -334,7 +334,7 @@
    "fut_exit": 25258.0,
    "fut_pts": 12.0,
    "reason": "score flip (+2)",
-   "rs": 300
+   "rs": 240
   },
   {
    "strat": "C",
@@ -349,7 +349,7 @@
    "fut_exit": 25264.0,
    "fut_pts": -3.7,
    "reason": "score flip (+2)",
-   "rs": -289
+   "rs": -270
   },
   {
    "strat": "C",
@@ -364,7 +364,7 @@
    "fut_exit": 25244.9,
    "fut_pts": -60.0,
    "reason": "score flip (-2)",
-   "rs": -2400
+   "rs": -2100
   },
   {
    "strat": "C",
@@ -379,7 +379,7 @@
    "fut_exit": 25369.5,
    "fut_pts": 59.5,
    "reason": "score flip (-2)",
-   "rs": 2081
+   "rs": 1784
   },
   {
    "strat": "C",
@@ -394,7 +394,7 @@
    "fut_exit": 25510.5,
    "fut_pts": 4.6,
    "reason": "score flip (-2)",
-   "rs": 22
+   "rs": 0
   },
   {
    "strat": "C",
@@ -409,7 +409,7 @@
    "fut_exit": 25700.0,
    "fut_pts": 186.9,
    "reason": "score flip (-2)",
-   "rs": 6859
+   "rs": 5924
   }
  ]
 }
