@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:31:39",
+ "updated": "2026-11-23 15:33:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -23,43 +23,29 @@
   },
   {
    "name": "INDIA VIX",
-   "ltp": 18.02,
-   "chg_pts": 0.7,
-   "chg_pct": 4.04
+   "ltp": 18.06,
+   "chg_pts": 0.74,
+   "chg_pct": 4.27
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7749,
-   "chg_pts": 54,
-   "chg_pct": 0.7
+   "ltp": 7748,
+   "chg_pts": 53,
+   "chg_pct": 0.69
   },
   {
    "name": "GOLD",
-   "ltp": 124695,
-   "chg_pts": 2917,
-   "chg_pct": 2.4
+   "ltp": 124755,
+   "chg_pts": 2977,
+   "chg_pct": 2.44
   },
   {
    "name": "SILVER",
-   "ltp": 152100,
-   "chg_pts": 4287,
-   "chg_pct": 2.9
+   "ltp": 152132,
+   "chg_pts": 4319,
+   "chg_pct": 2.92
   }
  ],
- "oc": {
-  "spot": 25349.7,
-  "expiry": "2026-11-23",
-  "res_strike": 25400.0,
-  "res_oi": 20855315,
-  "res_pct": 0.2,
-  "sup_strike": 25300.0,
-  "sup_oi": 15027870,
-  "sup_pct": 0.2,
-  "max_pain": 25350.0,
-  "mp_pct": 0.0,
-  "pcr": 0.707,
-  "suggests": "CALL side heavy - PUT bias"
- },
  "charts": {
   "NIFTY": [
    {
@@ -938,7 +924,7 @@
     "close": 25366.4
    },
    {
-    "time": 1795428000,
+    "time": 1795428180,
     "open": 25366.4,
     "high": 25366.4,
     "low": 25349.65,
@@ -2994,11 +2980,13 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000026E82015950>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
