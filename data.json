@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-23 10:03:24",
+ "updated": "2026-11-23 10:04:34",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25652.1,
-   "chg_pts": -148.5,
-   "chg_pct": -0.58
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63557.65,
-   "chg_pts": -1077.55,
-   "chg_pct": -1.67
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83453.04,
-   "chg_pts": -466.67,
-   "chg_pct": -0.56
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 18.36,
-   "chg_pts": 1.04,
-   "chg_pct": 6.0
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7787,
-   "chg_pts": 92,
-   "chg_pct": 1.2
-  },
-  {
-   "name": "GOLD",
-   "ltp": 124500,
-   "chg_pts": 2722,
-   "chg_pct": 2.24
-  },
-  {
-   "name": "SILVER",
-   "ltp": 150989,
-   "chg_pts": 3176,
-   "chg_pct": 2.15
-  }
- ],
  "oc": {
-  "spot": 25651.0,
+  "spot": 25635.8,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 35542455,
-  "res_pct": 1.36,
+  "res_oi": 36089560,
+  "res_pct": 1.42,
   "sup_strike": 25000.0,
-  "sup_oi": 19845280,
-  "sup_pct": 2.54,
+  "sup_oi": 19778265,
+  "sup_pct": 2.48,
   "max_pain": 25600.0,
-  "mp_pct": -0.2,
-  "pcr": 0.891,
+  "mp_pct": -0.14,
+  "pcr": 0.882,
   "suggests": "Balanced"
  },
  "charts": {
@@ -178,8 +134,8 @@
     "time": 1795408380,
     "open": 25648.05,
     "high": 25656.05,
-    "low": 25647.5,
-    "close": 25650.45
+    "low": 25633.4,
+    "close": 25636.45
    }
   ]
  },
@@ -674,10 +630,10 @@
    "spot_entry": 25623.4,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 72.25,
+   "exit_px": 78.65,
    "reason": "OPEN",
-   "pts": -16.8,
-   "rs": -1092
+   "pts": -10.4,
+   "rs": -676
   }
  ],
  "instrument": {
@@ -709,10 +665,12 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
