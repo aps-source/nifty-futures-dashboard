@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-23 10:09:41",
+ "updated": "2026-11-23 10:10:52",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25626.25,
-   "chg_pts": -174.35,
-   "chg_pct": -0.68
+   "ltp": 25610.7,
+   "chg_pts": -189.9,
+   "chg_pct": -0.74
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63438.6,
-   "chg_pts": -1196.6,
-   "chg_pct": -1.85
+   "ltp": 63373.75,
+   "chg_pts": -1261.45,
+   "chg_pct": -1.95
   },
   {
    "name": "SENSEX",
-   "ltp": 83390.38,
-   "chg_pts": -529.33,
-   "chg_pct": -0.63
+   "ltp": 83323.76,
+   "chg_pts": -595.95,
+   "chg_pct": -0.71
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.94,
-   "chg_pts": 0.62,
-   "chg_pct": 3.58
+   "ltp": 18,
+   "chg_pts": 0.68,
+   "chg_pct": 3.93
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7789,
-   "chg_pts": 94,
-   "chg_pct": 1.22
+   "ltp": 7791,
+   "chg_pts": 96,
+   "chg_pct": 1.25
   },
   {
    "name": "GOLD",
-   "ltp": 124592,
-   "chg_pts": 2814,
-   "chg_pct": 2.31
+   "ltp": 124622,
+   "chg_pts": 2844,
+   "chg_pct": 2.34
   },
   {
    "name": "SILVER",
-   "ltp": 150907,
-   "chg_pts": 3094,
-   "chg_pct": 2.09
+   "ltp": 150862,
+   "chg_pts": 3049,
+   "chg_pct": 2.06
   }
  ],
  "oc": {
-  "spot": 25626.2,
+  "spot": 25609.8,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 36271365,
-  "res_pct": 1.46,
-  "sup_strike": 25000.0,
-  "sup_oi": 19800755,
-  "sup_pct": 2.44,
+  "res_oi": 36282610,
+  "res_pct": 1.52,
+  "sup_strike": 25500.0,
+  "sup_oi": 19997705,
+  "sup_pct": 0.43,
   "max_pain": 25600.0,
-  "mp_pct": -0.1,
-  "pcr": 0.867,
+  "mp_pct": -0.04,
+  "pcr": 0.868,
   "suggests": "Balanced"
  },
  "charts": {
@@ -191,9 +191,9 @@
    {
     "time": 1795408740,
     "open": 25623.8,
-    "high": 25629.7,
-    "low": 25615.6,
-    "close": 25625.65
+    "high": 25631.55,
+    "low": 25607.35,
+    "close": 25611.3
    }
   ]
  },
@@ -205,10 +205,10 @@
    "d_oi": "-14105"
   },
   "5": {
-   "cls": "SHORT COVERING",
-   "time": "10:05",
-   "d_price": "12.5",
-   "d_oi": "-33345"
+   "cls": "LONG UNWINDING",
+   "time": "10:10",
+   "d_price": "-27.5",
+   "d_oi": "-26260"
   },
   "15": {
    "cls": "LONG UNWINDING",
@@ -217,8 +217,8 @@
    "d_oi": "-54990"
   }
  },
- "decision": "SHORT",
- "decision_score": -1,
+ "decision": "STRONG SHORT",
+ "decision_score": -3,
  "signals": [
   {
    "time": "09:18",
@@ -684,6 +684,21 @@
    "score": "-1",
    "decision_score": "-1",
    "decision": "SHORT"
+  },
+  {
+   "time": "10:10",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25642.5",
+   "close": "25615",
+   "oi_start": "6284785",
+   "oi_end": "6258525",
+   "d_price": "-27.5",
+   "d_oi": "-26260",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-3",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -733,10 +748,10 @@
    "spot_entry": 25623.4,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 78.9,
+   "exit_px": 89.3,
    "reason": "OPEN",
-   "pts": -10.15,
-   "rs": -660
+   "pts": 0.25,
+   "rs": 16
   }
  ],
  "instrument": {
