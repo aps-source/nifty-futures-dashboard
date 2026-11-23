@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-23 12:09:56",
+ "updated": "2026-11-23 12:11:08",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25520.35,
-   "chg_pts": -280.25,
-   "chg_pct": -1.09
+   "ltp": 25532.35,
+   "chg_pts": -268.25,
+   "chg_pct": -1.04
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63267,
-   "chg_pts": -1368.2,
-   "chg_pct": -2.12
+   "ltp": 63319.85,
+   "chg_pts": -1315.35,
+   "chg_pct": -2.04
   },
   {
    "name": "SENSEX",
-   "ltp": 82978.88,
-   "chg_pts": -940.83,
-   "chg_pct": -1.12
+   "ltp": 83016.8,
+   "chg_pts": -902.91,
+   "chg_pct": -1.08
   },
   {
    "name": "INDIA VIX",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 124980,
-   "chg_pts": 3202,
-   "chg_pct": 2.63
+   "ltp": 124937,
+   "chg_pts": 3159,
+   "chg_pct": 2.59
   },
   {
    "name": "SILVER",
-   "ltp": 152866,
-   "chg_pts": 5053,
-   "chg_pct": 3.42
+   "ltp": 152899,
+   "chg_pts": 5086,
+   "chg_pct": 3.44
   }
  ],
  "oc": {
-  "spot": 25520.2,
+  "spot": 25533.2,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 34914360,
-  "res_pct": 1.88,
+  "res_oi": 35235265,
+  "res_pct": 1.83,
   "sup_strike": 25500.0,
-  "sup_oi": 20612605,
-  "sup_pct": 0.08,
+  "sup_oi": 20637500,
+  "sup_pct": 0.13,
   "max_pain": 25500.0,
-  "mp_pct": -0.08,
-  "pcr": 0.67,
+  "mp_pct": -0.13,
+  "pcr": 0.668,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -471,9 +471,9 @@
    {
     "time": 1795415940,
     "open": 25524.8,
-    "high": 25525.25,
+    "high": 25534.3,
     "low": 25513.95,
-    "close": 25520.15
+    "close": 25532.6
    }
   ]
  },
@@ -485,10 +485,10 @@
    "d_oi": "-6370"
   },
   "5": {
-   "cls": "LONG BUILDUP",
-   "time": "12:05",
-   "d_price": "6.1",
-   "d_oi": "4550"
+   "cls": "SHORT COVERING",
+   "time": "12:10",
+   "d_price": "15.1",
+   "d_oi": "-325"
   },
   "15": {
    "cls": "LONG UNWINDING",
@@ -2076,6 +2076,21 @@
    "oi_end": "5727605",
    "d_price": "25.3",
    "d_oi": "-6370",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "12:10",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25519.1",
+   "close": "25534.2",
+   "oi_start": "5726825",
+   "oi_end": "5726500",
+   "d_price": "15.1",
+   "d_oi": "-325",
    "classification": "SHORT COVERING",
    "score": "1",
    "decision_score": "2",
