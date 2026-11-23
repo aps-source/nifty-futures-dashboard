@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-23 15:04:46",
+ "updated": "2026-11-23 15:05:58",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25364.85,
-   "chg_pts": -435.75,
-   "chg_pct": -1.69
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62638.6,
-   "chg_pts": -1996.6,
-   "chg_pct": -3.09
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82458.41,
-   "chg_pts": -1461.3,
-   "chg_pct": -1.74
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.46,
-   "chg_pts": 0.14,
-   "chg_pct": 0.81
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7750,
-   "chg_pts": 55,
-   "chg_pct": 0.71
-  },
-  {
-   "name": "GOLD",
-   "ltp": 124630,
-   "chg_pts": 2852,
-   "chg_pct": 2.34
-  },
-  {
-   "name": "SILVER",
-   "ltp": 152453,
-   "chg_pts": 4640,
-   "chg_pct": 3.14
-  }
- ],
  "oc": {
-  "spot": 25363.3,
+  "spot": 25370.0,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 27169805,
-  "res_pct": 0.54,
+  "res_oi": 26514800,
+  "res_pct": 0.51,
   "sup_strike": 25300.0,
-  "sup_oi": 22352330,
-  "sup_pct": 0.25,
+  "sup_oi": 22827025,
+  "sup_pct": 0.28,
   "max_pain": 25400.0,
-  "mp_pct": 0.14,
-  "pcr": 0.701,
+  "mp_pct": 0.12,
+  "pcr": 0.7,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -878,23 +834,30 @@
     "time": 1795426380,
     "open": 25382.2,
     "high": 25383.7,
-    "low": 25362.2,
-    "close": 25364.0
+    "low": 25360.85,
+    "close": 25370.4
+   },
+   {
+    "time": 1795426560,
+    "open": 25369.45,
+    "high": 25374.15,
+    "low": 25368.4,
+    "close": 25371.95
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "15:03",
-   "d_price": "5.4",
-   "d_oi": "-25935"
+   "cls": "LONG UNWINDING",
+   "time": "15:06",
+   "d_price": "-3.1",
+   "d_oi": "-10660"
   },
   "5": {
    "cls": "LONG UNWINDING",
-   "time": "15:00",
-   "d_price": "-4",
-   "d_oi": "-22100"
+   "time": "15:05",
+   "d_price": "-7",
+   "d_oi": "-32175"
   },
   "15": {
    "cls": "LONG UNWINDING",
@@ -909,39 +872,9 @@
    "d_oi": "-115310"
   }
  },
- "decision": "SHORT",
- "decision_score": -2,
+ "decision": "STRONG SHORT",
+ "decision_score": -4,
  "signals": [
-  {
-   "time": "11:50",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25565",
-   "close": "25549",
-   "oi_start": "5830630",
-   "oi_end": "5815485",
-   "d_price": "-16",
-   "d_oi": "-15145",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
-  {
-   "time": "11:51",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25549",
-   "close": "25547.1",
-   "oi_start": "5827835",
-   "oi_end": "5811715",
-   "d_price": "-1.9",
-   "d_oi": "-16120",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
   {
    "time": "11:54",
    "symbol": "NIFTY",
@@ -2711,6 +2644,36 @@
    "score": "1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "15:05",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25381",
+   "close": "25374",
+   "oi_start": "4917575",
+   "oi_end": "4885400",
+   "d_price": "-7",
+   "d_oi": "-32175",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "15:06",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25386.4",
+   "close": "25383.3",
+   "oi_start": "4891640",
+   "oi_end": "4880980",
+   "d_price": "-3.1",
+   "d_oi": "-10660",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-4",
+   "decision": "STRONG SHORT"
   }
  ],
  "trades": [
@@ -2828,10 +2791,10 @@
    "spot_entry": 25412.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 49.3,
+   "exit_px": 44.05,
    "reason": "OPEN",
-   "pts": 22.15,
-   "rs": 1440
+   "pts": 16.9,
+   "rs": 1098
   },
   {
    "date": "2026-11-23",
@@ -2931,10 +2894,12 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
