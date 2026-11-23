@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-23 15:05:58",
+ "updated": "2026-11-23 15:07:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25362.95,
+   "chg_pts": -437.65,
+   "chg_pct": -1.7
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62640.3,
+   "chg_pts": -1994.9,
+   "chg_pct": -3.09
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82459.4,
+   "chg_pts": -1460.31,
+   "chg_pct": -1.74
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.43,
+   "chg_pts": 0.11,
+   "chg_pct": 0.64
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7755,
+   "chg_pts": 60,
+   "chg_pct": 0.78
+  },
+  {
+   "name": "GOLD",
+   "ltp": 124659,
+   "chg_pts": 2881,
+   "chg_pct": 2.37
+  },
+  {
+   "name": "SILVER",
+   "ltp": 152386,
+   "chg_pts": 4573,
+   "chg_pct": 3.09
+  }
+ ],
  "oc": {
-  "spot": 25370.0,
+  "spot": 25361.3,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 26514800,
-  "res_pct": 0.51,
+  "res_oi": 26558220,
+  "res_pct": 0.55,
   "sup_strike": 25300.0,
-  "sup_oi": 22827025,
-  "sup_pct": 0.28,
+  "sup_oi": 22994595,
+  "sup_pct": 0.24,
   "max_pain": 25400.0,
-  "mp_pct": 0.12,
-  "pcr": 0.7,
+  "mp_pct": 0.15,
+  "pcr": 0.704,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -841,8 +885,8 @@
     "time": 1795426560,
     "open": 25369.45,
     "high": 25374.15,
-    "low": 25368.4,
-    "close": 25371.95
+    "low": 25359.5,
+    "close": 25362.35
    }
   ]
  },
@@ -2791,10 +2835,10 @@
    "spot_entry": 25412.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 44.05,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 16.9,
-   "rs": 1098
+   "pts": null,
+   "rs": null
   },
   {
    "date": "2026-11-23",
@@ -2894,12 +2938,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
