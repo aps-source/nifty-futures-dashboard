@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-23 14:14:03",
+ "updated": "2026-11-23 14:15:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25415.85,
-   "chg_pts": -384.75,
-   "chg_pct": -1.49
+   "ltp": 25423.15,
+   "chg_pts": -377.45,
+   "chg_pct": -1.46
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62907.2,
-   "chg_pts": -1728.0,
-   "chg_pct": -2.67
+   "ltp": 62940.2,
+   "chg_pts": -1695.0,
+   "chg_pct": -2.62
   },
   {
    "name": "SENSEX",
-   "ltp": 82637.13,
-   "chg_pts": -1282.58,
-   "chg_pct": -1.53
+   "ltp": 82658.43,
+   "chg_pts": -1261.28,
+   "chg_pct": -1.5
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.98,
-   "chg_pts": 0.66,
-   "chg_pct": 3.81
+   "ltp": 17.96,
+   "chg_pts": 0.64,
+   "chg_pct": 3.7
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 124606,
-   "chg_pts": 2828,
-   "chg_pct": 2.32
+   "ltp": 124643,
+   "chg_pts": 2865,
+   "chg_pct": 2.35
   },
   {
    "name": "SILVER",
-   "ltp": 152451,
-   "chg_pts": 4638,
-   "chg_pct": 3.14
+   "ltp": 152662,
+   "chg_pts": 4849,
+   "chg_pct": 3.28
   }
  ],
  "oc": {
-  "spot": 25415.3,
+  "spot": 25424.5,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 31473520,
-  "res_pct": 0.33,
+  "res_oi": 31518435,
+  "res_pct": 0.3,
   "sup_strike": 25400.0,
-  "sup_oi": 25244115,
-  "sup_pct": 0.06,
+  "sup_oi": 25745785,
+  "sup_pct": 0.1,
   "max_pain": 25450.0,
-  "mp_pct": 0.14,
-  "pcr": 0.678,
+  "mp_pct": 0.1,
+  "pcr": 0.682,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -760,99 +760,46 @@
     "open": 25421.3,
     "high": 25425.15,
     "low": 25414.05,
-    "close": 25416.05
+    "close": 25414.35
+   },
+   {
+    "time": 1795423500,
+    "open": 25414.15,
+    "high": 25425.35,
+    "low": 25414.15,
+    "close": 25425.2
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "14:12",
-   "d_price": "4.3",
-   "d_oi": "-9360"
+   "cls": "LONG UNWINDING",
+   "time": "14:15",
+   "d_price": "-6.2",
+   "d_oi": "-14430"
   },
   "5": {
-   "cls": "LONG UNWINDING",
-   "time": "14:10",
-   "d_price": "-17.5",
-   "d_oi": "-6890"
+   "cls": "SHORT COVERING",
+   "time": "14:15",
+   "d_price": "12.5",
+   "d_oi": "-22945"
   },
   "15": {
-   "cls": "SHORT COVERING",
-   "time": "14:00",
-   "d_price": "18.2",
-   "d_oi": "-19955"
+   "cls": "LONG UNWINDING",
+   "time": "14:15",
+   "d_price": "-44.6",
+   "d_oi": "-39585"
   },
   "60": {
    "cls": "LONG UNWINDING",
-   "time": "13:15",
-   "d_price": "-57.9",
-   "d_oi": "-528385"
+   "time": "14:15",
+   "d_price": "-55.1",
+   "d_oi": "-115310"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25569",
-   "close": "25551",
-   "oi_start": "6054490",
-   "oi_end": "6030960",
-   "d_price": "-18",
-   "d_oi": "-23530",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-4",
-   "decision": "STRONG SHORT"
-  },
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25567.5",
-   "close": "25551",
-   "oi_start": "6055790",
-   "oi_end": "6030960",
-   "d_price": "-16.5",
-   "d_oi": "-24830",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-4",
-   "decision": "STRONG SHORT"
-  },
-  {
-   "time": "11:00",
-   "symbol": "NIFTY",
-   "tf_min": "15",
-   "open": "25581.1",
-   "close": "25551",
-   "oi_start": "6097650",
-   "oi_end": "6030960",
-   "d_price": "-30.1",
-   "d_oi": "-66690",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-4",
-   "decision": "STRONG SHORT"
-  },
-  {
-   "time": "11:03",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25551",
-   "close": "25534",
-   "oi_start": "6030960",
-   "oi_end": "5982535",
-   "d_price": "-17",
-   "d_oi": "-48425",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-4",
-   "decision": "STRONG SHORT"
-  },
   {
    "time": "11:05",
    "symbol": "NIFTY",
@@ -2592,6 +2539,66 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25429.3",
+   "close": "25423.1",
+   "oi_start": "5088785",
+   "oi_end": "5074355",
+   "d_price": "-6.2",
+   "d_oi": "-14430",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25410.6",
+   "close": "25423.1",
+   "oi_start": "5097300",
+   "oi_end": "5074355",
+   "d_price": "12.5",
+   "d_oi": "-22945",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25467.7",
+   "close": "25423.1",
+   "oi_start": "5113940",
+   "oi_end": "5074355",
+   "d_price": "-44.6",
+   "d_oi": "-39585",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "14:15",
+   "symbol": "NIFTY",
+   "tf_min": "60",
+   "open": "25478.2",
+   "close": "25423.1",
+   "oi_start": "5189665",
+   "oi_end": "5074355",
+   "d_price": "-55.1",
+   "d_oi": "-115310",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -2692,10 +2699,10 @@
    "spot_entry": 25486.05,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 64.3,
+   "exit_px": 56.2,
    "reason": "OPEN",
-   "pts": 25.25,
-   "rs": 1641
+   "pts": 17.15,
+   "rs": 1115
   },
   {
    "date": "2026-11-23",
@@ -2760,10 +2767,10 @@
    "spot_entry": 25486.05,
    "strat": "C",
    "exit_t": null,
-   "exit_px": 64.3,
+   "exit_px": 56.2,
    "reason": "OPEN",
-   "pts": 25.25,
-   "rs": 1641
+   "pts": 17.15,
+   "rs": 1115
   }
  ],
  "instrument": {
