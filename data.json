@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-23 12:13:44",
+ "updated": "2026-11-23 12:15:07",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25528.5,
+   "chg_pts": -272.1,
+   "chg_pct": -1.05
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63270.8,
+   "chg_pts": -1364.4,
+   "chg_pct": -2.11
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 83013.76,
+   "chg_pts": -905.95,
+   "chg_pct": -1.08
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.97,
+   "chg_pts": 0.65,
+   "chg_pct": 3.75
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7765,
+   "chg_pts": 70,
+   "chg_pct": 0.91
+  },
+  {
+   "name": "GOLD",
+   "ltp": 125050,
+   "chg_pts": 3272,
+   "chg_pct": 2.69
+  },
+  {
+   "name": "SILVER",
+   "ltp": 152985,
+   "chg_pts": 5172,
+   "chg_pct": 3.5
+  }
+ ],
  "oc": {
-  "spot": 25535.5,
+  "spot": 25529.5,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 35204585,
-  "res_pct": 1.82,
+  "res_oi": 35002240,
+  "res_pct": 1.84,
   "sup_strike": 25500.0,
-  "sup_oi": 20835490,
-  "sup_pct": 0.14,
+  "sup_oi": 21320845,
+  "sup_pct": 0.12,
   "max_pain": 25500.0,
-  "mp_pct": -0.14,
-  "pcr": 0.666,
+  "mp_pct": -0.12,
+  "pcr": 0.669,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -435,35 +479,42 @@
     "time": 1795416120,
     "open": 25532.35,
     "high": 25543.0,
-    "low": 25532.35,
-    "close": 25534.3
+    "low": 25530.65,
+    "close": 25530.75
+   },
+   {
+    "time": 1795416300,
+    "open": 25533.6,
+    "high": 25533.6,
+    "low": 25527.0,
+    "close": 25529.4
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "SHORT COVERING",
-   "time": "12:12",
-   "d_price": "5.6",
-   "d_oi": "-5005"
+   "time": "12:15",
+   "d_price": "0.4",
+   "d_oi": "-4550"
   },
   "5": {
    "cls": "SHORT COVERING",
-   "time": "12:10",
-   "d_price": "15.1",
-   "d_oi": "-325"
+   "time": "12:15",
+   "d_price": "1.9",
+   "d_oi": "-8450"
   },
   "15": {
-   "cls": "LONG UNWINDING",
-   "time": "12:00",
-   "d_price": "-52",
-   "d_oi": "-108355"
+   "cls": "SHORT COVERING",
+   "time": "12:15",
+   "d_price": "23.1",
+   "d_oi": "-4225"
   },
   "60": {
-   "cls": "SHORT COVERING",
-   "time": "11:15",
-   "d_price": "6.7",
-   "d_oi": "-263250"
+   "cls": "LONG UNWINDING",
+   "time": "12:15",
+   "d_price": "-78.9",
+   "d_oi": "-225745"
   }
  },
  "decision": "LONG",
@@ -2073,6 +2124,66 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "12:15",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25535.7",
+   "close": "25536.1",
+   "oi_start": "5722600",
+   "oi_end": "5718050",
+   "d_price": "0.4",
+   "d_oi": "-4550",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "12:15",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25534.2",
+   "close": "25536.1",
+   "oi_start": "5726500",
+   "oi_end": "5718050",
+   "d_price": "1.9",
+   "d_oi": "-8450",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "12:15",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25513",
+   "close": "25536.1",
+   "oi_start": "5722275",
+   "oi_end": "5718050",
+   "d_price": "23.1",
+   "d_oi": "-4225",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "12:15",
+   "symbol": "NIFTY",
+   "tf_min": "60",
+   "open": "25615",
+   "close": "25536.1",
+   "oi_start": "5943795",
+   "oi_end": "5718050",
+   "d_price": "-78.9",
+   "d_oi": "-225745",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -2242,12 +2353,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000026EFFC51BD0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
