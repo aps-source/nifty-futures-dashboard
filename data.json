@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 15:33:00",
+ "updated": "2026-11-23 15:34:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -23,27 +23,27 @@
   },
   {
    "name": "INDIA VIX",
-   "ltp": 18.06,
-   "chg_pts": 0.74,
-   "chg_pct": 4.27
+   "ltp": 18.04,
+   "chg_pts": 0.72,
+   "chg_pct": 4.16
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7748,
-   "chg_pts": 53,
-   "chg_pct": 0.69
+   "ltp": 7735,
+   "chg_pts": 40,
+   "chg_pct": 0.52
   },
   {
    "name": "GOLD",
-   "ltp": 124755,
-   "chg_pts": 2977,
-   "chg_pct": 2.44
+   "ltp": 124780,
+   "chg_pts": 3002,
+   "chg_pct": 2.47
   },
   {
    "name": "SILVER",
-   "ltp": 152132,
-   "chg_pts": 4319,
-   "chg_pct": 2.92
+   "ltp": 152262,
+   "chg_pts": 4449,
+   "chg_pct": 3.01
   }
  ],
  "charts": {
@@ -2981,7 +2981,7 @@
   "live_book": "v2"
  },
  "errors": [
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000026E82015950>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
