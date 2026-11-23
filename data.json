@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-23 15:14:50",
+ "updated": "2026-11-23 15:16:02",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25364.05,
-   "chg_pts": -436.55,
-   "chg_pct": -1.69
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62601.55,
-   "chg_pts": -2033.65,
-   "chg_pct": -3.15
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82439.01,
-   "chg_pts": -1480.7,
-   "chg_pct": -1.76
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.72,
-   "chg_pts": 0.4,
-   "chg_pct": 2.31
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7744,
-   "chg_pts": 49,
-   "chg_pct": 0.64
-  },
-  {
-   "name": "GOLD",
-   "ltp": 124768,
-   "chg_pts": 2990,
-   "chg_pct": 2.46
-  },
-  {
-   "name": "SILVER",
-   "ltp": 152828,
-   "chg_pts": 5015,
-   "chg_pct": 3.39
-  }
- ],
  "oc": {
-  "spot": 25361.8,
+  "spot": 25366.4,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 25323870,
-  "res_pct": 0.54,
+  "res_oi": 25381460,
+  "res_pct": 0.53,
   "sup_strike": 25300.0,
-  "sup_oi": 23462985,
-  "sup_pct": 0.24,
+  "sup_oi": 23722985,
+  "sup_pct": 0.26,
   "max_pain": 25400.0,
-  "mp_pct": 0.15,
-  "pcr": 0.703,
+  "mp_pct": 0.13,
+  "pcr": 0.704,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -898,101 +854,48 @@
    {
     "time": 1795426920,
     "open": 25355.6,
-    "high": 25370.4,
+    "high": 25370.6,
     "low": 25343.85,
-    "close": 25361.25
+    "close": 25367.5
+   },
+   {
+    "time": 1795427100,
+    "open": 25366.4,
+    "high": 25366.4,
+    "low": 25366.4,
+    "close": 25366.4
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG UNWINDING",
-   "time": "15:12",
-   "d_price": "-2.9",
-   "d_oi": "-26000"
+   "cls": "SHORT COVERING",
+   "time": "15:15",
+   "d_price": "11.9",
+   "d_oi": "-15015"
   },
   "5": {
    "cls": "SHORT COVERING",
-   "time": "15:10",
-   "d_price": "7",
-   "d_oi": "-33410"
+   "time": "15:15",
+   "d_price": "8",
+   "d_oi": "-30680"
   },
   "15": {
-   "cls": "LONG UNWINDING",
-   "time": "15:00",
-   "d_price": "-45.9",
-   "d_oi": "-51935"
+   "cls": "SHORT COVERING",
+   "time": "15:15",
+   "d_price": "8",
+   "d_oi": "-96265"
   },
   "60": {
    "cls": "LONG UNWINDING",
-   "time": "14:15",
-   "d_price": "-55.1",
-   "d_oi": "-115310"
+   "time": "15:15",
+   "d_price": "-34.1",
+   "d_oi": "-253045"
   }
  },
- "decision": "SHORT",
- "decision_score": -2,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
-  {
-   "time": "12:00",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25539",
-   "close": "25513",
-   "oi_start": "5723445",
-   "oi_end": "5722275",
-   "d_price": "-26",
-   "d_oi": "-1170",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
-  {
-   "time": "12:00",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25533.4",
-   "close": "25513",
-   "oi_start": "5725070",
-   "oi_end": "5722275",
-   "d_price": "-20.4",
-   "d_oi": "-2795",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
-  {
-   "time": "12:00",
-   "symbol": "NIFTY",
-   "tf_min": "15",
-   "open": "25565",
-   "close": "25513",
-   "oi_start": "5830630",
-   "oi_end": "5722275",
-   "d_price": "-52",
-   "d_oi": "-108355",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
-  {
-   "time": "12:03",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25513",
-   "close": "25516.2",
-   "oi_start": "5722275",
-   "oi_end": "5723120",
-   "d_price": "3.2",
-   "d_oi": "845",
-   "classification": "LONG BUILDUP",
-   "score": "1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
   {
    "time": "12:05",
    "symbol": "NIFTY",
@@ -2732,6 +2635,66 @@
    "score": "-1",
    "decision_score": "-2",
    "decision": "SHORT"
+  },
+  {
+   "time": "15:15",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25377.1",
+   "close": "25389",
+   "oi_start": "4836325",
+   "oi_end": "4821310",
+   "d_price": "11.9",
+   "d_oi": "-15015",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "15:15",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25381",
+   "close": "25389",
+   "oi_start": "4851990",
+   "oi_end": "4821310",
+   "d_price": "8",
+   "d_oi": "-30680",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "15:15",
+   "symbol": "NIFTY",
+   "tf_min": "15",
+   "open": "25381",
+   "close": "25389",
+   "oi_start": "4917575",
+   "oi_end": "4821310",
+   "d_price": "8",
+   "d_oi": "-96265",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "15:15",
+   "symbol": "NIFTY",
+   "tf_min": "60",
+   "open": "25423.1",
+   "close": "25389",
+   "oi_start": "5074355",
+   "oi_end": "4821310",
+   "d_price": "-34.1",
+   "d_oi": "-253045",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -2847,12 +2810,12 @@
    "entry_px": 27.15,
    "score": -4,
    "spot_entry": 25412.5,
-   "strat": "v1",
-   "exit_t": null,
-   "exit_px": 36.8,
-   "reason": "OPEN",
-   "pts": 9.65,
-   "rs": 627
+   "exit_t": "15:16",
+   "exit_px": 35.35,
+   "reason": "score flip (+2)",
+   "pts": 8.2,
+   "rs": 383,
+   "strat": "v1"
   },
   {
    "date": "2026-11-23",
@@ -2931,9 +2894,9 @@
   "books": {
    "v1": {
     "desc": "3/5/15/60m, enter at |score|>=3",
-    "open": true,
-    "total_trades": 42,
-    "total_rs": 2425
+    "open": false,
+    "total_trades": 43,
+    "total_rs": 2808
    },
    "v2": {
     "desc": "5/15/60m all agree, max 2/day",
@@ -2952,10 +2915,12 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
