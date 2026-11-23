@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-23 11:31:44",
+ "updated": "2026-11-23 11:32:53",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25617.05,
-   "chg_pts": -183.55,
-   "chg_pct": -0.71
+   "ltp": 25606,
+   "chg_pts": -194.6,
+   "chg_pct": -0.75
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63464.75,
-   "chg_pts": -1170.45,
-   "chg_pct": -1.81
+   "ltp": 63448.85,
+   "chg_pts": -1186.35,
+   "chg_pct": -1.84
   },
   {
    "name": "SENSEX",
-   "ltp": 83329.93,
-   "chg_pts": -589.78,
-   "chg_pct": -0.7
+   "ltp": 83278.26,
+   "chg_pts": -641.45,
+   "chg_pct": -0.76
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.92,
-   "chg_pts": 0.6,
-   "chg_pct": 3.46
+   "ltp": 17.93,
+   "chg_pts": 0.61,
+   "chg_pct": 3.52
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7798,
-   "chg_pts": 103,
-   "chg_pct": 1.34
+   "ltp": 7785,
+   "chg_pts": 90,
+   "chg_pct": 1.17
   },
   {
    "name": "GOLD",
-   "ltp": 124940,
-   "chg_pts": 3162,
-   "chg_pct": 2.6
+   "ltp": 124910,
+   "chg_pts": 3132,
+   "chg_pct": 2.57
   },
   {
    "name": "SILVER",
-   "ltp": 152790,
-   "chg_pts": 4977,
-   "chg_pct": 3.37
+   "ltp": 152597,
+   "chg_pts": 4784,
+   "chg_pct": 3.24
   }
  ],
  "oc": {
-  "spot": 25611.6,
+  "spot": 25605.8,
   "expiry": "2026-11-23",
   "res_strike": 26000.0,
-  "res_oi": 36851880,
-  "res_pct": 1.52,
+  "res_oi": 36515570,
+  "res_pct": 1.54,
   "sup_strike": 25500.0,
-  "sup_oi": 22025900,
-  "sup_pct": 0.44,
+  "sup_oi": 22528415,
+  "sup_pct": 0.41,
   "max_pain": 25550.0,
-  "mp_pct": -0.24,
-  "pcr": 0.766,
+  "mp_pct": -0.22,
+  "pcr": 0.775,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -381,8 +381,15 @@
     "time": 1795413600,
     "open": 25617.0,
     "high": 25621.7,
-    "low": 25610.05,
-    "close": 25610.7
+    "low": 25604.0,
+    "close": 25604.0
+   },
+   {
+    "time": 1795413780,
+    "open": 25606.1,
+    "high": 25606.1,
+    "low": 25606.1,
+    "close": 25606.1
    }
   ]
  },
