@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-23 14:19:02",
+ "updated": "2026-11-23 14:20:19",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25442.5,
+  "spot": 25448.3,
   "expiry": "2026-11-23",
   "res_strike": 25500.0,
-  "res_oi": 30799665,
-  "res_pct": 0.23,
+  "res_oi": 31264675,
+  "res_pct": 0.2,
   "sup_strike": 25400.0,
-  "sup_oi": 25473110,
-  "sup_pct": 0.17,
+  "sup_oi": 26079690,
+  "sup_pct": 0.19,
   "max_pain": 25450.0,
-  "mp_pct": 0.03,
-  "pcr": 0.686,
+  "mp_pct": 0.01,
+  "pcr": 0.687,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -730,7 +730,7 @@
     "open": 25433.65,
     "high": 25451.4,
     "low": 25433.65,
-    "close": 25441.8
+    "close": 25448.9
    }
   ]
  },
@@ -2662,10 +2662,10 @@
    "spot_entry": 25486.05,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 45.05,
+   "exit_px": 38,
    "reason": "OPEN",
-   "pts": 6.0,
-   "rs": 390
+   "pts": -1.05,
+   "rs": -68
   },
   {
    "date": "2026-11-23",
@@ -2730,10 +2730,10 @@
    "spot_entry": 25486.05,
    "strat": "C",
    "exit_t": null,
-   "exit_px": 45.05,
+   "exit_px": 38,
    "reason": "OPEN",
-   "pts": 6.0,
-   "rs": 390
+   "pts": -1.05,
+   "rs": -68
   }
  ],
  "instrument": {
@@ -2766,7 +2766,7 @@
   "live_book": "v2"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x0000026EFFC51BD0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
