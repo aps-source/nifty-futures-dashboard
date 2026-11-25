@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-25 09:46:53",
+ "updated": "2026-11-25 09:48:06",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25725.45,
-   "chg_pts": 375.8,
-   "chg_pct": 1.48
+   "ltp": 25729.85,
+   "chg_pts": 380.2,
+   "chg_pct": 1.5
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63533.75,
-   "chg_pts": 948.4,
-   "chg_pct": 1.52
+   "ltp": 63553.75,
+   "chg_pts": 968.4,
+   "chg_pct": 1.55
   },
   {
    "name": "SENSEX",
-   "ltp": 83733.2,
-   "chg_pts": 1297.21,
-   "chg_pct": 1.57
+   "ltp": 83734.5,
+   "chg_pts": 1298.51,
+   "chg_pct": 1.58
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.08,
-   "chg_pts": -0.62,
-   "chg_pct": -3.5
+   "ltp": 17.11,
+   "chg_pts": -0.59,
+   "chg_pct": -3.33
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7508,
-   "chg_pts": -73,
-   "chg_pct": -0.96
+   "ltp": 7513,
+   "chg_pts": -68,
+   "chg_pct": -0.9
   },
   {
    "name": "GOLD",
-   "ltp": 121770,
-   "chg_pts": -559,
-   "chg_pct": -0.46
+   "ltp": 121848,
+   "chg_pts": -481,
+   "chg_pct": -0.39
   },
   {
    "name": "SILVER",
-   "ltp": 144400,
-   "chg_pts": -1038,
-   "chg_pct": -0.71
+   "ltp": 144387,
+   "chg_pts": -1051,
+   "chg_pct": -0.72
   }
  ],
  "oc": {
-  "spot": 25724.8,
+  "spot": 25727.3,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9745970,
-  "res_pct": 1.07,
+  "res_oi": 9719515,
+  "res_pct": 1.06,
   "sup_strike": 25700.0,
-  "sup_oi": 6503120,
-  "sup_pct": 0.1,
+  "sup_oi": 6822465,
+  "sup_pct": 0.11,
   "max_pain": 25700.0,
-  "mp_pct": -0.1,
-  "pcr": 0.878,
+  "mp_pct": -0.11,
+  "pcr": 0.889,
   "suggests": "Balanced"
  },
  "charts": {
@@ -136,8 +136,15 @@
     "time": 1795580100,
     "open": 25739.05,
     "high": 25759.9,
-    "low": 25724.5,
-    "close": 25727.25
+    "low": 25718.2,
+    "close": 25734.1
+   },
+   {
+    "time": 1795580280,
+    "open": 25737.05,
+    "high": 25737.05,
+    "low": 25724.6,
+    "close": 25727.55
    }
   ]
  },
@@ -465,10 +472,10 @@
    "spot_entry": 25753.85,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 226.55,
+   "exit_px": 225.9,
    "reason": "OPEN",
-   "pts": 12.4,
-   "rs": 806
+   "pts": 11.75,
+   "rs": 764
   }
  ],
  "instrument": {
