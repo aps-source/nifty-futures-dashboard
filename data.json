@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-25 10:30:41",
+ "updated": "2026-11-25 10:31:56",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25810.55,
-   "chg_pts": 460.9,
-   "chg_pct": 1.82
+   "ltp": 25808.85,
+   "chg_pts": 459.2,
+   "chg_pct": 1.81
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63797.15,
-   "chg_pts": 1211.8,
-   "chg_pct": 1.94
+   "ltp": 63774.55,
+   "chg_pts": 1189.2,
+   "chg_pct": 1.9
   },
   {
    "name": "SENSEX",
-   "ltp": 84020.3,
-   "chg_pts": 1584.31,
-   "chg_pct": 1.92
+   "ltp": 84004.91,
+   "chg_pts": 1568.92,
+   "chg_pct": 1.9
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.38,
-   "chg_pts": -0.32,
-   "chg_pct": -1.81
+   "ltp": 17.4,
+   "chg_pts": -0.3,
+   "chg_pct": -1.69
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7504,
-   "chg_pts": -77,
-   "chg_pct": -1.02
+   "ltp": 7500,
+   "chg_pts": -81,
+   "chg_pct": -1.07
   },
   {
    "name": "GOLD",
-   "ltp": 121789,
-   "chg_pts": -540,
-   "chg_pct": -0.44
+   "ltp": 121717,
+   "chg_pts": -612,
+   "chg_pct": -0.5
   },
   {
    "name": "SILVER",
-   "ltp": 144699,
-   "chg_pts": -739,
+   "ltp": 144690,
+   "chg_pts": -748,
    "chg_pct": -0.51
   }
  ],
  "oc": {
-  "spot": 25810.5,
+  "spot": 25806.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9397115,
-  "res_pct": 0.73,
+  "res_oi": 9427600,
+  "res_pct": 0.75,
   "sup_strike": 25700.0,
-  "sup_oi": 7260955,
-  "sup_pct": 0.43,
+  "sup_oi": 7254390,
+  "sup_pct": 0.41,
   "max_pain": 25700.0,
-  "mp_pct": -0.43,
-  "pcr": 0.952,
+  "mp_pct": -0.41,
+  "pcr": 0.957,
   "suggests": "Balanced"
  },
  "charts": {
@@ -241,8 +241,8 @@
     "time": 1795582800,
     "open": 25807.2,
     "high": 25814.2,
-    "low": 25804.2,
-    "close": 25811.4
+    "low": 25798.85,
+    "close": 25805.55
    }
   ]
  },
@@ -1013,10 +1013,10 @@
    "spot_entry": 25810.55,
    "strat": "v2",
    "exit_t": null,
-   "exit_px": 225.5,
+   "exit_px": 220.85,
    "reason": "OPEN",
-   "pts": 0.0,
-   "rs": 0
+   "pts": -4.65,
+   "rs": -302
   }
  ],
  "instrument": {
