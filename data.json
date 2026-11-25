@@ -1,124 +1,64 @@
 {
- "updated": "2026-11-25 09:36:13",
+ "updated": "2026-11-25 09:37:25",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25776.25,
-   "chg_pts": 426.6,
-   "chg_pct": 1.68
+   "ltp": 25774.2,
+   "chg_pts": 424.55,
+   "chg_pct": 1.67
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63888.95,
-   "chg_pts": 1303.6,
-   "chg_pct": 2.08
+   "ltp": 63873.9,
+   "chg_pts": 1288.55,
+   "chg_pct": 2.06
   },
   {
    "name": "SENSEX",
-   "ltp": 83913.53,
-   "chg_pts": 1477.54,
+   "ltp": 83908.86,
+   "chg_pts": 1472.87,
    "chg_pct": 1.79
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.15,
-   "chg_pts": -0.55,
-   "chg_pct": -3.11
+   "ltp": 17.08,
+   "chg_pts": -0.62,
+   "chg_pct": -3.5
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7494,
-   "chg_pts": -87,
-   "chg_pct": -1.15
+   "ltp": 7496,
+   "chg_pts": -85,
+   "chg_pct": -1.12
   },
   {
    "name": "GOLD",
-   "ltp": 121544,
-   "chg_pts": -785,
-   "chg_pct": -0.64
+   "ltp": 121530,
+   "chg_pts": -799,
+   "chg_pct": -0.65
   },
   {
    "name": "SILVER",
-   "ltp": 144327,
-   "chg_pts": -1111,
-   "chg_pct": -0.76
+   "ltp": 144350,
+   "chg_pts": -1088,
+   "chg_pct": -0.75
   }
  ],
  "oc": {
-  "spot": 25774.5,
+  "spot": 25774.8,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9291880,
-  "res_pct": 0.88,
+  "res_oi": 9270235,
+  "res_pct": 0.87,
   "sup_strike": 25700.0,
-  "sup_oi": 6061445,
+  "sup_oi": 6140680,
   "sup_pct": 0.29,
   "max_pain": 25700.0,
   "mp_pct": -0.29,
-  "pcr": 0.872,
+  "pcr": 0.878,
   "suggests": "Balanced"
- },
- "charts": {
-  "NIFTY": [
-   {
-    "time": 1795578300,
-    "open": 25658.35,
-    "high": 25756.0,
-    "low": 25619.0,
-    "close": 25742.1
-   },
-   {
-    "time": 1795578480,
-    "open": 25747.4,
-    "high": 25752.85,
-    "low": 25716.05,
-    "close": 25724.4
-   },
-   {
-    "time": 1795578660,
-    "open": 25728.7,
-    "high": 25742.3,
-    "low": 25718.7,
-    "close": 25734.3
-   },
-   {
-    "time": 1795578840,
-    "open": 25736.3,
-    "high": 25741.1,
-    "low": 25695.55,
-    "close": 25726.4
-   },
-   {
-    "time": 1795579020,
-    "open": 25729.4,
-    "high": 25775.5,
-    "low": 25725.85,
-    "close": 25774.1
-   },
-   {
-    "time": 1795579200,
-    "open": 25772.6,
-    "high": 25788.25,
-    "low": 25766.6,
-    "close": 25780.35
-   },
-   {
-    "time": 1795579380,
-    "open": 25782.6,
-    "high": 25795.9,
-    "low": 25773.45,
-    "close": 25776.0
-   },
-   {
-    "time": 1795579560,
-    "open": 25778.25,
-    "high": 25779.75,
-    "low": 25773.25,
-    "close": 25773.5
-   }
-  ]
  },
  "mtf": {
   "3": {
@@ -337,10 +277,10 @@
    "spot_entry": 25771.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 235.95,
+   "exit_px": 234.05,
    "reason": "OPEN",
-   "pts": 3.6,
-   "rs": 234
+   "pts": 1.7,
+   "rs": 110
   }
  ],
  "instrument": {
@@ -372,7 +312,9 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
