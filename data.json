@@ -1,19 +1,137 @@
 {
- "updated": "2026-11-25 09:34:59",
+ "updated": "2026-11-25 09:36:13",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25776.25,
+   "chg_pts": 426.6,
+   "chg_pct": 1.68
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63888.95,
+   "chg_pts": 1303.6,
+   "chg_pct": 2.08
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 83913.53,
+   "chg_pts": 1477.54,
+   "chg_pct": 1.79
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.15,
+   "chg_pts": -0.55,
+   "chg_pct": -3.11
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7494,
+   "chg_pts": -87,
+   "chg_pct": -1.15
+  },
+  {
+   "name": "GOLD",
+   "ltp": 121544,
+   "chg_pts": -785,
+   "chg_pct": -0.64
+  },
+  {
+   "name": "SILVER",
+   "ltp": 144327,
+   "chg_pts": -1111,
+   "chg_pct": -0.76
+  }
+ ],
+ "oc": {
+  "spot": 25774.5,
+  "expiry": "2026-12-01",
+  "res_strike": 26000.0,
+  "res_oi": 9291880,
+  "res_pct": 0.88,
+  "sup_strike": 25700.0,
+  "sup_oi": 6061445,
+  "sup_pct": 0.29,
+  "max_pain": 25700.0,
+  "mp_pct": -0.29,
+  "pcr": 0.872,
+  "suggests": "Balanced"
+ },
+ "charts": {
+  "NIFTY": [
+   {
+    "time": 1795578300,
+    "open": 25658.35,
+    "high": 25756.0,
+    "low": 25619.0,
+    "close": 25742.1
+   },
+   {
+    "time": 1795578480,
+    "open": 25747.4,
+    "high": 25752.85,
+    "low": 25716.05,
+    "close": 25724.4
+   },
+   {
+    "time": 1795578660,
+    "open": 25728.7,
+    "high": 25742.3,
+    "low": 25718.7,
+    "close": 25734.3
+   },
+   {
+    "time": 1795578840,
+    "open": 25736.3,
+    "high": 25741.1,
+    "low": 25695.55,
+    "close": 25726.4
+   },
+   {
+    "time": 1795579020,
+    "open": 25729.4,
+    "high": 25775.5,
+    "low": 25725.85,
+    "close": 25774.1
+   },
+   {
+    "time": 1795579200,
+    "open": 25772.6,
+    "high": 25788.25,
+    "low": 25766.6,
+    "close": 25780.35
+   },
+   {
+    "time": 1795579380,
+    "open": 25782.6,
+    "high": 25795.9,
+    "low": 25773.45,
+    "close": 25776.0
+   },
+   {
+    "time": 1795579560,
+    "open": 25778.25,
+    "high": 25779.75,
+    "low": 25773.25,
+    "close": 25773.5
+   }
+  ]
+ },
  "mtf": {
   "3": {
    "cls": "LONG BUILDUP",
-   "time": "09:33",
-   "d_price": "8.3",
-   "d_oi": "60125"
+   "time": "09:36",
+   "d_price": "8.2",
+   "d_oi": "24115"
   },
   "5": {
-   "cls": "SHORT COVERING",
-   "time": "09:30",
-   "d_price": "58.8",
-   "d_oi": "-27430"
+   "cls": "LONG BUILDUP",
+   "time": "09:35",
+   "d_price": "17.3",
+   "d_oi": "74230"
   },
   "15": {
    "cls": "SHORT COVERING",
@@ -174,6 +292,36 @@
    "score": "1",
    "decision_score": "3",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "09:35",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25893.8",
+   "close": "25911.1",
+   "oi_start": "11404315",
+   "oi_end": "11478545",
+   "d_price": "17.3",
+   "d_oi": "74230",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "3",
+   "decision": "STRONG LONG"
+  },
+  {
+   "time": "09:36",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25902.1",
+   "close": "25910.3",
+   "oi_start": "11464440",
+   "oi_end": "11488555",
+   "d_price": "8.2",
+   "d_oi": "24115",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "3",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -189,10 +337,10 @@
    "spot_entry": 25771.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 237,
+   "exit_px": 235.95,
    "reason": "OPEN",
-   "pts": 4.65,
-   "rs": 302
+   "pts": 3.6,
+   "rs": 234
   }
  ],
  "instrument": {
@@ -224,15 +372,11 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain",
-  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": false,
+  "quotes_ok": true,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
