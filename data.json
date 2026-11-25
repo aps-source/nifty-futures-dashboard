@@ -1,71 +1,71 @@
 {
- "updated": "2026-11-25 09:26:33",
+ "updated": "2026-11-25 09:27:42",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25724.5,
-   "chg_pts": 374.85,
-   "chg_pct": 1.48
+   "ltp": 25739.75,
+   "chg_pts": 390.1,
+   "chg_pct": 1.54
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63790.8,
-   "chg_pts": 1205.45,
-   "chg_pct": 1.93
+   "ltp": 63827.9,
+   "chg_pts": 1242.55,
+   "chg_pct": 1.99
   },
   {
    "name": "SENSEX",
-   "ltp": 83754.19,
-   "chg_pts": 1318.2,
-   "chg_pct": 1.6
+   "ltp": 83809.18,
+   "chg_pts": 1373.19,
+   "chg_pct": 1.67
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.96,
-   "chg_pts": -0.74,
-   "chg_pct": -4.18
+   "ltp": 16.93,
+   "chg_pts": -0.77,
+   "chg_pct": -4.35
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7501,
-   "chg_pts": -80,
-   "chg_pct": -1.06
+   "ltp": 7507,
+   "chg_pts": -74,
+   "chg_pct": -0.98
   },
   {
    "name": "GOLD",
-   "ltp": 121639,
-   "chg_pts": -690,
-   "chg_pct": -0.56
+   "ltp": 121584,
+   "chg_pts": -745,
+   "chg_pct": -0.61
   },
   {
    "name": "SILVER",
-   "ltp": 144398,
-   "chg_pts": -1040,
-   "chg_pct": -0.72
+   "ltp": 144352,
+   "chg_pts": -1086,
+   "chg_pct": -0.75
   }
  ],
  "oc": {
-  "spot": 25728.9,
+  "spot": 25743.8,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8812830,
-  "res_pct": 1.05,
+  "res_oi": 8853325,
+  "res_pct": 0.99,
   "sup_strike": 24000.0,
-  "sup_oi": 5879380,
-  "sup_pct": 6.72,
+  "sup_oi": 5925205,
+  "sup_pct": 6.77,
   "max_pain": 25600.0,
-  "mp_pct": -0.5,
-  "pcr": 0.819,
+  "mp_pct": -0.56,
+  "pcr": 0.824,
   "suggests": "Balanced"
  },
  "mtf": {
   "3": {
    "cls": "SHORT COVERING",
-   "time": "09:24",
-   "d_price": "24.6",
-   "d_oi": "-28665"
+   "time": "09:27",
+   "d_price": "5.7",
+   "d_oi": "-40105"
   },
   "5": {
    "cls": "SHORT COVERING",
@@ -147,6 +147,21 @@
    "oi_end": "11431745",
    "d_price": "9.9",
    "d_oi": "-22685",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
+  },
+  {
+   "time": "09:27",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25839.3",
+   "close": "25845",
+   "oi_start": "11427195",
+   "oi_end": "11387090",
+   "d_price": "5.7",
+   "d_oi": "-40105",
    "classification": "SHORT COVERING",
    "score": "1",
    "decision_score": "2",
