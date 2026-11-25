@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 15:18:38",
+ "updated": "2026-11-25 15:19:50",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,37 +29,23 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7558,
-   "chg_pts": -23,
-   "chg_pct": -0.3
+   "ltp": 7566,
+   "chg_pts": -15,
+   "chg_pct": -0.2
   },
   {
    "name": "GOLD",
-   "ltp": 120617,
-   "chg_pts": -1712,
-   "chg_pct": -1.4
+   "ltp": 120639,
+   "chg_pts": -1690,
+   "chg_pct": -1.38
   },
   {
    "name": "SILVER",
-   "ltp": 142355,
-   "chg_pts": -3083,
-   "chg_pct": -2.12
+   "ltp": 142466,
+   "chg_pts": -2972,
+   "chg_pct": -2.04
   }
  ],
- "oc": {
-  "spot": 25791.2,
-  "expiry": "2026-12-01",
-  "res_strike": 26000.0,
-  "res_oi": 9557730,
-  "res_pct": 0.81,
-  "sup_strike": 25000.0,
-  "sup_oi": 6581445,
-  "sup_pct": 3.07,
-  "max_pain": 25700.0,
-  "mp_pct": -0.35,
-  "pcr": 0.882,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -2880,10 +2866,10 @@
    "spot_entry": 25771.65,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 229.25,
+   "exit_px": 237.55,
    "reason": "OPEN",
-   "pts": -9.45,
-   "rs": -614
+   "pts": -1.15,
+   "rs": -75
   },
   {
    "date": "2026-11-25",
@@ -2983,11 +2969,13 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
