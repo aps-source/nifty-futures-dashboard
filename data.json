@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-25 12:31:40",
+ "updated": "2026-11-25 12:32:54",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25834.7,
+   "chg_pts": 485.05,
+   "chg_pct": 1.91
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63797.8,
+   "chg_pts": 1212.45,
+   "chg_pct": 1.94
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84103.2,
+   "chg_pts": 1667.21,
+   "chg_pct": 2.02
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.98,
+   "chg_pts": 0.28,
+   "chg_pct": 1.58
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7454,
+   "chg_pts": -127,
+   "chg_pct": -1.68
+  },
+  {
+   "name": "GOLD",
+   "ltp": 120473,
+   "chg_pts": -1856,
+   "chg_pct": -1.52
+  },
+  {
+   "name": "SILVER",
+   "ltp": 142916,
+   "chg_pts": -2522,
+   "chg_pct": -1.73
+  }
+ ],
  "oc": {
-  "spot": 25844.1,
+  "spot": 25836.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9122165,
-  "res_pct": 0.6,
+  "res_oi": 8851700,
+  "res_pct": 0.63,
   "sup_strike": 25500.0,
-  "sup_oi": 8231080,
-  "sup_pct": 1.33,
+  "sup_oi": 7854405,
+  "sup_pct": 1.3,
   "max_pain": 25800.0,
-  "mp_pct": -0.17,
-  "pcr": 1.119,
+  "mp_pct": -0.14,
+  "pcr": 1.104,
   "suggests": "Balanced"
  },
  "charts": {
@@ -477,8 +521,15 @@
     "time": 1795590000,
     "open": 25884.55,
     "high": 25884.6,
-    "low": 25830.9,
-    "close": 25846.35
+    "low": 25821.6,
+    "close": 25835.15
+   },
+   {
+    "time": 1795590180,
+    "open": 25836.35,
+    "high": 25836.35,
+    "low": 25832.85,
+    "close": 25834.85
    }
   ]
  },
@@ -2393,10 +2444,10 @@
    "spot_entry": 25898.95,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 219.15,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 25.85,
-   "rs": 1680
+   "pts": null,
+   "rs": null
   },
   {
    "date": "2026-11-25",
@@ -2496,12 +2547,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001D3EF571810>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
