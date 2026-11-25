@@ -1,65 +1,51 @@
 {
- "updated": "2026-11-25 12:13:51",
+ "updated": "2026-11-25 12:15:00",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25890.1,
-   "chg_pts": 540.45,
-   "chg_pct": 2.13
+   "ltp": 25895.25,
+   "chg_pts": 545.6,
+   "chg_pct": 2.15
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63939.35,
-   "chg_pts": 1354.0,
-   "chg_pct": 2.16
+   "ltp": 63950.3,
+   "chg_pts": 1364.95,
+   "chg_pct": 2.18
   },
   {
    "name": "SENSEX",
-   "ltp": 84289.24,
-   "chg_pts": 1853.25,
-   "chg_pct": 2.25
+   "ltp": 84302.39,
+   "chg_pts": 1866.4,
+   "chg_pct": 2.26
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.47,
-   "chg_pts": -0.23,
-   "chg_pct": -1.3
+   "ltp": 17.63,
+   "chg_pts": -0.07,
+   "chg_pct": -0.4
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7498,
-   "chg_pts": -83,
-   "chg_pct": -1.09
+   "ltp": 7492,
+   "chg_pts": -89,
+   "chg_pct": -1.17
   },
   {
    "name": "GOLD",
-   "ltp": 120658,
-   "chg_pts": -1671,
-   "chg_pct": -1.37
+   "ltp": 120641,
+   "chg_pts": -1688,
+   "chg_pct": -1.38
   },
   {
    "name": "SILVER",
-   "ltp": 143087,
-   "chg_pts": -2351,
-   "chg_pct": -1.62
+   "ltp": 143101,
+   "chg_pts": -2337,
+   "chg_pct": -1.61
   }
  ],
- "oc": {
-  "spot": 25891.5,
-  "expiry": "2026-12-01",
-  "res_strike": 26000.0,
-  "res_oi": 8854950,
-  "res_pct": 0.42,
-  "sup_strike": 25500.0,
-  "sup_oi": 8179340,
-  "sup_pct": 1.51,
-  "max_pain": 25800.0,
-  "mp_pct": -0.35,
-  "pcr": 1.139,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": [
    {
@@ -478,9 +464,16 @@
    {
     "time": 1795588920,
     "open": 25869.25,
-    "high": 25893.2,
+    "high": 25900.45,
     "low": 25861.7,
-    "close": 25890.75
+    "close": 25897.45
+   },
+   {
+    "time": 1795589100,
+    "open": 25898.7,
+    "high": 25899.15,
+    "low": 25893.8,
+    "close": 25897.85
    }
   ]
  },
@@ -2286,11 +2279,13 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
