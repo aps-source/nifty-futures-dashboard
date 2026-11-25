@@ -1,7 +1,51 @@
 {
- "updated": "2026-11-25 09:51:41",
+ "updated": "2026-11-25 09:52:54",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25769.9,
+   "chg_pts": 420.25,
+   "chg_pct": 1.66
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63722.65,
+   "chg_pts": 1137.3,
+   "chg_pct": 1.82
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 83855.42,
+   "chg_pts": 1419.43,
+   "chg_pct": 1.72
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.71,
+   "chg_pts": 0.01,
+   "chg_pct": 0.06
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7506,
+   "chg_pts": -75,
+   "chg_pct": -0.99
+  },
+  {
+   "name": "GOLD",
+   "ltp": 121900,
+   "chg_pts": -429,
+   "chg_pct": -0.35
+  },
+  {
+   "name": "SILVER",
+   "ltp": 144626,
+   "chg_pts": -812,
+   "chg_pct": -0.56
+  }
+ ],
  "charts": {
   "NIFTY": [
    {
@@ -92,8 +136,8 @@
     "time": 1795580460,
     "open": 25773.45,
     "high": 25782.85,
-    "low": 25768.6,
-    "close": 25768.75
+    "low": 25751.3,
+    "close": 25762.5
    }
   ]
  },
@@ -502,12 +546,11 @@
   "live_book": "v2"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
   "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": false,
   "tracker_running": true,
   "weekday": true
