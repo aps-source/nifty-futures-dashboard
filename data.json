@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 09:08:54",
+ "updated": "2026-11-25 09:10:12",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -17,9 +17,9 @@
   },
   {
    "name": "SENSEX",
-   "ltp": 83448,
-   "chg_pts": 1012.01,
-   "chg_pct": 1.23
+   "ltp": 83435.61,
+   "chg_pts": 999.62,
+   "chg_pct": 1.21
   },
   {
    "name": "INDIA VIX",
@@ -29,21 +29,21 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7518,
-   "chg_pts": -63,
-   "chg_pct": -0.83
+   "ltp": 7514,
+   "chg_pts": -67,
+   "chg_pct": -0.88
   },
   {
    "name": "GOLD",
-   "ltp": 121814,
-   "chg_pts": -515,
+   "ltp": 121819,
+   "chg_pts": -510,
    "chg_pct": -0.42
   },
   {
    "name": "SILVER",
-   "ltp": 144680,
-   "chg_pts": -758,
-   "chg_pct": -0.52
+   "ltp": 144668,
+   "chg_pts": -770,
+   "chg_pct": -0.53
   }
  ],
  "oc": {
@@ -59,9 +59,6 @@
   "mp_pct": -0.62,
   "pcr": 0.699,
   "suggests": "CALL side heavy - PUT bias"
- },
- "charts": {
-  "NIFTY": []
  },
  "mtf": {},
  "decision": null,
@@ -97,7 +94,9 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
