@@ -1,75 +1,64 @@
 {
- "updated": "2026-11-25 09:16:01",
+ "updated": "2026-11-25 09:17:14",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25752.05,
-   "chg_pts": 402.4,
-   "chg_pct": 1.59
+   "ltp": 25742.3,
+   "chg_pts": 392.65,
+   "chg_pct": 1.55
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63657.9,
-   "chg_pts": 1072.55,
-   "chg_pct": 1.71
+   "ltp": 63760.6,
+   "chg_pts": 1175.25,
+   "chg_pct": 1.88
   },
   {
    "name": "SENSEX",
-   "ltp": 83842.82,
-   "chg_pts": 1406.83,
-   "chg_pct": 1.71
+   "ltp": 83813.54,
+   "chg_pts": 1377.55,
+   "chg_pct": 1.67
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.01,
-   "chg_pts": -0.69,
-   "chg_pct": -3.9
+   "ltp": 16.6,
+   "chg_pts": -1.1,
+   "chg_pct": -6.21
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7512,
-   "chg_pts": -69,
-   "chg_pct": -0.91
+   "ltp": 7517,
+   "chg_pts": -64,
+   "chg_pct": -0.84
   },
   {
    "name": "GOLD",
-   "ltp": 122000,
-   "chg_pts": -329,
-   "chg_pct": -0.27
+   "ltp": 121963,
+   "chg_pts": -366,
+   "chg_pct": -0.3
   },
   {
    "name": "SILVER",
-   "ltp": 144814,
-   "chg_pts": -624,
+   "ltp": 144817,
+   "chg_pts": -621,
    "chg_pct": -0.43
   }
  ],
  "oc": {
-  "spot": 25748.9,
+  "spot": 25748.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8444735,
+  "res_oi": 8461245,
   "res_pct": 0.98,
   "sup_strike": 24000.0,
-  "sup_oi": 5276700,
+  "sup_oi": 5235425,
   "sup_pct": 6.79,
   "max_pain": 25500.0,
-  "mp_pct": -0.97,
-  "pcr": 0.727,
+  "mp_pct": -0.96,
+  "pcr": 0.748,
   "suggests": "CALL side heavy - PUT bias"
- },
- "charts": {
-  "NIFTY": [
-   {
-    "time": 1795578300,
-    "open": 25658.35,
-    "high": 25755.25,
-    "low": 25619.0,
-    "close": 25751.2
-   }
-  ]
  },
  "mtf": {},
  "decision": null,
@@ -105,7 +94,9 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
