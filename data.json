@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-25 11:30:56",
+ "updated": "2026-11-25 11:32:31",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "oc": {
-  "spot": 25918.5,
+  "spot": 25907.0,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8969480,
-  "res_pct": 0.31,
+  "res_oi": 9137115,
+  "res_pct": 0.36,
   "sup_strike": 25700.0,
-  "sup_oi": 8070725,
-  "sup_pct": 0.84,
+  "sup_oi": 8054995,
+  "sup_pct": 0.8,
   "max_pain": 25800.0,
-  "mp_pct": -0.46,
-  "pcr": 1.137,
+  "mp_pct": -0.41,
+  "pcr": 1.132,
   "suggests": "Balanced"
  },
  "charts": {
@@ -337,8 +337,8 @@
     "time": 1795586400,
     "open": 25914.0,
     "high": 25926.85,
-    "low": 25908.8,
-    "close": 25917.65
+    "low": 25904.35,
+    "close": 25907.55
    }
   ]
  },
@@ -1734,7 +1734,7 @@
   "live_book": "v2"
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001D3EF571810>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
  ],
  "checklist": {
   "within_window": true,
