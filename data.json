@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 09:13:42",
+ "updated": "2026-11-25 09:14:52",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -29,39 +29,36 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7509,
-   "chg_pts": -72,
-   "chg_pct": -0.95
+   "ltp": 7511,
+   "chg_pts": -70,
+   "chg_pct": -0.92
   },
   {
    "name": "GOLD",
-   "ltp": 121884,
-   "chg_pts": -445,
-   "chg_pct": -0.36
+   "ltp": 121871,
+   "chg_pts": -458,
+   "chg_pct": -0.37
   },
   {
    "name": "SILVER",
-   "ltp": 144633,
-   "chg_pts": -805,
-   "chg_pct": -0.55
+   "ltp": 144478,
+   "chg_pts": -960,
+   "chg_pct": -0.66
   }
  ],
  "oc": {
-  "spot": 25658.3,
+  "spot": 25637.7,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
   "res_oi": 8418020,
-  "res_pct": 1.33,
+  "res_pct": 1.41,
   "sup_strike": 24000.0,
   "sup_oi": 5120830,
-  "sup_pct": 6.46,
+  "sup_pct": 6.39,
   "max_pain": 25500.0,
-  "mp_pct": -0.62,
+  "mp_pct": -0.54,
   "pcr": 0.699,
   "suggests": "CALL side heavy - PUT bias"
- },
- "charts": {
-  "NIFTY": []
  },
  "mtf": {},
  "decision": null,
@@ -97,7 +94,9 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
