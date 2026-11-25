@@ -1,64 +1,45 @@
 {
- "updated": "2026-11-25 09:21:52",
+ "updated": "2026-11-25 09:23:01",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25725.45,
-   "chg_pts": 375.8,
-   "chg_pct": 1.48
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63880.7,
-   "chg_pts": 1295.35,
-   "chg_pct": 2.07
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83771.37,
-   "chg_pts": 1335.38,
-   "chg_pct": 1.62
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.9,
-   "chg_pts": -0.8,
-   "chg_pct": -4.52
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7506,
-   "chg_pts": -75,
-   "chg_pct": -0.99
-  },
-  {
-   "name": "GOLD",
-   "ltp": 121812,
-   "chg_pts": -517,
-   "chg_pct": -0.42
-  },
-  {
-   "name": "SILVER",
-   "ltp": 144622,
-   "chg_pts": -816,
-   "chg_pct": -0.56
-  }
- ],
  "oc": {
-  "spot": 25729.3,
+  "spot": 25734.7,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8654230,
-  "res_pct": 1.05,
+  "res_oi": 8649485,
+  "res_pct": 1.03,
   "sup_strike": 24000.0,
-  "sup_oi": 5588635,
-  "sup_pct": 6.72,
+  "sup_oi": 5636150,
+  "sup_pct": 6.74,
   "max_pain": 25600.0,
-  "mp_pct": -0.5,
-  "pcr": 0.796,
-  "suggests": "CALL side heavy - PUT bias"
+  "mp_pct": -0.52,
+  "pcr": 0.801,
+  "suggests": "Balanced"
+ },
+ "charts": {
+  "NIFTY": [
+   {
+    "time": 1795578300,
+    "open": 25658.35,
+    "high": 25756.0,
+    "low": 25619.0,
+    "close": 25742.1
+   },
+   {
+    "time": 1795578480,
+    "open": 25747.4,
+    "high": 25752.85,
+    "low": 25716.05,
+    "close": 25724.4
+   },
+   {
+    "time": 1795578660,
+    "open": 25728.7,
+    "high": 25742.3,
+    "low": 25718.7,
+    "close": 25732.9
+   }
+  ]
  },
  "mtf": {
   "3": {
@@ -154,11 +135,11 @@
   "live_book": "v2"
  },
  "errors": [
-  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
