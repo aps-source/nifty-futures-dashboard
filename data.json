@@ -1,64 +1,75 @@
 {
- "updated": "2026-11-25 09:14:52",
+ "updated": "2026-11-25 09:16:01",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25658.35,
-   "chg_pts": 308.7,
-   "chg_pct": 1.22
+   "ltp": 25752.05,
+   "chg_pts": 402.4,
+   "chg_pct": 1.59
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63408.6,
-   "chg_pts": 823.25,
-   "chg_pct": 1.32
+   "ltp": 63657.9,
+   "chg_pts": 1072.55,
+   "chg_pct": 1.71
   },
   {
    "name": "SENSEX",
-   "ltp": 83436.89,
-   "chg_pts": 1000.9,
-   "chg_pct": 1.21
+   "ltp": 83842.82,
+   "chg_pts": 1406.83,
+   "chg_pct": 1.71
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.7,
-   "chg_pts": 0.0,
-   "chg_pct": 0.0
+   "ltp": 17.01,
+   "chg_pts": -0.69,
+   "chg_pct": -3.9
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7511,
-   "chg_pts": -70,
-   "chg_pct": -0.92
+   "ltp": 7512,
+   "chg_pts": -69,
+   "chg_pct": -0.91
   },
   {
    "name": "GOLD",
-   "ltp": 121871,
-   "chg_pts": -458,
-   "chg_pct": -0.37
+   "ltp": 122000,
+   "chg_pts": -329,
+   "chg_pct": -0.27
   },
   {
    "name": "SILVER",
-   "ltp": 144478,
-   "chg_pts": -960,
-   "chg_pct": -0.66
+   "ltp": 144814,
+   "chg_pts": -624,
+   "chg_pct": -0.43
   }
  ],
  "oc": {
-  "spot": 25637.7,
+  "spot": 25748.9,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8418020,
-  "res_pct": 1.41,
+  "res_oi": 8444735,
+  "res_pct": 0.98,
   "sup_strike": 24000.0,
-  "sup_oi": 5120830,
-  "sup_pct": 6.39,
+  "sup_oi": 5276700,
+  "sup_pct": 6.79,
   "max_pain": 25500.0,
-  "mp_pct": -0.54,
-  "pcr": 0.699,
+  "mp_pct": -0.97,
+  "pcr": 0.727,
   "suggests": "CALL side heavy - PUT bias"
+ },
+ "charts": {
+  "NIFTY": [
+   {
+    "time": 1795578300,
+    "open": 25658.35,
+    "high": 25755.25,
+    "low": 25619.0,
+    "close": 25751.2
+   }
+  ]
  },
  "mtf": {},
  "decision": null,
@@ -94,9 +105,7 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
