@@ -1,69 +1,48 @@
 {
- "updated": "2026-11-25 09:17:14",
+ "updated": "2026-11-25 09:18:22",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25742.3,
-   "chg_pts": 392.65,
-   "chg_pct": 1.55
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63760.6,
-   "chg_pts": 1175.25,
-   "chg_pct": 1.88
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 83813.54,
-   "chg_pts": 1377.55,
-   "chg_pct": 1.67
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.6,
-   "chg_pts": -1.1,
-   "chg_pct": -6.21
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7517,
-   "chg_pts": -64,
-   "chg_pct": -0.84
-  },
-  {
-   "name": "GOLD",
-   "ltp": 121963,
-   "chg_pts": -366,
-   "chg_pct": -0.3
-  },
-  {
-   "name": "SILVER",
-   "ltp": 144817,
-   "chg_pts": -621,
-   "chg_pct": -0.43
-  }
- ],
  "oc": {
-  "spot": 25748.2,
+  "spot": 25750.1,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 8461245,
-  "res_pct": 0.98,
+  "res_oi": 8536190,
+  "res_pct": 0.97,
   "sup_strike": 24000.0,
-  "sup_oi": 5235425,
-  "sup_pct": 6.79,
-  "max_pain": 25500.0,
-  "mp_pct": -0.96,
-  "pcr": 0.748,
+  "sup_oi": 5600010,
+  "sup_pct": 6.8,
+  "max_pain": 25550.0,
+  "mp_pct": -0.78,
+  "pcr": 0.766,
   "suggests": "CALL side heavy - PUT bias"
  },
- "mtf": {},
- "decision": null,
- "decision_score": null,
- "signals": [],
+ "mtf": {
+  "3": {
+   "cls": "SHORT COVERING",
+   "time": "09:18",
+   "d_price": "34.1",
+   "d_oi": "-290355"
+  }
+ },
+ "decision": "LONG",
+ "decision_score": 1,
+ "signals": [
+  {
+   "time": "09:18",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25802.7",
+   "close": "25836.8",
+   "oi_start": "11784305",
+   "oi_end": "11493950",
+   "d_price": "34.1",
+   "d_oi": "-290355",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "1",
+   "decision": "LONG"
+  }
+ ],
  "trades": [],
  "instrument": {
   "type": "NIFTY 1-OTM option buy (Call when votes up, Put when down)",
@@ -95,13 +74,14 @@
   "live_book": "v2"
  },
  "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
   "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
-  "tracker_running": false,
+  "tracker_running": true,
   "weekday": true
  }
 }
