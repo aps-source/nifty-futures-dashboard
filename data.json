@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-25 12:55:21",
+ "updated": "2026-11-25 12:56:32",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25740.8,
-   "chg_pts": 391.15,
-   "chg_pct": 1.54
+   "ltp": 25741.55,
+   "chg_pts": 391.9,
+   "chg_pct": 1.55
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63505.8,
-   "chg_pts": 920.45,
-   "chg_pct": 1.47
+   "ltp": 63518.55,
+   "chg_pts": 933.2,
+   "chg_pct": 1.49
   },
   {
    "name": "SENSEX",
-   "ltp": 83800.3,
-   "chg_pts": 1364.31,
-   "chg_pct": 1.65
+   "ltp": 83789.1,
+   "chg_pts": 1353.11,
+   "chg_pct": 1.64
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.92,
-   "chg_pts": 0.22,
-   "chg_pct": 1.24
+   "ltp": 17.94,
+   "chg_pts": 0.24,
+   "chg_pct": 1.36
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7476,
-   "chg_pts": -105,
-   "chg_pct": -1.39
+   "ltp": 7472,
+   "chg_pts": -109,
+   "chg_pct": -1.44
   },
   {
    "name": "GOLD",
-   "ltp": 120510,
-   "chg_pts": -1819,
-   "chg_pct": -1.49
+   "ltp": 120479,
+   "chg_pts": -1850,
+   "chg_pct": -1.51
   },
   {
    "name": "SILVER",
-   "ltp": 142670,
-   "chg_pts": -2768,
-   "chg_pct": -1.9
+   "ltp": 142593,
+   "chg_pts": -2845,
+   "chg_pct": -1.96
   }
  ],
  "oc": {
-  "spot": 25741.8,
+  "spot": 25741.3,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9522110,
+  "res_oi": 9581845,
   "res_pct": 1.0,
   "sup_strike": 25000.0,
-  "sup_oi": 6750510,
+  "sup_oi": 6584500,
   "sup_pct": 2.88,
   "max_pain": 25750.0,
   "mp_pct": 0.03,
-  "pcr": 0.974,
+  "pcr": 0.965,
   "suggests": "Balanced"
  },
  "charts": {
@@ -578,7 +578,7 @@
     "open": 25737.95,
     "high": 25748.7,
     "low": 25730.25,
-    "close": 25739.95
+    "close": 25741.55
    }
   ]
  },
@@ -2493,10 +2493,10 @@
    "spot_entry": 25898.95,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 279.9,
+   "exit_px": 278.15,
    "reason": "OPEN",
-   "pts": 86.6,
-   "rs": 5629
+   "pts": 84.85,
+   "rs": 5515
   },
   {
    "date": "2026-11-25",
