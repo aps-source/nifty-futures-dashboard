@@ -1,25 +1,25 @@
 {
- "updated": "2026-11-25 10:28:22",
+ "updated": "2026-11-25 10:29:32",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25797.25,
-   "chg_pts": 447.6,
-   "chg_pct": 1.77
+   "ltp": 25805.8,
+   "chg_pts": 456.15,
+   "chg_pct": 1.8
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63749.1,
-   "chg_pts": 1163.75,
-   "chg_pct": 1.86
+   "ltp": 63781.7,
+   "chg_pts": 1196.35,
+   "chg_pct": 1.91
   },
   {
    "name": "SENSEX",
-   "ltp": 83966.89,
-   "chg_pts": 1530.9,
-   "chg_pct": 1.86
+   "ltp": 84004.77,
+   "chg_pts": 1568.78,
+   "chg_pct": 1.9
   },
   {
    "name": "INDIA VIX",
@@ -35,17 +35,31 @@
   },
   {
    "name": "GOLD",
-   "ltp": 121848,
-   "chg_pts": -481,
-   "chg_pct": -0.39
+   "ltp": 121763,
+   "chg_pts": -566,
+   "chg_pct": -0.46
   },
   {
    "name": "SILVER",
-   "ltp": 144680,
-   "chg_pts": -758,
-   "chg_pct": -0.52
+   "ltp": 144621,
+   "chg_pts": -817,
+   "chg_pct": -0.56
   }
  ],
+ "oc": {
+  "spot": 25808.0,
+  "expiry": "2026-12-01",
+  "res_strike": 26000.0,
+  "res_oi": 9350770,
+  "res_pct": 0.74,
+  "sup_strike": 25700.0,
+  "sup_oi": 7244835,
+  "sup_pct": 0.42,
+  "max_pain": 25700.0,
+  "mp_pct": -0.42,
+  "pcr": 0.95,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -221,7 +235,7 @@
     "open": 25809.2,
     "high": 25811.0,
     "low": 25792.4,
-    "close": 25799.55
+    "close": 25807.6
    }
   ]
  },
@@ -965,13 +979,11 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
