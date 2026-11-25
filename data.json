@@ -1,51 +1,65 @@
 {
- "updated": "2026-11-25 14:43:29",
+ "updated": "2026-11-25 14:44:44",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25723,
-   "chg_pts": 373.35,
-   "chg_pct": 1.47
+   "ltp": 25727.95,
+   "chg_pts": 378.3,
+   "chg_pct": 1.49
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63451.3,
-   "chg_pts": 865.95,
-   "chg_pct": 1.38
+   "ltp": 63473,
+   "chg_pts": 887.65,
+   "chg_pct": 1.42
   },
   {
    "name": "SENSEX",
-   "ltp": 83718.12,
-   "chg_pts": 1282.13,
-   "chg_pct": 1.56
+   "ltp": 83743.64,
+   "chg_pts": 1307.65,
+   "chg_pct": 1.59
   },
   {
    "name": "INDIA VIX",
-   "ltp": 18.01,
-   "chg_pts": 0.31,
-   "chg_pct": 1.75
+   "ltp": 17.97,
+   "chg_pts": 0.27,
+   "chg_pct": 1.53
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7545,
-   "chg_pts": -36,
-   "chg_pct": -0.47
+   "ltp": 7538,
+   "chg_pts": -43,
+   "chg_pct": -0.57
   },
   {
    "name": "GOLD",
-   "ltp": 120866,
-   "chg_pts": -1463,
-   "chg_pct": -1.2
+   "ltp": 120897,
+   "chg_pts": -1432,
+   "chg_pct": -1.17
   },
   {
    "name": "SILVER",
-   "ltp": 142649,
-   "chg_pts": -2789,
-   "chg_pct": -1.92
+   "ltp": 142708,
+   "chg_pts": -2730,
+   "chg_pct": -1.88
   }
  ],
+ "oc": {
+  "spot": 25729.7,
+  "expiry": "2026-12-01",
+  "res_strike": 26000.0,
+  "res_oi": 10499775,
+  "res_pct": 1.05,
+  "sup_strike": 25000.0,
+  "sup_oi": 6522295,
+  "sup_pct": 2.84,
+  "max_pain": 25700.0,
+  "mp_pct": -0.12,
+  "pcr": 0.863,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -816,7 +830,7 @@
     "open": 25744.45,
     "high": 25744.65,
     "low": 25717.0,
-    "close": 25723.0
+    "close": 25729.45
    }
   ]
  },
@@ -2868,13 +2882,11 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
