@@ -1,71 +1,138 @@
 {
- "updated": "2026-11-25 09:38:36",
+ "updated": "2026-11-25 09:39:48",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25742.45,
-   "chg_pts": 392.8,
-   "chg_pct": 1.55
+   "ltp": 25752.6,
+   "chg_pts": 402.95,
+   "chg_pct": 1.59
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63739,
-   "chg_pts": 1153.65,
-   "chg_pct": 1.84
+   "ltp": 63772.35,
+   "chg_pts": 1187.0,
+   "chg_pct": 1.9
   },
   {
    "name": "SENSEX",
-   "ltp": 83792.34,
-   "chg_pts": 1356.35,
-   "chg_pct": 1.65
+   "ltp": 83826.66,
+   "chg_pts": 1390.67,
+   "chg_pct": 1.69
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.06,
-   "chg_pts": -0.64,
-   "chg_pct": -3.62
+   "ltp": 17.08,
+   "chg_pts": -0.62,
+   "chg_pct": -3.5
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7496,
-   "chg_pts": -85,
-   "chg_pct": -1.12
+   "ltp": 7499,
+   "chg_pts": -82,
+   "chg_pct": -1.08
   },
   {
    "name": "GOLD",
-   "ltp": 121504,
-   "chg_pts": -825,
-   "chg_pct": -0.67
+   "ltp": 121473,
+   "chg_pts": -856,
+   "chg_pct": -0.7
   },
   {
    "name": "SILVER",
-   "ltp": 144351,
-   "chg_pts": -1087,
-   "chg_pct": -0.75
+   "ltp": 144158,
+   "chg_pts": -1280,
+   "chg_pct": -0.88
   }
  ],
  "oc": {
-  "spot": 25749.3,
+  "spot": 25752.9,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9314305,
-  "res_pct": 0.97,
+  "res_oi": 9372675,
+  "res_pct": 0.96,
   "sup_strike": 25700.0,
-  "sup_oi": 6249360,
-  "sup_pct": 0.19,
+  "sup_oi": 6231095,
+  "sup_pct": 0.21,
   "max_pain": 25700.0,
-  "mp_pct": -0.19,
-  "pcr": 0.881,
+  "mp_pct": -0.21,
+  "pcr": 0.88,
   "suggests": "Balanced"
+ },
+ "charts": {
+  "NIFTY": [
+   {
+    "time": 1795578300,
+    "open": 25658.35,
+    "high": 25756.0,
+    "low": 25619.0,
+    "close": 25742.1
+   },
+   {
+    "time": 1795578480,
+    "open": 25747.4,
+    "high": 25752.85,
+    "low": 25716.05,
+    "close": 25724.4
+   },
+   {
+    "time": 1795578660,
+    "open": 25728.7,
+    "high": 25742.3,
+    "low": 25718.7,
+    "close": 25734.3
+   },
+   {
+    "time": 1795578840,
+    "open": 25736.3,
+    "high": 25741.1,
+    "low": 25695.55,
+    "close": 25726.4
+   },
+   {
+    "time": 1795579020,
+    "open": 25729.4,
+    "high": 25775.5,
+    "low": 25725.85,
+    "close": 25774.1
+   },
+   {
+    "time": 1795579200,
+    "open": 25772.6,
+    "high": 25788.25,
+    "low": 25766.6,
+    "close": 25780.35
+   },
+   {
+    "time": 1795579380,
+    "open": 25782.6,
+    "high": 25795.9,
+    "low": 25773.45,
+    "close": 25776.0
+   },
+   {
+    "time": 1795579560,
+    "open": 25778.25,
+    "high": 25779.9,
+    "low": 25734.25,
+    "close": 25743.75
+   },
+   {
+    "time": 1795579740,
+    "open": 25745.6,
+    "high": 25755.95,
+    "low": 25735.2,
+    "close": 25754.4
+   }
+  ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "09:36",
-   "d_price": "8.2",
-   "d_oi": "24115"
+   "cls": "SHORT BUILDUP",
+   "time": "09:39",
+   "d_price": "-35.6",
+   "d_oi": "10205"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -80,8 +147,8 @@
    "d_oi": "-379990"
   }
  },
- "decision": "STRONG LONG",
- "decision_score": 3,
+ "decision": "LONG",
+ "decision_score": 1,
  "signals": [
   {
    "time": "09:18",
@@ -262,6 +329,21 @@
    "score": "1",
    "decision_score": "3",
    "decision": "STRONG LONG"
+  },
+  {
+   "time": "09:39",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25910.3",
+   "close": "25874.7",
+   "oi_start": "11488555",
+   "oi_end": "11498760",
+   "d_price": "-35.6",
+   "d_oi": "10205",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "1",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -277,10 +359,10 @@
    "spot_entry": 25771.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 222.8,
+   "exit_px": 223.05,
    "reason": "OPEN",
-   "pts": -9.55,
-   "rs": -621
+   "pts": -9.3,
+   "rs": -604
   }
  ],
  "instrument": {
@@ -312,9 +394,7 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "charts: 429 Client Error:  for url: https://api.dhan.co/v2/charts/intraday"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
