@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-25 11:58:05",
+ "updated": "2026-11-25 11:59:16",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25911.95,
+   "chg_pts": 562.3,
+   "chg_pct": 2.22
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 64037.5,
+   "chg_pts": 1452.15,
+   "chg_pct": 2.32
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84353.67,
+   "chg_pts": 1917.68,
+   "chg_pct": 2.33
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.9,
+   "chg_pts": 0.2,
+   "chg_pct": 1.13
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7514,
+   "chg_pts": -67,
+   "chg_pct": -0.88
+  },
+  {
+   "name": "GOLD",
+   "ltp": 120724,
+   "chg_pts": -1605,
+   "chg_pct": -1.31
+  },
+  {
+   "name": "SILVER",
+   "ltp": 143041,
+   "chg_pts": -2397,
+   "chg_pct": -1.65
+  }
+ ],
  "oc": {
-  "spot": 25927.2,
+  "spot": 25911.8,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9216350,
-  "res_pct": 0.28,
-  "sup_strike": 25700.0,
-  "sup_oi": 8141705,
-  "sup_pct": 0.88,
+  "res_oi": 9254245,
+  "res_pct": 0.34,
+  "sup_strike": 25500.0,
+  "sup_oi": 8153665,
+  "sup_pct": 1.59,
   "max_pain": 25800.0,
-  "mp_pct": -0.49,
-  "pcr": 1.126,
+  "mp_pct": -0.43,
+  "pcr": 1.124,
   "suggests": "Balanced"
  },
  "charts": {
@@ -400,8 +444,8 @@
     "time": 1795588020,
     "open": 25920.55,
     "high": 25934.7,
-    "low": 25919.15,
-    "close": 25926.4
+    "low": 25909.55,
+    "close": 25912.75
    }
   ]
  },
@@ -1969,10 +2013,10 @@
    "spot_entry": 25945.55,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 258.5,
+   "exit_px": 248.95,
    "reason": "OPEN",
-   "pts": -11.65,
-   "rs": -757
+   "pts": -21.2,
+   "rs": -1378
   },
   {
    "date": "2026-11-25",
@@ -2003,10 +2047,10 @@
    "spot_entry": 25945.55,
    "strat": "v2",
    "exit_t": null,
-   "exit_px": 258.5,
+   "exit_px": 248.95,
    "reason": "OPEN",
-   "pts": -11.65,
-   "rs": -757
+   "pts": -21.2,
+   "rs": -1378
   },
   {
    "date": "2026-11-25",
@@ -2037,10 +2081,10 @@
    "spot_entry": 25945.55,
    "strat": "C",
    "exit_t": null,
-   "exit_px": 258.5,
+   "exit_px": 248.95,
    "reason": "OPEN",
-   "pts": -11.65,
-   "rs": -757
+   "pts": -21.2,
+   "rs": -1378
   }
  ],
  "instrument": {
@@ -2072,12 +2116,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
