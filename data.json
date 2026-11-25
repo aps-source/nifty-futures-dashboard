@@ -1,51 +1,21 @@
 {
- "updated": "2026-11-25 12:30:27",
+ "updated": "2026-11-25 12:31:40",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25868.05,
-   "chg_pts": 518.4,
-   "chg_pct": 2.04
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63869.15,
-   "chg_pts": 1283.8,
-   "chg_pct": 2.05
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 84226.39,
-   "chg_pts": 1790.4,
-   "chg_pct": 2.17
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.71,
-   "chg_pts": 0.01,
-   "chg_pct": 0.06
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7456,
-   "chg_pts": -125,
-   "chg_pct": -1.65
-  },
-  {
-   "name": "GOLD",
-   "ltp": 120379,
-   "chg_pts": -1950,
-   "chg_pct": -1.59
-  },
-  {
-   "name": "SILVER",
-   "ltp": 142779,
-   "chg_pts": -2659,
-   "chg_pct": -1.83
-  }
- ],
+ "oc": {
+  "spot": 25844.1,
+  "expiry": "2026-12-01",
+  "res_strike": 26000.0,
+  "res_oi": 9122165,
+  "res_pct": 0.6,
+  "sup_strike": 25500.0,
+  "sup_oi": 8231080,
+  "sup_pct": 1.33,
+  "max_pain": 25800.0,
+  "mp_pct": -0.17,
+  "pcr": 1.119,
+  "suggests": "Balanced"
+ },
  "charts": {
   "NIFTY": [
    {
@@ -507,8 +477,8 @@
     "time": 1795590000,
     "open": 25884.55,
     "high": 25884.6,
-    "low": 25865.75,
-    "close": 25866.15
+    "low": 25830.9,
+    "close": 25846.35
    }
   ]
  },
@@ -2423,10 +2393,10 @@
    "spot_entry": 25898.95,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 209.75,
+   "exit_px": 219.15,
    "reason": "OPEN",
-   "pts": 16.45,
-   "rs": 1069
+   "pts": 25.85,
+   "rs": 1680
   },
   {
    "date": "2026-11-25",
@@ -2527,12 +2497,12 @@
   "live_book": "v2"
  },
  "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001D3EF571810>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
-  "oc_ok": false,
+  "quotes_ok": false,
+  "oc_ok": true,
   "tracker_running": true,
   "weekday": true
  }
