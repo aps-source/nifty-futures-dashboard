@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-25 10:31:56",
+ "updated": "2026-11-25 10:33:09",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25808.85,
-   "chg_pts": 459.2,
-   "chg_pct": 1.81
+   "ltp": 25814.15,
+   "chg_pts": 464.5,
+   "chg_pct": 1.83
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63774.55,
-   "chg_pts": 1189.2,
-   "chg_pct": 1.9
+   "ltp": 63792.65,
+   "chg_pts": 1207.3,
+   "chg_pct": 1.93
   },
   {
    "name": "SENSEX",
-   "ltp": 84004.91,
-   "chg_pts": 1568.92,
-   "chg_pct": 1.9
+   "ltp": 84028.73,
+   "chg_pts": 1592.74,
+   "chg_pct": 1.93
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.4,
-   "chg_pts": -0.3,
-   "chg_pct": -1.69
+   "ltp": 17.39,
+   "chg_pts": -0.31,
+   "chg_pct": -1.75
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 121717,
-   "chg_pts": -612,
-   "chg_pct": -0.5
+   "ltp": 121702,
+   "chg_pts": -627,
+   "chg_pct": -0.51
   },
   {
    "name": "SILVER",
-   "ltp": 144690,
-   "chg_pts": -748,
-   "chg_pct": -0.51
+   "ltp": 144755,
+   "chg_pts": -683,
+   "chg_pct": -0.47
   }
  ],
  "oc": {
-  "spot": 25806.2,
+  "spot": 25813.7,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 9427600,
-  "res_pct": 0.75,
+  "res_oi": 9501180,
+  "res_pct": 0.72,
   "sup_strike": 25700.0,
-  "sup_oi": 7254390,
-  "sup_pct": 0.41,
+  "sup_oi": 7294625,
+  "sup_pct": 0.44,
   "max_pain": 25700.0,
-  "mp_pct": -0.41,
-  "pcr": 0.957,
+  "mp_pct": -0.44,
+  "pcr": 0.956,
   "suggests": "Balanced"
  },
  "charts": {
@@ -242,16 +242,23 @@
     "open": 25807.2,
     "high": 25814.2,
     "low": 25798.85,
-    "close": 25805.55
+    "close": 25810.9
+   },
+   {
+    "time": 1795582980,
+    "open": 25812.15,
+    "high": 25816.1,
+    "low": 25811.15,
+    "close": 25814.6
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG UNWINDING",
-   "time": "10:30",
-   "d_price": "-3",
-   "d_oi": "-910"
+   "cls": "LONG BUILDUP",
+   "time": "10:33",
+   "d_price": "4.6",
+   "d_oi": "2210"
   },
   "5": {
    "cls": "SHORT COVERING",
@@ -272,8 +279,8 @@
    "d_oi": "-347425"
   }
  },
- "decision": "LONG",
- "decision_score": 2,
+ "decision": "STRONG LONG",
+ "decision_score": 4,
  "signals": [
   {
    "time": "09:18",
@@ -964,6 +971,21 @@
    "score": "1",
    "decision_score": "2",
    "decision": "LONG"
+  },
+  {
+   "time": "10:33",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25931",
+   "close": "25935.6",
+   "oi_start": "11460410",
+   "oi_end": "11462620",
+   "d_price": "4.6",
+   "d_oi": "2210",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "4",
+   "decision": "STRONG LONG"
   }
  ],
  "trades": [
@@ -1007,16 +1029,50 @@
    "side": "LONG",
    "opt_type": "CE",
    "strike": 25850,
+   "entry_t": "10:33",
+   "entry_px": 226.6,
+   "score": 4,
+   "spot_entry": 25814.15,
+   "strat": "v1",
+   "exit_t": null,
+   "exit_px": 226.6,
+   "reason": "OPEN",
+   "pts": 0.0,
+   "rs": 0
+  },
+  {
+   "date": "2026-11-25",
+   "expiry": "2026-12-01",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25850,
    "entry_t": "10:30",
    "entry_px": 225.5,
    "score": 3,
    "spot_entry": 25810.55,
    "strat": "v2",
    "exit_t": null,
-   "exit_px": 220.85,
+   "exit_px": 226.6,
    "reason": "OPEN",
-   "pts": -4.65,
-   "rs": -302
+   "pts": 1.1,
+   "rs": 72
+  },
+  {
+   "date": "2026-11-25",
+   "expiry": "2026-12-01",
+   "side": "LONG",
+   "opt_type": "CE",
+   "strike": 25850,
+   "entry_t": "10:33",
+   "entry_px": 226.6,
+   "score": 4,
+   "spot_entry": 25814.15,
+   "strat": "C",
+   "exit_t": null,
+   "exit_px": 226.6,
+   "reason": "OPEN",
+   "pts": 0.0,
+   "rs": 0
   }
  ],
  "instrument": {
@@ -1027,7 +1083,7 @@
   "books": {
    "v1": {
     "desc": "3/5/15/60m, enter at |score|>=3",
-    "open": false,
+    "open": true,
     "total_trades": 45,
     "total_rs": 2225
    },
@@ -1039,7 +1095,7 @@
    },
    "C": {
     "desc": "3/5/15/60m all 4 agree, 15-min wait after exit, max 2/day",
-    "open": false,
+    "open": true,
     "total_trades": 2,
     "total_rs": -1798
    }
