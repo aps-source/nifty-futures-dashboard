@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-26 11:32:10",
+ "updated": "2026-11-26 11:34:29",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25908.45,
-   "chg_pts": 89.2,
-   "chg_pct": 0.35
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63833.25,
-   "chg_pts": 130.0,
-   "chg_pct": 0.2
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 84333.3,
-   "chg_pts": 395.02,
-   "chg_pct": 0.47
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.4,
-   "chg_pts": -0.27,
-   "chg_pct": -1.53
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7850,
-   "chg_pts": 91,
-   "chg_pct": 1.17
-  },
-  {
-   "name": "GOLD",
-   "ltp": 122973,
-   "chg_pts": 1836,
-   "chg_pct": 1.52
-  },
-  {
-   "name": "SILVER",
-   "ltp": 147246,
-   "chg_pts": 4729,
-   "chg_pct": 3.32
-  }
- ],
  "oc": {
-  "spot": 25904.3,
+  "spot": 25878.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10912265,
-  "res_pct": 0.37,
+  "res_oi": 10674755,
+  "res_pct": 0.47,
   "sup_strike": 25000.0,
-  "sup_oi": 8335405,
-  "sup_pct": 3.49,
+  "sup_oi": 8362510,
+  "sup_pct": 3.39,
   "max_pain": 25800.0,
-  "mp_pct": -0.4,
-  "pcr": 1.086,
+  "mp_pct": -0.3,
+  "pcr": 1.098,
   "suggests": "Balanced"
  },
  "charts": {
@@ -382,22 +338,36 @@
     "open": 25889.65,
     "high": 25909.6,
     "low": 25888.45,
-    "close": 25904.05
+    "close": 25892.8
+   },
+   {
+    "time": 1795672980,
+    "open": 25892.3,
+    "high": 25898.35,
+    "low": 25872.15,
+    "close": 25884.7
+   },
+   {
+    "time": 1795673160,
+    "open": 25884.2,
+    "high": 25888.0,
+    "low": 25869.2,
+    "close": 25876.55
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "11:30",
-   "d_price": "3",
-   "d_oi": "-2470"
+   "cls": "SHORT BUILDUP",
+   "time": "11:36",
+   "d_price": "-18",
+   "d_oi": "4225"
   },
   "5": {
    "cls": "SHORT BUILDUP",
-   "time": "11:30",
-   "d_price": "-14",
-   "d_oi": "1625"
+   "time": "11:36",
+   "d_price": "-18",
+   "d_oi": "4225"
   },
   "15": {
    "cls": "SHORT BUILDUP",
@@ -412,8 +382,8 @@
    "d_oi": "183625"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
   {
    "time": "09:18",
@@ -1659,6 +1629,36 @@
    "score": "-1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:36",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "26016",
+   "close": "25998",
+   "oi_start": "12184120",
+   "oi_end": "12188345",
+   "d_price": "-18",
+   "d_oi": "4225",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
+  },
+  {
+   "time": "11:36",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "26016",
+   "close": "25998",
+   "oi_start": "12184120",
+   "oi_end": "12188345",
+   "d_price": "-18",
+   "d_oi": "4225",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -1706,12 +1706,12 @@
    "entry_px": 192.65,
    "score": 4,
    "spot_entry": 25942.05,
-   "strat": "v1",
-   "exit_t": null,
-   "exit_px": 183.35,
-   "reason": "OPEN",
-   "pts": -9.3,
-   "rs": -604
+   "exit_t": "11:34",
+   "exit_px": 173.7,
+   "reason": "score flip (-2)",
+   "pts": -18.95,
+   "rs": -1382,
+   "strat": "v1"
   },
   {
    "date": "2026-11-26",
@@ -1774,12 +1774,12 @@
    "entry_px": 192.65,
    "score": 4,
    "spot_entry": 25942.05,
-   "strat": "C",
-   "exit_t": null,
-   "exit_px": 183.35,
-   "reason": "OPEN",
-   "pts": -9.3,
-   "rs": -604
+   "exit_t": "11:34",
+   "exit_px": 173.7,
+   "reason": "score flip (-2)",
+   "pts": -18.95,
+   "rs": -1382,
+   "strat": "C"
   }
  ],
  "instrument": {
@@ -1790,9 +1790,9 @@
   "books": {
    "v1": {
     "desc": "3/5/15/60m, enter at |score|>=3",
-    "open": true,
-    "total_trades": 53,
-    "total_rs": 9293
+    "open": false,
+    "total_trades": 54,
+    "total_rs": 7911
    },
    "v2": {
     "desc": "5/15/60m all agree, max 2/day",
@@ -1802,19 +1802,21 @@
    },
    "C": {
     "desc": "3/5/15/60m all 4 agree, 15-min wait after exit, max 2/day",
-    "open": true,
-    "total_trades": 5,
-    "total_rs": 24
+    "open": false,
+    "total_trades": 6,
+    "total_rs": -1358
    }
   },
   "cost_rs": 150,
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
