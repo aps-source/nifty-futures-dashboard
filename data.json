@@ -1,62 +1,62 @@
 {
- "updated": "2026-11-26 13:07:48",
+ "updated": "2026-11-26 13:08:59",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25899.7,
-   "chg_pts": 80.45,
-   "chg_pct": 0.31
+   "ltp": 25885.9,
+   "chg_pts": 66.65,
+   "chg_pct": 0.26
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63935,
-   "chg_pts": 231.75,
-   "chg_pct": 0.36
+   "ltp": 63879.8,
+   "chg_pts": 176.55,
+   "chg_pct": 0.28
   },
   {
    "name": "SENSEX",
-   "ltp": 84285.27,
-   "chg_pts": 346.99,
-   "chg_pct": 0.41
+   "ltp": 84245.12,
+   "chg_pts": 306.84,
+   "chg_pct": 0.37
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.25,
-   "chg_pts": -0.42,
-   "chg_pct": -2.38
+   "ltp": 17.27,
+   "chg_pts": -0.4,
+   "chg_pct": -2.26
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7775,
-   "chg_pts": 16,
-   "chg_pct": 0.21
+   "ltp": 7780,
+   "chg_pts": 21,
+   "chg_pct": 0.27
   },
   {
    "name": "GOLD",
-   "ltp": 122630,
-   "chg_pts": 1493,
-   "chg_pct": 1.23
+   "ltp": 122636,
+   "chg_pts": 1499,
+   "chg_pct": 1.24
   },
   {
    "name": "SILVER",
-   "ltp": 146422,
-   "chg_pts": 3905,
-   "chg_pct": 2.74
+   "ltp": 146389,
+   "chg_pts": 3872,
+   "chg_pct": 2.72
   }
  ],
  "oc": {
-  "spot": 25898.2,
+  "spot": 25886.5,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10694060,
-  "res_pct": 0.39,
+  "res_oi": 10704850,
+  "res_pct": 0.44,
   "sup_strike": 25000.0,
-  "sup_oi": 8484645,
-  "sup_pct": 3.47,
+  "sup_oi": 8485100,
+  "sup_pct": 3.42,
   "max_pain": 25800.0,
-  "mp_pct": -0.38,
+  "mp_pct": -0.33,
   "pcr": 1.059,
   "suggests": "Balanced"
  },
@@ -605,8 +605,15 @@
     "time": 1795678560,
     "open": 25895.2,
     "high": 25901.2,
-    "low": 25890.8,
-    "close": 25896.7
+    "low": 25883.25,
+    "close": 25884.9
+   },
+   {
+    "time": 1795678740,
+    "open": 25885.1,
+    "high": 25887.65,
+    "low": 25884.25,
+    "close": 25886.55
    }
   ]
  },
@@ -2521,10 +2528,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 182.1,
+   "exit_px": 187.65,
    "reason": "OPEN",
-   "pts": 9.35,
-   "rs": 608
+   "pts": 14.9,
+   "rs": 968
   },
   {
    "date": "2026-11-26",
