@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-26 12:07:03",
+ "updated": "2026-11-26 12:08:23",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25927.85,
+   "chg_pts": 108.6,
+   "chg_pct": 0.42
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63908.2,
+   "chg_pts": 204.95,
+   "chg_pct": 0.32
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84397.56,
+   "chg_pts": 459.28,
+   "chg_pct": 0.55
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.39,
+   "chg_pts": -0.28,
+   "chg_pct": -1.58
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7798,
+   "chg_pts": 39,
+   "chg_pct": 0.5
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122404,
+   "chg_pts": 1267,
+   "chg_pct": 1.05
+  },
+  {
+   "name": "SILVER",
+   "ltp": 145835,
+   "chg_pts": 3318,
+   "chg_pct": 2.33
+  }
+ ],
  "oc": {
-  "spot": 25930.7,
+  "spot": 25932.6,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10880675,
-  "res_pct": 0.27,
+  "res_oi": 10919090,
+  "res_pct": 0.26,
   "sup_strike": 25000.0,
-  "sup_oi": 8264360,
-  "sup_pct": 3.59,
+  "sup_oi": 8261045,
+  "sup_pct": 3.6,
   "max_pain": 25800.0,
-  "mp_pct": -0.5,
-  "pcr": 1.039,
+  "mp_pct": -0.51,
+  "pcr": 1.036,
   "suggests": "Balanced"
  },
  "charts": {
@@ -420,9 +464,9 @@
    {
     "time": 1795674960,
     "open": 25922.0,
-    "high": 25931.35,
+    "high": 25937.55,
     "low": 25921.85,
-    "close": 25930.25
+    "close": 25931.9
    }
   ]
  },
@@ -2065,10 +2109,10 @@
    "spot_entry": 25927.7,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 199.35,
+   "exit_px": 200.9,
    "reason": "OPEN",
-   "pts": 3.4,
-   "rs": 221
+   "pts": 4.95,
+   "rs": 322
   },
   {
    "date": "2026-11-26",
@@ -2168,12 +2212,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
