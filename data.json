@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-26 11:34:29",
+ "updated": "2026-11-26 11:39:21",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25886,
+   "chg_pts": 66.75,
+   "chg_pct": 0.26
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63794.4,
+   "chg_pts": 91.15,
+   "chg_pct": 0.14
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84250.85,
+   "chg_pts": 312.57,
+   "chg_pct": 0.37
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.4,
+   "chg_pts": -0.27,
+   "chg_pct": -1.53
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7840,
+   "chg_pts": 81,
+   "chg_pct": 1.04
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122714,
+   "chg_pts": 1577,
+   "chg_pct": 1.3
+  },
+  {
+   "name": "SILVER",
+   "ltp": 146571,
+   "chg_pts": 4054,
+   "chg_pct": 2.84
+  }
+ ],
  "oc": {
-  "spot": 25878.2,
+  "spot": 25884.5,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10674755,
-  "res_pct": 0.47,
+  "res_oi": 10612355,
+  "res_pct": 0.45,
   "sup_strike": 25000.0,
-  "sup_oi": 8362510,
-  "sup_pct": 3.39,
+  "sup_oi": 8383635,
+  "sup_pct": 3.42,
   "max_pain": 25800.0,
-  "mp_pct": -0.3,
-  "pcr": 1.098,
+  "mp_pct": -0.33,
+  "pcr": 1.1,
   "suggests": "Balanced"
  },
  "charts": {
@@ -352,7 +396,14 @@
     "open": 25884.2,
     "high": 25888.0,
     "low": 25869.2,
-    "close": 25876.55
+    "close": 25877.95
+   },
+   {
+    "time": 1795673340,
+    "open": 25877.8,
+    "high": 25887.7,
+    "low": 25876.2,
+    "close": 25884.25
    }
   ]
  },
@@ -1811,12 +1862,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
