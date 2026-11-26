@@ -1,62 +1,62 @@
 {
- "updated": "2026-11-26 10:13:12",
+ "updated": "2026-11-26 10:14:23",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25829.85,
-   "chg_pts": 10.6,
-   "chg_pct": 0.04
+   "ltp": 25821.8,
+   "chg_pts": 2.55,
+   "chg_pct": 0.01
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63791.15,
-   "chg_pts": 87.9,
-   "chg_pct": 0.14
+   "ltp": 63776,
+   "chg_pts": 72.75,
+   "chg_pct": 0.11
   },
   {
    "name": "SENSEX",
-   "ltp": 84065.05,
-   "chg_pts": 126.77,
-   "chg_pct": 0.15
+   "ltp": 84050.35,
+   "chg_pts": 112.07,
+   "chg_pct": 0.13
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.42,
-   "chg_pts": -0.25,
-   "chg_pct": -1.41
+   "ltp": 17.39,
+   "chg_pts": -0.28,
+   "chg_pct": -1.58
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7848,
-   "chg_pts": 89,
-   "chg_pct": 1.15
+   "ltp": 7846,
+   "chg_pts": 87,
+   "chg_pct": 1.12
   },
   {
    "name": "GOLD",
-   "ltp": 123592,
-   "chg_pts": 2455,
-   "chg_pct": 2.03
+   "ltp": 123619,
+   "chg_pts": 2482,
+   "chg_pct": 2.05
   },
   {
    "name": "SILVER",
-   "ltp": 148075,
-   "chg_pts": 5558,
-   "chg_pct": 3.9
+   "ltp": 148238,
+   "chg_pts": 5721,
+   "chg_pct": 4.01
   }
  ],
  "oc": {
-  "spot": 25830.5,
+  "spot": 25817.5,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10730915,
-  "res_pct": 0.66,
+  "res_oi": 10734620,
+  "res_pct": 0.71,
   "sup_strike": 25800.0,
-  "sup_oi": 7842120,
-  "sup_pct": 0.12,
+  "sup_oi": 7878780,
+  "sup_pct": 0.07,
   "max_pain": 25800.0,
-  "mp_pct": -0.12,
+  "mp_pct": -0.07,
   "pcr": 0.91,
   "suggests": "Balanced"
  },
@@ -198,9 +198,9 @@
    {
     "time": 1795668120,
     "open": 25837.95,
-    "high": 25840.05,
-    "low": 25821.55,
-    "close": 25830.5
+    "high": 25840.85,
+    "low": 25816.55,
+    "close": 25816.85
    }
   ]
  },
@@ -753,10 +753,10 @@
    "spot_entry": 25845.5,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 193.35,
+   "exit_px": 183.7,
    "reason": "OPEN",
-   "pts": -7.7,
-   "rs": -500
+   "pts": -17.35,
+   "rs": -1128
   }
  ],
  "instrument": {
