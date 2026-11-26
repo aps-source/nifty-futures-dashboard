@@ -1,21 +1,51 @@
 {
- "updated": "2026-11-26 09:50:17",
+ "updated": "2026-11-26 09:51:29",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "oc": {
-  "spot": 25787.8,
-  "expiry": "2026-12-01",
-  "res_strike": 26000.0,
-  "res_oi": 10704590,
-  "res_pct": 0.82,
-  "sup_strike": 25800.0,
-  "sup_oi": 7148440,
-  "sup_pct": -0.05,
-  "max_pain": 25800.0,
-  "mp_pct": 0.05,
-  "pcr": 0.89,
-  "suggests": "Balanced"
- },
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25805.85,
+   "chg_pts": -13.4,
+   "chg_pct": -0.05
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63786.35,
+   "chg_pts": 83.1,
+   "chg_pct": 0.13
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84004.78,
+   "chg_pts": 66.5,
+   "chg_pct": 0.08
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.57,
+   "chg_pts": -0.1,
+   "chg_pct": -0.57
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7828,
+   "chg_pts": 69,
+   "chg_pct": 0.89
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122959,
+   "chg_pts": 1822,
+   "chg_pct": 1.5
+  },
+  {
+   "name": "SILVER",
+   "ltp": 147339,
+   "chg_pts": 4822,
+   "chg_pct": 3.38
+  }
+ ],
  "charts": {
   "NIFTY": [
    {
@@ -98,18 +128,25 @@
    {
     "time": 1795666680,
     "open": 25745.55,
-    "high": 25789.15,
+    "high": 25796.5,
     "low": 25745.55,
-    "close": 25789.15
+    "close": 25792.45
+   },
+   {
+    "time": 1795666860,
+    "open": 25791.55,
+    "high": 25813.25,
+    "low": 25791.45,
+    "close": 25811.3
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "SHORT COVERING",
-   "time": "09:48",
-   "d_price": "13.4",
-   "d_oi": "-69680"
+   "time": "09:51",
+   "d_price": "54.5",
+   "d_oi": "-2210"
   },
   "5": {
    "cls": "SHORT COVERING",
@@ -426,6 +463,21 @@
    "score": "1",
    "decision_score": "1",
    "decision": "LONG"
+  },
+  {
+   "time": "09:51",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25855.5",
+   "close": "25910",
+   "oi_start": "11996140",
+   "oi_end": "11993930",
+   "d_price": "54.5",
+   "d_oi": "-2210",
+   "classification": "SHORT COVERING",
+   "score": "1",
+   "decision_score": "1",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -477,12 +529,12 @@
   "live_book": "v2"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
-  "oc_ok": true,
+  "quotes_ok": true,
+  "oc_ok": false,
   "tracker_running": true,
   "weekday": true
  }
