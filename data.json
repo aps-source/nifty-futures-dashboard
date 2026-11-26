@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-26 15:00:48",
+ "updated": "2026-11-26 15:01:58",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25903.75,
+   "chg_pts": 84.5,
+   "chg_pct": 0.33
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63595.95,
+   "chg_pts": -107.3,
+   "chg_pct": -0.17
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84317.2,
+   "chg_pts": 378.92,
+   "chg_pct": 0.45
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 16.98,
+   "chg_pts": -0.69,
+   "chg_pct": -3.9
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7733,
+   "chg_pts": -26,
+   "chg_pct": -0.34
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122585,
+   "chg_pts": 1448,
+   "chg_pct": 1.2
+  },
+  {
+   "name": "SILVER",
+   "ltp": 147194,
+   "chg_pts": 4677,
+   "chg_pct": 3.28
+  }
+ ],
  "oc": {
-  "spot": 25897.0,
+  "spot": 25902.6,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 11535810,
-  "res_pct": 0.4,
+  "res_oi": 11508510,
+  "res_pct": 0.38,
   "sup_strike": 25000.0,
-  "sup_oi": 8235825,
-  "sup_pct": 3.46,
+  "sup_oi": 8226660,
+  "sup_pct": 3.48,
   "max_pain": 25800.0,
-  "mp_pct": -0.37,
-  "pcr": 0.973,
+  "mp_pct": -0.4,
+  "pcr": 0.975,
   "suggests": "Balanced"
  },
  "charts": {
@@ -827,8 +871,8 @@
     "time": 1795685400,
     "open": 25907.85,
     "high": 25910.95,
-    "low": 25896.25,
-    "close": 25897.95
+    "low": 25894.25,
+    "close": 25903.05
    }
   ]
  },
@@ -2863,12 +2907,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
