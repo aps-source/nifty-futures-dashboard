@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-26 13:30:56",
+ "updated": "2026-11-26 13:32:07",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25835.95,
-   "chg_pts": 16.7,
+   "ltp": 25835.7,
+   "chg_pts": 16.45,
    "chg_pct": 0.06
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63675.15,
-   "chg_pts": -28.1,
-   "chg_pct": -0.04
+   "ltp": 63689.95,
+   "chg_pts": -13.3,
+   "chg_pct": -0.02
   },
   {
    "name": "SENSEX",
-   "ltp": 84060.15,
-   "chg_pts": 121.87,
-   "chg_pct": 0.15
+   "ltp": 84081.09,
+   "chg_pts": 142.81,
+   "chg_pct": 0.17
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.28,
-   "chg_pts": -0.39,
-   "chg_pct": -2.21
+   "ltp": 17.25,
+   "chg_pts": -0.42,
+   "chg_pct": -2.38
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7792,
-   "chg_pts": 33,
-   "chg_pct": 0.43
+   "ltp": 7781,
+   "chg_pts": 22,
+   "chg_pct": 0.28
   },
   {
    "name": "GOLD",
-   "ltp": 122340,
-   "chg_pts": 1203,
-   "chg_pct": 0.99
+   "ltp": 122435,
+   "chg_pts": 1298,
+   "chg_pct": 1.07
   },
   {
    "name": "SILVER",
-   "ltp": 146168,
-   "chg_pts": 3651,
-   "chg_pct": 2.56
+   "ltp": 146224,
+   "chg_pts": 3707,
+   "chg_pct": 2.6
   }
  ],
  "oc": {
-  "spot": 25835.2,
+  "spot": 25834.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10728705,
+  "res_oi": 10574655,
   "res_pct": 0.64,
   "sup_strike": 25000.0,
-  "sup_oi": 8611720,
+  "sup_oi": 8645325,
   "sup_pct": 3.23,
   "max_pain": 25800.0,
-  "mp_pct": -0.14,
-  "pcr": 1.045,
+  "mp_pct": -0.13,
+  "pcr": 1.051,
   "suggests": "Balanced"
  },
  "charts": {
@@ -662,7 +662,7 @@
     "open": 25848.4,
     "high": 25848.4,
     "low": 25829.2,
-    "close": 25834.25
+    "close": 25832.6
    }
   ]
  },
@@ -2577,10 +2577,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 216.7,
+   "exit_px": 218.4,
    "reason": "OPEN",
-   "pts": 43.95,
-   "rs": 2857
+   "pts": 45.65,
+   "rs": 2967
   },
   {
    "date": "2026-11-26",
