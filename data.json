@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-26 14:00:56",
+ "updated": "2026-11-26 14:02:12",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25782.65,
-   "chg_pts": -36.6,
+   "ltp": 25783.25,
+   "chg_pts": -36.0,
    "chg_pct": -0.14
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63371.8,
-   "chg_pts": -331.45,
+   "ltp": 63372.35,
+   "chg_pts": -330.9,
    "chg_pct": -0.52
   },
   {
    "name": "SENSEX",
-   "ltp": 83870.3,
-   "chg_pts": -67.98,
-   "chg_pct": -0.08
+   "ltp": 83882.21,
+   "chg_pts": -56.07,
+   "chg_pct": -0.07
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.15,
-   "chg_pts": -0.52,
-   "chg_pct": -2.94
+   "ltp": 17.17,
+   "chg_pts": -0.5,
+   "chg_pct": -2.83
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7795,
-   "chg_pts": 36,
-   "chg_pct": 0.46
+   "ltp": 7805,
+   "chg_pts": 46,
+   "chg_pct": 0.59
   },
   {
    "name": "GOLD",
-   "ltp": 122350,
-   "chg_pts": 1213,
-   "chg_pct": 1.0
+   "ltp": 122289,
+   "chg_pts": 1152,
+   "chg_pct": 0.95
   },
   {
    "name": "SILVER",
-   "ltp": 146085,
-   "chg_pts": 3568,
-   "chg_pct": 2.5
+   "ltp": 146093,
+   "chg_pts": 3576,
+   "chg_pct": 2.51
   }
  ],
  "oc": {
-  "spot": 25782.8,
+  "spot": 25786.1,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 11261120,
-  "res_pct": 0.84,
+  "res_oi": 11346985,
+  "res_pct": 0.83,
   "sup_strike": 25000.0,
-  "sup_oi": 8569665,
-  "sup_pct": 3.04,
+  "sup_oi": 8623030,
+  "sup_pct": 3.05,
   "max_pain": 25800.0,
-  "mp_pct": 0.07,
-  "pcr": 0.966,
+  "mp_pct": 0.05,
+  "pcr": 0.956,
   "suggests": "Balanced"
  },
  "charts": {
@@ -730,9 +730,9 @@
    {
     "time": 1795681800,
     "open": 25778.05,
-    "high": 25786.9,
-    "low": 25774.2,
-    "close": 25784.25
+    "high": 25789.55,
+    "low": 25773.65,
+    "close": 25784.85
    }
   ]
  },
@@ -2664,10 +2664,10 @@
    "spot_entry": 25782.65,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 161.85,
+   "exit_px": 164.75,
    "reason": "OPEN",
-   "pts": 0.0,
-   "rs": 0
+   "pts": 2.9,
+   "rs": 188
   },
   {
    "date": "2026-11-26",
