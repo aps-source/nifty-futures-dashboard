@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-26 13:26:08",
+ "updated": "2026-11-26 13:27:19",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25856.7,
-   "chg_pts": 37.45,
-   "chg_pct": 0.15
+   "ltp": 25860.15,
+   "chg_pts": 40.9,
+   "chg_pct": 0.16
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63786.95,
-   "chg_pts": 83.7,
-   "chg_pct": 0.13
+   "ltp": 63777.55,
+   "chg_pts": 74.3,
+   "chg_pct": 0.12
   },
   {
    "name": "SENSEX",
-   "ltp": 84135.93,
-   "chg_pts": 197.65,
+   "ltp": 84142.33,
+   "chg_pts": 204.05,
    "chg_pct": 0.24
   },
   {
@@ -29,35 +29,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7783,
-   "chg_pts": 24,
-   "chg_pct": 0.31
+   "ltp": 7790,
+   "chg_pts": 31,
+   "chg_pct": 0.4
   },
   {
    "name": "GOLD",
-   "ltp": 122370,
-   "chg_pts": 1233,
-   "chg_pct": 1.02
+   "ltp": 122419,
+   "chg_pts": 1282,
+   "chg_pct": 1.06
   },
   {
    "name": "SILVER",
-   "ltp": 146025,
-   "chg_pts": 3508,
-   "chg_pct": 2.46
+   "ltp": 146041,
+   "chg_pts": 3524,
+   "chg_pct": 2.47
   }
  ],
  "oc": {
-  "spot": 25856.4,
+  "spot": 25860.4,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10604945,
-  "res_pct": 0.56,
+  "res_oi": 10649210,
+  "res_pct": 0.54,
   "sup_strike": 25000.0,
-  "sup_oi": 8608145,
-  "sup_pct": 3.31,
+  "sup_oi": 8617830,
+  "sup_pct": 3.33,
   "max_pain": 25800.0,
-  "mp_pct": -0.22,
-  "pcr": 1.038,
+  "mp_pct": -0.23,
+  "pcr": 1.039,
   "suggests": "Balanced"
  },
  "charts": {
@@ -648,7 +648,14 @@
     "open": 25859.35,
     "high": 25861.85,
     "low": 25850.25,
-    "close": 25856.95
+    "close": 25859.55
+   },
+   {
+    "time": 1795679820,
+    "open": 25859.7,
+    "high": 25861.5,
+    "low": 25858.2,
+    "close": 25859.95
    }
   ]
  },
@@ -2563,10 +2570,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 204.15,
+   "exit_px": 201.15,
    "reason": "OPEN",
-   "pts": 31.4,
-   "rs": 2041
+   "pts": 28.4,
+   "rs": 1846
   },
   {
    "date": "2026-11-26",
