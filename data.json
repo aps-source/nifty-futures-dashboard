@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-26 12:55:32",
+ "updated": "2026-11-26 12:56:44",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25894.9,
-   "chg_pts": 75.65,
+   "ltp": 25895.35,
+   "chg_pts": 76.1,
    "chg_pct": 0.29
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63936.35,
-   "chg_pts": 233.1,
+   "ltp": 63936.45,
+   "chg_pts": 233.2,
    "chg_pct": 0.37
   },
   {
    "name": "SENSEX",
-   "ltp": 84278.83,
-   "chg_pts": 340.55,
+   "ltp": 84278.91,
+   "chg_pts": 340.63,
    "chg_pct": 0.41
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.34,
-   "chg_pts": -0.33,
-   "chg_pct": -1.87
+   "ltp": 17.35,
+   "chg_pts": -0.32,
+   "chg_pct": -1.81
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7774,
-   "chg_pts": 15,
-   "chg_pct": 0.19
+   "ltp": 7780,
+   "chg_pts": 21,
+   "chg_pct": 0.27
   },
   {
    "name": "GOLD",
-   "ltp": 122686,
-   "chg_pts": 1549,
-   "chg_pct": 1.28
+   "ltp": 122700,
+   "chg_pts": 1563,
+   "chg_pct": 1.29
   },
   {
    "name": "SILVER",
-   "ltp": 146450,
-   "chg_pts": 3933,
-   "chg_pct": 2.76
+   "ltp": 146422,
+   "chg_pts": 3905,
+   "chg_pct": 2.74
   }
  ],
  "oc": {
-  "spot": 25893.8,
+  "spot": 25896.6,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10531625,
-  "res_pct": 0.41,
+  "res_oi": 10550930,
+  "res_pct": 0.4,
   "sup_strike": 25000.0,
-  "sup_oi": 8460270,
-  "sup_pct": 3.45,
+  "sup_oi": 8473010,
+  "sup_pct": 3.46,
   "max_pain": 25800.0,
-  "mp_pct": -0.36,
-  "pcr": 1.073,
+  "mp_pct": -0.37,
+  "pcr": 1.072,
   "suggests": "Balanced"
  },
  "charts": {
@@ -578,7 +578,7 @@
     "open": 25890.3,
     "high": 25899.05,
     "low": 25888.7,
-    "close": 25893.4
+    "close": 25897.9
    }
   ]
  },
@@ -2493,10 +2493,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 185.65,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": 12.9,
-   "rs": 838
+   "pts": null,
+   "rs": null
   },
   {
    "date": "2026-11-26",
