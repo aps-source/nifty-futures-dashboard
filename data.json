@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-26 11:04:36",
+ "updated": "2026-11-26 11:05:57",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25946.25,
-   "chg_pts": 127.0,
-   "chg_pct": 0.49
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63985.1,
-   "chg_pts": 281.85,
-   "chg_pct": 0.44
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 84479.46,
-   "chg_pts": 541.18,
-   "chg_pct": 0.64
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.34,
-   "chg_pts": -0.33,
-   "chg_pct": -1.87
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7840,
-   "chg_pts": 81,
-   "chg_pct": 1.04
-  },
-  {
-   "name": "GOLD",
-   "ltp": 123709,
-   "chg_pts": 2572,
-   "chg_pct": 2.12
-  },
-  {
-   "name": "SILVER",
-   "ltp": 148300,
-   "chg_pts": 5783,
-   "chg_pct": 4.06
-  }
- ],
  "oc": {
-  "spot": 25943.8,
+  "spot": 25938.5,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 11087830,
-  "res_pct": 0.22,
+  "res_oi": 11099465,
+  "res_pct": 0.24,
   "sup_strike": 25000.0,
-  "sup_oi": 8223085,
-  "sup_pct": 3.64,
+  "sup_oi": 8210800,
+  "sup_pct": 3.62,
   "max_pain": 25800.0,
-  "mp_pct": -0.55,
-  "pcr": 1.063,
+  "mp_pct": -0.53,
+  "pcr": 1.072,
   "suggests": "Balanced"
  },
  "charts": {
@@ -318,8 +274,15 @@
     "time": 1795671180,
     "open": 25949.85,
     "high": 25958.15,
-    "low": 25943.25,
-    "close": 25945.5
+    "low": 25941.9,
+    "close": 25943.2
+   },
+   {
+    "time": 1795671360,
+    "open": 25943.3,
+    "high": 25949.65,
+    "low": 25927.45,
+    "close": 25930.9
    }
   ]
  },
@@ -331,10 +294,10 @@
    "d_oi": "6435"
   },
   "5": {
-   "cls": "SHORT BUILDUP",
-   "time": "11:00",
-   "d_price": "-31.5",
-   "d_oi": "14560"
+   "cls": "LONG BUILDUP",
+   "time": "11:05",
+   "d_price": "14.0",
+   "d_oi": "11115"
   },
   "15": {
    "cls": "LONG BUILDUP",
@@ -349,8 +312,8 @@
    "d_oi": "-16705"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "LONG",
+ "decision_score": 2,
  "signals": [
   {
    "time": "09:18",
@@ -1326,6 +1289,21 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "11:05",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "26056.5",
+   "close": "26070.5",
+   "oi_start": "12155390",
+   "oi_end": "12166505",
+   "d_price": "14.0",
+   "d_oi": "11115",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "2",
+   "decision": "LONG"
   }
  ],
  "trades": [
@@ -1427,10 +1405,12 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1077)')))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
