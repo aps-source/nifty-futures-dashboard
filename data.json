@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-26 09:37:04",
+ "updated": "2026-11-26 09:38:14",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25816.2,
+   "chg_pts": -3.05,
+   "chg_pct": -0.01
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63896.35,
+   "chg_pts": 193.1,
+   "chg_pct": 0.3
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84065.88,
+   "chg_pts": 127.6,
+   "chg_pct": 0.15
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.53,
+   "chg_pts": -0.14,
+   "chg_pct": -0.79
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7827,
+   "chg_pts": 68,
+   "chg_pct": 0.88
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122603,
+   "chg_pts": 1466,
+   "chg_pct": 1.21
+  },
+  {
+   "name": "SILVER",
+   "ltp": 147091,
+   "chg_pts": 4574,
+   "chg_pct": 3.21
+  }
+ ],
  "oc": {
-  "spot": 25812.3,
+  "spot": 25810.8,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10556455,
+  "res_oi": 10632895,
   "res_pct": 0.73,
   "sup_strike": 25500.0,
-  "sup_oi": 7690930,
-  "sup_pct": 1.21,
+  "sup_oi": 7688265,
+  "sup_pct": 1.2,
   "max_pain": 25800.0,
-  "mp_pct": -0.05,
-  "pcr": 0.893,
+  "mp_pct": -0.04,
+  "pcr": 0.888,
   "suggests": "Balanced"
  },
  "charts": {
@@ -70,9 +114,9 @@
    {
     "time": 1795665960,
     "open": 25783.3,
-    "high": 25814.75,
+    "high": 25825.4,
     "low": 25781.55,
-    "close": 25814.75
+    "close": 25810.25
    }
   ]
  },
@@ -280,7 +324,25 @@
    "decision": "STRONG SHORT"
   }
  ],
- "trades": [],
+ "trades": [
+  {
+   "date": "2026-11-26",
+   "expiry": "2026-12-01",
+   "side": "SHORT",
+   "opt_type": "PE",
+   "strike": 25800,
+   "entry_t": "09:38",
+   "entry_px": 214.15,
+   "score": -3,
+   "spot_entry": 25816.2,
+   "strat": "v1",
+   "exit_t": null,
+   "exit_px": 214.15,
+   "reason": "OPEN",
+   "pts": 0.0,
+   "rs": 0
+  }
+ ],
  "instrument": {
   "type": "NIFTY 1-OTM option buy (Call when votes up, Put when down)",
   "expiry": "2026-12-01"
@@ -289,7 +351,7 @@
   "books": {
    "v1": {
     "desc": "3/5/15/60m, enter at |score|>=3",
-    "open": false,
+    "open": true,
     "total_trades": 51,
     "total_rs": 8842
    },
@@ -310,12 +372,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
