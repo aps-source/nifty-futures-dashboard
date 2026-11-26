@@ -1,63 +1,19 @@
 {
- "updated": "2026-11-26 14:31:23",
+ "updated": "2026-11-26 14:32:36",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25850.9,
-   "chg_pts": 31.65,
-   "chg_pct": 0.12
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 63593.2,
-   "chg_pts": -110.05,
-   "chg_pct": -0.17
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 84120.95,
-   "chg_pts": 182.67,
-   "chg_pct": 0.22
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 17.08,
-   "chg_pts": -0.59,
-   "chg_pct": -3.34
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7750,
-   "chg_pts": -9,
-   "chg_pct": -0.12
-  },
-  {
-   "name": "GOLD",
-   "ltp": 122641,
-   "chg_pts": 1504,
-   "chg_pct": 1.24
-  },
-  {
-   "name": "SILVER",
-   "ltp": 147171,
-   "chg_pts": 4654,
-   "chg_pct": 3.27
-  }
- ],
  "oc": {
-  "spot": 25853.7,
+  "spot": 25853.1,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 12145250,
+  "res_oi": 12162670,
   "res_pct": 0.57,
   "sup_strike": 25000.0,
-  "sup_oi": 8552830,
+  "sup_oi": 8516170,
   "sup_pct": 3.3,
   "max_pain": 25800.0,
   "mp_pct": -0.21,
-  "pcr": 0.923,
+  "pcr": 0.924,
   "suggests": "Balanced"
  },
  "charts": {
@@ -800,9 +756,16 @@
    {
     "time": 1795683600,
     "open": 25839.9,
-    "high": 25854.4,
+    "high": 25856.15,
     "low": 25837.95,
-    "close": 25853.45
+    "close": 25852.3
+   },
+   {
+    "time": 1795683780,
+    "open": 25852.95,
+    "high": 25853.35,
+    "low": 25852.45,
+    "close": 25852.5
    }
   ]
  },
@@ -2837,10 +2800,12 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x00000282A11E1BD0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ],
  "checklist": {
   "within_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
