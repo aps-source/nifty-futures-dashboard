@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 09:12:12",
+ "updated": "2026-11-26 09:13:24",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
@@ -35,31 +35,17 @@
   },
   {
    "name": "GOLD",
-   "ltp": 122769,
-   "chg_pts": 1632,
-   "chg_pct": 1.35
+   "ltp": 122800,
+   "chg_pts": 1663,
+   "chg_pct": 1.37
   },
   {
    "name": "SILVER",
-   "ltp": 147435,
-   "chg_pts": 4918,
-   "chg_pct": 3.45
+   "ltp": 147293,
+   "chg_pts": 4776,
+   "chg_pct": 3.35
   }
  ],
- "oc": {
-  "spot": 25873.2,
-  "expiry": "2026-12-01",
-  "res_strike": 26000.0,
-  "res_oi": 8568885,
-  "res_pct": 0.49,
-  "sup_strike": 25500.0,
-  "sup_oi": 6804785,
-  "sup_pct": 1.44,
-  "max_pain": 25700.0,
-  "mp_pct": -0.67,
-  "pcr": 0.915,
-  "suggests": "Balanced"
- },
  "charts": {
   "NIFTY": []
  },
@@ -97,11 +83,13 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [],
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ],
  "checklist": {
   "within_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "tracker_running": false,
   "weekday": true
  }
