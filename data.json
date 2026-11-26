@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-26 13:06:35",
+ "updated": "2026-11-26 13:07:48",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25895.3,
-   "chg_pts": 76.05,
-   "chg_pct": 0.29
+   "ltp": 25899.7,
+   "chg_pts": 80.45,
+   "chg_pct": 0.31
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63927.1,
-   "chg_pts": 223.85,
-   "chg_pct": 0.35
+   "ltp": 63935,
+   "chg_pts": 231.75,
+   "chg_pct": 0.36
   },
   {
    "name": "SENSEX",
-   "ltp": 84280.57,
-   "chg_pts": 342.29,
+   "ltp": 84285.27,
+   "chg_pts": 346.99,
    "chg_pct": 0.41
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.29,
-   "chg_pts": -0.38,
-   "chg_pct": -2.15
+   "ltp": 17.25,
+   "chg_pts": -0.42,
+   "chg_pct": -2.38
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7780,
-   "chg_pts": 21,
-   "chg_pct": 0.27
+   "ltp": 7775,
+   "chg_pts": 16,
+   "chg_pct": 0.21
   },
   {
    "name": "GOLD",
-   "ltp": 122629,
-   "chg_pts": 1492,
+   "ltp": 122630,
+   "chg_pts": 1493,
    "chg_pct": 1.23
   },
   {
    "name": "SILVER",
-   "ltp": 146310,
-   "chg_pts": 3793,
-   "chg_pct": 2.66
+   "ltp": 146422,
+   "chg_pts": 3905,
+   "chg_pct": 2.74
   }
  ],
  "oc": {
-  "spot": 25897.7,
+  "spot": 25898.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10634325,
-  "res_pct": 0.4,
+  "res_oi": 10694060,
+  "res_pct": 0.39,
   "sup_strike": 25000.0,
-  "sup_oi": 8484450,
+  "sup_oi": 8484645,
   "sup_pct": 3.47,
   "max_pain": 25800.0,
   "mp_pct": -0.38,
-  "pcr": 1.061,
+  "pcr": 1.059,
   "suggests": "Balanced"
  },
  "charts": {
@@ -605,8 +605,8 @@
     "time": 1795678560,
     "open": 25895.2,
     "high": 25901.2,
-    "low": 25894.25,
-    "close": 25896.65
+    "low": 25890.8,
+    "close": 25896.7
    }
   ]
  },
@@ -2521,10 +2521,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 182.6,
+   "exit_px": 182.1,
    "reason": "OPEN",
-   "pts": 9.85,
-   "rs": 640
+   "pts": 9.35,
+   "rs": 608
   },
   {
    "date": "2026-11-26",
