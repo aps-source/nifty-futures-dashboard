@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-26 10:23:26",
+ "updated": "2026-11-26 10:24:41",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25864.1,
-   "chg_pts": 44.85,
-   "chg_pct": 0.17
+   "ltp": 25872.2,
+   "chg_pts": 52.95,
+   "chg_pct": 0.21
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63921.05,
-   "chg_pts": 217.8,
-   "chg_pct": 0.34
+   "ltp": 63929.25,
+   "chg_pts": 226.0,
+   "chg_pct": 0.35
   },
   {
    "name": "SENSEX",
-   "ltp": 84191.44,
-   "chg_pts": 253.16,
-   "chg_pct": 0.3
+   "ltp": 84234.42,
+   "chg_pts": 296.14,
+   "chg_pct": 0.35
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.39,
-   "chg_pts": -0.28,
-   "chg_pct": -1.58
+   "ltp": 17.37,
+   "chg_pts": -0.3,
+   "chg_pct": -1.7
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7853,
-   "chg_pts": 94,
-   "chg_pct": 1.21
+   "ltp": 7850,
+   "chg_pts": 91,
+   "chg_pct": 1.17
   },
   {
    "name": "GOLD",
-   "ltp": 123590,
-   "chg_pts": 2453,
-   "chg_pct": 2.02
+   "ltp": 123520,
+   "chg_pts": 2383,
+   "chg_pct": 1.97
   },
   {
    "name": "SILVER",
-   "ltp": 147900,
-   "chg_pts": 5383,
-   "chg_pct": 3.78
+   "ltp": 147697,
+   "chg_pts": 5180,
+   "chg_pct": 3.63
   }
  ],
  "oc": {
-  "spot": 25865.8,
+  "spot": 25873.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10805145,
-  "res_pct": 0.52,
+  "res_oi": 10953540,
+  "res_pct": 0.49,
   "sup_strike": 25000.0,
-  "sup_oi": 7586605,
-  "sup_pct": 3.35,
+  "sup_oi": 7635745,
+  "sup_pct": 3.37,
   "max_pain": 25800.0,
-  "mp_pct": -0.25,
-  "pcr": 0.905,
+  "mp_pct": -0.28,
+  "pcr": 0.904,
   "suggests": "Balanced"
  },
  "charts": {
@@ -221,16 +221,23 @@
     "open": 25881.6,
     "high": 25887.55,
     "low": 25858.25,
-    "close": 25864.65
+    "close": 25862.3
+   },
+   {
+    "time": 1795668840,
+    "open": 25862.7,
+    "high": 25878.5,
+    "low": 25862.3,
+    "close": 25871.85
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "LONG BUILDUP",
-   "time": "10:21",
-   "d_price": "22.4",
-   "d_oi": "40040"
+   "cls": "SHORT BUILDUP",
+   "time": "10:24",
+   "d_price": "-11.4",
+   "d_oi": "2275"
   },
   "5": {
    "cls": "LONG BUILDUP",
@@ -251,8 +258,8 @@
    "d_oi": "-16705"
   }
  },
- "decision": "NEUTRAL",
- "decision_score": 0,
+ "decision": "SHORT",
+ "decision_score": -2,
  "signals": [
   {
    "time": "09:18",
@@ -853,6 +860,21 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "10:24",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25989.4",
+   "close": "25978",
+   "oi_start": "12053210",
+   "oi_end": "12055485",
+   "d_price": "-11.4",
+   "d_oi": "2275",
+   "classification": "SHORT BUILDUP",
+   "score": "-1",
+   "decision_score": "-2",
+   "decision": "SHORT"
   }
  ],
  "trades": [
@@ -902,10 +924,10 @@
    "spot_entry": 25857.2,
    "strat": "v2",
    "exit_t": null,
-   "exit_px": 193.05,
+   "exit_px": 189.1,
    "reason": "OPEN",
-   "pts": -4.25,
-   "rs": -276
+   "pts": -8.2,
+   "rs": -533
   },
   {
    "date": "2026-11-26",
@@ -919,10 +941,10 @@
    "spot_entry": 25857.2,
    "strat": "C",
    "exit_t": null,
-   "exit_px": 193.05,
+   "exit_px": 189.1,
    "reason": "OPEN",
-   "pts": -4.25,
-   "rs": -276
+   "pts": -8.2,
+   "rs": -533
   }
  ],
  "instrument": {
