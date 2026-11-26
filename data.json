@@ -1,19 +1,63 @@
 {
- "updated": "2026-11-26 13:37:11",
+ "updated": "2026-11-26 13:38:36",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25825.15,
+   "chg_pts": 5.9,
+   "chg_pct": 0.02
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 63656.05,
+   "chg_pts": -47.2,
+   "chg_pct": -0.07
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 84025.17,
+   "chg_pts": 86.89,
+   "chg_pct": 0.1
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 17.31,
+   "chg_pts": -0.36,
+   "chg_pct": -2.04
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7775,
+   "chg_pts": 16,
+   "chg_pct": 0.21
+  },
+  {
+   "name": "GOLD",
+   "ltp": 122450,
+   "chg_pts": 1313,
+   "chg_pct": 1.08
+  },
+  {
+   "name": "SILVER",
+   "ltp": 146165,
+   "chg_pts": 3648,
+   "chg_pct": 2.56
+  }
+ ],
  "oc": {
-  "spot": 25818.7,
+  "spot": 25824.4,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10613330,
-  "res_pct": 0.7,
+  "res_oi": 10744110,
+  "res_pct": 0.68,
   "sup_strike": 25000.0,
-  "sup_oi": 8690045,
-  "sup_pct": 3.17,
+  "sup_oi": 8622510,
+  "sup_pct": 3.19,
   "max_pain": 25800.0,
-  "mp_pct": -0.07,
-  "pcr": 1.038,
+  "mp_pct": -0.09,
+  "pcr": 1.025,
   "suggests": "Balanced"
  },
  "charts": {
@@ -630,9 +674,9 @@
    {
     "time": 1795680360,
     "open": 25818.5,
-    "high": 25821.95,
+    "high": 25838.25,
     "low": 25811.75,
-    "close": 25819.05
+    "close": 25823.8
    }
   ]
  },
@@ -2547,10 +2591,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 217.8,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": 45.05,
+   "rs": 2928
   },
   {
    "date": "2026-11-26",
@@ -2650,12 +2694,10 @@
   "telegram": true,
   "live_book": "v2"
  },
- "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
- ],
+ "errors": [],
  "checklist": {
   "within_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
   "tracker_running": true,
   "weekday": true
