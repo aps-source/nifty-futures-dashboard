@@ -1,43 +1,43 @@
 {
- "updated": "2026-11-26 13:16:13",
+ "updated": "2026-11-26 13:17:31",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25845.55,
-   "chg_pts": 26.3,
-   "chg_pct": 0.1
+   "ltp": 25859.65,
+   "chg_pts": 40.4,
+   "chg_pct": 0.16
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63755.8,
-   "chg_pts": 52.55,
-   "chg_pct": 0.08
+   "ltp": 63796.7,
+   "chg_pts": 93.45,
+   "chg_pct": 0.15
   },
   {
    "name": "SENSEX",
-   "ltp": 84097.44,
-   "chg_pts": 159.16,
-   "chg_pct": 0.19
+   "ltp": 84143.73,
+   "chg_pts": 205.45,
+   "chg_pct": 0.24
   },
   {
    "name": "INDIA VIX",
-   "ltp": 17.25,
-   "chg_pts": -0.42,
-   "chg_pct": -2.38
+   "ltp": 17.27,
+   "chg_pts": -0.4,
+   "chg_pct": -2.26
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7790,
-   "chg_pts": 31,
-   "chg_pct": 0.4
+   "ltp": 7787,
+   "chg_pts": 28,
+   "chg_pct": 0.36
   },
   {
    "name": "GOLD",
-   "ltp": 122551,
-   "chg_pts": 1414,
-   "chg_pct": 1.17
+   "ltp": 122463,
+   "chg_pts": 1326,
+   "chg_pct": 1.09
   },
   {
    "name": "SILVER",
@@ -47,17 +47,17 @@
   }
  ],
  "oc": {
-  "spot": 25849.9,
+  "spot": 25861.2,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 10449400,
-  "res_pct": 0.58,
+  "res_oi": 10480470,
+  "res_pct": 0.54,
   "sup_strike": 25000.0,
-  "sup_oi": 8504535,
-  "sup_pct": 3.29,
+  "sup_oi": 8532420,
+  "sup_pct": 3.33,
   "max_pain": 25800.0,
-  "mp_pct": -0.19,
-  "pcr": 1.054,
+  "mp_pct": -0.24,
+  "pcr": 1.048,
   "suggests": "Balanced"
  },
  "charts": {
@@ -625,9 +625,9 @@
    {
     "time": 1795679100,
     "open": 25835.45,
-    "high": 25851.3,
+    "high": 25865.85,
     "low": 25833.15,
-    "close": 25849.05
+    "close": 25860.9
    }
   ]
  },
@@ -2542,10 +2542,10 @@
    "spot_entry": 25917.25,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 211.95,
+   "exit_px": 197.35,
    "reason": "OPEN",
-   "pts": 39.2,
-   "rs": 2548
+   "pts": 24.6,
+   "rs": 1599
   },
   {
    "date": "2026-11-26",
