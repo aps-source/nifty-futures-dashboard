@@ -1,31 +1,31 @@
 {
- "updated": "2026-11-27 14:00:43",
+ "updated": "2026-11-27 14:01:56",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25664.95,
-   "chg_pts": -219.55,
+   "ltp": 25664.5,
+   "chg_pts": -220.0,
    "chg_pct": -0.85
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63277.65,
-   "chg_pts": -257.65,
-   "chg_pct": -0.41
+   "ltp": 63258.35,
+   "chg_pts": -276.95,
+   "chg_pct": -0.44
   },
   {
    "name": "SENSEX",
-   "ltp": 83552.46,
-   "chg_pts": -776.13,
-   "chg_pct": -0.92
+   "ltp": 83538.7,
+   "chg_pts": -789.89,
+   "chg_pct": -0.94
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.56,
-   "chg_pts": -0.28,
-   "chg_pct": -1.66
+   "ltp": 16.58,
+   "chg_pts": -0.26,
+   "chg_pct": -1.54
   },
   {
    "name": "CRUDEOIL",
@@ -35,29 +35,29 @@
   },
   {
    "name": "GOLD",
-   "ltp": 125794,
-   "chg_pts": 3522,
-   "chg_pct": 2.88
+   "ltp": 125747,
+   "chg_pts": 3475,
+   "chg_pct": 2.84
   },
   {
    "name": "SILVER",
-   "ltp": 154214,
-   "chg_pts": 8371,
-   "chg_pct": 5.74
+   "ltp": 154191,
+   "chg_pts": 8348,
+   "chg_pct": 5.72
   }
  ],
  "oc": {
-  "spot": 25663.5,
+  "spot": 25662.7,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 22627085,
+  "res_oi": 22648990,
   "res_pct": 1.31,
   "sup_strike": 25500.0,
-  "sup_oi": 10720970,
-  "sup_pct": 0.64,
+  "sup_oi": 10806380,
+  "sup_pct": 0.63,
   "max_pain": 25700.0,
-  "mp_pct": 0.14,
-  "pcr": 0.693,
+  "mp_pct": 0.15,
+  "pcr": 0.695,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -731,8 +731,8 @@
     "time": 1795768200,
     "open": 25664.0,
     "high": 25670.2,
-    "low": 25660.7,
-    "close": 25663.15
+    "low": 25660.25,
+    "close": 25664.65
    }
   ]
  },
@@ -2630,10 +2630,10 @@
    "spot_entry": 25664.95,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 155.55,
+   "exit_px": 151.6,
    "reason": "OPEN",
-   "pts": 0.0,
-   "rs": 0
+   "pts": -3.95,
+   "rs": -257
   },
   {
    "date": "2026-11-27",
