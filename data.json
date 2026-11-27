@@ -1,63 +1,63 @@
 {
- "updated": "2026-11-27 13:38:56",
+ "updated": "2026-11-27 13:40:15",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25681.3,
-   "chg_pts": -203.2,
-   "chg_pct": -0.79
+   "ltp": 25684.1,
+   "chg_pts": -200.4,
+   "chg_pct": -0.77
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63270.35,
-   "chg_pts": -264.95,
-   "chg_pct": -0.42
+   "ltp": 63283.05,
+   "chg_pts": -252.25,
+   "chg_pct": -0.4
   },
   {
    "name": "SENSEX",
-   "ltp": 83578.19,
-   "chg_pts": -750.4,
-   "chg_pct": -0.89
+   "ltp": 83596.12,
+   "chg_pts": -732.47,
+   "chg_pct": -0.87
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.19,
-   "chg_pts": -0.65,
-   "chg_pct": -3.86
+   "ltp": 16.21,
+   "chg_pts": -0.63,
+   "chg_pct": -3.74
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8018,
-   "chg_pts": 146,
-   "chg_pct": 1.85
+   "ltp": 8027,
+   "chg_pts": 155,
+   "chg_pct": 1.97
   },
   {
    "name": "GOLD",
-   "ltp": 125475,
-   "chg_pts": 3203,
-   "chg_pct": 2.62
+   "ltp": 125460,
+   "chg_pts": 3188,
+   "chg_pct": 2.61
   },
   {
    "name": "SILVER",
-   "ltp": 153605,
-   "chg_pts": 7762,
-   "chg_pct": 5.32
+   "ltp": 153648,
+   "chg_pts": 7805,
+   "chg_pct": 5.35
   }
  ],
  "oc": {
-  "spot": 25680.0,
+  "spot": 25684.6,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 22689680,
-  "res_pct": 1.25,
+  "res_oi": 22708660,
+  "res_pct": 1.23,
   "sup_strike": 25500.0,
-  "sup_oi": 10658895,
-  "sup_pct": 0.7,
+  "sup_oi": 10590840,
+  "sup_pct": 0.72,
   "max_pain": 25700.0,
-  "mp_pct": 0.08,
-  "pcr": 0.683,
+  "mp_pct": 0.06,
+  "pcr": 0.682,
   "suggests": "CALL side heavy - PUT bias"
  },
  "charts": {
@@ -681,24 +681,24 @@
    {
     "time": 1795766940,
     "open": 25680.45,
-    "high": 25682.1,
+    "high": 25686.5,
     "low": 25679.8,
-    "close": 25680.75
+    "close": 25684.75
    }
   ]
  },
  "mtf": {
   "3": {
-   "cls": "SHORT COVERING",
-   "time": "13:36",
-   "d_price": "8.1",
-   "d_oi": "-5330"
+   "cls": "LONG BUILDUP",
+   "time": "13:39",
+   "d_price": "14.6",
+   "d_oi": "16055"
   },
   "5": {
-   "cls": "SHORT COVERING",
-   "time": "13:35",
-   "d_price": "36.8",
-   "d_oi": "-4290"
+   "cls": "LONG BUILDUP",
+   "time": "13:40",
+   "d_price": "7.2",
+   "d_oi": "16770"
   },
   "15": {
    "cls": "SHORT BUILDUP",
@@ -716,36 +716,6 @@
  "decision": "NEUTRAL",
  "decision_score": 0,
  "signals": [
-  {
-   "time": "10:24",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25939",
-   "close": "25902.2",
-   "oi_start": "12577435",
-   "oi_end": "12577630",
-   "d_price": "-36.8",
-   "d_oi": "195",
-   "classification": "SHORT BUILDUP",
-   "score": "-1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
-  {
-   "time": "10:25",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25940",
-   "close": "25895.3",
-   "oi_start": "12577175",
-   "oi_end": "12574640",
-   "d_price": "-44.7",
-   "d_oi": "-2535",
-   "classification": "LONG UNWINDING",
-   "score": "-1",
-   "decision_score": "-2",
-   "decision": "SHORT"
-  },
   {
    "time": "10:27",
    "symbol": "NIFTY",
@@ -2515,6 +2485,36 @@
    "score": "1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "13:39",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25758",
+   "close": "25772.6",
+   "oi_start": "12512175",
+   "oi_end": "12528230",
+   "d_price": "14.6",
+   "d_oi": "16055",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "13:40",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25762.8",
+   "close": "25770",
+   "oi_start": "12513475",
+   "oi_end": "12530245",
+   "d_price": "7.2",
+   "d_oi": "16770",
+   "classification": "LONG BUILDUP",
+   "score": "1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
   }
  ],
  "trades": [
@@ -2564,10 +2564,10 @@
    "spot_entry": 25694.9,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 145.05,
+   "exit_px": 144.45,
    "reason": "OPEN",
-   "pts": -0.4,
-   "rs": -26
+   "pts": -1.0,
+   "rs": -65
   },
   {
    "date": "2026-11-27",
