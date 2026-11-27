@@ -1,43 +1,43 @@
 {
- "updated": "2026-11-27 14:23:59",
+ "updated": "2026-11-27 14:25:19",
  "run_window": "08:59-15:40",
  "project": "Project Nifty Futures",
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25663.65,
-   "chg_pts": -220.85,
-   "chg_pct": -0.85
+   "ltp": 25661.7,
+   "chg_pts": -222.8,
+   "chg_pct": -0.86
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 63211.1,
-   "chg_pts": -324.2,
-   "chg_pct": -0.51
+   "ltp": 63197.7,
+   "chg_pts": -337.6,
+   "chg_pct": -0.53
   },
   {
    "name": "SENSEX",
-   "ltp": 83549.57,
-   "chg_pts": -779.02,
-   "chg_pct": -0.92
+   "ltp": 83535.3,
+   "chg_pts": -793.29,
+   "chg_pct": -0.94
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.47,
-   "chg_pts": -0.37,
-   "chg_pct": -2.2
+   "ltp": 16.53,
+   "chg_pts": -0.31,
+   "chg_pct": -1.84
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8004,
-   "chg_pts": 132,
-   "chg_pct": 1.68
+   "ltp": 8001,
+   "chg_pts": 129,
+   "chg_pct": 1.64
   },
   {
    "name": "GOLD",
-   "ltp": 125981,
-   "chg_pts": 3709,
-   "chg_pct": 3.03
+   "ltp": 126022,
+   "chg_pts": 3750,
+   "chg_pct": 3.07
   },
   {
    "name": "SILVER",
@@ -47,16 +47,16 @@
   }
  ],
  "oc": {
-  "spot": 25663.7,
+  "spot": 25660.6,
   "expiry": "2026-12-01",
   "res_strike": 26000.0,
-  "res_oi": 22520810,
-  "res_pct": 1.31,
-  "sup_strike": 25500.0,
-  "sup_oi": 10427430,
-  "sup_pct": 0.64,
+  "res_oi": 22591595,
+  "res_pct": 1.32,
+  "sup_strike": 25000.0,
+  "sup_oi": 10435490,
+  "sup_pct": 2.57,
   "max_pain": 25700.0,
-  "mp_pct": 0.14,
+  "mp_pct": 0.15,
   "pcr": 0.687,
   "suggests": "CALL side heavy - PUT bias"
  },
@@ -786,24 +786,24 @@
    {
     "time": 1795769640,
     "open": 25665.85,
-    "high": 25665.9,
-    "low": 25662.75,
-    "close": 25662.85
+    "high": 25669.25,
+    "low": 25659.8,
+    "close": 25660.65
    }
   ]
  },
  "mtf": {
   "3": {
    "cls": "LONG UNWINDING",
-   "time": "14:21",
-   "d_price": "-1",
-   "d_oi": "-1950"
+   "time": "14:24",
+   "d_price": "-27.9",
+   "d_oi": "-2145"
   },
   "5": {
-   "cls": "SHORT BUILDUP",
-   "time": "14:20",
-   "d_price": "-5.3",
-   "d_oi": "325"
+   "cls": "LONG UNWINDING",
+   "time": "14:25",
+   "d_price": "-24.1",
+   "d_oi": "-2730"
   },
   "15": {
    "cls": "SHORT COVERING",
@@ -821,36 +821,6 @@
  "decision": "NEUTRAL",
  "decision_score": 0,
  "signals": [
-  {
-   "time": "11:10",
-   "symbol": "NIFTY",
-   "tf_min": "5",
-   "open": "25825",
-   "close": "25850",
-   "oi_start": "12519585",
-   "oi_end": "12511915",
-   "d_price": "25",
-   "d_oi": "-7670",
-   "classification": "SHORT COVERING",
-   "score": "1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
-  {
-   "time": "11:12",
-   "symbol": "NIFTY",
-   "tf_min": "3",
-   "open": "25844.4",
-   "close": "25853.5",
-   "oi_start": "12516465",
-   "oi_end": "12510355",
-   "d_price": "9.1",
-   "d_oi": "-6110",
-   "classification": "SHORT COVERING",
-   "score": "1",
-   "decision_score": "0",
-   "decision": "NEUTRAL"
-  },
   {
    "time": "11:15",
    "symbol": "NIFTY",
@@ -2620,6 +2590,36 @@
    "score": "-1",
    "decision_score": "0",
    "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:24",
+   "symbol": "NIFTY",
+   "tf_min": "3",
+   "open": "25784",
+   "close": "25756.1",
+   "oi_start": "12571780",
+   "oi_end": "12569635",
+   "d_price": "-27.9",
+   "d_oi": "-2145",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
+  },
+  {
+   "time": "14:25",
+   "symbol": "NIFTY",
+   "tf_min": "5",
+   "open": "25789.1",
+   "close": "25765",
+   "oi_start": "12572365",
+   "oi_end": "12569635",
+   "d_price": "-24.1",
+   "d_oi": "-2730",
+   "classification": "LONG UNWINDING",
+   "score": "-1",
+   "decision_score": "0",
+   "decision": "NEUTRAL"
   }
  ],
  "trades": [
@@ -2703,10 +2703,10 @@
    "spot_entry": 25685.95,
    "strat": "v1",
    "exit_t": null,
-   "exit_px": 131.65,
+   "exit_px": 131.75,
    "reason": "OPEN",
-   "pts": -11.7,
-   "rs": -760
+   "pts": -11.6,
+   "rs": -754
   },
   {
    "date": "2026-11-27",
